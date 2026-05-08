@@ -17,6 +17,9 @@ scripts/
 # Documentation interne (optionnelle en prod)
 docs/
 
+# Suivi de projet interne
+suivi_projet.md
+
 # Editeurs et OS
 .DS_Store
 .vscode/
