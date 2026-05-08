@@ -1,0 +1,184 @@
+.methodology-section {
+  position: relative;
+  overflow: hidden;
+  background: #f2f5f3;
+  padding-block: var(--space-80);
+}
+
+/* ── Filigrane fiole ── */
+.methodology-section__watermark {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: auto;
+  color: var(--color-primary);
+  opacity: 0.06;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Structure interne ── */
+.methodology-section__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-48);
+}
+
+.methodology-section__header {
+  max-width: 680px;
+}
+
+.methodology-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-16);
+}
+
+.methodology-section__desc {
+  font-size: var(--text-body-lg);
+  color: var(--on-surface-variant);
+  line-height: 1.75;
+}
+
+/* ── Grille 2×2 ── */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-24);
+}
+
+.methodology-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: var(--space-28, 28px) var(--space-24);
+  box-shadow: 0 1px 4px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.04);
+  border-top: 3px solid var(--color-primary);
+}
+
+/* Numéro d'étape — accent discret en arrière-plan */
+.methodology-card__num {
+  position: absolute;
+  top: var(--space-16);
+  right: var(--space-20, 20px);
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.07;
+  user-select: none;
+  pointer-events: none;
+}
+
+.methodology-card__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(13, 99, 27, 0.09);
+  border-radius: var(--radius-lg);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.methodology-card__icon-wrap svg {
+  width: 22px;
+  height: 22px;
+}
+
+.methodology-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.methodology-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.methodology-card__desc {
+  font-size: var(--text-body-md);
+  color: var(--on-surface-variant);
+  line-height: 1.65;
+}
+
+/* ── Liste sources ── */
+.methodology-card__sources {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.methodology-card__sources li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-8);
+  font-size: var(--text-body-sm);
+  color: var(--on-surface-variant);
+  line-height: 1.5;
+}
+
+.methodology-source__tag {
+  display: inline-block;
+  background: rgba(13, 99, 27, 0.1);
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.methodology-source__full {
+  color: var(--on-surface-variant);
+}
+
+/* ── Badge licence ── */
+.methodology-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .methodology-section__watermark {
+    right: -100px;
+    width: 300px;
+    opacity: 0.05;
+  }
+}
+

@@ -1,0 +1,525 @@
+.citadel-section {
+  background: var(--surface);
+  padding: var(--space-80) 0;
+  text-align: center;
+}
+
+.citadel-section__header {
+  margin-bottom: var(--space-40);
+}
+
+.citadel-section__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-12);
+}
+
+.citadel-section__subtitle {
+  max-width: 860px;
+  margin: 0 auto;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--on-surface-variant);
+}
+
+.citadel-slider {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto var(--space-32);
+}
+
+.citadel-slider__track {
+  min-height: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(25, 28, 30, 0.08);
+}
+
+.citadel-slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: var(--on-surface-variant);
+  box-shadow: var(--shadow-card);
+  z-index: 3;
+  transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+}
+
+.citadel-slider__arrow:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.citadel-slider__arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.citadel-slider__arrow--prev {
+  left: -22px;
+}
+
+.citadel-slider__arrow--next {
+  right: -22px;
+}
+
+.citadel-slider__dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-8);
+  margin-top: var(--space-20);
+}
+
+.citadel-slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--outline-variant);
+  transition: width var(--transition-fast), background var(--transition-fast);
+}
+
+.citadel-slider__dot--active {
+  width: 24px;
+  background: var(--color-primary);
+}
+
+.citadel-slide {
+  min-height: 0;
+}
+
+.citadel-slide__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--space-16);
+  text-align: center;
+}
+
+@keyframes cascadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide 1: conservé comme validé */
+.citadel-slide--1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.citadel-slide1__bg {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+.citadel-slide1__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(8, 24, 10, 0.72) 0%, rgba(8, 24, 10, 0.38) 45%, rgba(8, 24, 10, 0.1) 100%);
+}
+
+.citadel-slide1__desc {
+  position: absolute;
+  left: clamp(1.25rem, 5vw, 3rem);
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: min(560px, 72%);
+  text-align: left;
+}
+
+.citadel-slide1__desc-line {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.8vw, 2.1rem);
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  animation: cascadeIn 550ms ease forwards;
+}
+
+.citadel-slide1__desc-line + .citadel-slide1__desc-line {
+  margin-top: 0.2rem;
+}
+
+.citadel-slide1__desc-line--1 {
+  font-weight: 800;
+  animation-delay: 80ms;
+}
+
+.citadel-slide1__desc-line--2 {
+  animation-delay: 260ms;
+}
+
+.citadel-slide1__desc-line--3 {
+  animation-delay: 440ms;
+}
+
+/* Slide 2 */
+.citadel-slide--2 {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.citadel-slide2__top {
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.citadel-slide2__text {
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-lg);
+  line-height: 1.68;
+  text-align: center;
+}
+
+.citadel-slide2__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: var(--space-16);
+}
+
+.citadel-slide2__card {
+  background: var(--surface-container-low);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(13, 99, 27, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.citadel-slide2__card-image {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+  display: block;
+}
+
+.citadel-slide2__card-title {
+  font-family: var(--font-display);
+  font-size: var(--text-title-md);
+  color: var(--on-surface);
+  padding: var(--space-14) var(--space-14) var(--space-8);
+}
+
+.citadel-slide2__card-desc {
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-md);
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 var(--space-14) var(--space-14);
+  margin-top: auto;
+}
+
+/* Slide 3 */
+.citadel-slide--3 {
+  display: grid;
+  place-items: center;
+  background: #f5faf6;
+}
+
+.citadel-slide3__image {
+  width: 100%;
+  height: auto;
+  max-height: 760px;
+  object-fit: contain;
+  object-position: center;
+  background: #f5faf6;
+  display: block;
+}
+
+/* Slide 4 */
+.citadel-slide--4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.citadel-slide--4 > .citadel-slide__title {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: var(--space-20);
+  margin-bottom: var(--space-12);
+}
+
+.citadel-slide4__main-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+}
+
+.citadel-slide4__right {
+  text-align: left;
+  padding: var(--space-24);
+  background: #ffffff;
+}
+
+.citadel-slide4__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-14);
+}
+
+.citadel-slide4__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-12);
+  text-align: left;
+}
+
+.citadel-slide4__item-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.citadel-slide4__item-content {
+  flex: 1;
+  text-align: left;
+}
+
+.citadel-slide4__item-title {
+  font-family: var(--font-display);
+  font-size: var(--text-body-lg);
+  color: var(--on-surface);
+  margin-bottom: 2px;
+}
+
+.citadel-slide4__item-desc {
+  font-size: var(--text-body-md);
+  color: var(--on-surface-variant);
+  line-height: 1.45;
+  text-align: left;
+}
+
+/* Slides 5 & 6 */
+.citadel-slide--5,
+.citadel-slide--6 {
+  padding: var(--space-24);
+  text-align: center;
+}
+
+.citadel-grid {
+  display: grid;
+  gap: var(--space-14);
+}
+
+.citadel-grid--partners {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.citadel-grid--members {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+.citadel-card {
+  background: var(--surface-container-low);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(13, 99, 27, 0.08);
+  overflow: hidden;
+}
+
+.citadel-partner-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.citadel-partner-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elevated);
+}
+
+.citadel-partner-card__image {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+  padding: var(--space-12);
+  display: block;
+}
+
+.citadel-partner-card__desc {
+  padding: var(--space-10) var(--space-12) var(--space-14);
+  color: var(--on-surface);
+  font-size: 0.74rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.citadel-partner-card--more {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 150px;
+}
+
+.citadel-partner-card__plus {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.citadel-member-card {
+  padding: var(--space-10);
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.citadel-member-card__image {
+  width: 100%;
+  height: auto;
+  max-height: 512px;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-10);
+  display: block;
+}
+
+.citadel-member-card__line1 {
+  font-size: 0.9rem;
+  color: var(--on-surface);
+  line-height: 1.22;
+  text-align: center;
+}
+
+.citadel-member-card__line2 {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  color: var(--on-surface-variant);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.citadel-section__cta {
+  margin-top: var(--space-40);
+}
+
+@media (max-width: 1200px) {
+  .citadel-member-card__image {
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .citadel-slider__arrow {
+    display: none;
+  }
+
+  .citadel-slide2__cards,
+  .citadel-grid--partners,
+  .citadel-grid--members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .citadel-slide--4 {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .citadel-slide4__left,
+  .citadel-slide4__right {
+    min-height: auto;
+  }
+
+  .citadel-slide4__main-image {
+    max-height: 420px;
+  }
+
+  .citadel-slide--5,
+  .citadel-slide--6 {
+    min-height: auto;
+  }
+
+  .citadel-member-card__image {
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .citadel-section {
+    padding: var(--space-48) 0;
+  }
+
+  .citadel-slider__track,
+  .citadel-slide1__bg {
+    min-height: 420px;
+    height: 420px;
+  }
+
+  .citadel-slide--2,
+  .citadel-slide--3,
+  .citadel-slide--5,
+  .citadel-slide--6 {
+    min-height: auto;
+    height: auto;
+    padding: var(--space-20);
+  }
+
+  .citadel-slide2__cards,
+  .citadel-grid--partners,
+  .citadel-grid--members {
+    grid-template-columns: 1fr;
+  }
+
+  .citadel-slide3__image {
+    max-height: 420px;
+  }
+
+  .citadel-slide1__desc {
+    max-width: 92%;
+    left: var(--space-16);
+  }
+
+  .citadel-member-card {
+    max-width: 100%;
+  }
+
+  .citadel-member-card__image {
+    max-height: none;
+  }
+
+  .citadel-partner-card__image {
+    max-height: 180px;
+  }
+}

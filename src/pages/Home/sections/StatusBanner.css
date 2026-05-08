@@ -1,0 +1,139 @@
+.status-banner {
+  position: relative;
+  margin-top: calc(-1 * var(--space-16));
+  padding-bottom: var(--space-48);
+}
+
+.status-banner__surface {
+  background: #000;
+  border-radius: 16px;
+  border: 1px solid rgba(13, 99, 27, 0.1);
+  box-shadow: 0 0 0 1px rgba(13, 99, 27, 0.05), 0 6px 24px rgba(25, 28, 30, 0.06);
+  backdrop-filter: blur(2px);
+}
+
+.status-banner__viewport {
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+}
+
+.status-banner__track {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-16) var(--space-24);
+  display: flex;
+  align-items: center;
+  gap: var(--space-20);
+  width: max-content;
+  animation: status-banner-marquee 28s linear infinite;
+}
+
+.status-banner__surface:hover .status-banner__track {
+  animation-play-state: paused;
+}
+
+@keyframes status-banner-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.status-banner__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  min-width: 270px;
+  padding-inline: var(--space-4);
+}
+
+.status-banner__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.status-banner__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.status-banner__icon--primary {
+  background: rgba(80, 200, 120, 0.18);
+  color: #9af0b4;
+}
+
+.status-banner__icon--secondary {
+  background: rgba(255, 196, 77, 0.18);
+  color: #ffd36b;
+}
+
+.status-banner__text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.status-banner__label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.72);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-banner__value {
+  font-family: var(--font-display);
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+@media (min-width: 1440px) {
+  .status-banner__track {
+    padding: var(--space-20) var(--space-32);
+    gap: var(--space-24);
+  }
+
+  .status-banner__value {
+    font-size: 1.14rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .status-banner__track {
+    animation-duration: 24s;
+  }
+
+  .status-banner__item {
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .status-banner {
+    margin-top: 0;
+    padding-bottom: var(--space-32);
+  }
+
+  .status-banner__track {
+    padding: var(--space-16);
+    gap: var(--space-16);
+    animation-duration: 20s;
+  }
+
+  .status-banner__item {
+    min-width: 220px;
+  }
+}

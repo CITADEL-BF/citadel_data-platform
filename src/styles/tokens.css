@@ -1,0 +1,89 @@
+/* ============================================
+   CITADEL Data Platform — Design Tokens V1
+   Source: DESIGN.md + architecture_technique.md
+   ============================================ */
+
+:root {
+  /* === PALETTE COEUR === */
+  --color-primary: #0d631b;
+  --color-primary-container: #2e7d32;
+  --color-on-primary: #ffffff;
+
+  --color-secondary: #755b00;
+  --color-secondary-container: #fccc38;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #261a00;
+
+  --color-tertiary: #af0012;
+  --color-tertiary-container: #d42627;
+  --color-on-tertiary: #ffffff;
+
+  /* === SURFACES === */
+  --surface: #fcfdfd;
+  --surface-container-low: #f7f9fa;
+  --surface-container-lowest: #ffffff;
+  --surface-container: #f2f5f6;
+  --surface-container-high: #eef2f4;
+  --surface-container-highest: #e8ecee;
+  --on-surface: #191c1e;
+  --on-surface-variant: #414941;
+  --outline-variant: #bfcaba;
+
+  /* === COULEURS DOMAINES === */
+  --domain-securite: #af0012;
+  --domain-population: #2e7d32;
+  --domain-education: #1565c0;
+  --domain-economie: #755b00;
+  --domain-sante: #00695c;
+
+  /* === TYPOGRAPHIE === */
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --text-display-lg: 3.5rem;       /* 56px */
+  --text-headline-lg: 2.25rem;     /* 36px */
+  --text-headline-md: 1.75rem;     /* 28px */
+  --text-title-lg: 1.375rem;       /* 22px */
+  --text-title-md: 1.125rem;       /* 18px */
+  --text-body-lg: 1rem;            /* 16px */
+  --text-body-md: 0.875rem;        /* 14px */
+  --text-label-lg: 0.875rem;       /* 14px */
+  --text-label-sm: 0.6875rem;      /* 11px */
+
+  /* === RADIUS === */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* === OMBRES (ambiance, jamais dures) === */
+  --shadow-ambient: 0 12px 40px 0 rgba(25, 28, 30, 0.06);
+  --shadow-card: 0 2px 8px 0 rgba(25, 28, 30, 0.08);
+  --shadow-elevated: 0 4px 16px 0 rgba(25, 28, 30, 0.10);
+
+  /* === ESPACEMENTS === */
+  --space-2: 0.125rem;
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+  --space-80: 5rem;
+  --space-96: 6rem;
+
+  /* === LAYOUT === */
+  --container-max: 1280px;
+  --container-padding: 1.5rem;
+
+  /* === TRANSITIONS === */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}

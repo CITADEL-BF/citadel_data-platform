@@ -1,0 +1,198 @@
+.module-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Sous-navigation (breadcrumb + onglets modules) ── */
+.module-layout__subnav {
+  background: #ffffff;
+  border-bottom: 1px solid var(--surface-container-high);
+  position: sticky;
+  top: var(--header-height, 104px);
+  z-index: 50;
+}
+
+.module-layout__subnav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding-block: var(--space-8);
+}
+
+/* Breadcrumb */
+.module-layout__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+.module-layout__breadcrumb-link {
+  color: var(--on-surface-variant);
+  transition: color var(--transition-fast);
+}
+
+.module-layout__breadcrumb-link:hover {
+  color: var(--color-primary);
+}
+
+.module-layout__breadcrumb-sep {
+  opacity: 0.4;
+}
+
+.module-layout__breadcrumb-current {
+  font-weight: 600;
+  color: var(--module-accent);
+}
+
+/* Onglets modules */
+.module-layout__tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.module-layout__tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.module-layout__tab {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: var(--space-8) var(--space-16);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--on-surface-variant);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.module-layout__tab:hover {
+  color: var(--tab-color);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.module-layout__tab--active {
+  color: var(--tab-color);
+  font-weight: 700;
+  border-bottom-color: var(--tab-color);
+}
+
+/* ── En-tête du module ── */
+.module-layout__header {
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--module-accent) 8%, #fff) 0%,
+    #ffffff 100%
+  );
+  border-bottom: 1px solid color-mix(in srgb, var(--module-accent) 15%, transparent);
+  padding-block: var(--space-48) var(--space-40);
+}
+
+.module-layout__header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.module-layout__header-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--module-accent);
+  opacity: 0.7;
+}
+
+.module-layout__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--on-surface);
+}
+
+.module-layout__description {
+  max-width: 680px;
+  font-size: var(--text-body-lg);
+  color: var(--on-surface-variant);
+  line-height: 1.7;
+}
+
+/* ── Contenu ── */
+.module-layout__content {
+  flex: 1;
+  padding-block: var(--space-48);
+}
+
+/* ── Placeholder en attente de développement ── */
+.module-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-24);
+  min-height: 320px;
+  text-align: center;
+  padding: var(--space-48) var(--space-24);
+}
+
+.module-placeholder__icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--module-accent) 10%, transparent);
+  color: var(--module-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.module-placeholder__icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.module-placeholder__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.module-placeholder__desc {
+  max-width: 500px;
+  color: var(--on-surface-variant);
+  line-height: 1.65;
+}
+
+.module-placeholder__tag {
+  display: inline-block;
+  background: color-mix(in srgb, var(--module-accent) 12%, transparent);
+  color: var(--module-accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .module-layout__subnav-inner {
+    gap: var(--space-4);
+  }
+
+  .module-layout__header {
+    padding-block: var(--space-32) var(--space-24);
+  }
+
+  .module-layout__content {
+    padding-block: var(--space-32);
+  }
+}
