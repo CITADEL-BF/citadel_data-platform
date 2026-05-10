@@ -11,7 +11,7 @@ import ContactPage from '../pages/Contact/ContactPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Header />
       <main>
         <Routes>

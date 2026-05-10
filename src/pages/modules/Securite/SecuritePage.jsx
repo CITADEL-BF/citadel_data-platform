@@ -76,6 +76,8 @@ const normalizeName = (value) => (
     .replace(/^-+|-+$/g, '')
 )
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+
 const fmtInt = (value) => Number(value || 0).toLocaleString('fr-FR')
 
 export default function SecuritePage() {
@@ -88,10 +90,10 @@ export default function SecuritePage() {
 
   useEffect(() => {
     Promise.all([
-      fetch('/data/viz/csv/securite_incidents_hrp_mensuel.csv').then((r) => r.text()),
-      fetch('/data/viz/csv/securite_series_annuelles.csv').then((r) => r.text()),
-      fetch('/data/viz/json/securite/kpi.json').then((r) => r.json()),
-      fetch('/data/viz/geojson/bfa_regions_boundaries.geojson').then((r) => r.json()),
+      fetch(withBase('data/viz/csv/securite_incidents_hrp_mensuel.csv')).then((r) => r.text()),
+      fetch(withBase('data/viz/csv/securite_series_annuelles.csv')).then((r) => r.text()),
+      fetch(withBase('data/viz/json/securite/kpi.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/geojson/bfa_regions_boundaries.geojson')).then((r) => r.json()),
     ])
       .then(([monthlyText, seriesText, kpiJson, regionsGeo]) => {
         const monthlyParsed = parseCsv(monthlyText).map((row) => ({

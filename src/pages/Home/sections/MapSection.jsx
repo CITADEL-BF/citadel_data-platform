@@ -88,6 +88,8 @@ const projectPoint = (lon, lat, bounds) => {
   return [x, y]
 }
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+
 const buildPathD = (feature, bounds) => {
   const rings = getRings(feature.geometry)
   if (!rings.length) return ''
@@ -116,14 +118,14 @@ export default function MapSection() {
   const [mapFeatures, setMapFeatures] = useState([])
 
   useEffect(() => {
-    fetch('/data/home/regions.json')
+    fetch(withBase('data/home/regions.json'))
       .then((r) => r.json())
       .then((d) => { if (d.regions?.length) setRegions(d.regions) })
       .catch(() => {})
   }, [])
 
   useEffect(() => {
-    fetch('/data/viz/geojson/bfa_regions_boundaries.geojson')
+    fetch(withBase('data/viz/geojson/bfa_regions_boundaries.geojson'))
       .then((r) => r.json())
       .then((d) => {
         if (!Array.isArray(d.features)) return

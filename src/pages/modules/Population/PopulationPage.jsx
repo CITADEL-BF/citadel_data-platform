@@ -20,6 +20,8 @@ const fmtK = (v) => {
   return String(n)
 }
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
+
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function ResetViewControl() {
@@ -70,13 +72,13 @@ export default function PopulationPage() {
   // ── Data loading ──
   useEffect(() => {
     Promise.all([
-      fetch('/data/viz/json/population/kpi.json').then((r) => r.json()),
-      fetch('/data/viz/json/population/courbe_pdi.json').then((r) => r.json()),
-      fetch('/data/viz/json/population/pdi_mensuel.json').then((r) => r.json()),
-      fetch('/data/viz/json/population/vulnerabilite_menages.json').then((r) => r.json()),
-      fetch('/data/viz/json/population/pyramide_demographique.json').then((r) => r.json()),
-      fetch('/data/viz/json/population/comparaison_regionale.json').then((r) => r.json()),
-      fetch('/data/viz/geojson/population_carte_pdi.geojson').then((r) => r.json()),
+      fetch(withBase('data/viz/json/population/kpi.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/json/population/courbe_pdi.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/json/population/pdi_mensuel.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/json/population/vulnerabilite_menages.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/json/population/pyramide_demographique.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/json/population/comparaison_regionale.json')).then((r) => r.json()),
+      fetch(withBase('data/viz/geojson/population_carte_pdi.geojson')).then((r) => r.json()),
     ])
       .then(([kpiData, courbeData, pdiMensuelData, vulnerabiliteData, pyramideData, comparaisonData, geoData]) => {
         setKpi(kpiData)
