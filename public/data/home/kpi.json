@@ -1,0 +1,32 @@
+{
+  "source": "INSD / CITADEL",
+  "date_mise_a_jour": "2025-04-30",
+  "niveau_geo": "national",
+  "statut_qualite": "valide",
+  "indicateurs": [
+    {
+      "id": "datasets_total",
+      "valeur": 1428,
+      "unite": "datasets",
+      "icone": "database"
+    },
+    {
+      "id": "organisations",
+      "valeur": 52,
+      "unite": "organisations",
+      "icone": "building"
+    },
+    {
+      "id": "domaines",
+      "valeur": 12,
+      "unite": "domaines",
+      "icone": "grid"
+    },
+    {
+      "id": "derniere_maj",
+      "valeur": "il y a 2h",
+      "unite": "",
+      "icone": "clock"
+    }
+  ]
+}

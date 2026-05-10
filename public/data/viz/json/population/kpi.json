@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "source": "INSD / IDMC / SP-CONASUR",
+    "mise_a_jour": "2026-05-08"
+  },
+  "kpis": [
+    {
+      "id": "pop_totale",
+      "label": "Population totale",
+      "valeur": 22752315,
+      "unite": "habitants",
+      "annee": 2023,
+      "tendance": "hausse"
+    },
+    {
+      "id": "taux_croissance",
+      "label": "Taux de croissance",
+      "valeur": 2.9,
+      "unite": "%/an",
+      "annee": 2023,
+      "tendance": "stable"
+    },
+    {
+      "id": "pdi_total",
+      "label": "PDI recensés",
+      "valeur": 2063000,
+      "unite": "personnes",
+      "annee": 2024,
+      "tendance": "hausse"
+    },
+    {
+      "id": "regions_couvertes",
+      "label": "Régions avec PDI",
+      "valeur": 8,
+      "unite": "régions / 13",
+      "annee": 2025,
+      "tendance": "stable"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+region,type_evenement,nb_evenements,nb_deces,region_norm
+Boucle du Mouhoun,civilian_targeting,361,1258,Boucle du Mouhoun
+Boucle du Mouhoun,demonstrations,110,0,Boucle du Mouhoun
+Boucle du Mouhoun,political_violence,1106,4273,Boucle du Mouhoun
+Cascades,civilian_targeting,90,147,Cascades
+Cascades,demonstrations,69,0,Cascades
+Cascades,political_violence,318,796,Cascades
+Centre,civilian_targeting,67,116,Centre
+Centre,demonstrations,573,0,Centre
+Centre,political_violence,107,156,Centre
+Centre-Est,civilian_targeting,206,382,Centre-Est
+Centre-Est,demonstrations,83,0,Centre-Est
+Centre-Est,political_violence,645,2274,Centre-Est
+Centre-Nord,civilian_targeting,430,1258,Centre-Nord
+Centre-Nord,demonstrations,129,0,Centre-Nord
+Centre-Nord,political_violence,1344,5033,Centre-Nord
+Centre-Ouest,civilian_targeting,39,82,Centre-Ouest
+Centre-Ouest,demonstrations,97,0,Centre-Ouest
+Centre-Ouest,political_violence,81,192,Centre-Ouest
+Centre-Sud,civilian_targeting,18,19,Centre-Sud
+Centre-Sud,demonstrations,47,0,Centre-Sud
+Centre-Sud,political_violence,38,75,Centre-Sud
+Est,civilian_targeting,780,1814,Est
+Est,demonstrations,163,0,Est
+Est,political_violence,1876,6486,Est
+Hauts-Bassins,civilian_targeting,106,265,Hauts-Bassins
+Hauts-Bassins,demonstrations,181,0,Hauts-Bassins
+Hauts-Bassins,political_violence,221,645,Hauts-Bassins
+Nord,civilian_targeting,311,1061,Nord
+Nord,demonstrations,134,0,Nord
+Nord,political_violence,1010,3556,Nord
+Plateau-Central,civilian_targeting,7,5,Plateau-Central
+Plateau-Central,demonstrations,35,0,Plateau-Central
+Plateau-Central,political_violence,12,6,Plateau-Central
+Sahel,civilian_targeting,1125,3745,Sahel
+Sahel,demonstrations,89,0,Sahel
+Sahel,political_violence,2626,10225,Sahel
+Sud-Ouest,civilian_targeting,43,79,Sud-Ouest
+Sud-Ouest,demonstrations,93,0,Sud-Ouest
+Sud-Ouest,political_violence,148,391,Sud-Ouest

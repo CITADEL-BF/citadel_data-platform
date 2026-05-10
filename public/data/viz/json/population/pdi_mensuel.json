@@ -1,0 +1,467 @@
+{
+  "meta": {
+    "titre": "Série mensuelle PDI",
+    "source": "GCORR / OCHA",
+    "mise_a_jour": "2026-05-08"
+  },
+  "years": [
+    2024,
+    2025
+  ],
+  "regions": [
+    "Boucle du Mouhoun",
+    "Cascades",
+    "Centre-Est",
+    "Centre-Nord",
+    "Est",
+    "Hauts-Bassins",
+    "Nord",
+    "Sahel"
+  ],
+  "types_deplacement": [
+    "Security Incident"
+  ],
+  "rows": [
+    {
+      "annee": 2025,
+      "mois": 4,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 44567
+    },
+    {
+      "annee": 2025,
+      "mois": 4,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 5100
+    },
+    {
+      "annee": 2025,
+      "mois": 4,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 6662
+    },
+    {
+      "annee": 2025,
+      "mois": 4,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 5012
+    },
+    {
+      "annee": 2025,
+      "mois": 3,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 912
+    },
+    {
+      "annee": 2025,
+      "mois": 3,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1600
+    },
+    {
+      "annee": 2025,
+      "mois": 3,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 9593
+    },
+    {
+      "annee": 2025,
+      "mois": 2,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 11088
+    },
+    {
+      "annee": 2025,
+      "mois": 2,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 11633
+    },
+    {
+      "annee": 2025,
+      "mois": 2,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 11495
+    },
+    {
+      "annee": 2024,
+      "mois": 12,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2152
+    },
+    {
+      "annee": 2025,
+      "mois": 1,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 6879
+    },
+    {
+      "annee": 2025,
+      "mois": 1,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 9184
+    },
+    {
+      "annee": 2025,
+      "mois": 1,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 4199
+    },
+    {
+      "annee": 2025,
+      "mois": 1,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2046
+    },
+    {
+      "annee": 2024,
+      "mois": 11,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 5579
+    },
+    {
+      "annee": 2024,
+      "mois": 12,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2556
+    },
+    {
+      "annee": 2024,
+      "mois": 12,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 11395
+    },
+    {
+      "annee": 2024,
+      "mois": 12,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2017
+    },
+    {
+      "annee": 2024,
+      "mois": 12,
+      "region": "Hauts-Bassins",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 6098
+    },
+    {
+      "annee": 2024,
+      "mois": 11,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 276
+    },
+    {
+      "annee": 2024,
+      "mois": 11,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 7114
+    },
+    {
+      "annee": 2024,
+      "mois": 11,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 6335
+    },
+    {
+      "annee": 2024,
+      "mois": 10,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2360
+    },
+    {
+      "annee": 2024,
+      "mois": 10,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 3235
+    },
+    {
+      "annee": 2024,
+      "mois": 7,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2261
+    },
+    {
+      "annee": 2024,
+      "mois": 10,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 21897
+    },
+    {
+      "annee": 2024,
+      "mois": 10,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2298
+    },
+    {
+      "annee": 2024,
+      "mois": 9,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1400
+    },
+    {
+      "annee": 2024,
+      "mois": 9,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1516
+    },
+    {
+      "annee": 2024,
+      "mois": 9,
+      "region": "Hauts-Bassins",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1531
+    },
+    {
+      "annee": 2024,
+      "mois": 7,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 6989
+    },
+    {
+      "annee": 2024,
+      "mois": 8,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 4273
+    },
+    {
+      "annee": 2024,
+      "mois": 8,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 27251
+    },
+    {
+      "annee": 2024,
+      "mois": 8,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2815
+    },
+    {
+      "annee": 2024,
+      "mois": 6,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 6016
+    },
+    {
+      "annee": 2024,
+      "mois": 6,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 7737
+    },
+    {
+      "annee": 2024,
+      "mois": 7,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 31086
+    },
+    {
+      "annee": 2024,
+      "mois": 7,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 5861
+    },
+    {
+      "annee": 2024,
+      "mois": 6,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 10304
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2468
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 27029
+    },
+    {
+      "annee": 2024,
+      "mois": 6,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 18489
+    },
+    {
+      "annee": 2024,
+      "mois": 6,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 12774
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 27116
+    },
+    {
+      "annee": 2024,
+      "mois": 6,
+      "region": "Cascades",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 777
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Hauts-Bassins",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1434
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 4237
+    },
+    {
+      "annee": 2024,
+      "mois": 3,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 898
+    },
+    {
+      "annee": 2024,
+      "mois": 2,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 13757
+    },
+    {
+      "annee": 2024,
+      "mois": 2,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 8692
+    },
+    {
+      "annee": 2024,
+      "mois": 1,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 23205
+    },
+    {
+      "annee": 2024,
+      "mois": 4,
+      "region": "Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 2304
+    },
+    {
+      "annee": 2024,
+      "mois": 4,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 536
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Centre-Nord",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 7127
+    },
+    {
+      "annee": 2024,
+      "mois": 4,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 4550
+    },
+    {
+      "annee": 2024,
+      "mois": 4,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 4500
+    },
+    {
+      "annee": 2024,
+      "mois": 3,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 3744
+    },
+    {
+      "annee": 2024,
+      "mois": 2,
+      "region": "Sahel",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1818
+    },
+    {
+      "annee": 2024,
+      "mois": 2,
+      "region": "Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 7572
+    },
+    {
+      "annee": 2024,
+      "mois": 1,
+      "region": "Boucle du Mouhoun",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 14137
+    },
+    {
+      "annee": 2024,
+      "mois": 1,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 1820
+    },
+    {
+      "annee": 2024,
+      "mois": 5,
+      "region": "Centre-Est",
+      "type_deplacement": "Security Incident",
+      "pdi_personnes": 8026
+    }
+  ]
+}

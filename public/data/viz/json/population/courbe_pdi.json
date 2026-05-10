@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "titre": "Évolution du nombre de PDI — Burkina Faso",
+    "unite": "personnes déplacées internes",
+    "source": "IDMC — Global Internal Displacement Database",
+    "mise_a_jour": "2026-05-08",
+    "note": "Déplacements liés aux conflits. Données en stock (cumul fin d'année)."
+  },
+  "categories": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "series": [
+    {
+      "nom": "PDI (stock)",
+      "data": [
+        700,
+        4900,
+        47000,
+        560000,
+        1075000,
+        1580000,
+        1882000,
+        2063000,
+        2063000
+      ]
+    }
+  ]
+}

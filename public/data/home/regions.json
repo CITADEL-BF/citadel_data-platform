@@ -1,0 +1,87 @@
+{
+  "source": "INSD / CITADEL",
+  "date_mise_a_jour": "2026-05-05",
+  "niveau_geo": "region",
+  "statut_qualite": "valide",
+  "methode_calcul": "Déduplication par (source_fichier, indicateur, annee, region). Pondération : chaque fichier source contribue au plus 200 entrées uniques par région. Indice UI = score normalisé 0–100.",
+  "regions": [
+    {
+      "code": "centre",
+      "nom": "Région Centre",
+      "datasets": 303,
+      "indice": 78
+    },
+    {
+      "code": "hauts-bassins",
+      "nom": "Hauts-Bassins",
+      "datasets": 367,
+      "indice": 95
+    },
+    {
+      "code": "nord",
+      "nom": "Nord",
+      "datasets": 372,
+      "indice": 96
+    },
+    {
+      "code": "est",
+      "nom": "Est",
+      "datasets": 387,
+      "indice": 100
+    },
+    {
+      "code": "sahel",
+      "nom": "Sahel",
+      "datasets": 387,
+      "indice": 100
+    },
+    {
+      "code": "centre-nord",
+      "nom": "Centre-Nord",
+      "datasets": 384,
+      "indice": 99
+    },
+    {
+      "code": "centre-est",
+      "nom": "Centre-Est",
+      "datasets": 384,
+      "indice": 99
+    },
+    {
+      "code": "centre-ouest",
+      "nom": "Centre-Ouest",
+      "datasets": 384,
+      "indice": 99
+    },
+    {
+      "code": "cascades",
+      "nom": "Cascades",
+      "datasets": 387,
+      "indice": 100
+    },
+    {
+      "code": "boucle",
+      "nom": "Boucle du Mouhoun",
+      "datasets": 384,
+      "indice": 99
+    },
+    {
+      "code": "plateau",
+      "nom": "Plateau Central",
+      "datasets": 372,
+      "indice": 96
+    },
+    {
+      "code": "centre-sud",
+      "nom": "Centre-Sud",
+      "datasets": 364,
+      "indice": 94
+    },
+    {
+      "code": "sud-ouest",
+      "nom": "Sud-Ouest",
+      "datasets": 387,
+      "indice": 100
+    }
+  ]
+}

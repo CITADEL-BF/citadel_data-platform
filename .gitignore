@@ -8,8 +8,8 @@ dist/
 .venv/
 
 # Donnees brutes et pipeline de preparation des donnees
-data_raw/
-data/
+/data_raw/
+/data/
 
 # Scripts Python / notebooks de preparation (pipeline local)
 scripts/

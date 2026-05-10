@@ -1,0 +1,892 @@
+annee,theme,indicateur,rubrique,region,unite,valeur
+1994,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,41099.0
+1998,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,72690.0
+2003,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,82672.0
+2009,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,130735.0
+2014,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,153530.0
+2018,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,164955.0
+2021,economie,Evolution des indices de pauvreté,Seuil de pauvreté,,FCFA,247806.0
+1994,economie,Evolution des indices de pauvreté,Incidence P0,,%,44.5
+1998,economie,Evolution des indices de pauvreté,Incidence P0,,%,45.3
+2003,economie,Evolution des indices de pauvreté,Incidence P0,,%,46.4
+2009,economie,Evolution des indices de pauvreté,Incidence P0,,%,46.7
+2014,economie,Evolution des indices de pauvreté,Incidence P0,,%,40.1
+2018,economie,Evolution des indices de pauvreté,Incidence P0,,%,36.2
+2021,economie,Evolution des indices de pauvreté,Incidence P0,,%,43.2
+1994,economie,Evolution des indices de pauvreté,Profondeur P1,,%,13.9
+1998,economie,Evolution des indices de pauvreté,Profondeur P1,,%,13.7
+2003,economie,Evolution des indices de pauvreté,Profondeur P1,,%,15.6
+2009,economie,Evolution des indices de pauvreté,Profondeur P1,,%,15.1
+2014,economie,Evolution des indices de pauvreté,Profondeur P1,,%,9.7
+2018,economie,Evolution des indices de pauvreté,Profondeur P1,,%,12.3
+2021,economie,Evolution des indices de pauvreté,Profondeur P1,,%,13.0
+1994,economie,Evolution des indices de pauvreté,Sévérité P2,,%,6.0
+1998,economie,Evolution des indices de pauvreté,Sévérité P2,,%,5.9
+2003,economie,Evolution des indices de pauvreté,Sévérité P2,,%,7.1
+2009,economie,Evolution des indices de pauvreté,Sévérité P2,,%,6.7
+2014,economie,Evolution des indices de pauvreté,Sévérité P2,,%,3.3
+2018,economie,Evolution des indices de pauvreté,Sévérité P2,,%,5.0
+2021,economie,Evolution des indices de pauvreté,Sévérité P2,,%,5.4
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (AA_PO),,%,19.9
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (AA_PO),,%,52.3
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (AA_PO),,%,46.4
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (AA_CTR),,%,7.8
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (AA_CTR),,%,92.2
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (AA_CTR),,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (AA_P1),,%,5.5
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (AA_P1),,%,17.9
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (AA_P1),,%,15.6
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (AA_CTR),,%,6.4
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (AA_CTR),,%,93.6
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (AA_CTR),,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (AA_P2),,%,2.2
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (AA_P2),,%,8.2
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (AA_P2),,%,7.1
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (AA_CTR),,%,5.6
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (AA_CTR),,%,94.4
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (AA_CTR),,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,21.7
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,25.2
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,47.5
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,44.6
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,54.6
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,52.8
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,13.7
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,10.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,48.6
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,46.7
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,40.1
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_PO),,%,36.2
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,8.1
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,12.0
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,92.5
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,93.3
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,91.9
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,88.0
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,7.5
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,6.7
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,100.0
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,100.0
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,100.0
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Incidence de pauvreté (NA_CTR),,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,6.0
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,6.8
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,11.6
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,11.2
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,19.3
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,17.5
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,2.9
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,2.2
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,16.9
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,15.1
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,9.7
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_P1),,%,9.3
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,6.4
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,9.9
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,93.4
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,93.6
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,90.1
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,6.6
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,100.0
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,100.0
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Profondeur de pauvreté (NA_CTR),,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,2.4
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,2.6
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,4.0
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,4.1
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,9.1
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,7.9
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,0.9
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,0.8
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,7.8
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,6.7
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,3.3
+2018,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_P2),,%,3.3
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,5.5
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,8.7
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,94.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,94.5
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,91.3
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,6.0
+2003,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,100.0
+2009,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,100.0
+2014,economie,Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté,Sévérité de pauvreté (NA_CTR),,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Burkina Faso,%,46.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Boucle du Mouhoun,%,60.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Cascades,%,39.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Centre,%,22.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Centre-Est,%,55.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Centre-Nord,%,34.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Centre-Ouest,%,41.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Centre-Sud,%,66.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Est,%,40.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Hauts-Bassins,%,34.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Nord,%,68.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Plateau Central,%,58.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Sahel,%,37.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Sud-Ouest,%,56.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Burkina Faso,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Boucle du Mouhoun,%,15.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Cascades,%,3.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Centre,%,4.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Centre-Est,%,9.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Centre-Nord,%,6.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Centre-Ouest,%,7.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Centre-Sud,%,6.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Est,%,7.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Hauts-Bassins,%,8.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Nord,%,12.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Plateau Central,%,7.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Sahel,%,4.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_CTR),Sud-Ouest,%,6.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Burkina Faso,%,15.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Boucle du Mouhoun,%,21.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Cascades,%,14.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Centre,%,7.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Centre-Est,%,19.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Centre-Nord,%,8.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Centre-Ouest,%,14.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Centre-Sud,%,26.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Est,%,12.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Hauts-Bassins,%,10.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Nord,%,24.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Plateau Central,%,20.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Sahel,%,12.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Sud-Ouest,%,17.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Burkina Faso,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Boucle du Mouhoun,%,16.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Cascades,%,3.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Centre,%,4.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Centre-Est,%,10.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Centre-Nord,%,4.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Centre-Ouest,%,7.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Centre-Sud,%,7.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Est,%,6.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Hauts-Bassins,%,7.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Nord,%,13.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Plateau Central,%,7.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Sahel,%,4.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_CTR),Sud-Ouest,%,5.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Burkina Faso,%,7.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Boucle du Mouhoun,%,9.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Cascades,%,7.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Centre,%,2.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Centre-Est,%,9.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Centre-Nord,%,2.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Centre-Ouest,%,6.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Centre-Sud,%,13.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Est,%,5.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Hauts-Bassins,%,4.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Nord,%,11.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Plateau Central,%,9.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Sahel,%,5.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Sud-Ouest,%,7.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Burkina Faso,%,48.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Burkina Faso,%,46.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Burkina Faso,%,40.1
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Burkina Faso,%,41.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Boucle du Mouhoun,%,36.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Boucle du Mouhoun,%,42.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Boucle du Mouhoun,%,59.7
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Boucle du Mouhoun,%,50.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Cascades,%,66.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Cascades,%,48.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Cascades,%,22.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Cascades,%,20.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre,%,34.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre,%,41.5
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre,%,9.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre,%,5.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Est,%,38.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Est,%,62.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Est,%,36.1
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Est,%,53.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Nord,%,58.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Nord,%,57.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Nord,%,47.0
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Nord,%,60.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Ouest,%,42.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Ouest,%,39.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Ouest,%,51.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Ouest,%,53.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Sud,%,43.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Sud,%,49.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Sud,%,40.5
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Centre-Sud,%,26.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Est,%,61.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Est,%,51.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Est,%,50.1
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Est,%,45.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Hauts-Bassins,%,69.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Hauts-Bassins,%,64.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Hauts-Bassins,%,34.4
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Hauts-Bassins,%,34.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Nord,%,57.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Nord,%,57.4
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Nord,%,70.4
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Nord,%,70.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Plateau Central,%,24.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Plateau Central,%,28.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Plateau Central,%,45.2
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Plateau Central,%,34.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sahel,%,41.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sahel,%,27.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sahel,%,20.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sahel,%,44.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sud-Ouest,%,62.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sud-Ouest,%,42.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sud-Ouest,%,41.5
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_PO),Sud-Ouest,%,45.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Boucle du Mouhoun,%,8.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Boucle du Mouhoun,%,9.5
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Boucle du Mouhoun,%,14.7
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Boucle du Mouhoun,%,12.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Cascades,%,16.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Cascades,%,10.4
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Cascades,%,2.2
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Cascades,%,2.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre,%,4.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre,%,6.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre,%,3.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre,%,1.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Est,%,6.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Est,%,11.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Est,%,7.2
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Est,%,10.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Nord,%,5.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Nord,%,5.4
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Nord,%,9.8
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Nord,%,12.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Ouest,%,7.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Ouest,%,7.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Ouest,%,10.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Ouest,%,10.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Sud,%,7.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Sud,%,8.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Sud,%,4.4
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Centre-Sud,%,2.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Est,%,7.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Est,%,5.4
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Est,%,10.9
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Est,%,9.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Hauts-Bassins,%,12.3
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Hauts-Bassins,%,11.5
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Hauts-Bassins,%,9.1
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Hauts-Bassins,%,9.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Nord,%,9.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Nord,%,9.9
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Nord,%,14.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Nord,%,13.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Plateau Central,%,5.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Plateau Central,%,7.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Plateau Central,%,5.4
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Plateau Central,%,3.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sahel,%,3.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sahel,%,2.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sahel,%,3.5
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sahel,%,7.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sud-Ouest,%,5.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sud-Ouest,%,4.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sud-Ouest,%,4.5
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (NA_CTR),Sud-Ouest,%,4.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Burkina Faso,%,16.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Burkina Faso,%,15.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Burkina Faso,%,9.7
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Burkina Faso,%,12.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Boucle du Mouhoun,%,11.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Boucle du Mouhoun,%,12.2
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Boucle du Mouhoun,%,15.4
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Boucle du Mouhoun,%,14.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Cascades,%,24.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Cascades,%,14.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Cascades,%,4.4
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Cascades,%,5.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre,%,11.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre,%,14.9
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre,%,2.0
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre,%,1.1
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Est,%,12.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Est,%,23.2
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Est,%,10.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Est,%,19.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Nord,%,19.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Nord,%,19.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Nord,%,10.9
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Nord,%,20.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Ouest,%,11.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Ouest,%,10.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Ouest,%,11.8
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Ouest,%,14.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Sud,%,15.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Sud,%,15.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Sud,%,9.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Centre-Sud,%,5.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Est,%,22.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Est,%,16.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Est,%,11.7
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Est,%,11.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Hauts-Bassins,%,26.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Hauts-Bassins,%,23.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Hauts-Bassins,%,7.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Hauts-Bassins,%,8.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Nord,%,19.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Nord,%,20.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Nord,%,18.9
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Nord,%,25.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Plateau Central,%,7.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Plateau Central,%,8.5
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Plateau Central,%,10.9
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Plateau Central,%,9.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sahel,%,15.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sahel,%,7.4
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sahel,%,3.8
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sahel,%,13.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sud-Ouest,%,24.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sud-Ouest,%,11.2
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sud-Ouest,%,10.1
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_P1),Sud-Ouest,%,10.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Boucle du Mouhoun,%,7.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Boucle du Mouhoun,%,8.5
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Boucle du Mouhoun,%,15.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Cascades,%,18.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Cascades,%,9.9
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Cascades,%,1.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre,%,4.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre,%,6.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre,%,2.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Est,%,6.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Est,%,13.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Est,%,8.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Nord,%,5.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Nord,%,5.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Nord,%,9.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Ouest,%,5.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Ouest,%,5.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Ouest,%,10.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Sud,%,8.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Sud,%,8.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Centre-Sud,%,4.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Est,%,7.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Est,%,5.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Est,%,10.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Hauts-Bassins,%,13.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Hauts-Bassins,%,13.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Hauts-Bassins,%,8.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Nord,%,9.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Nord,%,10.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Nord,%,16.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Plateau Central,%,4.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Plateau Central,%,7.2
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Plateau Central,%,5.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Sahel,%,3.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Sahel,%,1.9
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Sahel,%,2.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Sud-Ouest,%,6.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Sud-Ouest,%,3.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (NA_CTR),Sud-Ouest,%,4.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Burkina Faso,%,7.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Burkina Faso,%,6.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Burkina Faso,%,3.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Burkina Faso,%,5.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Boucle du Mouhoun,%,5.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Boucle du Mouhoun,%,4.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Boucle du Mouhoun,%,5.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Boucle du Mouhoun,%,5.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Cascades,%,11.9
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Cascades,%,6.4
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Cascades,%,1.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Cascades,%,1.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre,%,5.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre,%,7.5
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre,%,0.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre,%,0.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Est,%,5.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Est,%,11.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Est,%,4.2
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Est,%,9.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Nord,%,8.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Nord,%,9.2
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Nord,%,3.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Nord,%,8.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Ouest,%,4.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Ouest,%,3.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Ouest,%,3.7
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Ouest,%,5.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Sud,%,7.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Sud,%,6.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Sud,%,3.0
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Centre-Sud,%,2.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Est,%,10.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Est,%,7.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Est,%,3.7
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Est,%,3.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Hauts-Bassins,%,13.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Hauts-Bassins,%,11.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Hauts-Bassins,%,2.3
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Hauts-Bassins,%,3.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Nord,%,9.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Nord,%,9.2
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Nord,%,6.8
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Nord,%,11.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Plateau Central,%,3.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Plateau Central,%,3.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Plateau Central,%,3.6
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Plateau Central,%,3.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sahel,%,8.2
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sahel,%,2.9
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sahel,%,1.1
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sahel,%,5.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sud-Ouest,%,12.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sud-Ouest,%,4.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sud-Ouest,%,3.5
+2018,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_P2),Sud-Ouest,%,3.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Burkina Faso,%,100.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Boucle du Mouhoun,%,7.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Boucle du Mouhoun,%,7.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Boucle du Mouhoun,%,16.7
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Cascades,%,18.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Cascades,%,9.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Cascades,%,1.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre,%,3.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre,%,7.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre,%,2.6
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Est,%,5.5
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Est,%,14.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Est,%,10.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Nord,%,5.3
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Nord,%,6.0
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Nord,%,9.2
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Ouest,%,4.6
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Ouest,%,4.7
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Ouest,%,9.4
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Sud,%,8.4
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Sud,%,8.3
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Centre-Sud,%,4.0
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Est,%,8.1
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Est,%,5.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Est,%,9.9
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Hauts-Bassins,%,14.3
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Hauts-Bassins,%,14.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Hauts-Bassins,%,7.5
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Nord,%,9.7
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Nord,%,11.1
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Nord,%,16.8
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Plateau Central,%,4.0
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Plateau Central,%,6.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Plateau Central,%,5.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Sahel,%,3.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Sahel,%,1.6
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Sahel,%,2.3
+2003,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Sud-Ouest,%,6.8
+2009,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Sud-Ouest,%,2.8
+2014,economie,Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (NA_CTR),Sud-Ouest,%,4.6
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,76.3
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,78.1
+2021,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,77.2
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,93.5
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,94.9
+2021,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,91.3
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,69.6
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,70.4
+2021,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'eau potable,,%,71.2
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,8.1
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,14.4
+2021,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,15.2
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,18.8
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,30.1
+2021,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,29.3
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,3.9
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,7.3
+2021,sante,Quelques indicateurs sur les conditions de vie des ménages,Accès à l'assainissement (Latrine améliorée),,%,9.2
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,% de ménage utilisant principalement les Combustibles solides (bois et dérivés) comme source d'énergie,,%,90.1
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,% de ménage utilisant principalement les Combustibles solides (bois et dérivés) comme source d'énergie,,%,76.1
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,% de ménage utilisant principalement les Combustibles solides (bois et dérivés) comme source d'énergie,,%,68.2
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,% de ménage utilisant principalement les Combustibles solides (bois et dérivés) comme source d'énergie,,%,35.9
+2014,sante,Quelques indicateurs sur les conditions de vie des ménages,% de ménage utilisant principalement les Combustibles solides (bois et dérivés) comme source d'énergie,,%,98.7
+2018,sante,Quelques indicateurs sur les conditions de vie des ménages,% de ménage utilisant principalement les Combustibles solides (bois et dérivés) comme source d'énergie,,%,94.4
+2018,economie,Revenu des emplois des ménages,Burkina Faso,,FCFA,1614881127097.0
+2018,economie,Revenu des emplois des ménages,Boucle du Mouhoun,,FCFA,44807688898.0
+2018,economie,Revenu des emplois des ménages,Cascades,,FCFA,44935686153.0
+2018,economie,Revenu des emplois des ménages,Centre,,FCFA,942997994069.0
+2018,economie,Revenu des emplois des ménages,Centre-Est,,FCFA,50313003565.0
+2018,economie,Revenu des emplois des ménages,Centre-Nord,,FCFA,43582394699.0
+2018,economie,Revenu des emplois des ménages,Centre-Ouest,,FCFA,64115210269.0
+2018,economie,Revenu des emplois des ménages,Centre-Sud,,FCFA,21315928313.0
+2018,economie,Revenu des emplois des ménages,Est,,FCFA,50937034714.0
+2018,economie,Revenu des emplois des ménages,Hauts Bassins,,FCFA,138891614939.0
+2018,economie,Revenu des emplois des ménages,Nord,,FCFA,56754751549.0
+2018,economie,Revenu des emplois des ménages,Plateau-Central,,FCFA,24132315092.0
+2018,economie,Revenu des emplois des ménages,Sahel,,FCFA,102752391253.0
+2018,economie,Revenu des emplois des ménages,Sud-Ouest,,FCFA,29345113585.0
+2018,economie,Revenu des emplois des ménages,Urbain,,FCFA,1233042433273.0
+2018,economie,Revenu des emplois des ménages,Rural,,FCFA,381838693824.0
+2018,economie,Revenu des emplois des ménages,Masculin,,FCFA,1413452886726.0
+2018,economie,Revenu des emplois des ménages,Féminin,,FCFA,201428240371.0
+2018,economie,Revenu des emplois des ménages,Aucun,,FCFA,625264086233.0
+2018,economie,Revenu des emplois des ménages,Primaire,,FCFA,111234900136.0
+2018,economie,Revenu des emplois des ménages,Post primaire,,FCFA,154019543691.0
+2018,economie,Revenu des emplois des ménages,Secondaire et plus,,FCFA,724362597037.0
+2018,economie,Revenu des emplois des ménages,Inactif,,FCFA,113251415271.0
+2018,economie,Revenu des emplois des ménages,Agriculture,,FCFA,183831010333.0
+2018,economie,Revenu des emplois des ménages,Industrie,,FCFA,172022336831.0
+2018,economie,Revenu des emplois des ménages,Service,,FCFA,1145776364662.0
+2018,economie,Revenu des emplois des ménages,Burkina Faso,,FCFA,6288176584054.0
+2018,economie,Revenu des emplois des ménages,Boucle du Mouhoun,,FCFA,441713284003.0
+2018,economie,Revenu des emplois des ménages,Cascades,,FCFA,294839671894.0
+2018,economie,Revenu des emplois des ménages,Centre,,FCFA,2665000245789.0
+2018,economie,Revenu des emplois des ménages,Centre-Est,,FCFA,428889817434.0
+2018,economie,Revenu des emplois des ménages,Centre-Nord,,FCFA,150970830565.0
+2018,economie,Revenu des emplois des ménages,Centre-Ouest,,FCFA,240455059624.0
+2018,economie,Revenu des emplois des ménages,Centre-Sud,,FCFA,185491087364.0
+2018,economie,Revenu des emplois des ménages,Est,,FCFA,259310646523.0
+2018,economie,Revenu des emplois des ménages,Hauts Bassins,,FCFA,877633785733.0
+2018,economie,Revenu des emplois des ménages,Nord,,FCFA,201562948726.0
+2018,economie,Revenu des emplois des ménages,Plateau-Central,,FCFA,134876279932.0
+2018,economie,Revenu des emplois des ménages,Sahel,,FCFA,244845117399.0
+2018,economie,Revenu des emplois des ménages,Sud-Ouest,,FCFA,162587809069.0
+2018,economie,Revenu des emplois des ménages,Urbain,,FCFA,3949964583766.0
+2018,economie,Revenu des emplois des ménages,Rural,,FCFA,2338212000288.0
+2018,economie,Revenu des emplois des ménages,Masculin,,FCFA,5835655173275.0
+2018,economie,Revenu des emplois des ménages,Féminin,,FCFA,452521410779.0
+2018,economie,Revenu des emplois des ménages,Aucun,,FCFA,2913323469309.0
+2018,economie,Revenu des emplois des ménages,Primaire,,FCFA,711092510505.0
+2018,economie,Revenu des emplois des ménages,Post primaire,,FCFA,527274024958.0
+2018,economie,Revenu des emplois des ménages,Secondaire et plus,,FCFA,2136486579281.0
+2018,economie,Revenu des emplois des ménages,Inactif,,FCFA,399680081033.0
+2018,economie,Revenu des emplois des ménages,Agriculture,,FCFA,1847947044316.0
+2018,economie,Revenu des emplois des ménages,Industrie,,FCFA,447332340304.0
+2018,economie,Revenu des emplois des ménages,Service,,FCFA,3593217118400.0
+2018,economie,Revenu des emplois des ménages,Burkina Faso,,%,25.7
+2018,economie,Revenu des emplois des ménages,Boucle du Mouhoun,,%,10.1
+2018,economie,Revenu des emplois des ménages,Cascades,,%,15.2
+2018,economie,Revenu des emplois des ménages,Centre,,%,35.4
+2018,economie,Revenu des emplois des ménages,Centre-Est,,%,11.7
+2018,economie,Revenu des emplois des ménages,Centre-Nord,,%,28.9
+2018,economie,Revenu des emplois des ménages,Centre-Ouest,,%,26.7
+2018,economie,Revenu des emplois des ménages,Centre-Sud,,%,11.5
+2018,economie,Revenu des emplois des ménages,Est,,%,19.6
+2018,economie,Revenu des emplois des ménages,Hauts Bassins,,%,15.8
+2018,economie,Revenu des emplois des ménages,Nord,,%,28.2
+2018,economie,Revenu des emplois des ménages,Plateau-Central,,%,17.9
+2018,economie,Revenu des emplois des ménages,Sahel,,%,42.0
+2018,economie,Revenu des emplois des ménages,Sud-Ouest,,%,18.0
+2018,economie,Revenu des emplois des ménages,Urbain,,%,31.2
+2018,economie,Revenu des emplois des ménages,Rural,,%,16.3
+2018,economie,Revenu des emplois des ménages,Masculin,,%,24.2
+2018,economie,Revenu des emplois des ménages,Féminin,,%,44.5
+2018,economie,Revenu des emplois des ménages,Aucun,,%,21.5
+2018,economie,Revenu des emplois des ménages,Primaire,,%,15.6
+2018,economie,Revenu des emplois des ménages,Post primaire,,%,29.2
+2018,economie,Revenu des emplois des ménages,Secondaire et plus,,%,33.9
+2018,economie,Revenu des emplois des ménages,Inactif,,%,28.3
+2018,economie,Revenu des emplois des ménages,Agriculture,,%,9.9
+2018,economie,Revenu des emplois des ménages,Industrie,,%,38.5
+2018,economie,Revenu des emplois des ménages,Service,,%,31.9
+2018,economie,Revenu des emplois des ménages,Burkina Faso,,FCFA,501376.7
+2018,economie,Revenu des emplois des ménages,Boucle du Mouhoun,,FCFA,268845.2
+2018,economie,Revenu des emplois des ménages,Cascades,,FCFA,279139.4
+2018,economie,Revenu des emplois des ménages,Centre,,FCFA,845608.0
+2018,economie,Revenu des emplois des ménages,Centre-Est,,FCFA,337153.7
+2018,economie,Revenu des emplois des ménages,Centre-Nord,,FCFA,153836.0
+2018,economie,Revenu des emplois des ménages,Centre-Ouest,,FCFA,452104.9
+2018,economie,Revenu des emplois des ménages,Centre-Sud,,FCFA,247319.8
+2018,economie,Revenu des emplois des ménages,Est,,FCFA,330247.1
+2018,economie,Revenu des emplois des ménages,Hauts Bassins,,FCFA,342070.7
+2018,economie,Revenu des emplois des ménages,Nord,,FCFA,202048.1
+2018,economie,Revenu des emplois des ménages,Plateau-Central,,FCFA,251457.2
+2018,economie,Revenu des emplois des ménages,Sahel,,FCFA,402531.8
+2018,economie,Revenu des emplois des ménages,Sud-Ouest,,FCFA,243204.4
+2018,economie,Revenu des emplois des ménages,Urbain,,FCFA,686110.8
+2018,economie,Revenu des emplois des ménages,Rural,,FCFA,217400.6
+2018,economie,Revenu des emplois des ménages,Masculin,,FCFA,505394.8
+2018,economie,Revenu des emplois des ménages,Féminin,,FCFA,471377.9
+2018,economie,Revenu des emplois des ménages,Aucun,,FCFA,350236.7
+2018,economie,Revenu des emplois des ménages,Primaire,,FCFA,202068.2
+2018,economie,Revenu des emplois des ménages,Post primaire,,FCFA,386714.4
+2018,economie,Revenu des emplois des ménages,Secondaire et plus,,FCFA,1097634.5
+2018,economie,Revenu des emplois des ménages,Inactif,,FCFA,253650.8
+2018,economie,Revenu des emplois des ménages,Agriculture,,FCFA,118981.4
+2018,economie,Revenu des emplois des ménages,Industrie,,FCFA,813051.5
+2018,economie,Revenu des emplois des ménages,Service,,FCFA,702500.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Haut-Bassins,%,8.8
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Haut-Bassins,%,9.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Haut-Bassins,%,43.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Haut-Bassins,%,4.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Haut-Bassins,%,34.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Haut-Bassins,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Haut-Bassins,%,0.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Haut-Bassins,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Haut-Bassins,%,0.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Haut-Bassins,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Haut-Bassins,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Boucle du Mouhoun,%,12.5
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Boucle du Mouhoun,%,21.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Boucle du Mouhoun,%,9.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Boucle du Mouhoun,%,6.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Boucle du Mouhoun,%,50.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Boucle du Mouhoun,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Boucle du Mouhoun,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Boucle du Mouhoun,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Boucle du Mouhoun,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Boucle du Mouhoun,%,0.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Boucle du Mouhoun,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Sahel,%,74.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Sahel,%,19.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Sahel,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Sahel,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Sahel,%,3.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Sahel,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Sahel,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Sahel,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Sahel,%,0.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Sahel,%,0.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Sahel,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Est,%,7.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Est,%,23.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Est,%,9.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Est,%,1.5
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Est,%,57.5
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Est,%,1.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Est,%,0.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Est,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Sud-Ouest,%,3.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Sud-Ouest,%,9.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Sud-Ouest,%,15.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Sud-Ouest,%,1.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Sud-Ouest,%,70.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Sud-Ouest,%,0.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Sud-Ouest,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Sud-Ouest,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Sud-Ouest,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Sud-Ouest,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Sud-Ouest,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Centre-Nord,%,9.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Centre-Nord,%,24.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Centre-Nord,%,26.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Centre-Nord,%,2.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Centre-Nord,%,31.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Centre-Nord,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Centre-Nord,%,1.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Centre-Nord,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Centre-Nord,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Centre-Nord,%,4.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Centre-Nord,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Centre-Ouest,%,3.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Centre-Ouest,%,34.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Centre-Ouest,%,6.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Centre-Ouest,%,2.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Centre-Ouest,%,52.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Centre-Ouest,%,0.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Centre-Ouest,%,0.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Centre-Ouest,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Centre-Ouest,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Centre-Ouest,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Centre-Ouest,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Plateur Central,%,3.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Plateur Central,%,15.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Plateur Central,%,12.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Plateur Central,%,1.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Plateur Central,%,66.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Plateur Central,%,0.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Plateur Central,%,0.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Plateur Central,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Plateur Central,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Plateur Central,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Plateur Central,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Nord,%,25.8
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Nord,%,30.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Nord,%,17.8
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Nord,%,3.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Nord,%,17.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Nord,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Nord,%,0.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Nord,%,0.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Nord,%,4.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Nord,%,0.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Nord,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Centre-Est,%,9.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Centre-Est,%,8.8
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Centre-Est,%,46.8
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Centre-Est,%,5.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Centre-Est,%,29.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Centre-Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Centre-Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Centre-Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Centre-Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Centre-Est,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Centre-Est,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Centre,%,2.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Centre,%,12.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Centre,%,4.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Centre,%,0.5
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Centre,%,80.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Centre,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Centre,%,0.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Centre,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Centre,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Centre,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Centre,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Cascades,%,2.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Cascades,%,24.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Cascades,%,6.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Cascades,%,1.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Cascades,%,65.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Cascades,%,0.4
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Cascades,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Cascades,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Cascades,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Cascades,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Cascades,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Centre-Sud,%,4.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Centre-Sud,%,30.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Centre-Sud,%,14.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Centre-Sud,%,2.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Centre-Sud,%,44.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Centre-Sud,%,0.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Centre-Sud,%,3.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Centre-Sud,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Centre-Sud,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Centre-Sud,%,0.5
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Centre-Sud,%,100.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Robinet privé,Burkina Faso,%,20.3
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Borne fontaine/Robinet public,Burkina Faso,%,20.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits ouverts,Burkina Faso,%,15.9
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Puits couverts,Burkina Faso,%,2.2
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Forage,Burkina Faso,%,39.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Sources,Burkina Faso,%,0.1
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Fleuve/Rivière/Lac/Barrage,Burkina Faso,%,0.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Eau en bouteille,Burkina Faso,%,0.0
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Vendeur ambulant,Burkina Faso,%,0.7
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Autre,Burkina Faso,%,0.6
+2018,sante,Répartition des ménages par région selon le mode d'approvisionnement en eau,Total,Burkina Faso,%,100.0
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Boucle du Mouhoun,%,0.0
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Cascades,%,0.3
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Centre,%,0.6
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Centre-Est,%,0.2
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Centre-Nord,%,3.5
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Centre-Ouest,%,1.1
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Centre-Sud,%,1.8
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Est,%,0.1
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Hauts Bassins,%,1.1
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Nord,%,4.9
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Plateau-Central,%,3.4
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Sahel,%,3.9
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Sud-Ouest,%,0.0
+2018,sante,Répartition ménages par Rég selon le mode d'énergie pour la cuisine,Autre combustible,Burkina Faso,%,1.4
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Boucle du Mouhoun,%,0.5
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Cascades,%,1.7
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Centre,%,21.6
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Centre-Est,%,1.3
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Centre-Nord,%,0.2
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Centre-Ouest,%,1.6
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Centre-Sud,%,1.6
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Est,%,0.3
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Hauts Bassins,%,1.5
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Nord,%,0.6
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Plateau-Central,%,2.5
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Sahel,%,0.1
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Sud-Ouest,%,0.1
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,"W,C avec chasse d'eau",Burkina Faso,%,4.6
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Boucle du Mouhoun,%,0.0
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Cascades,%,2.4
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Centre,%,0.0
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Centre-Est,%,0.2
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Centre-Nord,%,0.0
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Centre-Ouest,%,1.5
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Centre-Sud,%,0.4
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Est,%,2.1
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Hauts Bassins,%,0.3
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Nord,%,0.7
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Plateau-Central,%,0.2
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Sahel,%,0.4
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Sud-Ouest,%,1.2
+2018,sante,Répartition des ménages selon le lieu d'aisance par région,Toilettes publiques,Burkina Faso,%,0.6
+1994,alimentaire,Pourcentage des dépenses alimentaires dans l'ensemble des dépenses des ménages,,,%,45.8
+1998,alimentaire,Pourcentage des dépenses alimentaires dans l'ensemble des dépenses des ménages,,,%,52.2
+2003,alimentaire,Pourcentage des dépenses alimentaires dans l'ensemble des dépenses des ménages,,,%,48.8
+2009,alimentaire,Pourcentage des dépenses alimentaires dans l'ensemble des dépenses des ménages,,,%,52.3
+2018,alimentaire,Pourcentage des dépenses alimentaires dans l'ensemble des dépenses des ménages,,,%,47.9
+2021,alimentaire,Pourcentage des dépenses alimentaires dans l'ensemble des dépenses des ménages,,,%,45.1
+1994,economie,Seuil de pauvreté,,,milliers FCFA,41.1
+1998,economie,Seuil de pauvreté,,,milliers FCFA,72.7
+2003,economie,Seuil de pauvreté,,,milliers FCFA,82.7
+2009,economie,Seuil de pauvreté,,,milliers FCFA,130.7
+2014,economie,Seuil de pauvreté,,,milliers FCFA,153.5
+2018,economie,Seuil de pauvreté,,,milliers FCFA,194.6
+2021,economie,Seuil de pauvreté,,,milliers FCFA,247.8
+1994,economie,Taux de pauvreté au seuil de pauvreté national,,,%,44.5
+1998,economie,Taux de pauvreté au seuil de pauvreté national,,,%,45.3
+2003,economie,Taux de pauvreté au seuil de pauvreté national,,,%,46.4
+2009,economie,Taux de pauvreté au seuil de pauvreté national,,,%,46.7
+2014,economie,Taux de pauvreté au seuil de pauvreté national,,,%,40.1
+2018,economie,Taux de pauvreté au seuil de pauvreté national,,,%,41.4
+2021,economie,Taux de pauvreté au seuil de pauvreté national,,,%,43.2
+1994,economie,Profondeur de la pauvreté,,,,0.139
+1998,economie,Profondeur de la pauvreté,,,,0.137
+2003,economie,Profondeur de la pauvreté,,,,0.156
+2009,economie,Profondeur de la pauvreté,,,,0.151
+2014,economie,Profondeur de la pauvreté,,,,0.097
+2018,economie,Profondeur de la pauvreté,,,,0.123
+2021,economie,Profondeur de la pauvreté,,,,0.13
+2006,sante,Pourcentage de la population ayant des toilettes saines,,,%,0.6
+2010,sante,Pourcentage de la population ayant des toilettes saines,,,%,1.7
+2021,sante,Pourcentage de la population ayant des toilettes saines,,,%,2.4
+1991,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,1.5
+1994,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,2.7
+1996,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,1.9
+1998,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,4.0
+2003,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,2.9
+2005,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,4.8
+2006,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,4.4
+2007,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,6.8
+2010,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,5.3
+2019,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,17.5
+2021,sante,Population utilisant des combustibles modernes pour cuisiner,,,%,12.4
+1991,sante,Pourcentage des ménages ayant des toilettes saines,,,%,0.5
+1993,sante,Pourcentage des ménages ayant des toilettes saines,,,%,0.9
+1994,sante,Pourcentage des ménages ayant des toilettes saines,,,%,1.4
+1996,sante,Pourcentage des ménages ayant des toilettes saines,,,%,0.8
+1998,sante,Pourcentage des ménages ayant des toilettes saines,,,%,1.3
+1999,sante,Pourcentage des ménages ayant des toilettes saines,,,%,0.7
+2003,sante,Pourcentage des ménages ayant des toilettes saines,,,%,2.1
+2005,sante,Pourcentage des ménages ayant des toilettes saines,,,%,4.5
+2006,sante,Pourcentage des ménages ayant des toilettes saines,,,%,2.4
+2007,sante,Pourcentage des ménages ayant des toilettes saines,,,%,5.8
+2010,sante,Pourcentage des ménages ayant des toilettes saines,,,%,1.9
+2019,sante,Pourcentage des ménages ayant des toilettes saines,,,%,4.5
+2021,sante,Pourcentage des ménages ayant des toilettes saines,,,%,3.6
+1991,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,7.6
+1994,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,9.9
+1996,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,7.8
+1998,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,5.3
+2006,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,10.1
+2007,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,9.1
+2019,sante,Pourcentage des ménages ayant une évacuation saine des ordures,,,%,17.3
+1991,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,4.9
+1993,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,6.2
+1994,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,6.3
+1996,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,5.0
+1998,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,8.1
+1999,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,6.9
+2003,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,11.4
+2005,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,12.7
+2006,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,11.6
+2007,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,13.9
+2009,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,14.0
+2010,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,13.1
+2014,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,19.3
+2018,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,20.5
+2019,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,17.6
+2021,sante,Pourcentage des ménages dont le mode principal d'électrictité est l'électricité réseau,,,%,16.2
