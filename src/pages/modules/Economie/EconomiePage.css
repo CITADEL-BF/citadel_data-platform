@@ -1,0 +1,308 @@
+.economie-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+}
+
+.eco-warning {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-16);
+  align-items: start;
+  background: linear-gradient(135deg, rgba(252, 204, 56, 0.18), rgba(161, 109, 0, 0.08));
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  box-shadow: var(--shadow-card);
+}
+
+.eco-warning__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: var(--radius-full);
+  background: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  font-size: var(--text-label-sm);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eco-warning h2 {
+  margin: 0 0 4px;
+  font-size: var(--text-title-lg);
+}
+
+.eco-warning p {
+  margin: 0;
+  color: var(--on-surface-variant);
+  line-height: 1.6;
+}
+
+.eco-filters {
+  display: flex;
+  align-items: end;
+  gap: var(--space-12);
+  flex-wrap: wrap;
+}
+
+.eco-filter-group {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--on-surface-variant);
+  font-size: var(--text-label-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.eco-filter-group select {
+  min-width: 180px;
+  border: none;
+  background: var(--surface-container-high);
+  color: var(--on-surface);
+  border-radius: var(--radius-full);
+  padding: 10px 14px;
+  outline: none;
+  font-weight: 600;
+}
+
+.eco-filter-group select:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.eco-subfilters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-12);
+}
+
+.eco-employment-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-12);
+}
+
+.eco-employment-stats div {
+  background: var(--surface-container-high);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.eco-employment-stats strong {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.eco-employment-stats span {
+  color: var(--on-surface-variant);
+  font-size: 0.78rem;
+}
+
+.eco-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-12);
+}
+
+.eco-kpi {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.eco-kpi--highlight {
+  background: linear-gradient(160deg, rgba(252, 204, 56, 0.24), rgba(255, 255, 255, 1));
+}
+
+.eco-kpi__label {
+  color: var(--on-surface-variant);
+  margin: 0;
+}
+
+.eco-kpi__value {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.eco-kpi__hint {
+  margin: 0;
+  color: var(--on-surface-variant);
+  font-size: 0.78rem;
+}
+
+.eco-main-grid,
+.eco-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+}
+
+.eco-panel,
+.eco-sources {
+  background: var(--surface-container-lowest);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-16);
+}
+
+.eco-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.eco-panel__header h2,
+.eco-sources h2 {
+  margin: 0 0 4px;
+  font-size: var(--text-title-md);
+}
+
+.eco-panel__header p,
+.eco-sources p {
+  margin: 0;
+  color: var(--on-surface-variant);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.eco-map-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  min-height: 220px;
+  background: linear-gradient(180deg, #eef2f4 0%, #e8ecee 100%);
+}
+
+.eco-map-reset {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: var(--radius-full);
+  padding: 6px 12px;
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: var(--on-surface);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.eco-map-legend {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  color: var(--on-surface-variant);
+  font-size: 0.74rem;
+  flex-wrap: wrap;
+}
+
+.eco-map-legend__bar {
+  width: 120px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, rgba(161, 109, 0, 0.12), rgba(161, 109, 0, 0.92));
+}
+
+.eco-leaflet-tooltip {
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
+  border: none;
+}
+
+.eco-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  border-radius: var(--radius-md);
+  background: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  font-style: italic;
+}
+
+.eco-placeholder--sm {
+  min-height: 140px;
+}
+
+.eco-panel--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.eco-mini-panel {
+  background: var(--surface-container-low);
+  border-radius: var(--radius-md);
+  padding: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.eco-mini-panel__header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-family: var(--font-display);
+}
+
+.eco-mini-panel__header p {
+  margin: 0;
+  color: var(--on-surface-variant);
+  font-size: 0.76rem;
+}
+
+@media (max-width: 1100px) {
+  .eco-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  .eco-main-grid,
+  .eco-bottom-grid,
+  .eco-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .eco-subfilters,
+  .eco-employment-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .eco-warning {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .eco-filter-group,
+  .eco-filter-group select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .eco-kpi__value {
+    font-size: 1.5rem;
+  }
+}

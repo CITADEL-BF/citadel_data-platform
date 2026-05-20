@@ -325,7 +325,7 @@ export default function SecuritePage() {
   return (
     <ModuleLayout
       accentColor="#AF0012"
-      domaine="Sécurité & Stabilité"
+      domaine="Sécurité"
       description="Surveillance des incidents sécuritaires au Burkina Faso. Sources : ACLED / HDX, HRP Burkina Faso et harmonisation CITADEL."
     >
       <div className="container securite-page">
