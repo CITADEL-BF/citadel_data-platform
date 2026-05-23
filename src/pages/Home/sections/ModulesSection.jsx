@@ -5,7 +5,7 @@ const MODULES = [
     id: 'securite',
     label: 'Sécurité',
     desc: "Analyse prédictive des zones de conflit et surveillance de l'intégrité territoriale.",
-    href: '/modules/securite',
+    href: '/visualisations/securite',
     color: 'var(--domain-securite)',
     bg: 'rgba(175, 0, 18, 0.07)',
     icon: (
@@ -19,7 +19,7 @@ const MODULES = [
     id: 'population',
     label: 'Population & PDI',
     desc: 'Gestion des flux migratoires et des personnes déplacées internes.',
-    href: '/modules/population',
+    href: '/visualisations/population',
     color: 'var(--domain-population)',
     bg: 'rgba(46, 125, 50, 0.08)',
     icon: (
@@ -32,7 +32,7 @@ const MODULES = [
     id: 'education',
     label: 'Éducation',
     desc: 'Suivi des taux de scolarisation et déploiement des infrastructures scolaires.',
-    href: '/modules/education',
+    href: '/visualisations/education',
     color: 'var(--domain-education)',
     bg: 'rgba(21, 101, 192, 0.08)',
     icon: (
@@ -45,7 +45,7 @@ const MODULES = [
     id: 'economie',
     label: 'Économie & Emploi',
     desc: "PIB, indicateurs de croissance et marchés de l'emploi nationaux.",
-    href: '/modules/economie',
+    href: '/visualisations/economie',
     color: 'var(--domain-economie)',
     bg: 'rgba(117, 91, 0, 0.08)',
     icon: (
@@ -59,7 +59,7 @@ const MODULES = [
     id: 'sante',
     label: 'Santé',
     desc: 'Cartographie sanitaire et gestion des épidémies régionales.',
-    href: '/modules/sante',
+    href: '/visualisations/sante',
     color: 'var(--domain-sante)',
     bg: 'rgba(0, 105, 92, 0.08)',
     icon: (

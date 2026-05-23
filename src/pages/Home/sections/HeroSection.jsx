@@ -2,11 +2,11 @@ import { NavLink } from 'react-router-dom'
 import './HeroSection.css'
 
 const MODULES = [
-  { label: 'Sécurité',        to: '/modules/securite',   r: 175, g: 0,   b: 18 },
-  { label: 'Population & PDI',to: '/modules/population', r: 13,  g: 99,  b: 27 },
-  { label: 'Éducation',       to: '/modules/education',  r: 21,  g: 101, b: 192 },
-  { label: 'Économie & Emploi',to: '/modules/economie',  r: 161, g: 109, b: 0 },
-  { label: 'Santé',           to: '/modules/sante',      r: 0,   g: 105, b: 92 },
+  { label: 'Sécurité',        to: '/visualisations/securite',   r: 175, g: 0,   b: 18 },
+  { label: 'Population & PDI',to: '/visualisations/population', r: 13,  g: 99,  b: 27 },
+  { label: 'Éducation',       to: '/visualisations/education',  r: 21,  g: 101, b: 192 },
+  { label: 'Économie & Emploi',to: '/visualisations/economie',  r: 161, g: 109, b: 0 },
+  { label: 'Santé',           to: '/visualisations/sante',      r: 0,   g: 105, b: 92 },
 ]
 
 

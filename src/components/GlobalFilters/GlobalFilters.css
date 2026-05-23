@@ -1,0 +1,50 @@
+.global-filters {
+  margin-top: var(--space-16);
+  background: #eceff1;
+  border-radius: 12px;
+  padding: var(--space-12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.global-filters__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.global-filters label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.global-filters span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5a656c;
+}
+
+.global-filters select {
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid #d6dce0;
+  padding: 0 var(--space-12);
+  background: #f6f8f9;
+}
+
+.global-filters__stamp {
+  font-size: 0.82rem;
+  color: #505b62;
+}
+
+@media (max-width: 900px) {
+  .global-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,34 +1,66 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useMemo, useState } from 'react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import logoImg from '../../../assets/logo-citadel.png'
 import './Header.css'
 
-const MEGA_MENU = [
-  {
-    group: 'Gouvernance & Analyse',
-    items: [
-      { href: '/modules/population', label: 'Population & PDI' },
-      { href: '/modules/securite', label: 'Sécurité' },
-    ],
-  },
-  {
-    group: 'Développement Social',
-    items: [
-      { href: '/modules/education', label: 'Éducation' },
-      { href: '/modules/sante', label: 'Santé' },
-    ],
-  },
-  {
-    group: 'Développement Économique',
-    items: [
-      { href: '/modules/economie', label: 'Économie & Emploi' },
-    ],
-  },
-]
+const ROUTE_LABELS = {
+  donnees: 'Données',
+  visualisations: 'Visualisations',
+  organisations: 'Organisations',
+  contact: 'Contact',
+  faq: 'FAQ',
+  connexion: 'Connexion',
+  inscription: 'Inscription',
+  contribution: 'Contribution',
+  docs: 'Documentation',
+}
+
+const MODULE_LABELS = {
+  securite: 'Securite',
+  population: 'Population',
+  education: 'Education',
+  economie: 'Economie',
+  sante: 'Sante',
+}
 
 export default function Header() {
-  const [modulesOpen, setModulesOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const { pathname } = useLocation()
+
+  const breadcrumbItems = useMemo(() => {
+    const cleanPath = pathname.replace(/\/+$/, '') || '/'
+    if (cleanPath === '/') return []
+
+    const segments = cleanPath.split('/').filter(Boolean)
+    const items = [{ label: 'Accueil', to: '/' }]
+    let currentPath = ''
+
+    segments.forEach((segment, idx) => {
+      currentPath += `/${segment}`
+      let label = ROUTE_LABELS[segment] || segment.charAt(0).toUpperCase() + segment.slice(1)
+
+      if (segments[0] === 'visualisations' && idx === 1) {
+        label = MODULE_LABELS[segment] || label
+      }
+
+      if (segments[0] === 'modules' && idx === 1) {
+        label = MODULE_LABELS[segment] || label
+      }
+
+      if (segment === 'modules') {
+        label = 'Visualisations'
+      }
+
+      items.push({
+        label,
+        to: idx === segments.length - 1 ? null : currentPath,
+      })
+    })
+
+    return items
+  }, [pathname])
+
+  const showBreadcrumb = breadcrumbItems.length > 0
 
   return (
     <header className="header">
@@ -69,49 +101,7 @@ export default function Header() {
               Accueil
             </NavLink>
             <NavLink to="/donnees" className="header__nav-link">Données</NavLink>
-
-            {/* Méga-menu Modules */}
-            <div
-              className="header__dropdown"
-              onMouseEnter={() => setModulesOpen(true)}
-              onMouseLeave={() => setModulesOpen(false)}
-            >
-              <button
-                className="header__nav-link header__nav-link--btn"
-                aria-expanded={modulesOpen}
-                aria-haspopup="true"
-              >
-                Modules
-                <svg
-                  className={`header__chevron${modulesOpen ? ' header__chevron--open' : ''}`}
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-
-              {modulesOpen && (
-                <div className="header__mega-menu" role="menu" aria-label="Modules thématiques">
-                  {MEGA_MENU.map((section) => (
-                    <div key={section.group} className="header__mega-group">
-                      <span className="header__mega-group-title">{section.group}</span>
-                      {section.items.map((item) => (
-                        <NavLink
-                          key={item.href}
-                          to={item.href}
-                          className="header__mega-item"
-                          role="menuitem"
-                        >
-                          {item.label}
-                        </NavLink>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            <NavLink to="/visualisations" className="header__nav-link">Visualisations</NavLink>
 
             <NavLink to="/organisations" className="header__nav-link">Organisations</NavLink>
             <NavLink to="/contact" className="header__nav-link">Contact</NavLink>
@@ -146,26 +136,28 @@ export default function Header() {
         </div>
       </div>
 
+      {showBreadcrumb && (
+        <div className="header__breadcrumb" aria-label="Fil d'ariane">
+          <div className="container header__breadcrumb-inner">
+            <nav className="header__breadcrumb-trail" aria-label="Navigation de contexte">
+              {breadcrumbItems.map((item, idx) => (
+                <span key={`${item.label}-${idx}`} className="header__breadcrumb-item">
+                  {item.to ? <Link to={item.to} className="header__breadcrumb-link">{item.label}</Link> : <span className="header__breadcrumb-current">{item.label}</span>}
+                  {idx < breadcrumbItems.length - 1 && <span className="header__breadcrumb-sep">/</span>}
+                </span>
+              ))}
+            </nav>
+            <span className="header__breadcrumb-version">V1.0.4</span>
+          </div>
+        </div>
+      )}
+
       {/* Menu mobile */}
       {mobileOpen && (
         <nav className="header__mobile-nav" aria-label="Navigation mobile">
           <NavLink to="/" end className="header__mobile-link" onClick={() => setMobileOpen(false)}>Accueil</NavLink>
           <NavLink to="/donnees" className="header__mobile-link" onClick={() => setMobileOpen(false)}>Données</NavLink>
-          {MEGA_MENU.map((section) => (
-            <div key={section.group} className="header__mobile-group">
-              <span className="header__mobile-label">{section.group}</span>
-              {section.items.map((item) => (
-                <NavLink
-                  key={item.href}
-                  to={item.href}
-                  className="header__mobile-link header__mobile-link--sub"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {item.label}
-                </NavLink>
-              ))}
-            </div>
-          ))}
+          <NavLink to="/visualisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>Visualisations</NavLink>
           <NavLink to="/organisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>Organisations</NavLink>
           <NavLink to="/contact" className="header__mobile-link" onClick={() => setMobileOpen(false)}>Contact</NavLink>
           <a href="/contribution" className="btn-primary header__mobile-cta">Ajouter des données</a>

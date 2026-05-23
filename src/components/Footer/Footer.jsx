@@ -4,7 +4,7 @@ import './Footer.css'
 const quickLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/donnees', label: 'Données' },
-  { href: '/modules', label: 'Modules' },
+  { href: '/visualisations', label: 'Visualisations' },
   { href: '/organisations', label: 'Organisations' },
   { href: '/contribution', label: 'Ajouter des données' },
   { href: '/faq', label: 'FAQ' },
