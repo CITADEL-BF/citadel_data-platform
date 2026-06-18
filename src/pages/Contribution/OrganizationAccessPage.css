@@ -1,0 +1,246 @@
+.org-access-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f4f6f8 0%, #eef2f5 100%);
+  padding: var(--space-40) 0 var(--space-64);
+}
+
+.org-access-page__inner {
+  display: grid;
+  gap: var(--space-24);
+}
+
+.org-access-page__inner--narrow {
+  max-width: 880px;
+}
+
+.org-access-page__hero {
+  display: grid;
+  gap: 8px;
+}
+
+.org-access-page__hero h1 {
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  color: #17211f;
+}
+
+.org-access-page__hero p {
+  color: #5a6672;
+  max-width: 76ch;
+}
+
+.org-access-stepper {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.org-access-stepper__item {
+  background: #e8edf1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #586372;
+}
+
+.org-access-stepper__item span {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #d4dce4;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.org-access-stepper__item strong {
+  font-size: 0.83rem;
+}
+
+.org-access-stepper__item.is-active {
+  background: #e8f4ea;
+  color: #165f25;
+}
+
+.org-access-stepper__item.is-active span,
+.org-access-stepper__item.is-done span {
+  background: #1c7a2f;
+  color: #ffffff;
+}
+
+.org-access-stepper__item.is-done {
+  background: #ecf1f4;
+  color: #2d3d4d;
+}
+
+.org-access-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: var(--space-24);
+  box-shadow: 0 14px 30px rgba(22, 30, 38, 0.08);
+  display: grid;
+  gap: var(--space-16);
+}
+
+.org-access-card h2 {
+  font-size: 1.35rem;
+  color: #1a2423;
+}
+
+.org-access-card p {
+  color: #4f5d69;
+  line-height: 1.55;
+}
+
+.org-access-form {
+  display: grid;
+  gap: 14px;
+}
+
+.org-access-field {
+  display: grid;
+  gap: 7px;
+}
+
+.org-access-field > span:first-child {
+  color: #5a6672;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+}
+
+.org-access-field input,
+.org-access-field select,
+.org-access-field textarea {
+  min-height: 44px;
+  border-radius: 9px;
+  border: 1px solid #dbe2ea;
+  background: #f4f7fa;
+  padding: 10px 12px;
+  color: #1d2731;
+}
+
+.org-access-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.org-access-field input:focus,
+.org-access-field select:focus,
+.org-access-field textarea:focus {
+  outline: none;
+  border-color: #1c7a2f;
+  background: #ffffff;
+}
+
+.org-access-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 12px;
+  border-radius: 9px;
+  background: #f3f6f9;
+  color: #2d3b47;
+}
+
+.org-access-check input {
+  margin-top: 2px;
+}
+
+.org-access-inline-note {
+  font-size: 0.92rem;
+}
+
+.org-access-link {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.org-access-link:hover {
+  text-decoration: underline;
+}
+
+.org-access-field-group {
+  display: grid;
+  gap: 6px;
+}
+
+.org-access-field__label {
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+  color: #5a6672;
+}
+
+.org-access-field__label abbr {
+  color: #af0012;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.org-access-hint {
+  margin: 0;
+  font-size: 0.86rem;
+  color: #7a8899;
+  line-height: 1.5;
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.org-access-guidance {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 7px;
+  color: #42515e;
+}
+
+.org-access-guidance li {
+  line-height: 1.45;
+  font-size: 0.88rem;
+}
+
+.org-access-field abbr {
+  color: #af0012;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.org-access-error {
+  color: #af0012;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.org-access-success {
+  background: #ecf8ef;
+  border: 1px solid #cfead5;
+  border-radius: 10px;
+  padding: 12px;
+  color: #215f2d;
+}
+
+.org-access-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .org-access-stepper {
+    grid-template-columns: 1fr;
+  }
+
+  .org-access-card {
+    padding: var(--space-18);
+  }
+}

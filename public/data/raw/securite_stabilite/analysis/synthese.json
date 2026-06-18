@@ -1,0 +1,16 @@
+{
+  "domaine": "securite_stabilite",
+  "horodatage_utc": "2026-04-08T22:43:36.725798+00:00",
+  "nb_fichiers_total": 5,
+  "nb_fichiers_analyzables": 5,
+  "nb_fichiers_hors_perimetre_analyse": 0,
+  "repartition_extensions": {
+    "xlsx": 4,
+    "csv": 1
+  },
+  "qualite": {
+    "nb_analyses": 5,
+    "nb_ok": 5,
+    "nb_ko": 0
+  }
+}

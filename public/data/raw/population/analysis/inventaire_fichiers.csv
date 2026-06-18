@@ -1,0 +1,69 @@
+domaine,chemin_relatif,extension,taille_octets,analyse_directe
+population,data_raw/population/demographie/Densité par région et province des quatres derniers recensements.csv,csv,28792,oui
+population,data_raw/population/demographie/Evolution de la population par groupes d'âge et par sexe.csv,csv,40357,oui
+population,data_raw/population/demographie/Population du Burkina Faso par groupes d'âge et par sexe.csv,csv,197271,oui
+population,data_raw/population/demographie/Population du Burkina Faso par province.csv,csv,120876,oui
+population,data_raw/population/demographie/Population du Burkina Faso par région et selon le sexe.csv,csv,148241,oui
+population,data_raw/population/demographie/Population du Burkina Faso par région.csv,csv,1351,oui
+population,data_raw/population/demographie/evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,csv,8152,oui
+population,data_raw/population/demographie/fichier_localite_population/Fichier des localités du Burkina Faso.xlsx - Fichier Village 2019.csv,csv,837204,oui
+population,"data_raw/population/demographie/fichier_localite_population/Population résidence par année d'âge selon la province, le milieu de résidence et le sexe.xlsx - Ensemble des provinces.csv",csv,201895,oui
+population,"data_raw/population/demographie/fichier_localite_population/Population résidente par année d'âge selon la région, le milieu de résidence et le sexe en 2019.xlsx - Ensemble des régions.csv",csv,73798,oui
+population,data_raw/population/demographie/fichier_localite_population/Population résidente par année d'âge selon le milieu de résidence et le sexe.xlsx - Milieu de résidence.csv,csv,7460,oui
+population,data_raw/population/demographie/indice_dh_afristat.csv,csv,4729,oui
+population,data_raw/population/demographie/projection_provincial/BANKUI.xlsx - BANKUI.csv,csv,199084,oui
+population,data_raw/population/demographie/projection_provincial/DJORO.xlsx - DJORO.csv,csv,237226,oui
+population,data_raw/population/demographie/projection_provincial/GOULMOU.xlsx - GOULMOU.csv,csv,141825,oui
+population,data_raw/population/demographie/projection_provincial/GUIRIKO.xlsx - GUIRIKO.csv,csv,206820,oui
+population,data_raw/population/demographie/projection_provincial/KADIOGO.xlsx - KADIOGO.csv,csv,55647,oui
+population,data_raw/population/demographie/projection_provincial/KOULSE.xlsx - KOULSE.csv,csv,207134,oui
+population,data_raw/population/demographie/projection_provincial/LIPTAKO.xlsx - LIPTAKO.csv,csv,188322,oui
+population,data_raw/population/demographie/projection_provincial/NAKAMBE.xlsx - NAKAMBE.csv,csv,206408,oui
+population,data_raw/population/demographie/projection_provincial/NANDO.xlsx - NANDO.csv,csv,252587,oui
+population,data_raw/population/demographie/projection_provincial/NAZINON.xlsx - NAZINON.csv,csv,197194,oui
+population,data_raw/population/demographie/projection_provincial/OUBRI.xlsx - OUBRI.csv,csv,199849,oui
+population,data_raw/population/demographie/projection_provincial/SIRBA.xlsx - SIRBA.csv,csv,144499,oui
+population,data_raw/population/demographie/projection_provincial/SOUM.xlsx - SOUM.csv,csv,136814,oui
+population,data_raw/population/demographie/projection_provincial/SOUROU.xlsx - SOUROU.csv,csv,195891,oui
+population,data_raw/population/demographie/projection_provincial/TANNOUNYAN.xlsx - TANNOUNYAN.csv,csv,149100,oui
+population,data_raw/population/demographie/projection_provincial/TAPOA.xlsx - TAPOA.csv,csv,144324,oui
+population,data_raw/population/demographie/projection_provincial/YAADGA.xlsx - YAADGA.csv,csv,249769,oui
+population,data_raw/population/demographie/projection_regional/BANKUI.xlsx - BANKUI.csv,csv,52965,oui
+population,data_raw/population/demographie/projection_regional/BURKINA FASO.xlsx - BURKINA FASO.csv,csv,58889,oui
+population,data_raw/population/demographie/projection_regional/DJÔRÔ.xlsx - DJÔRÔ.csv,csv,52615,oui
+population,data_raw/population/demographie/projection_regional/GOULMOU.xlsx - GOULMOU.csv,csv,49895,oui
+population,data_raw/population/demographie/projection_regional/GUIRIKO.xlsx - GUIRIKO.csv,csv,54914,oui
+population,data_raw/population/demographie/projection_regional/KADIOGO.xlsx - KADIOGO.csv,csv,55487,oui
+population,data_raw/population/demographie/projection_regional/KOULSÉ.xlsx - KOULSÉ.csv,csv,54402,oui
+population,data_raw/population/demographie/projection_regional/LIPTAKO.xlsx - LIPTAKO.csv,csv,51038,oui
+population,data_raw/population/demographie/projection_regional/NAKAMBÉ.xlsx - NAKAMBÉ.csv,csv,54342,oui
+population,data_raw/population/demographie/projection_regional/NANDO.xlsx - NANDO.csv,csv,54493,oui
+population,data_raw/population/demographie/projection_regional/NAZINON.xlsx - NAZINON.csv,csv,52935,oui
+population,data_raw/population/demographie/projection_regional/OUBRI.xlsx - OUBRI.csv,csv,53504,oui
+population,data_raw/population/demographie/projection_regional/SIRBA.xlsx - SIRBA.csv,csv,51168,oui
+population,data_raw/population/demographie/projection_regional/SOUM.xlsx - SOUM.csv,csv,47791,oui
+population,data_raw/population/demographie/projection_regional/SOUROU.xlsx - SOUROU.csv,csv,52367,oui
+population,data_raw/population/demographie/projection_regional/TANNOUNYAN.xlsx - TANNOUNYAN.csv,csv,52166,oui
+population,data_raw/population/demographie/projection_regional/TAPOA.xlsx - TAPOA.csv,csv,50241,oui
+population,data_raw/population/demographie/projection_regional/YAADGA.xlsx - YAADGA.csv,csv,54456,oui
+population,data_raw/population/demographie/Évolution de l’espérance de vie à la naissance.csv,csv,1344,oui
+population,data_raw/population/demographie/Évolution des  taux de fecondite.csv,csv,5426,oui
+population,"data_raw/population/demographie/Évolution des quotients de mortalité infantile, juvénile et infanto-juvénile.csv",csv,5129,oui
+population,data_raw/population/pdi/Effectif des réfugiés au Burkina Faso par région administrative.csv,csv,9771,oui
+population,data_raw/population/pdi/IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,xlsx,17275,oui
+population,data_raw/population/pdi/gfx_population-figures_operation-level_2012-2026_population-type.csv,csv,1519,oui
+population,data_raw/population/pdi/idps4.xlsx,xlsx,777190,oui
+population,data_raw/population/pdi/pdi-gcorr-burkinafaso-may2025.xlsx,xlsx,35054,oui
+population,data_raw/population/pdi/situation-des-pdi-par-communes-accueil-du-31-decembre-2022-1.xlsx,xlsx,949246,oui
+population,data_raw/population/vulnerabilite_menages/Dépenses moyennes par région en 2009 et 2018.csv,csv,13039,oui
+population,data_raw/population/vulnerabilite_menages/Evolution des indices de pauvreté.csv,csv,2116,oui
+population,data_raw/population/vulnerabilite_menages/Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté.csv,csv,12883,oui
+population,data_raw/population/vulnerabilite_menages/Indicateurs de pauvreté et contributions des régions à la pauvreté.csv,csv,52334,oui
+population,data_raw/population/vulnerabilite_menages/Pourcentage des ménages disposant de certains biens par région en 2018.csv,csv,44139,oui
+population,data_raw/population/vulnerabilite_menages/Quelques indicateurs sur les conditions de vie des ménages.csv,csv,8845,oui
+population,data_raw/population/vulnerabilite_menages/Revenu des emplois des ménages par région en 2018.csv,csv,12166,oui
+population,data_raw/population/vulnerabilite_menages/Répartition des ménages par région selon la nature des murs du logement en 2018.csv,csv,12456,oui
+population,data_raw/population/vulnerabilite_menages/Répartition des ménages par région selon le mode d'approvisionnement en eau en 2018.csv,csv,19766,oui
+population,data_raw/population/vulnerabilite_menages/Répartition des ménages par région selon le mode d'énergie pour la cuisine en 2018.csv,csv,13425,oui
+population,data_raw/population/vulnerabilite_menages/Répartition des ménages selon le lieu d'aisance par région en 2018.csv,csv,16023,oui
+population,data_raw/population/vulnerabilite_menages/conditions_de_vie_des_menages_afristat.csv,csv,29325,oui

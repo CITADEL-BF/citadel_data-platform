@@ -1,0 +1,16 @@
+{
+  "domaine": "Sante",
+  "nb_lignes_couverture": 392,
+  "nb_lignes_epidemiologie": 817,
+  "nb_lignes_infrastructures": 1334,
+  "nb_lignes_national": 701,
+  "nb_lignes_harmonise_global": 3244,
+  "fichiers_generes": [
+    "data/Sante/Couverture/sante_couverture_harmonisee.csv",
+    "data/Sante/Epidemiologie/sante_epidemiologie_harmonisee.csv",
+    "data/Sante/Infrastructures/sante_infrastructures_harmonisee.csv",
+    "data/Sante/sante_national_harmonise.csv",
+    "data/Sante/sante_fusion_annuelle.csv",
+    "data/Sante/sante_harmonisee_global.csv"
+  ]
+}

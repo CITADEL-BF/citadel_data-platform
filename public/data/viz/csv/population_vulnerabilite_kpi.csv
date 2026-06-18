@@ -1,0 +1,4 @@
+indicateur,rubrique,region,unite,date,valeur,date_source,periode_normalisee,granularite_temporelle,annee,source_fichier,domaine,region_norm
+Indicateurs de pauvreté et contributions des régions à la pauvreté,Incidence de pauvreté (AA_PO),Burkina Faso,%,2003,46.4,2003,2003,annuelle,2003,Indicateurs de pauvreté et contributions des régions à la pauvreté.csv,vulnerabilite_menages,
+Indicateurs de pauvreté et contributions des régions à la pauvreté,Profondeur de pauvreté (AA_P1),Burkina Faso,%,2003,15.6,2003,2003,annuelle,2003,Indicateurs de pauvreté et contributions des régions à la pauvreté.csv,vulnerabilite_menages,
+Indicateurs de pauvreté et contributions des régions à la pauvreté,Sévérité de pauvreté (AA_P2),Burkina Faso,%,2003,7.1,2003,2003,annuelle,2003,Indicateurs de pauvreté et contributions des régions à la pauvreté.csv,vulnerabilite_menages,

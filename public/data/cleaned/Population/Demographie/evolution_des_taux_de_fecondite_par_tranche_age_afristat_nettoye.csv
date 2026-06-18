@@ -1,0 +1,73 @@
+indicateur,pays,sexe,age,unite,date,valeur,date_source,periode_normalisee,granularite_temporelle,annee,source_fichier,domaine
+Population,Burkina Faso,Ensemble,Ensemble,Habitants,1996,10312609.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,Ensemble,Habitants,2006,14017262.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,Ensemble,Habitants,2019,20505155.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,Moins de 15 ans,Habitants,1996,4961997.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,Moins de 15 ans,Habitants,2006,6499211.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,Moins de 15 ans,Habitants,2019,9286263.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,15 à 24 ans,Habitants,1996,1857394.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,15 à 24 ans,Habitants,2006,2660663.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,15 à 24 ans,Habitants,2019,3866070.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,15 à 64 ans,Habitants,1996,4963246.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,15 à 64 ans,Habitants,2006,6969953.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,15 à 64 ans,Habitants,2019,10531217.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,65 ans et plus,Habitants,1996,387366.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,65 ans et plus,Habitants,2006,473611.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,65 ans et plus,Habitants,2019,687675.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Ensemble,Non déterminé,Habitants,2006,74487.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Masculin,Ensemble,Habitants,1996,4970882.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Masculin,Ensemble,Habitants,2006,6768739.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Masculin,Ensemble,Habitants,2019,9900847.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Féminin,Ensemble,Habitants,1996,5341727.0,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Féminin,Ensemble,Habitants,2006,7248523.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Population,Burkina Faso,Féminin,Ensemble,Habitants,2019,10604308.0,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1990,2.64,1990,1990,annuelle,1990,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1991,2.64,1991,1991,annuelle,1991,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1992,2.64,1992,1992,annuelle,1992,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1993,2.64,1993,1993,annuelle,1993,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1994,2.64,1994,1994,annuelle,1994,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1995,2.64,1995,1995,annuelle,1995,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1996,2.4,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1997,1.52,1997,1997,annuelle,1997,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1998,3.05,1998,1998,annuelle,1998,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,1999,3.06,1999,1999,annuelle,1999,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2000,3.08,2000,2000,annuelle,2000,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2001,3.1,2001,2001,annuelle,2001,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2002,3.12,2002,2002,annuelle,2002,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2003,3.13,2003,2003,annuelle,2003,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2004,3.15,2004,2004,annuelle,2004,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2005,3.17,2005,2005,annuelle,2005,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2006,3.12,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2007,2.97,2007,2007,annuelle,2007,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2008,2.97,2008,2008,annuelle,2008,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2009,2.97,2009,2009,annuelle,2009,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2010,2.97,2010,2010,annuelle,2010,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2011,2.97,2011,2011,annuelle,2011,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2012,2.97,2012,2012,annuelle,2012,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2013,2.97,2013,2013,annuelle,2013,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2014,2.97,2014,2014,annuelle,2014,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2015,2.97,2015,2015,annuelle,2015,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2016,2.97,2016,2016,annuelle,2016,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2017,2.97,2017,2017,annuelle,2017,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2018,2.97,2018,2018,annuelle,2018,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2019,2.97,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2020,3.24,2020,2020,annuelle,2020,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2021,3.21,2021,2021,annuelle,2021,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2022,3.14,2022,2022,annuelle,2022,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2023,3.08,2023,2023,annuelle,2023,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2024,3.02,2024,2024,annuelle,2024,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux d'accroissement global,Burkina Faso,Ensemble,Ensemble,%,2025,2.95,2025,2025,annuelle,2025,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux brut de reproduction,Burkina Faso,Féminin,Ensemble,Filles/femme,1996,3.3,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Taux brut de reproduction,Burkina Faso,Féminin,Ensemble,Filles/femme,2006,3.0,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Ensemble,Ensemble,années,1991,52.2,1991,1991,annuelle,1991,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Ensemble,Ensemble,années,1996,53.8,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Ensemble,Ensemble,années,2006,56.7,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Ensemble,Ensemble,années,2019,62.9,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Masculin,Ensemble,années,1991,50.7,1991,1991,annuelle,1991,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Masculin,Ensemble,années,1996,53.5,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Masculin,Ensemble,années,2006,55.8,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Masculin,Ensemble,années,2019,61.2,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Féminin,Ensemble,années,1991,53.2,1991,1991,annuelle,1991,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Féminin,Ensemble,années,1996,54.1,1996,1996,annuelle,1996,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Féminin,Ensemble,années,2006,57.5,2006,2006,annuelle,2006,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie
+Espérance de vie à la naissance,Burkina Faso,Féminin,Ensemble,années,2019,64.4,2019,2019,annuelle,2019,evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv,demographie

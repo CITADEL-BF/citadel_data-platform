@@ -1,10 +1,10 @@
+import { useLanguage } from '../../../contexts/LanguageContext'
+import { TRANSLATIONS } from './translations'
 import './ModulesSection.css'
 
 const MODULES = [
   {
     id: 'securite',
-    label: 'Sécurité',
-    desc: "Analyse prédictive des zones de conflit et surveillance de l'intégrité territoriale.",
     href: '/visualisations/securite',
     color: 'var(--domain-securite)',
     bg: 'rgba(175, 0, 18, 0.07)',
@@ -17,8 +17,6 @@ const MODULES = [
   },
   {
     id: 'population',
-    label: 'Population & PDI',
-    desc: 'Gestion des flux migratoires et des personnes déplacées internes.',
     href: '/visualisations/population',
     color: 'var(--domain-population)',
     bg: 'rgba(46, 125, 50, 0.08)',
@@ -30,8 +28,6 @@ const MODULES = [
   },
   {
     id: 'education',
-    label: 'Éducation',
-    desc: 'Suivi des taux de scolarisation et déploiement des infrastructures scolaires.',
     href: '/visualisations/education',
     color: 'var(--domain-education)',
     bg: 'rgba(21, 101, 192, 0.08)',
@@ -43,8 +39,6 @@ const MODULES = [
   },
   {
     id: 'economie',
-    label: 'Économie & Emploi',
-    desc: "PIB, indicateurs de croissance et marchés de l'emploi nationaux.",
     href: '/visualisations/economie',
     color: 'var(--domain-economie)',
     bg: 'rgba(117, 91, 0, 0.08)',
@@ -57,8 +51,6 @@ const MODULES = [
   },
   {
     id: 'sante',
-    label: 'Santé',
-    desc: 'Cartographie sanitaire et gestion des épidémies régionales.',
     href: '/visualisations/sante',
     color: 'var(--domain-sante)',
     bg: 'rgba(0, 105, 92, 0.08)',
@@ -71,35 +63,40 @@ const MODULES = [
 ]
 
 export default function ModulesSection() {
+  const { language } = useLanguage()
+  const t = TRANSLATIONS[language].modules
   return (
-    <section className="modules-section section--low" aria-label="Axes stratégiques et modules thématiques">
+    <section className="modules-section section--low" aria-label={t.ariaLabel}>
       <div className="container">
-        <h2 className="modules-section__title headline-md">[DOMAINES CLÉS]</h2>
+        <h2 className="modules-section__title headline-md">{t.title}</h2>
 
         <div className="modules-grid">
-          {MODULES.map((m) => (
-            <a
-              key={m.id}
-              href={m.href}
-              className={`module-card${m.large ? ' module-card--large' : ''}`}
-              style={{ '--module-color': m.color, '--module-bg': m.bg }}
-              aria-label={`Module ${m.label}`}
-            >
-              <div className="module-card__icon-wrap">
-                <span className="module-card__icon">{m.icon}</span>
-              </div>
-              <div className="module-card__body">
-                <h3 className="module-card__title">{m.label}</h3>
-                <p className="module-card__desc">{m.desc}</p>
-              </div>
-              <span className="module-card__cta">
-                VOIR LE DOMAINE
-                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </span>
-            </a>
-          ))}
+          {MODULES.map((m) => {
+            const item = t.items.find((i) => i.id === m.id)
+            return (
+              <a
+                key={m.id}
+                href={m.href}
+                className={`module-card${m.large ? ' module-card--large' : ''}`}
+                style={{ '--module-color': m.color, '--module-bg': m.bg }}
+                aria-label={`Module ${item.label}`}
+              >
+                <div className="module-card__icon-wrap">
+                  <span className="module-card__icon">{m.icon}</span>
+                </div>
+                <div className="module-card__body">
+                  <h3 className="module-card__title">{item.label}</h3>
+                  <p className="module-card__desc">{item.desc}</p>
+                </div>
+                <span className="module-card__cta">
+                  {t.cta}
+                  <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </span>
+              </a>
+            )
+          })}
         </div>
       </div>
     </section>

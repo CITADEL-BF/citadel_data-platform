@@ -195,6 +195,13 @@
   transition: width 0.6s ease;
 }
 
+.map-region__meta {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  color: var(--on-surface-variant);
+  opacity: 0.82;
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 900px) {
   .map-section__inner {

@@ -1,0 +1,432 @@
+indicateur,statut_juridique,unit,date,value,valeur,date_source,periode_normalisee,granularite_temporelle,annee,source_fichier,domaine,tranche_d_age,type,rubrique,localit
+Répartition des entreprises par statut juridique,Entreprise individuelle (EI),Nombre,2016,4666,4666,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Société à responsabilité limitée (SARL),Nombre,2016,5062,5062,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Société anonyme (SA),Nombre,2016,614,614,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Société en participation (SP),Nombre,2016,5,5,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Société de fait,Nombre,2016,19,19,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Société coopérative simplifiée,Nombre,2016,313,313,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Société coopérative avec Conseil d'Administration,Nombre,2016,8,8,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Autres,Nombre,2016,249,249,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,ND,Nombre,2016,5912,5912,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Répartition des entreprises par statut juridique,Total,Nombre,2016,16848,16848,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises,,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2010,649,649,2010,2010,annuelle,2010,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2012,1297,1297,2012,2012,annuelle,2012,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2013,1514,1514,2013,2013,annuelle,2013,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2014,1516,1516,2014,2014,annuelle,2014,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2015,1293,1293,2015,2015,annuelle,2015,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2016,2435,2435,2016,2016,annuelle,2016,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2017,2670,2670,2017,2017,annuelle,2017,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2018,4961,4961,2018,2018,annuelle,2018,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2019,5878,5878,2019,2019,annuelle,2019,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,18 à 30 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2010,3192,3192,2010,2010,annuelle,2010,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2012,3927,3927,2012,2012,annuelle,2012,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2013,4820,4820,2013,2013,annuelle,2013,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2014,5765,5765,2014,2014,annuelle,2014,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2015,5467,5467,2015,2015,annuelle,2015,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2016,7776,7776,2016,2016,annuelle,2016,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2017,9515,9515,2017,2017,annuelle,2017,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2018,6475,6475,2018,2018,annuelle,2018,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2019,6416,6416,2019,2019,annuelle,2019,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,30 à 55 ans,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2010,729,729,2010,2010,annuelle,2010,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2011,912,912,2011,2011,annuelle,2011,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2012,704,704,2012,2012,annuelle,2012,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2013,846,846,2013,2013,annuelle,2013,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2014,1280,1280,2014,2014,annuelle,2014,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2015,804,804,2015,2015,annuelle,2015,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2016,1450,1450,2016,2016,annuelle,2016,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2017,424,424,2017,2017,annuelle,2017,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2018,1075,1075,2018,2018,annuelle,2018,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2019,843,843,2019,2019,annuelle,2019,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,55 ans et plus,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2010,4570,4570,2010,2010,annuelle,2010,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2011,4949,4949,2011,2011,annuelle,2011,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2012,5928,5928,2012,2012,annuelle,2012,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2013,7180,7180,2013,2013,annuelle,2013,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2014,8561,8561,2014,2014,annuelle,2014,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2015,7564,7564,2015,2015,annuelle,2015,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2016,11661,11661,2016,2016,annuelle,2016,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2017,12609,12609,2017,2017,annuelle,2017,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2018,12511,12511,2018,2018,annuelle,2018,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Création des entreprises enregistrées au CEFORE selon l’âge du promoteur,,Nombre,2019,13137,13137,2019,2019,annuelle,2019,Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,entreprises,Ensemble,,,
+Nombre et coût de projets financés par type de fonds,,Nombre,2003,1255,1255,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2004,1374,1374,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2005,1457,1457,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2006,1797,1797,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2007,1808,1808,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2008,1741,1741,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2009,2885,2885,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2011,2104,2104,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2012,2290,2290,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2013,10615,10615,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2014,11566,11566,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2015,12550,12550,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2016,13032,13032,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2017,13326,13326,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2018,12702,12702,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2019,13792,13792,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2020,24192,24192,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2021,18477,18477,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2022,20349,20349,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2023,15106,15106,2023,2023,annuelle,2023,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Nombre,
+Nombre et coût de projets financés par type de fonds,,FCFA,2003,957000000,957000000,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2004,912300000,912300000,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2005,1310000000,1310000000,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2006,1522000000,1522000000,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2007,1426300000,1426300000,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2008,1461500000,1461500000,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2009,2465200000,2465200000,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2010,2170000000,2170000000,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2011,1370600000,1370600000,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2012,1636400000,1636400000,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2013,8802584000,8802584000,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2014,10008400000,10008400000,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2015,11837100000,11837100000,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2016,12122800000,12122800000,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2017,12731800000,12731800000,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2018,12189500000,12189500000,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2019,13459500000,13459500000,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2020,22963905000,22963905000,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2021,18099000000,18099000000,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2022,23431300000,23431300000,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2023,199469000,199469000,2023,2023,annuelle,2023,Nombre de cout de projets finances.csv,entreprises,,Ensemble,Coût,
+Nombre et coût de projets financés par type de fonds,,Nombre,2003,59,59,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2004,60,60,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2005,107,107,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2006,56,56,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2007,39,39,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2008,25,25,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2009,42,42,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2010,95,95,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2011,103,103,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2012,48,48,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2013,157,157,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2014,234,234,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2015,101,101,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2016,140,140,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2017,105,105,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2018,84,84,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2019,62,62,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2020,95,95,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2022,64,64,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2023,76,76,2023,2023,annuelle,2023,Nombre de cout de projets finances.csv,entreprises,,FONADR,Nombre,
+Nombre et coût de projets financés par type de fonds,,FCFA,2003,197600000,197600000,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2004,234100000,234100000,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2005,296000000,296000000,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2006,288400000,288400000,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2007,155000000,155000000,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2008,169500000,169500000,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2009,160400000,160400000,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2010,347500000,347500000,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2011,460200000,460200000,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2012,184700000,184700000,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2013,457700000,457700000,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2014,709300000,709300000,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2015,283600000,283600000,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2016,341800000,341800000,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2017,221900000,221900000,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2018,181000000,181000000,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2019,181600000,181600000,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2020,250800000,250800000,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2022,161900000,161900000,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2023,181478000,181478000,2023,2023,annuelle,2023,Nombre de cout de projets finances.csv,entreprises,,FONADR,Coût,
+Nombre et coût de projets financés par type de fonds,,Nombre,2003,1095,1095,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2004,1244,1244,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2005,1202,1202,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2006,1623,1623,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2007,1645,1645,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2008,822,822,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2009,1330,1330,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2010,1244,1244,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2011,1034,1034,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2012,1499,1499,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2013,1719,1719,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2014,2257,2257,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2015,2055,2055,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2016,2119,2119,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2017,2133,2133,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2018,2132,2132,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2019,2225,2225,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2020,8032,8032,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2021,1765,1765,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2022,2290,2290,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FASI,Nombre,
+Nombre et coût de projets financés par type de fonds,,FCFA,2003,509900000,509900000,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2004,570200000,570200000,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2005,578000000,578000000,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2006,755700000,755700000,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2007,812400000,812400000,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2008,378700000,378700000,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2009,601300000,601300000,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2010,532500000,532500000,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2011,43000000,43000000,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2012,642600000,642600000,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2013,764663000,764663000,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2014,948400000,948400000,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2015,886600000,886600000,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2016,941200000,941200000,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2017,899000000,899000000,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2018,933900000,933900000,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2019,1021300000,1021300000,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2020,3336855000,3336855000,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2021,785300000,785300000,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2022,1021500000,1021500000,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FASI,Coût,
+Nombre et coût de projets financés par type de fonds,,Nombre,2003,101,101,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2004,70,70,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2005,148,148,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2006,118,118,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2007,124,124,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2008,69,69,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2009,216,216,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2010,141,141,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2011,61,61,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2012,56,56,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2013,165,165,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2014,243,243,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2015,893,893,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2016,270,270,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2017,603,603,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2018,193,193,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2019,304,304,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2020,1775,1775,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2021,407,407,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2022,336,336,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FAPE,Nombre,
+Nombre et coût de projets financés par type de fonds,,FCFA,2003,249500000,249500000,2003,2003,annuelle,2003,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2004,108000000,108000000,2004,2004,annuelle,2004,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2005,436000000,436000000,2005,2005,annuelle,2005,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2006,478000000,478000000,2006,2006,annuelle,2006,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2007,458900000,458900000,2007,2007,annuelle,2007,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2008,114000000,114000000,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2009,398000000,398000000,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2010,278500000,278500000,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2011,149800000,149800000,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2012,193000000,193000000,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2013,460565000,460565000,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2014,658700000,658700000,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2015,1740100000,1740100000,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2016,640100000,640100000,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2017,1496900000,1496900000,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2018,501900000,501900000,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2019,743900000,743900000,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2020,4148950000,4148950000,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2021,1008700000,1008700000,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2022,716000000,716000000,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FAPE,Coût,
+Nombre et coût de projets financés par type de fonds,,Nombre,2008,825,825,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2009,1297,1297,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2011,906,906,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2012,687,687,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2013,901,901,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2014,272,272,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2015,484,484,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2016,619,619,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2017,972,972,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2018,118,118,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2019,532,532,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Nombre,
+Nombre et coût de projets financés par type de fonds,,FCFA,2008,799400000,799400000,2008,2008,annuelle,2008,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2009,1305500000,1305500000,2009,2009,annuelle,2009,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2010,1011500000,1011500000,2010,2010,annuelle,2010,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2011,717600000,717600000,2011,2011,annuelle,2011,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2012,616200000,616200000,2012,2012,annuelle,2012,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2013,714056000,714056000,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2014,310500000,310500000,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2015,481900000,481900000,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2016,793500000,793500000,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2017,785000000,785000000,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2018,110100000,110100000,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2019,448700000,448700000,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FAIJ,Coût,
+Nombre et coût de projets financés par type de fonds,,Nombre,2013,7673,7673,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2014,8560,8560,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2015,9017,9017,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2016,9884,9884,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2017,9513,9513,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2018,10175,10175,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2019,10669,10669,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2020,14290,14290,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2021,16305,16305,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2022,17659,17659,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,Nombre,2023,15030,15030,2023,2023,annuelle,2023,Nombre de cout de projets finances.csv,entreprises,,FAARF,Nombre,
+Nombre et coût de projets financés par type de fonds,,FCFA,2013,6405600000,6405600000,2013,2013,annuelle,2013,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2014,7381500000,7381500000,2014,2014,annuelle,2014,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2015,8444900000,8444900000,2015,2015,annuelle,2015,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2016,9406200000,9406200000,2016,2016,annuelle,2016,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2017,9329000000,9329000000,2017,2017,annuelle,2017,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2018,10462600000,10462600000,2018,2018,annuelle,2018,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2019,11064000000,11064000000,2019,2019,annuelle,2019,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2020,15227300000,15227300000,2020,2020,annuelle,2020,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2021,16305000000,16305000000,2021,2021,annuelle,2021,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2022,21531800000,21531800000,2022,2022,annuelle,2022,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Nombre et coût de projets financés par type de fonds,,FCFA,2023,17991000,17991000,2023,2023,annuelle,2023,Nombre de cout de projets finances.csv,entreprises,,FAARF,Coût,
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,2,2,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,74,74,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,100,100,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,141,141,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,115,115,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,216,216,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,264,264,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,218,218,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,241,241,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,250,250,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,323,323,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,401,401,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,463,463,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dédougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,3611,3611,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,3771,3771,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,4374,4374,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,5293,5293,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,5760,5760,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,5223,5223,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,7466,7466,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,8133,8133,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,8332,8332,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,8837,8837,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,10691,10691,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,12093,12093,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,12895,12895,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,14953,14953,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouagadougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,126,126,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,141,141,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,189,189,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,195,195,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,289,289,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,235,235,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,472,472,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,321,321,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,266,266,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,355,355,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,537,537,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,278,278,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,250,250,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,391,391,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Tenkodogo
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,70,70,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,88,88,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,94,94,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,138,138,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,191,191,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,155,155,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,284,284,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,280,280,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,182,182,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,197,197,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,245,245,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,288,288,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,313,313,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,448,448,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Kaya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,79,79,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,98,98,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,143,143,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,195,195,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,305,305,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,211,211,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,406,406,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,431,431,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,359,359,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,366,366,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,393,393,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,439,439,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,417,417,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,427,427,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koudougou
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,49,49,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,61,61,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,81,81,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,108,108,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,180,180,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,122,122,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,208,208,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,291,291,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,255,255,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,247,247,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,235,235,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,193,193,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,156,156,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,340,340,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Fada N’Gourma
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,495,495,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,512,512,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,696,696,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,732,732,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,1133,1133,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,1040,1040,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,1787,1787,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,1635,1635,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,1640,1640,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,1508,1508,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,1793,1793,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,1715,1715,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,1862,1862,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,2607,2607,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Bobo-Dioulasso
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,105,105,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,181,181,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,182,182,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,235,235,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,305,305,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,228,228,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,467,467,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,496,496,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,428,428,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,413,413,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,445,445,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,479,479,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,438,438,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,634,634,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ouahigouya
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,11,11,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,90,90,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,137,137,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,114,114,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,170,170,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,297,297,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,230,230,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,143,143,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,145,145,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,186,186,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,86,86,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,158,158,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Dori
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,35,35,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,95,95,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,84,84,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,94,94,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,120,120,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,121,121,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,185,185,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,244,244,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,171,171,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,131,131,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,130,130,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,151,151,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,129,129,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,206,206,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Gaoua
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,113,113,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,224,224,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,273,273,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,311,311,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,333,333,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,269,269,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,615,615,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Banfora
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,104,104,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,156,156,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,147,147,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,196,196,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,131,131,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,116,116,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,188,188,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Koupèla
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,8,8,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ziniaré
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,117,117,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ziniaré
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,128,128,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ziniaré
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,155,155,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ziniaré
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,75,75,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ziniaré
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,181,181,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ziniaré
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,42,42,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Manga
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,162,162,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Manga
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,144,144,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Manga
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,126,126,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Manga
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,138,138,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Manga
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,176,176,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Manga
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2010,4570,4570,2010,2010,annuelle,2010,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2011,4949,4949,2011,2011,annuelle,2011,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2012,5928,5928,2012,2012,annuelle,2012,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2013,7180,7180,2013,2013,annuelle,2013,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2014,8561,8561,2014,2014,annuelle,2014,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2015,7564,7564,2015,2015,annuelle,2015,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2016,11661,11661,2016,2016,annuelle,2016,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2017,12609,12609,2017,2017,annuelle,2017,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2018,12511,12511,2018,2018,annuelle,2018,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2019,13137,13137,2019,2019,annuelle,2019,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2020,15643,15643,2020,2020,annuelle,2020,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2021,16890,16890,2021,2021,annuelle,2021,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2022,17545,17545,2022,2022,annuelle,2022,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble
+Création des entreprises enregistrées au CEFORE par localité,,Nombre,2023,21787,21787,2023,2023,annuelle,2023,entreprises_enregistres_CEFORE.csv,entreprises,,,,Ensemble

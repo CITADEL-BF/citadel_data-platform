@@ -1,0 +1,22 @@
+indicateur,rubrique,unite,date,valeur,date_source,periode_normalisee,granularite_temporelle,annee,source_fichier,domaine
+Evolution des indices de pauvreté,Incidence P0,%,1994,44.5,1994,1994,annuelle,1994,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,1994,13.9,1994,1994,annuelle,1994,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,1994,6.0,1994,1994,annuelle,1994,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Incidence P0,%,1998,45.3,1998,1998,annuelle,1998,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,1998,13.7,1998,1998,annuelle,1998,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,1998,5.9,1998,1998,annuelle,1998,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Incidence P0,%,2003,46.4,2003,2003,annuelle,2003,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,2003,15.6,2003,2003,annuelle,2003,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,2003,7.1,2003,2003,annuelle,2003,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Incidence P0,%,2009,46.7,2009,2009,annuelle,2009,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,2009,15.1,2009,2009,annuelle,2009,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,2009,6.7,2009,2009,annuelle,2009,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Incidence P0,%,2014,40.1,2014,2014,annuelle,2014,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,2014,9.7,2014,2014,annuelle,2014,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,2014,3.3,2014,2014,annuelle,2014,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Incidence P0,%,2018,36.2,2018,2018,annuelle,2018,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,2018,12.3,2018,2018,annuelle,2018,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,2018,5.0,2018,2018,annuelle,2018,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Incidence P0,%,2021,43.2,2021,2021,annuelle,2021,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Profondeur P1,%,2021,13.0,2021,2021,annuelle,2021,Evolution des indices de pauvreté.csv,vulnerabilite_menages
+Evolution des indices de pauvreté,Sévérité P2,%,2021,5.4,2021,2021,annuelle,2021,Evolution des indices de pauvreté.csv,vulnerabilite_menages

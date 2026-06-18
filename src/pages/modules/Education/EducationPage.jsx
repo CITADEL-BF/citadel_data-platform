@@ -10,7 +10,7 @@ const BFA_ZOOM = 6
 
 const IND_CLOSED = "Nombre d'établissements d'enseignement général, technique et professionnel fermés pour insécurité"
 const IND_TOTAL_SCHOOLS = "Nombre d'établissements"
-const IND_INTERNET_USERS = 'Utilisateurs d internet'
+const IND_INTERNET_USERS = 'Utilisateurs d’internet'
 const IND_COV_2G = 'At least 2G'
 const IND_COV_3G = 'At least 3G'
 const IND_COV_4G = 'At least LTE/WiMAX'
@@ -334,8 +334,8 @@ export default function EducationPage() {
       xAxis: { type: 'category', data: years },
       yAxis: { type: 'value' },
       series: [
-        { name: 'Écoles ouvertes (proxy)', type: 'bar', stack: 'etat', data: opened, barMaxWidth: 24 },
-        { name: 'Écoles fermées', type: 'bar', stack: 'etat', data: closed, barMaxWidth: 24 },
+        { name: 'Écoles ouvertes (proxy)', type: 'bar', stack: 'état', data: opened, barMaxWidth: 24 },
+        { name: 'Écoles fermées', type: 'bar', stack: 'état', data: closed, barMaxWidth: 24 },
       ],
     }
   }, [totalSchoolsByYear, closedByYear])

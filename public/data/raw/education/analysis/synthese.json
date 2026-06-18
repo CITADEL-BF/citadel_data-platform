@@ -1,0 +1,16 @@
+{
+  "domaine": "education",
+  "horodatage_utc": "2026-04-08T22:43:33.865066+00:00",
+  "nb_fichiers_total": 23,
+  "nb_fichiers_analyzables": 23,
+  "nb_fichiers_hors_perimetre_analyse": 0,
+  "repartition_extensions": {
+    "csv": 18,
+    "xlsx": 5
+  },
+  "qualite": {
+    "nb_analyses": 23,
+    "nb_ok": 23,
+    "nb_ko": 0
+  }
+}

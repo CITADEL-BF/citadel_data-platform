@@ -11,11 +11,11 @@ import SantePage from '../pages/modules/Sante/SantePage'
 import './VisualisationsLayout.css'
 
 const DOMAINES = [
-  { id: 'securite', label: 'Securite', accent: '#af0012', soft: 'rgba(175, 0, 18, 0.10)', icon: 'shield', subtitle: '14 312 incidents', trend: '+3% ce mois' },
+  { id: 'securite', label: 'Sécurité', accent: '#af0012', soft: 'rgba(175, 0, 18, 0.10)', icon: 'shield', subtitle: '14 312 incidents', trend: '+3% ce mois' },
   { id: 'population', label: 'Population', accent: '#0d631b', soft: 'rgba(13, 99, 27, 0.10)', icon: 'people', subtitle: '22 752 315 habitants', trend: 'Croissance stable' },
-  { id: 'education', label: 'Education', accent: '#1565c0', soft: 'rgba(21, 101, 192, 0.10)', icon: 'school', subtitle: '64% scolarisation', trend: 'Taux de scolarisation' },
-  { id: 'economie', label: 'Economie', accent: '#a16d00', soft: 'rgba(161, 109, 0, 0.10)', icon: 'briefcase', subtitle: '21 787 entreprises', trend: 'Prevision croissance', highlighted: true },
-  { id: 'sante', label: 'Sante', accent: '#00695c', soft: 'rgba(0, 105, 92, 0.10)', icon: 'hospital', subtitle: '92,4% couverture', trend: 'Couverture vaccinale' },
+  { id: 'education', label: 'Éducation', accent: '#1565c0', soft: 'rgba(21, 101, 192, 0.10)', icon: 'school', subtitle: '64% scolarisation', trend: 'Taux de scolarisation' },
+  { id: 'economie', label: 'Économie', accent: '#a16d00', soft: 'rgba(161, 109, 0, 0.10)', icon: 'briefcase', subtitle: '21 787 entreprises', trend: 'Prévision croissance', highlighted: true },
+  { id: 'sante', label: 'Santé', accent: '#00695c', soft: 'rgba(0, 105, 92, 0.10)', icon: 'hospital', subtitle: '92,4% couverture', trend: 'Couverture vaccinale' },
 ]
 
 const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`
@@ -124,7 +124,7 @@ export default function VisualisationsLayout() {
         const latestCoverage = cpn2Rows[cpn2Rows.length - 1]
 
         setKpis({
-          securite: { value: fmtInt(securiteValue), detail: `${fmtInt(securiteDeaths)} deces totaux` },
+          sécurité: { value: fmtInt(securiteValue), detail: `${fmtInt(securiteDeaths)} décès totaux` },
           population: { value: fmtInt(populationKpi?.valeur || 0), detail: populationRate ? `${populationRate.valeur}% de croissance` : 'Population totale' },
           education: { value: fmtPct(educationAvgRate), detail: educationYear ? `Taux moyen de reussite ${educationYear}` : 'Resultats scolaires' },
           economie: { value: fmtInt(enterprisesValue || 0), detail: latestEmployment ? `${fmtPct(latestEmployment)} d'emploi` : 'Entreprises CEFORE' },
@@ -133,7 +133,7 @@ export default function VisualisationsLayout() {
       })
       .catch(() => {
         setKpis({
-          securite: { value: '14 312', detail: 'Alerte nationale' },
+          sécurité: { value: '14 312', detail: 'Alerte nationale' },
           population: { value: '22 752 315', detail: 'Population totale' },
           education: { value: '64.0%', detail: 'Taux moyen de reussite' },
           economie: { value: '21 787', detail: 'Entreprises CEFORE' },

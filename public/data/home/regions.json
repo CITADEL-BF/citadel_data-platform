@@ -1,87 +1,165 @@
 {
   "source": "INSD / CITADEL",
-  "date_mise_a_jour": "2026-05-05",
+  "date_mise_a_jour": "2026-06-17",
   "niveau_geo": "region",
   "statut_qualite": "valide",
-  "methode_calcul": "Déduplication par (source_fichier, indicateur, annee, region). Pondération : chaque fichier source contribue au plus 200 entrées uniques par région. Indice UI = score normalisé 0–100.",
+  "methode_calcul": "Métriques par région: (1) observations valides agrégées, (2) indicateurs distincts, (3) score mixte = 0.40*couverture_fichiers_normalisee + 0.60*volume_observations_normalise. Indice UI = arrondi du score mixte sur 0–100.",
   "regions": [
     {
       "code": "centre",
       "nom": "Région Centre",
-      "datasets": 303,
-      "indice": 78
+      "datasets": 4444,
+      "observations_valides": 4444,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 53.54,
+      "couverture_norm": 100.0,
+      "volume_norm": 22.57,
+      "indice": 54
     },
     {
       "code": "hauts-bassins",
       "nom": "Hauts-Bassins",
-      "datasets": 367,
-      "indice": 95
+      "datasets": 10553,
+      "observations_valides": 10553,
+      "indicateurs_distincts": 21,
+      "couverture_fichiers": 19,
+      "score_mixte": 72.15,
+      "couverture_norm": 100.0,
+      "volume_norm": 53.59,
+      "indice": 72
     },
     {
       "code": "nord",
       "nom": "Nord",
-      "datasets": 372,
-      "indice": 96
+      "datasets": 11260,
+      "observations_valides": 11260,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 74.31,
+      "couverture_norm": 100.0,
+      "volume_norm": 57.18,
+      "indice": 74
     },
     {
       "code": "est",
       "nom": "Est",
-      "datasets": 387,
-      "indice": 100
+      "datasets": 15675,
+      "observations_valides": 15675,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 87.76,
+      "couverture_norm": 100.0,
+      "volume_norm": 79.6,
+      "indice": 88
     },
     {
       "code": "sahel",
       "nom": "Sahel",
-      "datasets": 387,
-      "indice": 100
+      "datasets": 13125,
+      "observations_valides": 13125,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 79.99,
+      "couverture_norm": 100.0,
+      "volume_norm": 66.65,
+      "indice": 80
     },
     {
       "code": "centre-nord",
       "nom": "Centre-Nord",
-      "datasets": 384,
-      "indice": 99
+      "datasets": 9888,
+      "observations_valides": 9888,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 70.13,
+      "couverture_norm": 100.0,
+      "volume_norm": 50.21,
+      "indice": 70
     },
     {
       "code": "centre-est",
       "nom": "Centre-Est",
-      "datasets": 384,
-      "indice": 99
+      "datasets": 10258,
+      "observations_valides": 10258,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 71.25,
+      "couverture_norm": 100.0,
+      "volume_norm": 52.09,
+      "indice": 71
     },
     {
       "code": "centre-ouest",
       "nom": "Centre-Ouest",
-      "datasets": 384,
-      "indice": 99
+      "datasets": 12089,
+      "observations_valides": 12089,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 76.83,
+      "couverture_norm": 100.0,
+      "volume_norm": 61.39,
+      "indice": 77
     },
     {
       "code": "cascades",
       "nom": "Cascades",
-      "datasets": 387,
-      "indice": 100
+      "datasets": 6249,
+      "observations_valides": 6249,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 59.04,
+      "couverture_norm": 100.0,
+      "volume_norm": 31.73,
+      "indice": 59
     },
     {
       "code": "boucle",
       "nom": "Boucle du Mouhoun",
-      "datasets": 384,
-      "indice": 99
+      "datasets": 19692,
+      "observations_valides": 19692,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 100.0,
+      "couverture_norm": 100.0,
+      "volume_norm": 100.0,
+      "indice": 100
     },
     {
       "code": "plateau",
       "nom": "Plateau Central",
-      "datasets": 372,
-      "indice": 96
+      "datasets": 8748,
+      "observations_valides": 8748,
+      "indicateurs_distincts": 21,
+      "couverture_fichiers": 19,
+      "score_mixte": 66.65,
+      "couverture_norm": 100.0,
+      "volume_norm": 44.42,
+      "indice": 67
     },
     {
       "code": "centre-sud",
       "nom": "Centre-Sud",
-      "datasets": 364,
-      "indice": 94
+      "datasets": 9522,
+      "observations_valides": 9522,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 69.01,
+      "couverture_norm": 100.0,
+      "volume_norm": 48.35,
+      "indice": 69
     },
     {
       "code": "sud-ouest",
       "nom": "Sud-Ouest",
-      "datasets": 387,
-      "indice": 100
+      "datasets": 12299,
+      "observations_valides": 12299,
+      "indicateurs_distincts": 22,
+      "couverture_fichiers": 19,
+      "score_mixte": 77.48,
+      "couverture_norm": 100.0,
+      "volume_norm": 62.46,
+      "indice": 77
     }
   ]
 }

@@ -1,0 +1,70 @@
+indicateur,pays,date,valeur,date_source,periode_normalisee,granularite_temporelle,annee,source_fichier,domaine
+Indice de développement humain,Burkina Faso,2005,0.333,2005,2005,annuelle,2005,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2006,0.34,2006,2006,annuelle,2006,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2007,0.344,2007,2007,annuelle,2007,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2008,0.357,2008,2008,annuelle,2008,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2009,0.366,2009,2009,annuelle,2009,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2010,0.377,2010,2010,annuelle,2010,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2011,0.389,2011,2011,annuelle,2011,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2012,0.398,2012,2012,annuelle,2012,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2013,0.405,2013,2013,annuelle,2013,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2014,0.409,2014,2014,annuelle,2014,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2015,0.419,2015,2015,annuelle,2015,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2016,0.427,2016,2016,annuelle,2016,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2017,0.438,2017,2017,annuelle,2017,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2018,0.449,2018,2018,annuelle,2018,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2019,0.453,2019,2019,annuelle,2019,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2020,0.453,2020,2020,annuelle,2020,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2021,0.454,2021,2021,annuelle,2021,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2022,0.457,2022,2022,annuelle,2022,indice_dh_afristat.csv,demographie
+Indice de développement humain,Burkina Faso,2023,0.459,2023,2023,annuelle,2023,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,1999,0.647,1999,1999,annuelle,1999,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2000,0.644,2000,2000,annuelle,2000,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2001,0.639,2001,2001,annuelle,2001,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2002,0.633,2002,2002,annuelle,2002,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2003,0.629,2003,2003,annuelle,2003,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2004,0.624,2004,2004,annuelle,2004,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2005,0.619,2005,2005,annuelle,2005,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2006,0.633,2006,2006,annuelle,2006,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2007,0.604,2007,2007,annuelle,2007,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2008,0.601,2008,2008,annuelle,2008,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2009,0.6,2009,2009,annuelle,2009,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2010,0.599,2010,2010,annuelle,2010,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2011,0.596,2011,2011,annuelle,2011,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2012,0.593,2012,2012,annuelle,2012,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2013,0.595,2013,2013,annuelle,2013,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2014,0.592,2014,2014,annuelle,2014,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2015,0.61,2015,2015,annuelle,2015,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2016,0.606,2016,2016,annuelle,2016,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2017,0.593,2017,2017,annuelle,2017,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2018,0.589,2018,2018,annuelle,2018,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2019,0.571,2019,2019,annuelle,2019,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2020,0.606,2020,2020,annuelle,2020,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2021,0.609,2021,2021,annuelle,2021,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2022,0.548,2022,2022,annuelle,2022,indice_dh_afristat.csv,demographie
+Indice d'inégalité de genre,Burkina Faso,2023,0.555,2023,2023,annuelle,2023,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,1999,0.75,1999,1999,annuelle,1999,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2000,0.759,2000,2000,annuelle,2000,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2001,0.766,2001,2001,annuelle,2001,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2002,0.77,2002,2002,annuelle,2002,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2003,0.776,2003,2003,annuelle,2003,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2004,0.786,2004,2004,annuelle,2004,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2005,0.819,2005,2005,annuelle,2005,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2006,0.812,2006,2006,annuelle,2006,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2007,0.842,2007,2007,annuelle,2007,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2008,0.851,2008,2008,annuelle,2008,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2009,0.855,2009,2009,annuelle,2009,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2010,0.867,2010,2010,annuelle,2010,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2011,0.87,2011,2011,annuelle,2011,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2012,0.875,2012,2012,annuelle,2012,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2013,0.879,2013,2013,annuelle,2013,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2014,0.896,2014,2014,annuelle,2014,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2015,0.883,2015,2015,annuelle,2015,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2016,0.884,2016,2016,annuelle,2016,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2017,0.886,2017,2017,annuelle,2017,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2018,0.885,2018,2018,annuelle,2018,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2019,0.905,2019,2019,annuelle,2019,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2020,0.904,2020,2020,annuelle,2020,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2021,0.904,2021,2021,annuelle,2021,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2022,0.908,2022,2022,annuelle,2022,indice_dh_afristat.csv,demographie
+Indice de développement de genre,Burkina Faso,2023,0.881,2023,2023,annuelle,2023,indice_dh_afristat.csv,demographie

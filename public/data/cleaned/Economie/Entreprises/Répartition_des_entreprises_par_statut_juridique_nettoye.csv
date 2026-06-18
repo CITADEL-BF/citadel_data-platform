@@ -1,0 +1,11 @@
+indicateur,statut_juridique,unit,date,value,valeur,date_source,periode_normalisee,granularite_temporelle,annee,source_fichier,domaine
+Répartition des entreprises par statut juridique,Entreprise individuelle (EI),Nombre,2016,4666,4666,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Société à responsabilité limitée (SARL),Nombre,2016,5062,5062,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Société anonyme (SA),Nombre,2016,614,614,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Société en participation (SP),Nombre,2016,5,5,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Société de fait,Nombre,2016,19,19,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Société coopérative simplifiée,Nombre,2016,313,313,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Société coopérative avec Conseil d'Administration,Nombre,2016,8,8,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Autres,Nombre,2016,249,249,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,ND,Nombre,2016,5912,5912,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises
+Répartition des entreprises par statut juridique,Total,Nombre,2016,16848,16848,2016,2016,annuelle,2016, Répartition des entreprises par statut juridique.csv,entreprises

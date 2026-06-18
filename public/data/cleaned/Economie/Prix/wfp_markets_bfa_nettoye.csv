@@ -1,0 +1,68 @@
+marche,region,province,source_fichier,domaine
+Banfora,CASCADES,COMOÉ,wfp_markets_bfa.csv,prix
+Bousse,PLATEAU-CENTRAL,KOURWÉOGO,wfp_markets_bfa.csv,prix
+Diebougou,SUD-OUEST,BOUGOURIBA,wfp_markets_bfa.csv,prix
+Djibo,SAHEL,SOUM,wfp_markets_bfa.csv,prix
+Dori,SAHEL,SÉNO,wfp_markets_bfa.csv,prix
+Fada N'Gourma,EST,GOURMA,wfp_markets_bfa.csv,prix
+Gorom Gorom,SAHEL,OUDALAN,wfp_markets_bfa.csv,prix
+Gourcy,NORD,ZONDOMA,wfp_markets_bfa.csv,prix
+Kongoussi,CENTRE-NORD,BAM,wfp_markets_bfa.csv,prix
+Koudougou,CENTRE-OUEST,BOULKIEMDÉ,wfp_markets_bfa.csv,prix
+Ouagadougo (Sankaryare),CENTRE,KADIOGO,wfp_markets_bfa.csv,prix
+Tenkodogo,CENTRE-EST,BOULGOU,wfp_markets_bfa.csv,prix
+Tougan,BOUCLE DU MOUHOUN,SOUROU,wfp_markets_bfa.csv,prix
+Kantchari (CBM),EST,TAPOA,wfp_markets_bfa.csv,prix
+Namouno (CBM),EST,TAPOA,wfp_markets_bfa.csv,prix
+Pouytenga,CENTRE-EST,KOURITTENGA,wfp_markets_bfa.csv,prix
+Kaya,CENTRE-NORD,SANMATENGA,wfp_markets_bfa.csv,prix
+Leo,CENTRE-OUEST,SISSILI,wfp_markets_bfa.csv,prix
+Guelwongo,CENTRE-SUD,NAHOURI,wfp_markets_bfa.csv,prix
+Nieneta,HAUTS-BASSINS,HOUET,wfp_markets_bfa.csv,prix
+Dedougou,BOUCLE DU MOUHOUN,MOUHOUN,wfp_markets_bfa.csv,prix
+Ouahigouya,NORD,YATENGA,wfp_markets_bfa.csv,prix
+Bobo Dioulasso,HAUTS-BASSINS,HOUET,wfp_markets_bfa.csv,prix
+Nouna,BOUCLE DU MOUHOUN,KOSSI,wfp_markets_bfa.csv,prix
+Arbinda,SAHEL,SOUM,wfp_markets_bfa.csv,prix
+Batié,SUD-OUEST,NOUMBIEL,wfp_markets_bfa.csv,prix
+Bogandé,EST,GNAGNA,wfp_markets_bfa.csv,prix
+Boromo,BOUCLE DU MOUHOUN,BALÉ,wfp_markets_bfa.csv,prix
+Boulsa,CENTRE-NORD,NAMENTENGA,wfp_markets_bfa.csv,prix
+Dano,SUD-OUEST,IOBA,wfp_markets_bfa.csv,prix
+Diapaga,EST,TAPOA,wfp_markets_bfa.csv,prix
+Djibasso,BOUCLE DU MOUHOUN,KOSSI,wfp_markets_bfa.csv,prix
+Douna,CASCADES,LÉRABA,wfp_markets_bfa.csv,prix
+Fara,BOUCLE DU MOUHOUN,BALÉ,wfp_markets_bfa.csv,prix
+Faramana,HAUTS-BASSINS,HOUET,wfp_markets_bfa.csv,prix
+Founza,HAUTS-BASSINS,TUY,wfp_markets_bfa.csv,prix
+Gaoua,SUD-OUEST,PONI,wfp_markets_bfa.csv,prix
+Gassan,BOUCLE DU MOUHOUN,NAYALA,wfp_markets_bfa.csv,prix
+Gayéri,EST,KOMANDJARI,wfp_markets_bfa.csv,prix
+Gounghin,CENTRE,KADIOGO,wfp_markets_bfa.csv,prix
+Haaba,EST,KOMANDJARI,wfp_markets_bfa.csv,prix
+Hamélé,SUD-OUEST,IOBA,wfp_markets_bfa.csv,prix
+Houndé,HAUTS-BASSINS,TUY,wfp_markets_bfa.csv,prix
+Kombissiri,CENTRE-SUD,BAZÈGA,wfp_markets_bfa.csv,prix
+Kompienga,EST,KOMPIENGA,wfp_markets_bfa.csv,prix
+Koupela,CENTRE-EST,KOURITTENGA,wfp_markets_bfa.csv,prix
+Manga,CENTRE-SUD,ZOUNDWÉOGO,wfp_markets_bfa.csv,prix
+Markoye,SAHEL,OUDALAN,wfp_markets_bfa.csv,prix
+Mogtédo,PLATEAU-CENTRAL,GANZOURGOU,wfp_markets_bfa.csv,prix
+Namounou,EST,TAPOA,wfp_markets_bfa.csv,prix
+N'Dorola,HAUTS-BASSINS,KÉNÉDOUGOU,wfp_markets_bfa.csv,prix
+Orodara,HAUTS-BASSINS,KÉNÉDOUGOU,wfp_markets_bfa.csv,prix
+Ouargaye,CENTRE-EST,KOULPÉLOGO,wfp_markets_bfa.csv,prix
+Po,CENTRE-SUD,NAHOURI,wfp_markets_bfa.csv,prix
+Réo,CENTRE-OUEST,SANGUIÉ,wfp_markets_bfa.csv,prix
+Sapouy,CENTRE-OUEST,ZIRO,wfp_markets_bfa.csv,prix
+Sebba,SAHEL,YAGHA,wfp_markets_bfa.csv,prix
+Seytenga,SAHEL,SÉNO,wfp_markets_bfa.csv,prix
+Solenzo,BOUCLE DU MOUHOUN,BANWA,wfp_markets_bfa.csv,prix
+Tita,CENTRE-OUEST,SANGUIÉ,wfp_markets_bfa.csv,prix
+Titao,NORD,LOROUM,wfp_markets_bfa.csv,prix
+Toma,BOUCLE DU MOUHOUN,NAYALA,wfp_markets_bfa.csv,prix
+Yako,NORD,PASSORÉ,wfp_markets_bfa.csv,prix
+Yalgo,CENTRE-NORD,NAMENTENGA,wfp_markets_bfa.csv,prix
+Zabré,CENTRE-EST,BOULGOU,wfp_markets_bfa.csv,prix
+Ziniaré,PLATEAU-CENTRAL,OUBRITENGA,wfp_markets_bfa.csv,prix
+Zorgho,PLATEAU-CENTRAL,GANZOURGOU,wfp_markets_bfa.csv,prix

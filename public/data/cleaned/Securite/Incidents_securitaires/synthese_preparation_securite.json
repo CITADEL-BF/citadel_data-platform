@@ -1,0 +1,165 @@
+{
+  "domaine": "Securite",
+  "sous_domaine": "Incidents_securitaires",
+  "version": "revisee_S3",
+  "fichiers_exclus": {
+    "conflict_data_bfa.csv": "biais potentiel identifié — exclu à partir de la version révisée (S3)"
+  },
+  "nb_lignes_hrp": 46980,
+  "nb_lignes_hebdo": 8232,
+  "nb_lignes_harmonise": 55212,
+  "nb_lignes_serie_annuelle": 30,
+  "nb_lignes_violence_mensuelle": 352,
+  "types_evenements_hrp": [
+    "civilian_targeting",
+    "demonstrations",
+    "political_violence"
+  ],
+  "annees_couvertes_hrp": [
+    1997,
+    2026
+  ],
+  "annees_couvertes_annuel": [
+    1997,
+    2026
+  ],
+  "regions_hrp": [
+    "Boucle du Mouhoun",
+    "Cascades",
+    "Centre",
+    "Centre-Est",
+    "Centre-Nord",
+    "Centre-Ouest",
+    "Centre-Sud",
+    "Est",
+    "Hauts-Bassins",
+    "Nord",
+    "Plateau-Central",
+    "Sahel",
+    "Sud-Ouest"
+  ],
+  "fichiers_generes": [
+    "incidents_hrp_region_province_mensuel_bfa_clean.csv",
+    "incidents_hebdo_bfa_clean.csv",
+    "evenements_civils_annuels_bfa_clean.csv",
+    "deces_civils_annuels_bfa_clean.csv",
+    "deces_totaux_annuels_bfa_clean.csv",
+    "violence_politique_annuelle_bfa_clean.csv",
+    "manifestations_annuelles_bfa_clean.csv",
+    "violence_politique_mensuelle_bfa_clean.csv",
+    "series_annuelles_bfa_harmonisees.csv",
+    "incidents_securitaires_harmonises_bfa.csv"
+  ],
+  "journal_actions": [
+    {
+      "section": "hrp_civilian_targeting",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s) retirée(s)"
+    },
+    {
+      "section": "hrp_civilian_targeting",
+      "action": "lignes_retenues",
+      "details": "15300 lignes Burkina Faso"
+    },
+    {
+      "section": "hrp_political_violence",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s) retirée(s)"
+    },
+    {
+      "section": "hrp_political_violence",
+      "action": "lignes_retenues",
+      "details": "15840 lignes Burkina Faso"
+    },
+    {
+      "section": "hrp_demonstrations",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s) retirée(s)"
+    },
+    {
+      "section": "hrp_demonstrations",
+      "action": "lignes_retenues",
+      "details": "15840 lignes Burkina Faso"
+    },
+    {
+      "section": "incidents_hebdo",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s) retirée(s)"
+    },
+    {
+      "section": "incidents_hebdo",
+      "action": "lignes_retenues",
+      "details": "8232 lignes Burkina Faso"
+    },
+    {
+      "section": "annuel_events_civils",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s)"
+    },
+    {
+      "section": "annuel_events_civils",
+      "action": "lignes_retenues",
+      "details": "30 lignes BFA, années 1997–2026"
+    },
+    {
+      "section": "annuel_deces_civils",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s)"
+    },
+    {
+      "section": "annuel_deces_civils",
+      "action": "lignes_retenues",
+      "details": "30 lignes BFA, années 1997–2026"
+    },
+    {
+      "section": "annuel_deces_totaux",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s)"
+    },
+    {
+      "section": "annuel_deces_totaux",
+      "action": "lignes_retenues",
+      "details": "30 lignes BFA, années 1997–2026"
+    },
+    {
+      "section": "annuel_violence_politique",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s)"
+    },
+    {
+      "section": "annuel_violence_politique",
+      "action": "lignes_retenues",
+      "details": "30 lignes BFA, années 1997–2026"
+    },
+    {
+      "section": "annuel_manifestations",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s)"
+    },
+    {
+      "section": "annuel_manifestations",
+      "action": "lignes_retenues",
+      "details": "30 lignes BFA, années 1997–2026"
+    },
+    {
+      "section": "violence_politique_mensuelle",
+      "action": "supprimer_lignes_vides",
+      "details": "0 ligne(s)"
+    },
+    {
+      "section": "violence_politique_mensuelle",
+      "action": "lignes_retenues",
+      "details": "352 lignes BFA"
+    },
+    {
+      "section": "fusion_annuelle",
+      "action": "fusion_5_tables",
+      "details": "30 lignes, années 1997–2026"
+    },
+    {
+      "section": "harmonisation_finale",
+      "action": "fusion_hrp_hebdo",
+      "details": "55212 lignes — conflict_data_bfa.csv exclu"
+    }
+  ]
+}

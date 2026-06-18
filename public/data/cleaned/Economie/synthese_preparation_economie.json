@@ -1,0 +1,170 @@
+{
+  "date_generation": "2026-04-10T09:40:37.165749",
+  "nombre_groupes": 4,
+  "nombre_fichiers_exportes": 25,
+  "exports": [
+    "data/Economie/Activites_economiques/Chiffre_d’affaire_moyen_par_branche_d’activité_en_million_de_FCFA_nettoye.csv",
+    "data/Economie/Activites_economiques/Evolution_de_l'indice_de_la_Production_Industrielle_par_Branches_Regroupées_nettoye.csv",
+    "data/Economie/Activites_economiques/Répartition_des_entreprises_enregistrées_au_CEFORE_suivant_les_domaines_d’activités_nettoye.csv",
+    "data/Economie/Activites_economiques/Répartition_des_travailleurs_par_branches_d'activités_selon_le_sexe_nettoye.csv",
+    "data/Economie/Activites_economiques/activites_economiques_harmonise_global.csv",
+    "data/Economie/Activites_economiques/activites_economiques_fusion_annuelle.csv",
+    "data/Economie/Emploi/Evolution_du_taux_de_chômage_selon_le_milieu_de_résidence_nettoye.csv",
+    "data/Economie/Emploi/Statistiques_du_travail_nettoye.csv",
+    "data/Economie/Emploi/Taux_chomage-emploi_nettoye.csv",
+    "data/Economie/Emploi/emploi_chomage_afristat_nettoye.csv",
+    "data/Economie/Emploi/emploi_harmonise_global.csv",
+    "data/Economie/Emploi/emploi_fusion_annuelle.csv",
+    "data/Economie/Entreprises/Répartition_des_entreprises_par_statut_juridique_nettoye.csv",
+    "data/Economie/Entreprises/Création_des_entreprises_enregistrées_au_CEFORE_selon_l’âge_du_promoteur_nettoye.csv",
+    "data/Economie/Entreprises/Nombre_de_cout_de_projets_finances_nettoye.csv",
+    "data/Economie/Entreprises/entreprises_enregistres_CEFORE_nettoye.csv",
+    "data/Economie/Entreprises/entreprises_harmonise_global.csv",
+    "data/Economie/Entreprises/entreprises_fusion_annuelle.csv",
+    "data/Economie/Prix/Prix_moyens_mensuels_de_quelques_produits_par_région1_nettoye.csv",
+    "data/Economie/Prix/Prix_moyens_mensuels_de_quelques_produits_par_région2_nettoye.csv",
+    "data/Economie/Prix/real-time-food-prices-for-burkina-faso_nettoye.csv",
+    "data/Economie/Prix/wfp_food_prices_bfa_nettoye.csv",
+    "data/Economie/Prix/wfp_markets_bfa_nettoye.csv",
+    "data/Economie/Prix/prix_harmonise_global.csv",
+    "data/Economie/Prix/prix_fusion_annuelle.csv"
+  ],
+  "actions": [
+    {
+      "groupe": "activites_economiques",
+      "fichier": "Chiffre d’affaire moyen par branche d’activité en million de FCFA.csv",
+      "lignes": 20,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "activites_economiques",
+      "fichier": "Evolution de l'indice de la Production Industrielle par Branches Regroupées.csv",
+      "lignes": 616,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 13,
+      "colonnes_supprimees": 1
+    },
+    {
+      "groupe": "activites_economiques",
+      "fichier": "Répartition des entreprises enregistrées au CEFORE suivant les domaines d’activités.csv",
+      "lignes": 30,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "activites_economiques",
+      "fichier": "Répartition des travailleurs par branches d'activités selon le sexe.csv",
+      "lignes": 215,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 13,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "emploi",
+      "fichier": "Evolution du taux de chômage selon le milieu de résidence.csv",
+      "lignes": 30,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "emploi",
+      "fichier": "Statistiques du travail .csv",
+      "lignes": 453,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 13,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "emploi",
+      "fichier": "Taux_chomage-emploi.csv",
+      "lignes": 45,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 15,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "emploi",
+      "fichier": "emploi_chomage_afristat.csv",
+      "lignes": 244,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 14,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "entreprises",
+      "fichier": " Répartition des entreprises par statut juridique.csv",
+      "lignes": 10,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "entreprises",
+      "fichier": "Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv",
+      "lignes": 38,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "entreprises",
+      "fichier": "Nombre de cout de projets finances.csv",
+      "lignes": 206,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 13,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "entreprises",
+      "fichier": "entreprises_enregistres_CEFORE.csv",
+      "lignes": 177,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_supprimees": 2
+    },
+    {
+      "groupe": "prix",
+      "fichier": "Prix moyens mensuels de quelques produits par région1.csv",
+      "lignes": 8161,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 15,
+      "colonnes_supprimees": 0
+    },
+    {
+      "groupe": "prix",
+      "fichier": "Prix moyens mensuels de quelques produits par région2.csv",
+      "lignes": 9431,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 15,
+      "colonnes_supprimees": 0
+    },
+    {
+      "groupe": "prix",
+      "fichier": "real-time-food-prices-for-burkina-faso.csv",
+      "lignes": 15015,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 19,
+      "colonnes_supprimees": 848
+    },
+    {
+      "groupe": "prix",
+      "fichier": "wfp_food_prices_bfa.csv",
+      "lignes": 40963,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 20,
+      "colonnes_supprimees": 5
+    },
+    {
+      "groupe": "prix",
+      "fichier": "wfp_markets_bfa.csv",
+      "lignes": 67,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 5,
+      "colonnes_supprimees": 11
+    }
+  ]
+}

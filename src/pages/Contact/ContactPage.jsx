@@ -20,8 +20,8 @@ const INFO_CARDS = [
       </svg>
     ),
     label: 'Email',
-    value: 'info@citadel.bf',
-    href: 'mailto:info@citadel.bf',
+    value: 'citadel.uvbf@gmail.com',
+    href: 'mailto:citadel.uvbf@gmail.com',
   },
   {
     icon: (
@@ -104,11 +104,11 @@ export default function ContactPage() {
       {/* ── En-tête ── */}
       <div className="contact-page__header">
         <div className="container contact-page__header-inner">
-          <nav className="contact-page__breadcrumb" aria-label="Fil d'Ariane">
+         {/* <nav className="contact-page__breadcrumb" aria-label="Fil d'Ariane">
             <NavLink to="/" className="contact-page__breadcrumb-link">Accueil</NavLink>
             <span className="contact-page__breadcrumb-sep" aria-hidden="true">›</span>
             <span className="contact-page__breadcrumb-current">Contact</span>
-          </nav>
+          </nav> */}
 
           <div className="contact-page__header-badge">Nous contacter</div>
 

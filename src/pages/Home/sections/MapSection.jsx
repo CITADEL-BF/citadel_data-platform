@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
+import { useLanguage } from '../../../contexts/LanguageContext'
+import { TRANSLATIONS } from './translations'
 import './MapSection.css'
 
 const REGIONS_FALLBACK = [
-  { nom: 'Région Centre', datasets: 640, code: 'centre' },
-  { nom: 'Sahel',         datasets: 215, code: 'sahel' },
-  { nom: 'Hauts-Bassins', datasets: 310, code: 'hauts-bassins' },
-  { nom: 'Est',           datasets: 178, code: 'est' },
-  { nom: 'Nord',          datasets: 193, code: 'nord' },
+  { nom: 'Région Centre', datasets: 640, code: 'centre', observations_valides: 640, indicateurs_distincts: 12, couverture_fichiers: 18, score_mixte: 89, indice: 89 },
+  { nom: 'Sahel',         datasets: 215, code: 'sahel', observations_valides: 215, indicateurs_distincts: 10, couverture_fichiers: 17, score_mixte: 74, indice: 74 },
+  { nom: 'Hauts-Bassins', datasets: 310, code: 'hauts-bassins', observations_valides: 310, indicateurs_distincts: 11, couverture_fichiers: 17, score_mixte: 79, indice: 79 },
+  { nom: 'Est',           datasets: 178, code: 'est', observations_valides: 178, indicateurs_distincts: 9, couverture_fichiers: 16, score_mixte: 67, indice: 67 },
+  { nom: 'Nord',          datasets: 193, code: 'nord', observations_valides: 193, indicateurs_distincts: 9, couverture_fichiers: 16, score_mixte: 69, indice: 69 },
 ]
 
 const REGION_COLORS = {
@@ -113,6 +115,9 @@ const buildPathD = (feature, bounds) => {
 }
 
 export default function MapSection() {
+  const { language } = useLanguage()
+  const t = TRANSLATIONS[language].map
+  
   const [regions, setRegions] = useState(REGIONS_FALLBACK)
   const [selectedRegion, setSelectedRegion] = useState('all')
   const [mapFeatures, setMapFeatures] = useState([])
@@ -136,27 +141,35 @@ export default function MapSection() {
       })
   }, [])
 
-  const maxDatasets = Math.max(...regions.map((r) => r.datasets))
+  const maxDatasets = Math.max(...regions.map((r) => r.observations_valides || r.datasets || 0), 1)
   const hasPctIndex = regions.some((r) => typeof r.indice === 'number')
 
   const displayedRegions =
     selectedRegion === 'all'
-      ? regions.slice(0, 5)
+      ? [...regions].sort((a, b) => (b.score_mixte || 0) - (a.score_mixte || 0))
       : regions.filter((r) => r.code === selectedRegion)
 
   const getRegionColor = (code) => REGION_COLORS[code] || 'var(--color-primary)'
   const mapBounds = mapFeatures.length ? getBoundsFromFeatures(mapFeatures) : null
 
+  const formatMeta = (region) => {
+    const obs = region.observations_valides ?? region.datasets ?? 0
+    const ind = region.indicateurs_distincts ?? 0
+    const cov = region.couverture_fichiers ?? 0
+    const locale = language === 'fr' ? 'fr-FR' : 'en-US'
+    return `${obs.toLocaleString(locale)} ${t.observations} · ${ind.toLocaleString(locale)} ${t.indicators} · ${cov.toLocaleString(locale)} ${t.files}`
+  }
+
   return (
-    <section className="map-section" aria-label="Concentration des données par région">
+    <section className="map-section" aria-label={t.ariaLabel}>
       <div className="map-section__inner">
         {/* Carte */}
         <div className="map-section__map-col">
-          <div className="map-section__map" aria-label="Carte du Burkina Faso — visualisation des données par région">
+          <div className="map-section__map" aria-label={t.mapAriaLabel}>
             {/* Sélecteur de région */}
             <div className="map-section__selector">
               <label htmlFor="region-select" className="label-sm map-section__selector-label">
-                SÉLECTEUR DE RÉGION
+                {t.selectorLabel}
               </label>
               <select
                 id="region-select"
@@ -164,7 +177,7 @@ export default function MapSection() {
                 value={selectedRegion}
                 onChange={(e) => setSelectedRegion(e.target.value)}
               >
-                <option value="all">Toutes les régions</option>
+                <option value="all">{t.allRegions}</option>
                 {regions.map((r) => (
                   <option key={r.code} value={r.code}>{r.nom}</option>
                 ))}
@@ -178,7 +191,7 @@ export default function MapSection() {
                     className="map-section__svg"
                     viewBox={`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`}
                     role="img"
-                    aria-label="Carte des régions du Burkina Faso"
+                    aria-label={t.svgAriaLabel}
                   >
                     {mapFeatures.map((feature, idx) => {
                       const key = feature.properties?.shapeID || `${feature.properties?.shapeName || 'region'}-${idx}`
@@ -196,7 +209,7 @@ export default function MapSection() {
                           className="map-section__region-shape"
                           style={{ '--region-color': color, opacity: isSelected ? 0.92 : 0.35 }}
                         >
-                          <title>{feature.properties?.shapeName || 'Région'}</title>
+                          <title>{feature.properties?.shapeName || t.regionDefaultLabel}</title>
                         </path>
                       )
                     })}
@@ -215,14 +228,16 @@ export default function MapSection() {
 
         {/* Panneau de données */}
         <div className="map-section__data-col">
-          <h2 className="map-section__data-title headline-md">[Concentration des Données]</h2>
+          <h2 className="map-section__data-title headline-md">{t.dataTitle}</h2>
           <p className="map-section__data-subtitle">
-            Répartition des datasets par région du Burkina Faso.
+            {t.dataSubtitle}
           </p>
 
           <div className="map-section__regions">
             {displayedRegions.map((r) => {
-              const pct = hasPctIndex ? r.indice : Math.round((r.datasets / maxDatasets) * 100)
+              const obs = r.observations_valides ?? r.datasets ?? 0
+              const pct = hasPctIndex ? r.indice : Math.round((obs / maxDatasets) * 100)
+              const locale = language === 'fr' ? 'fr-FR' : 'en-US'
               return (
                 <div key={r.code} className="map-region">
                   <div className="map-region__header">
@@ -231,12 +246,13 @@ export default function MapSection() {
                       {r.nom.toUpperCase()}
                     </span>
                     <span className="map-region__count">
-                      <strong>{r.datasets.toLocaleString('fr-FR')}</strong> Datasets
+                      <strong>{(r.score_mixte ?? pct).toLocaleString(locale)}</strong> {t.score}
                     </span>
                   </div>
-                  <div className="map-region__bar-track" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100} aria-label={`${r.datasets} datasets`}>
+                  <div className="map-region__bar-track" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100} aria-label={`${r.nom} ${t.score} ${pct} / 100`}>
                     <div className="map-region__bar-fill" style={{ width: `${pct}%`, '--region-color': getRegionColor(r.code) }} />
                   </div>
+                  <p className="map-region__meta">{formatMeta(r)}</p>
                 </div>
               )
             })}

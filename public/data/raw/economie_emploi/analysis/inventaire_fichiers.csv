@@ -1,0 +1,18 @@
+domaine,chemin_relatif,extension,taille_octets,analyse_directe
+economie_emploi,data_raw/economie_emploi/activites_economiques_locales/Chiffre d’affaire moyen par branche d’activité en million de FCFA.csv,csv,2794,oui
+economie_emploi,data_raw/economie_emploi/activites_economiques_locales/Evolution de l'indice de la Production Industrielle par Branches Regroupées.csv,csv,104848,oui
+economie_emploi,data_raw/economie_emploi/activites_economiques_locales/Répartition des entreprises enregistrées au CEFORE suivant les domaines d’activités.csv,csv,3844,oui
+economie_emploi,data_raw/economie_emploi/activites_economiques_locales/Répartition des travailleurs par branches d'activités selon le sexe.csv,csv,29617,oui
+economie_emploi,data_raw/economie_emploi/emploi_chomage/Evolution du taux de chômage selon le milieu de résidence.csv,csv,2806,oui
+economie_emploi,data_raw/economie_emploi/emploi_chomage/Statistiques du travail .csv,csv,35730,oui
+economie_emploi,data_raw/economie_emploi/emploi_chomage/Taux_chomage-emploi.csv,csv,4346,oui
+economie_emploi,data_raw/economie_emploi/emploi_chomage/emploi_chomage_afristat.csv,csv,25248,oui
+economie_emploi,data_raw/economie_emploi/pme_entreprises/ Répartition des entreprises par statut juridique.csv,csv,1076,oui
+economie_emploi,data_raw/economie_emploi/pme_entreprises/Création des entreprises enregistrées au CEFORE selon l’âge du promoteur.csv,csv,4550,oui
+economie_emploi,data_raw/economie_emploi/pme_entreprises/Nombre de cout de projets finances.csv,csv,20509,oui
+economie_emploi,data_raw/economie_emploi/pme_entreprises/entreprises_enregistres_CEFORE.csv,csv,17898,oui
+economie_emploi,data_raw/economie_emploi/prix_denrees/Prix moyens mensuels de quelques produits par région1.csv,csv,994314,oui
+economie_emploi,data_raw/economie_emploi/prix_denrees/Prix moyens mensuels de quelques produits par région2.csv,csv,1098206,oui
+economie_emploi,data_raw/economie_emploi/prix_denrees/real-time-food-prices-for-burkina-faso.csv,csv,23684043,oui
+economie_emploi,data_raw/economie_emploi/prix_denrees/wfp_food_prices_bfa.csv,csv,5007705,oui
+economie_emploi,data_raw/economie_emploi/prix_denrees/wfp_markets_bfa.csv,csv,3307,oui

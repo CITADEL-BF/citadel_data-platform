@@ -1,0 +1,24 @@
+domaine,chemin_relatif,extension,taille_octets,analyse_directe
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775481045210.csv,csv,91710,oui
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775484548867.csv,csv,83031,oui
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775484721989.csv,csv,40173,oui
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775484841053.csv,csv,39777,oui
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775486509768.csv,csv,48277,oui
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775486806072.csv,csv,56257,oui
+education,data_raw/education/acces_numerique/ITU/itu_data_extract_1775486892753.csv,csv,56257,oui
+education,data_raw/education/acces_numerique/Indicateurs de télécommunications de téléphonie fixe.csv,csv,13004,oui
+education,data_raw/education/acces_numerique/Indicateurs de télécommunications de téléphonie mobile.csv,csv,8367,oui
+education,data_raw/education/acces_numerique/Nombre d’abonnements actifs par opérateur de téléphonie mobile.csv,csv,1735,oui
+education,data_raw/education/ecoles_fermes-ouvertes/2017-2025-bfa-education-in-danger-incident-data.xlsx,xlsx,25607,oui
+education,data_raw/education/ecoles_fermes-ouvertes/2017-2026-education-in-danger-incident-data.xlsx,xlsx,753116,oui
+education,data_raw/education/ecoles_fermes-ouvertes/2017-2026-education-in-danger-overview-data.xlsx,xlsx,27531,oui
+education,data_raw/education/ecoles_fermes-ouvertes/2020-2026-bfa-overview-data.xlsx,xlsx,6101,oui
+education,data_raw/education/ecoles_fermes-ouvertes/2026-education-in-danger-incident-data.xlsx,xlsx,40985,oui
+education,"data_raw/education/ecoles_fermes-ouvertes/Nombre d'établissements d'enseignement général, technique et professionnel fermés pour insécurité.csv",csv,118838,oui
+education,data_raw/education/ecoles_fermes-ouvertes/Évolution des nombres d'écoles et de salles de classe du primaire des secteurs privé et public par région.csv,csv,114969,oui
+education,data_raw/education/ecoles_fermes-ouvertes/Évolution des nombres d'établissements et de classes de l'enseignement secondaire technique et professionnel des secteurs public et privé par région.csv,csv,154332,oui
+education,data_raw/education/ecoles_fermes-ouvertes/Évolution des nombres d'établissements et de classes du post-primaire et du secondaire général des secteurs public et privé par région.csv,csv,139100,oui
+education,data_raw/education/education_afristat.csv,csv,314490,oui
+education,data_raw/education/resultats_scolaires/Évolution des résultats du BEPC.csv,csv,5995,oui
+education,data_raw/education/resultats_scolaires/Évolution des résultats du Certificat d’Études Primaires (CEP).csv,csv,9428,oui
+education,data_raw/education/resultats_scolaires/Évolution des résultats du baccalauréat.csv,csv,6359,oui

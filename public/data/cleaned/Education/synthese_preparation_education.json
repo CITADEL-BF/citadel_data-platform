@@ -1,0 +1,16 @@
+{
+  "domaine": "Education",
+  "nb_lignes_acces": 1918,
+  "nb_lignes_ecoles": 3027,
+  "nb_lignes_resultats": 250,
+  "nb_lignes_national": 2517,
+  "nb_lignes_harmonise_global": 7712,
+  "fichiers_generes": [
+    "data/Education/Acces_numerique/education_acces_numerique_harmonise.csv",
+    "data/Education/Ecoles/education_ecoles_harmonise.csv",
+    "data/Education/Resultats/education_resultats_harmonise.csv",
+    "data/Education/education_national_harmonise.csv",
+    "data/Education/education_fusion_annuelle.csv",
+    "data/Education/education_harmonisee_global.csv"
+  ]
+}

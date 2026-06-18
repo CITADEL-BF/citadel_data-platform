@@ -7,18 +7,49 @@ dist/
 # Environnement Python local
 .venv/
 
+# Fichiers de configuration locaux
+.env.local
+
 # Donnees brutes et pipeline de preparation des donnees
 /data_raw/
 /data/
 
 # Scripts Python / notebooks de preparation (pipeline local)
-scripts/
+/scripts/analyse_technique_donnees.py
+/scripts/generer_livrable_S3.py
+/scripts/maj_suivi_projet.py
+/scripts/run_analyse_et_suivi.sh
+/scripts/__pycache__
 
-# Documentation interne (optionnelle en prod)
+#Supabase local 
+supabase/
+
+# Documentation interne 
 docs/
 
 # Suivi de projet interne
 suivi_projet.md
+
+# Fichiers de configuration de l'IDE
+.idea/
+
+# Fichiers de configuration de l'éditeur
+*.sublime-project
+*.sublime-workspace
+
+ # Fichiers de configuration de l'éditeur Visual Studio Code
+.vscode/
+
+# Fichiers générés par l'éditeur de code
+*.code-workspace
+
+# Fichiers de configuration de l'éditeur JetBrains
+*.iml
+*.ipr
+*.iws
+
+# Fichier gitignore lui même
+.gitignore
 
 # Editeurs et OS
 .DS_Store

@@ -1,0 +1,226 @@
+iso3,name,annee_source,conflict_stock_displacement,conflict_stock_displacement_raw,conflict_internal_displacements,conflict_internal_displacements_raw,source_onglet,figure_cause,figure_category,description,figures,figures_rounded,country,sex,cause,0_4,5_11,12_17,18_59,60,title_global_internal_displacement_database_gidd,source_fichier,domaine
+BFA,Burkina Faso,2024,2063000,2062534,380000,379980,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2023,2063000,2062534,713000,713417,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2022,1882000,1882391,438000,438462,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2021,1580000,1579976,682000,682245,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2020,1075000,1074993,515000,514960,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2019,560000,560033,513000,513004,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2018,47000,47029,42000,42118,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2017,4900,4911,4900,4911,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2016,700,700,700,700,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+ISO3,Name,Year,Conflict Stock Displacement,Conflict Stock Displacement (Raw),Conflict Internal Displacements,Conflict Internal Displacements (Raw),1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2024,2063000,2062534,380000,379980,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2023,2063000,2062534,713000,713417,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2022,1882000,1882391,438000,438462,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2021,1580000,1579976,682000,682245,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2020,1075000,1074993,515000,514960,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2019,560000,560033,513000,513004,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2018,47000,47029,42000,42118,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2017,4900,4911,4900,4911,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,Burkina Faso,2016,700,700,700,700,1_Displacement_data,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2022,,,,,2_Context_Displacement_data,Conflict,IDPs,"**Methodology and Sources** This figure refers to people internally displaced by conflict and violence across Burkina Faso. This figure was obtained from data collected by the Conseil National de Secours d'Urgence et de Réhabilitation (CONASUR) and UNHCR. It is based on the number of registered IDPs by CONASUR and UNHCR as of December 2022. **Caveats and Challenges** This figure is considered an underestimate as it only includes IDPs registered with the government. Thus, IDPs who have chosen not to register, or who have not yet done so, are not included. The figure may also be an underestimate due to access or security constraints which limit the ability to conduct assessments or verify data. We have medium confidence in this figure.",1882391.0,1882000.0,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2022,,,,,2_Context_Displacement_data,Conflict,Internal Displacements,"**Methodology and Sources** This figure refers to internal displacements triggered by conflict and violence. This figure was obtained from the Groupe de Coordination Opérationelle de la Réponse Rapide (GCORR). The GCORR acts as a rapid response mechanism and centralizes all displacement alerts collected by humanitarian actors across Burkina Faso. **Caveats and Challenges** There may be a time lag in the reporting and validation of new movements, not captured in the January 2022 extraction of the data. This may result in this figure being an underestimate. We have high confidence in this figure.",438462.0,438000.0,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2023,,,,,2_Context_Displacement_data,Conflict,IDPs,"**Methodology and Sources** This figure refers to people internally displaced by conflict and violence across Burkina Faso with Sahel, Centre-Nord, Nord and Est being the most affected regions. This figure was obtained from data collected by the Conseil National de Secours d'Urgence (CONASUR) in March 2023. **Caveats and Challenges** This figure is considered an underestimate as it only includes IDPs registered with the government. Thus, IDPs who have chosen not to register, or who have not yet done so, are not included. The figure may also be an underestimate due to the fact that it was last updated in March 2023, while there were significant new population displacements between March and December 2023. Additionally, access and security constraints limited the ability to conduct assessments or verify data across the country. Nevertheless, IDMC has high confidence in this figure.",2062534.0,2063000.0,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2023,,,,,2_Context_Displacement_data,Conflict,Internal Displacements,"**Methodology and Sources** This figure refers to internal displacements triggered by conflict and violence across the country, with Centre-Nord, Est, Boucle du Mouhoun and Nord being the most affected regions. This figure was obtained from the Groupe de Coordination Opérationelle de la Réponse Rapide (GCORR). The GCORR acts as a rapid response mechanism and centralizes all displacement alerts collected by humanitarian actors across Burkina Faso. **Caveats and Challenges** This figure can be considered an underestimate as this figure does not capture all displacements in non-government-controlled areas, as GCORR partners operate mainly in government-controlled areas. As part of a methodological revision some figures published may differ from previous publications due to retroactive changes or the inclusion of previously unavailable data. IDMC has high confidence in this figure.",713417.0,713000.0,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2024,,,,,2_Context_Displacement_data,Conflict,IDPs,"**Methodology and Sources** This figure refers to people internally displaced by conflict and violence as of the end of the year across Burkina Faso with Sahel, Centre-Nord, Nord and Est being the most affected regions. This figure was obtained from data collected by the Conseil National de Secours d'Urgence (CONASUR) in March 2023. **Caveats and Challenges** This figure is considered an underestimate as it only includes IDPs registered with the government. Thus, IDPs who have chosen not to register, or who have not yet done so, are not included. The figure may also be an underestimate because it was last updated in March 2023, while there were significant new displacements between March 2023 and December 2024. Additionally, access and security constraints limited the ability to conduct assessments or verify data across the country. IDMC has medium confidence in this figure.",2062534.0,2063000.0,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2024,,,,,2_Context_Displacement_data,Conflict,Internal Displacements,"**Methodology and Sources** This figure refers to internal displacements triggered by conflict and violence through the year, mostly in Est, Boucle du Mouhoun, Sahel and Nord regions. It was obtained from the Groupe de Coordination Opérationelle de la Réponse Rapide (GCORR). The GCORR acts as a rapid response mechanism and centralizes all displacement alerts collected by humanitarian actors across Burkina Faso. **Caveats and Challenges** This figure is considered an underestimate because it risks omitting displacements in non-government-controlled areas, as GCORR partners operate mainly in government-controlled areas. The temporal coverage of the figure is also limited as it might not take into account displacements that occurred during the year-end period. Nonetheless, IDMC has high confidence in this figure.",379980.0,380000.0,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2016,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,122.0,144.0,97.0,309.0,28.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2016,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,60.0,71.0,48.0,157.0,17.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2016,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,62.0,73.0,49.0,152.0,11.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2017,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,838.0,1010.0,686.0,2177.0,200.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2017,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,413.0,498.0,338.0,1102.0,117.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2017,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,425.0,512.0,348.0,1075.0,83.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2018,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,7838.0,9679.0,6634.0,20951.0,1927.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2018,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,3857.0,4766.0,3271.0,10605.0,1124.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2018,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,3981.0,4913.0,3363.0,10346.0,803.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2019,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,90658.0,115162.0,79880.0,251212.0,23121.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2019,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,44609.0,56704.0,39386.0,127103.0,13471.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2019,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,46049.0,58458.0,40494.0,124109.0,9650.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2020,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,168050.0,220460.0,155187.0,486580.0,44716.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2020,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,82691.0,108544.0,76504.0,245936.0,26045.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2020,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,85359.0,111916.0,78683.0,240644.0,18671.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2021,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,239283.0,322389.0,230480.0,721647.0,66177.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2021,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,117743.0,158717.0,113605.0,364492.0,38485.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2021,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,121540.0,163672.0,116875.0,357155.0,27692.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2022,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,277064.0,380879.0,277406.0,867428.0,79614.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2022,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,136334.0,187498.0,136734.0,437980.0,46230.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2022,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,140730.0,193381.0,140672.0,429448.0,33384.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2023,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,296854.0,411484.0,306525.0,959382.0,88289.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2023,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,146068.0,202551.0,151084.0,484356.0,51188.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2023,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,150786.0,208933.0,155441.0,475026.0,37101.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2024,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Both sexes,Conflict,291826.0,403200.0,308190.0,969989.0,89329.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2024,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Female,Conflict,143710.0,198499.0,151874.0,489261.0,51706.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+BFA,,2024,,,,,3_IDPs_SADD_estimates,,,,,,Burkina Faso,Male,Conflict,148116.0,204701.0,156316.0,480728.0,37623.0,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,FILENAME: IDMC_Internal_Displacement_Conflict-Violence_Disasters,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,SOURCE: Internal Displacement Monitoring Centre (IDMC),IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"DATE EXTRACTED: March 31, 2026",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"LAST UPDATE: May 13, 2025",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,DESCRIPTION:,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"The Internal Displacement Monitoring Centre (IDMC) monitors internal displacement events globally, triggered by disasters, conflict, and other forms of violence. It gathers and analyses both structured and unstructured secondary data from diverse sources—including government agencies, UN agencies, the International Federation of the Red Cross and Red Crescent, and the media. IDMC analysts rigorously analyse and triangulate all reported data. The data undergo thorough quality control processes, involving engagement with primary data collectors for peer review and validation. This meticulous approach guarantees that the data reported by IDMC reflects high accuracy. The data in the Global Internal Displacement Database (GIDD) is annually validated and peer-reviewed, having passed through various quality control processes in consultation with different UN agencies, goverments and local data providers. The GIDD database documents displacement due to conflict from 2009 to 2023 and disaster-induced displacement from 2008 to 2023. For detailed definitions and more comprehensive descriptions, please refer to the IDMC Monitoring Tools (https://www.internal-displacement.org/monitoring-tools).",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,KEY DEFINITIONS:,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Internal Displacements (flows): This metric represents the number of internal displacements, or internal displacement population flows, reported from January 1st to December 31st of a reporting year.This figure may include individuals who are displaced multiple times during the year by different events.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Total number of Internally Displaced Persons (IDPs) (stocks): This metric represents the total number of people living in situations of internal displacement as of the end of the reporting year, specifically on December 31st of each year.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Conflict displacement: Refers to situations where people are forced to leave their homes or places of habitual residence as a result or in order to avoid the impact of armed conflict, communal violence and criminal violence.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Disaster displacement: Refers to situations where people are forced to leave their homes or places of habitual residence as a result, or in anticipation of the negative impact of natural hazards.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Disaster: A serious disruption of the functioning of a community or a society involving widespread human, material, economic or environmental losses and impacts, which exceeds the ability of the affected community or society to cope using its own resources (UNSDR).",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,USE LICENSE: This content is licensed under CC BY-NC. Detailed licensing information is available at Creative Commons License (See: https://creativecommons.org/licenses/by-nc/4.0/).,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"COVERAGE: Global. The GIDD provides data on internal displacement caused by conflict since 2009. This includes information on both metrics: internal displacements and the total number of IDPs. Data on internal displacements triggered by disasters dates back to 2008, and the metrics on the total number of IDPs from disaster-related events are available from 2019 onwards.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,CITATION:,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,All derived work from IDMC data could cite IDMC following this example: Internal Displacement Monitoring Centre. Global Internal Displacement Database. IDMC (2023). Available at: https://www.internal-displacement.org/database/displacement-data/ (Accessed: [date of access]).,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,CONTACT: ch.datainfo@idmc.ch,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,DATA DESCRIPTION: 1_Displacement_data table,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"This dataset offers annually validated data on internal displacement caused by disasters, conflicts, and other situations of violence, as compiled and reported by the Internal Displacement Monitoring Centre (IDMC).",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ISO3: Represents the ISO 3166-1 alpha-3 code. The code 'AB9' is assigned to the Abyei Area.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Name: Short name of the country or territory.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Year: Indicates the year for which displacement data are reported.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Conflict Stock Displacement: Total number of IDPs (rounded figures at the national level), as a result of conflict and violence as of the end of the reporting year. Units are recorded as 'People'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Conflict Stock Displacement (Raw): Total number of IDPs (not rounded), as a result of conflict and violence as of the end of the reporting year. Units are recorded as 'People'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Conflict Internal Displacements: Total number of internal displacements reported (rounded figures at national level), as a result of conflict and violence over the reporting year. Units are recorded as 'internal displacement flows' or 'internal displacement movements'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Conflict Internal Displacements (Raw): Total number of internal displacements reported (not rounded), as a result of conflict and violence over the reporting year. Units are recorded as 'internal displacement flows' or 'internal displacement movements'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Disaster Internal Displacements: Total number of internal displacements reported (rounded figures at national level), as a result of disasters over the reporting year. Units are recorded as 'internal displacement flows' or 'internal displacement movements'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Disaster Internal Displacements (Raw): Total number of internal displacements reported (not rounded), as a result of disasters over the reporting year. Units are recorded as 'internal displacement flows' or 'internal displacement movements'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Disaster Stock Displacement: Total number of IDPs (rounded figures at national level), as a result of disasters as of the end of the reporting year. Units are recorded as 'People'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Disaster Stock Displacement (Raw): Total number of IDPs (not rounded), as a result of disasters as of the end of the reporting year. Units are recorded as 'People'.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,DATA DESCRIPTION: 2_Context_Displacement_data table,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"This dataset provides contextual information and analysis documented by IDMC analysts. It captures flags related to methodology, caveats, sources, and challenges identified for each metric, reporting year, and country.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ISO3: Represents the ISO 3166-1 alpha-3 code. The code 'AB9' is assigned to the Abyei Area.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Year: Indicates the year for which displacement data are reported.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Figure cause: Identifies the trigger of displacement, such as conflict or disasters.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Figure category: Categorizes the type of displacement metric. It details values for Internal Displacements (internal displacement flows) and Total Number of IDPs (internal displacement stocks), as defined earlier in this document.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Description: Provides contextual information about the data, including sources and data limitations. It is essential for representing the analysis conducted by IDMC analysts. This field also details the methodology used, descriptions of sources, and outlines any caveats and challenges identified with the displacement figures reported.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Figures: Represents the total number of internal displacements or IDPs. For internal displacements, units are recorded as 'internal displacement flows' or 'internal displacement movements'. For total number of IDPs, units reflect the total number of people living in displacement.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Figures rounded: Displays rounded figures to provide a simplified view of the data that matches the figures reported in the Global Report on Internal Displacement (GRID).,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,DATA DESCRIPTION: 3_IDPs_SADD_estimates table,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Sex and Age Disaggregated Data (SADD) for displacement associated with conflict or disasters is often scarce. One way to estimate it is to use SADD available at the national level. IDMC employs United Nations Population Estimates and Projections to break down the number of internally displaced people by sex and age. The methodology and limitations of this approach are described on IDMC’s website at: https://www.internal-displacement.org/monitoring-tools,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ISO3: Represents the ISO 3166-1 alpha-3 code. The code 'AB9' is assigned to the Abyei Area.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Country: Short name of the country or territory.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Year: The year for which displacement figures are reported.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Sex: This field contains information on Female, Male, and Both Sexes categories following the United Nations Department of Economic and Social Affairs (UN DESA) classifications.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"Cause: Identifies the trigger of displacement, such as conflict or disasters.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Age_0_4: Represents the age cohort from newborns to 4 years old.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Age_5_11: Represents children aged 5 to 11 years.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Age_12_17: Represents adolescents aged 12 to 17 years.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Age_18_59: Represents adults aged 18 to 59 years.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,Age_60_plus: Represents the population aged 60 years and older.,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,HISTORICAL DATA REVISIONS AND CORRECTIONS,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,The description of our methodology is available at https://www.internal-displacement.org/monitoring-tools,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"As part of our ongoing commitment to providing accurate and reliable internal displacement data, the Internal Displacement Monitoring Centre (IDMC) has released updated figures for several countries and years where data was previously unavailable or required corrections. These revisions, which result from a comprehensive methodological review, address discrepancies in earlier figures published in the Global Internal Displacement Database (GIDD) and reflect our dedication to upholding the highest standards of data quality and reliability. Our team of experts rigorously reviewed and validated the new figures to ensure they meet IDMC’s stringent data requirements. For questions or further information about these updates, please contact us at ch.datainfo@idmc.ch.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,FIGURES REVIEWED IN JANUARY 2025,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"All figures have undergone thorough expert validation to ensure consistency with IDMC’s quality requirements. A detailed account of the changes and the analytical processes underpinning them is provided in Tab 2_Context_Displacement_data, which contains a full summary of the revisions conducted by IDMC experts. For further information or inquiries, please contact us at ch.datainfo@idmc.ch.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ISO3,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BFA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BDI,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,COD,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,GRC,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,KGZ,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,KGZ,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,LSO,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MLI,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MEX,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MAR,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MAR,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MOZ,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,NAM,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,NAM,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PHL,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ESP,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ESP,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ESP,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,UGA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,UGA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,UGA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,UGA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,USA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,FIGURES REVIEWED IN MAY 2025,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,"All figures have undergone thorough expert validation to ensure consistency with IDMC’s quality requirements. A detailed account of the changes and the analytical processes underpinning them is provided in Tab 2_Context_Displacement_data, which contains a full summary of the revisions conducted by IDMC experts. For further information or inquiries, please contact us at ch.datainfo@idmc.ch.",IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ISO3,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PRI,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ESP,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,ESP,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PNG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PNG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PRI,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BGD,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BGD,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PNG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PNG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BGD,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BGD,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BGD,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BDI,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,UGA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,COL,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PNG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,TUR,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MDG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,LKA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PHL,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,GEO,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PAK,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,COL,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PNG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IDN,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,TUR,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PSE,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PSE,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,MDG,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,IND,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,KAZ,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,LKA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,BIH,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PER,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,KGZ,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PHL,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,PHL,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,THA,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,GEO,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi
+,,,,,,,README,,,,,,,,,,,,,,SLE,IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx,pdi

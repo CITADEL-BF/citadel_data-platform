@@ -1,0 +1,14 @@
+domaine,chemin_relatif,extension,taille_octets,analyse_directe
+sante,data_raw/sante/couverture_sanitaire/Evolution des accouchements assistés par milieu de résidence.csv,csv,3455,oui
+sante,data_raw/sante/couverture_sanitaire/Taux de consultation.csv,csv,6058,oui
+sante,data_raw/sante/couverture_sanitaire/Taux de couverture CPN.csv,csv,18834,oui
+sante,data_raw/sante/couverture_sanitaire/couverture vaccinale.csv,csv,10614,oui
+sante,data_raw/sante/indicateurs_epidemiologiques/Evolution des indicateurs de santé.csv,csv,80689,oui
+sante,data_raw/sante/indicateurs_epidemiologiques/Les 10 principales causes de décès dans les centres médicaux et les hôpitaux.csv,csv,7366,oui
+sante,data_raw/sante/indicateurs_epidemiologiques/Taux de morbidite.csv,csv,5748,oui
+sante,data_raw/sante/indicateurs_epidemiologiques/cas de deces epidemies.csv,csv,19543,oui
+sante,data_raw/sante/infrastructures_sanitaires/Evolution des Infrastructures sanitaires.csv,csv,16221,oui
+sante,data_raw/sante/infrastructures_sanitaires/Evolution des personnels de santé du secteur public 2017.csv,csv,10677,oui
+sante,data_raw/sante/infrastructures_sanitaires/Evolution des personnels de santé du secteur public.csv,csv,15178,oui
+sante,data_raw/sante/infrastructures_sanitaires/Infrastructures sanitaires par région à partir de 2017.csv,csv,114319,oui
+sante,data_raw/sante/sante_afristat.csv,csv,69478,oui

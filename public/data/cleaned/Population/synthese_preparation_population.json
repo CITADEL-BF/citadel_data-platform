@@ -1,0 +1,627 @@
+{
+  "date_generation": "2026-04-10T13:56:57.059567",
+  "groupes": [
+    "demographie",
+    "pdi",
+    "vulnerabilite_menages",
+    "projection_regional",
+    "projection_provincial"
+  ],
+  "nombre_groupes": 5,
+  "nombre_fichiers_exportes": 41,
+  "exports": [
+    "data/Population/Demographie/Densité_par_région_et_province_des_quatres_derniers_recensements_nettoye.csv",
+    "data/Population/Demographie/Evolution_de_la_population_par_groupes_d'âge_et_par_sexe_nettoye.csv",
+    "data/Population/Demographie/Population_du_Burkina_Faso_par_groupes_d'âge_et_par_sexe_nettoye.csv",
+    "data/Population/Demographie/Population_du_Burkina_Faso_par_province_nettoye.csv",
+    "data/Population/Demographie/Population_du_Burkina_Faso_par_région_et_selon_le_sexe_nettoye.csv",
+    "data/Population/Demographie/Population_du_Burkina_Faso_par_région_nettoye.csv",
+    "data/Population/Demographie/evolution_des_taux_de_fecondite_par_tranche_age_afristat_nettoye.csv",
+    "data/Population/Demographie/Fichier_des_localités_du_Burkina_Faso.xlsx_-_Fichier_Village_2019_nettoye.csv",
+    "data/Population/Demographie/Population_résidence_par_année_d'âge_selon_la_province,_le_milieu_de_résidence_et_le_sexe.xlsx_-_Ensemble_des_provinces_nettoye.csv",
+    "data/Population/Demographie/Population_résidente_par_année_d'âge_selon_la_région,_le_milieu_de_résidence_et_le_sexe_en_2019.xlsx_-_Ensemble_des_régions_nettoye.csv",
+    "data/Population/Demographie/Population_résidente_par_année_d'âge_selon_le_milieu_de_résidence_et_le_sexe.xlsx_-_Milieu_de_résidence_nettoye.csv",
+    "data/Population/Demographie/indice_dh_afristat_nettoye.csv",
+    "data/Population/Demographie/Évolution_de_l’espérance_de_vie_à_la_naissance_nettoye.csv",
+    "data/Population/Demographie/Évolution_des__taux_de_fecondite_nettoye.csv",
+    "data/Population/Demographie/Évolution_des_quotients_de_mortalité_infantile,_juvénile_et_infanto-juvénile_nettoye.csv",
+    "data/Population/Demographie/demographie_harmonise_global.csv",
+    "data/Population/Demographie/demographie_fusion_annuelle.csv",
+    "data/Population/PDI/Effectif_des_réfugiés_au_Burkina_Faso_par_région_administrative_nettoye.csv",
+    "data/Population/PDI/IDMC_Internal_Displacement_Conflict-Violence_Disasters_nettoye.csv",
+    "data/Population/PDI/gfx_population-figures_operation-level_2012-2026_population-type_nettoye.csv",
+    "data/Population/PDI/idps4_nettoye.csv",
+    "data/Population/PDI/pdi-gcorr-burkinafaso-may2025_nettoye.csv",
+    "data/Population/PDI/situation-des-pdi-par-communes-accueil-du-31-decembre-2022-1_nettoye.csv",
+    "data/Population/PDI/pdi_harmonise_global.csv",
+    "data/Population/PDI/pdi_fusion_annuelle.csv",
+    "data/Population/Vulnerabilite_menages/Dépenses_moyennes_par_région_en_2009_et_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Evolution_des_indices_de_pauvreté_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Indicateurs_de_pauvreté_et_contributions_des_milieux_de_résidence_à_la_pauvreté_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Indicateurs_de_pauvreté_et_contributions_des_régions_à_la_pauvreté_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Pourcentage_des_ménages_disposant_de_certains_biens_par_région_en_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Quelques_indicateurs_sur_les_conditions_de_vie_des_ménages_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Revenu_des_emplois_des_ménages_par_région_en_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Répartition_des_ménages_par_région_selon_la_nature_des_murs_du_logement_en_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Répartition_des_ménages_par_région_selon_le_mode_d'approvisionnement_en_eau_en_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Répartition_des_ménages_par_région_selon_le_mode_d'énergie_pour_la_cuisine_en_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/Répartition_des_ménages_selon_le_lieu_d'aisance_par_région_en_2018_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/conditions_de_vie_des_menages_afristat_nettoye.csv",
+    "data/Population/Vulnerabilite_menages/vulnerabilite_menages_harmonise_global.csv",
+    "data/Population/Vulnerabilite_menages/vulnerabilite_menages_fusion_annuelle.csv",
+    "data/Population/Demographie/projection_regional_fusion.csv",
+    "data/Population/Demographie/projection_provincial_fusion.csv"
+  ],
+  "actions": [
+    {
+      "groupe": "demographie",
+      "fichier": "Densité par région et province des quatres derniers recensements.csv",
+      "lignes": 236,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Evolution de la population par groupes d'âge et par sexe.csv",
+      "lignes": 381,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population du Burkina Faso par groupes d'âge et par sexe.csv",
+      "lignes": 1539,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population du Burkina Faso par province.csv",
+      "lignes": 1242,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population du Burkina Faso par région et selon le sexe.csv",
+      "lignes": 1176,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population du Burkina Faso par région.csv",
+      "lignes": 13,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "evolution_des_taux_de_fecondite_par_tranche_age_afristat.csv",
+      "lignes": 72,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 13,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Fichier des localités du Burkina Faso.xlsx - Fichier Village 2019.csv",
+      "lignes": 9838,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 29,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population résidence par année d'âge selon la province, le milieu de résidence et le sexe.xlsx - Ensemble des provinces.csv",
+      "lignes": 82,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 147,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population résidente par année d'âge selon la région, le milieu de résidence et le sexe en 2019.xlsx - Ensemble des régions.csv",
+      "lignes": 82,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 51,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Population résidente par année d'âge selon le milieu de résidence et le sexe.xlsx - Milieu de résidence.csv",
+      "lignes": 81,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 19,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "indice_dh_afristat.csv",
+      "lignes": 69,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 10,
+      "colonnes_vides_supprimees": 4
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Évolution de l’espérance de vie à la naissance.csv",
+      "lignes": 15,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Évolution des  taux de fecondite.csv",
+      "lignes": 56,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "demographie",
+      "fichier": "Évolution des quotients de mortalité infantile, juvénile et infanto-juvénile.csv",
+      "lignes": 36,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "pdi",
+      "fichier": "Effectif des réfugiés au Burkina Faso par région administrative.csv",
+      "lignes": 94,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "pdi",
+      "fichier": "IDMC_Internal_Displacement_Conflict-Violence_Disasters.xlsx",
+      "lignes": 225,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 24,
+      "colonnes_vides_supprimees": 15
+    },
+    {
+      "groupe": "pdi",
+      "fichier": "gfx_population-figures_operation-level_2012-2026_population-type.csv",
+      "lignes": 39,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 7,
+      "colonnes_vides_supprimees": 7
+    },
+    {
+      "groupe": "pdi",
+      "fichier": "idps4.xlsx",
+      "lignes": 10105,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 16,
+      "colonnes_vides_supprimees": 18
+    },
+    {
+      "groupe": "pdi",
+      "fichier": "pdi-gcorr-burkinafaso-may2025.xlsx",
+      "lignes": 154,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 25,
+      "colonnes_vides_supprimees": 6
+    },
+    {
+      "groupe": "pdi",
+      "fichier": "situation-des-pdi-par-communes-accueil-du-31-decembre-2022-1.xlsx",
+      "lignes": 327,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 15
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Dépenses moyennes par région en 2009 et 2018.csv",
+      "lignes": 107,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Evolution des indices de pauvreté.csv",
+      "lignes": 28,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Indicateurs de pauvreté et contributions des milieux de résidence à la pauvreté.csv",
+      "lignes": 84,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Indicateurs de pauvreté et contributions des régions à la pauvreté.csv",
+      "lignes": 378,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Pourcentage des ménages disposant de certains biens par région en 2018.csv",
+      "lignes": 392,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Quelques indicateurs sur les conditions de vie des ménages.csv",
+      "lignes": 54,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Revenu des emplois des ménages par région en 2018.csv",
+      "lignes": 104,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Répartition des ménages par région selon la nature des murs du logement en 2018.csv",
+      "lignes": 98,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Répartition des ménages par région selon le mode d'approvisionnement en eau en 2018.csv",
+      "lignes": 154,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Répartition des ménages par région selon le mode d'énergie pour la cuisine en 2018.csv",
+      "lignes": 112,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "Répartition des ménages selon le lieu d'aisance par région en 2018.csv",
+      "lignes": 140,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 12,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "vulnerabilite_menages",
+      "fichier": "conditions_de_vie_des_menages_afristat.csv",
+      "lignes": 330,
+      "lignes_vides_supprimees": 0,
+      "colonnes": 11,
+      "colonnes_vides_supprimees": 3
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "BANKUI.xlsx - BANKUI.csv",
+      "region": "BANKUI",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "DJÔRÔ.xlsx - DJÔRÔ.csv",
+      "region": "DJÔRÔ",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "GOULMOU.xlsx - GOULMOU.csv",
+      "region": "GOULMOU",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "GUIRIKO.xlsx - GUIRIKO.csv",
+      "region": "GUIRIKO",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "KADIOGO.xlsx - KADIOGO.csv",
+      "region": "KADIOGO",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "KOULSÉ.xlsx - KOULSÉ.csv",
+      "region": "KOULSÉ",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "LIPTAKO.xlsx - LIPTAKO.csv",
+      "region": "LIPTAKO",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "NAKAMBÉ.xlsx - NAKAMBÉ.csv",
+      "region": "NAKAMBÉ",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "NANDO.xlsx - NANDO.csv",
+      "region": "NANDO",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "NAZINON.xlsx - NAZINON.csv",
+      "region": "NAZINON",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "OUBRI.xlsx - OUBRI.csv",
+      "region": "OUBRI",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "SIRBA.xlsx - SIRBA.csv",
+      "region": "SIRBA",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "SOUM.xlsx - SOUM.csv",
+      "region": "SOUM",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "SOUROU.xlsx - SOUROU.csv",
+      "region": "SOUROU",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "TANNOUNYAN.xlsx - TANNOUNYAN.csv",
+      "region": "TANNOUNYAN",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "TAPOA.xlsx - TAPOA.csv",
+      "region": "TAPOA",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_regional",
+      "fichier": "YAADGA.xlsx - YAADGA.csv",
+      "region": "YAADGA",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "BANKUI.xlsx - BANKUI.csv",
+      "region": "BANKUI",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "DJORO.xlsx - DJORO.csv",
+      "region": "DJORO",
+      "lignes": 19680,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "GOULMOU.xlsx - GOULMOU.csv",
+      "region": "GOULMOU",
+      "lignes": 11808,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "GUIRIKO.xlsx - GUIRIKO.csv",
+      "region": "GUIRIKO",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "KADIOGO.xlsx - KADIOGO.csv",
+      "region": "KADIOGO",
+      "lignes": 3936,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "KOULSE.xlsx - KOULSE.csv",
+      "region": "KOULSE",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "LIPTAKO.xlsx - LIPTAKO.csv",
+      "region": "LIPTAKO",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "NAKAMBE.xlsx - NAKAMBE.csv",
+      "region": "NAKAMBE",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "NANDO.xlsx - NANDO.csv",
+      "region": "NANDO",
+      "lignes": 19680,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "NAZINON.xlsx - NAZINON.csv",
+      "region": "NAZINON",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "OUBRI.xlsx - OUBRI.csv",
+      "region": "OUBRI",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "SIRBA.xlsx - SIRBA.csv",
+      "region": "SIRBA",
+      "lignes": 11808,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "SOUM.xlsx - SOUM.csv",
+      "region": "SOUM",
+      "lignes": 11808,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "SOUROU.xlsx - SOUROU.csv",
+      "region": "SOUROU",
+      "lignes": 15744,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "TANNOUNYAN.xlsx - TANNOUNYAN.csv",
+      "region": "TANNOUNYAN",
+      "lignes": 11808,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "TAPOA.xlsx - TAPOA.csv",
+      "region": "TAPOA",
+      "lignes": 11808,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    },
+    {
+      "groupe": "projection_provincial",
+      "fichier": "YAADGA.xlsx - YAADGA.csv",
+      "region": "YAADGA",
+      "lignes": 19680,
+      "lignes_vides_supprimees": 0,
+      "colonnes": null,
+      "colonnes_vides_supprimees": null
+    }
+  ]
+}
