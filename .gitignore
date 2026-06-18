@@ -1,0 +1,62 @@
+# Dependances Node
+node_modules/
+
+# Build Vite 
+dist/
+
+# Environnement Python local
+.venv/
+
+# Fichiers de configuration locaux
+.env.local
+
+# Donnees brutes et pipeline de preparation des donnees
+/data_raw/
+/data/
+
+# Scripts Python / notebooks de preparation (pipeline local)
+/scripts/analyse_technique_donnees.py
+/scripts/generer_livrable_S3.py
+/scripts/maj_suivi_projet.py
+/scripts/run_analyse_et_suivi.sh
+/scripts/__pycache__
+
+
+# Documentation interne 
+docs/
+
+# Suivi de projet interne
+suivi_projet.md
+
+# Fichiers de configuration de l'IDE
+.idea/
+
+# Fichiers de configuration de l'éditeur
+*.sublime-project
+*.sublime-workspace
+
+ # Fichiers de configuration de l'éditeur Visual Studio Code
+.vscode/
+
+# Fichiers générés par l'éditeur de code
+*.code-workspace
+
+# Fichiers de configuration de l'éditeur JetBrains
+*.iml
+*.ipr
+*.iws
+
+
+
+# Editeurs et OS
+.DS_Store
+.vscode/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Supabase local temporaire
+supabase/.temp/
