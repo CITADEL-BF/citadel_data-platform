@@ -183,7 +183,7 @@ export default function Header() {
     await signOutFromSupabase()
     setUserMenuOpen(false)
     setMobileOpen(false)
-    window.location.href = '/'
+    navigate('/', { replace: true })
   }
 
   function handleSearchSubmit(e) {
