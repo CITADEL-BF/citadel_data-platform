@@ -80,21 +80,42 @@
 .citadel-slider__dots {
   display: flex;
   justify-content: center;
-  gap: var(--space-8);
+  gap: var(--space-4);
   margin-top: var(--space-20);
 }
 
 .citadel-slider__dot {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.citadel-slider__dot::before {
+  content: '';
   width: 8px;
   height: 8px;
   border-radius: 999px;
   background: var(--outline-variant);
-  transition: width var(--transition-fast), background var(--transition-fast);
+  transition: width var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
 }
 
-.citadel-slider__dot--active {
+.citadel-slider__dot--active::before {
   width: 24px;
   background: var(--color-primary);
+}
+
+.citadel-slider__dot:hover::before {
+  transform: scale(1.1);
+}
+
+.citadel-slider__dot:focus-visible {
+  outline: 2px solid rgba(13, 99, 27, 0.36);
+  outline-offset: 2px;
 }
 
 .citadel-slide {

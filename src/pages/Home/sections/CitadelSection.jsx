@@ -58,7 +58,7 @@ const NUM_SLIDES = 6
 function Slide1({ t }) {
   return (
     <div className="citadel-slide citadel-slide--1">
-      <img src={slide1Bg} alt={t.slides.slide1.alt} className="citadel-slide1__bg" />
+      <img src={slide1Bg} alt={t.slides.slide1.alt} className="citadel-slide1__bg" width={1920} height={1080} />
       <div className="citadel-slide1__overlay" />
       <div className="citadel-slide1__desc" aria-live="polite">
         <p className="citadel-slide1__desc-line citadel-slide1__desc-line--1">{t.slides.slide1.line1}</p>
@@ -81,7 +81,7 @@ function Slide2({ t }) {
       <div className="citadel-slide2__cards">
         {t.slides.slide2.missions.map((mission, idx) => (
           <article key={mission.title} className="citadel-slide2__card">
-            <img src={MISSION_IMAGES[idx]} alt={mission.title} className="citadel-slide2__card-image" />
+            <img src={MISSION_IMAGES[idx]} alt={mission.title} className="citadel-slide2__card-image" width={350} height={350} />
             <h4 className="citadel-slide2__card-title">{mission.title}</h4>
             <p className="citadel-slide2__card-desc">{mission.desc}</p>
           </article>
@@ -93,7 +93,7 @@ function Slide2({ t }) {
 function Slide3({ t }) {
   return (
     <div className="citadel-slide citadel-slide--3">
-      <img src={axeImage} alt={t.slides.slide3.alt} className="citadel-slide3__image" />
+      <img src={axeImage} alt={t.slides.slide3.alt} className="citadel-slide3__image" width={600} height={400} />
     </div>
   )
 }
@@ -103,13 +103,13 @@ function Slide4({ t }) {
     <div className="citadel-slide citadel-slide--4">
       <h3 className="citadel-slide__title">{t.slides.slide4.title}</h3>
       <div className="citadel-slide4__left">
-        <img src={activitesMainImage} alt={t.slides.slide4.alt} className="citadel-slide4__main-image" />
+        <img src={activitesMainImage} alt={t.slides.slide4.alt} className="citadel-slide4__main-image" width={500} height={500} />
       </div>
       <div className="citadel-slide4__right">
         <div className="citadel-slide4__list">
           {t.slides.slide4.activities.map((activity, idx) => (
             <article key={activity.title} className="citadel-slide4__item">
-              <img src={ACTIVITY_ICONS[idx]} alt={activity.title} className="citadel-slide4__item-icon" />
+              <img src={ACTIVITY_ICONS[idx]} alt={activity.title} className="citadel-slide4__item-icon" width={40} height={40} />
               <div className="citadel-slide4__item-content">
                 <h4 className="citadel-slide4__item-title">{activity.title}</h4>
                 <p className="citadel-slide4__item-desc">{activity.desc}</p>
@@ -129,7 +129,7 @@ function Slide5({ t }) {
       <div className="citadel-grid citadel-grid--partners">
         {PARTENAIRES.map((p) => (
           <a key={p.desc} href={p.href} className="citadel-card citadel-partner-card" target="_blank" rel="noopener noreferrer">
-            <img src={p.image} alt={p.desc} className="citadel-partner-card__image" />
+            <img src={p.image} alt={p.desc} className="citadel-partner-card__image" width={200} height={100} />
             <p className="citadel-partner-card__desc"><strong>{p.desc}</strong></p>
           </a>
         ))}
@@ -149,7 +149,7 @@ function Slide6({ t }) {
       <div className="citadel-grid citadel-grid--members">
         {t.slides.slide6.members.map((member, idx) => (
           <article key={member.line1} className="citadel-card citadel-member-card">
-            <img src={MEMBRE_IMAGES[idx]} alt={member.line1} className="citadel-member-card__image" />
+            <img src={MEMBRE_IMAGES[idx]} alt={member.line1} className="citadel-member-card__image" width={180} height={240} />
             <p className="citadel-member-card__line1"><strong>{member.line1}</strong></p>
             <p className="citadel-member-card__line2">{member.line2}</p>
           </article>

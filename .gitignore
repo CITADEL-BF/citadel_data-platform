@@ -60,3 +60,9 @@ yarn-error.log*
 
 # Supabase local temporaire
 supabase/.temp/
+
+# Dossier de redaction de la documentation
+rapport/
+PageSpeed Insights.pdf
+PageSpeed Insights-Desktop.pdf
+OPTIMISATIONS_PAGESPEED_MOBILE.md

@@ -80,7 +80,7 @@ export default function Footer() {
             {/* Colonne 1 — Identité */}
             <div className="footer__brand">
               <div className="footer__logo">
-                <img src={logoImg} alt="Logo CITADEL" className="footer__logo-img" />
+                <img src={logoImg} alt="Logo CITADEL" className="footer__logo-img" width={354} height={84} />
               </div>
               <p className="footer__brand-desc">
                 {t.brandDesc}
