@@ -62,9 +62,10 @@ export default defineConfig({
         manualChunks: {
           // Vendor dependencies with long-term cache
           'vendor-core': ['react', 'react-dom', 'react-router-dom'],
-          'vendor-data': ['d3', 'leaflet', 'echarts', 'echarts-for-react'],
+          'vendor-charts': ['echarts', 'echarts-for-react'],
+          'vendor-maps': ['leaflet', 'react-leaflet'],
           'vendor-i18n': ['i18next', 'i18next-browser-languagedetector', 'react-i18next'],
-          'vendor-ui': ['@supabase/supabase-js', 'react-leaflet'],
+          'vendor-supabase': ['@supabase/supabase-js'],
         },
       },
     },

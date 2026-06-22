@@ -124,7 +124,7 @@ export default function OrganisationsPage() {
               <div className="organisation-card__top">
                 {organization.logo && (
                   <div className="organisation-card__logo">
-                    <img src={organization.logo} alt={`Logo ${organization.shortName || organization.name}`} />
+                    <img src={organization.logo} alt={`Logo ${organization.shortName || organization.name}`} width={64} height={64} />
                   </div>
                 )}
                 <div>

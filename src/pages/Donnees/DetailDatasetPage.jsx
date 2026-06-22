@@ -295,6 +295,8 @@ export default function DetailDatasetPage() {
                         src={datasetOrganization.logo} 
                         alt={`Logo ${datasetOrganization.shortName || dataset.organization}`}
                         className="detail-org-logo"
+                        width={320}
+                        height={180}
                       />
                     ) : (
                       <span className="detail-org-fallback">{dataset.organization}</span>

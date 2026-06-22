@@ -1,4 +1,6 @@
 import logoImg from '../../../assets/logo-citadel.png'
+import logoImg202 from '../../../assets/logo-citadel-202.webp'
+import logoImg404 from '../../../assets/logo-citadel-404.webp'
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../../contexts/LanguageContext'
 import './Footer.css'
@@ -80,7 +82,17 @@ export default function Footer() {
             {/* Colonne 1 — Identité */}
             <div className="footer__brand">
               <div className="footer__logo">
-                <img src={logoImg} alt="Logo CITADEL" className="footer__logo-img" width={354} height={84} />
+                <picture>
+                  <source srcSet={`${logoImg202} 1x, ${logoImg404} 2x`} type="image/webp" />
+                  <img
+                    src={logoImg}
+                    alt="Logo CITADEL"
+                    className="footer__logo-img"
+                    width={202}
+                    height={48}
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <p className="footer__brand-desc">
                 {t.brandDesc}

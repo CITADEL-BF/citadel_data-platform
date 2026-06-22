@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { useVisualisations } from '../app/visualisations/VisualisationsContext'
 import KpiCockpit from '../components/KpiCockpit/KpiCockpit'
 import DomainSidebar from '../components/DomainSidebar/DomainSidebar'
-import BestOfGrid from '../components/BestOfGrid/BestOfGrid'
-import SecuritePage from '../pages/modules/Securite/SecuritePage'
-import PopulationPage from '../pages/modules/Population/PopulationPage'
-import EducationPage from '../pages/modules/Education/EducationPage'
-import EconomiePage from '../pages/modules/Economie/EconomiePage'
-import SantePage from '../pages/modules/Sante/SantePage'
 import './VisualisationsLayout.css'
+
+const BestOfGrid = lazy(() => import('../components/BestOfGrid/BestOfGrid'))
+const SecuritePage = lazy(() => import('../pages/modules/Securite/SecuritePage'))
+const PopulationPage = lazy(() => import('../pages/modules/Population/PopulationPage'))
+const EducationPage = lazy(() => import('../pages/modules/Education/EducationPage'))
+const EconomiePage = lazy(() => import('../pages/modules/Economie/EconomiePage'))
+const SantePage = lazy(() => import('../pages/modules/Sante/SantePage'))
 
 const DOMAINES = [
   { id: 'securite', label: 'Sécurité', accent: '#af0012', soft: 'rgba(175, 0, 18, 0.10)', icon: 'shield', subtitle: '14 312 incidents', trend: '+3% ce mois' },
@@ -65,6 +66,44 @@ const parseCsv = (csvText) => {
     })
     return row
   })
+}
+
+function DeferredChunk({ children, minHeight = '18rem' }) {
+  const ref = useRef(null)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    if (isVisible) return undefined
+
+    const node = ref.current
+    if (!node || typeof IntersectionObserver === 'undefined') {
+      setIsVisible(true)
+      return undefined
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setIsVisible(true)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: '180px 0px' },
+    )
+
+    observer.observe(node)
+    return () => observer.disconnect()
+  }, [isVisible])
+
+  return (
+    <div ref={ref} style={{ minHeight }}>
+      {isVisible ? <Suspense fallback={null}>{children}</Suspense> : null}
+    </div>
+  )
+}
+
+function ModuleFallback() {
+  return <div style={{ minHeight: '24rem' }} />
 }
 
 export default function VisualisationsLayout() {
@@ -148,7 +187,9 @@ export default function VisualisationsLayout() {
         {!activeDomaine && (
           <section key="landing" className="visualisations-landing visualisations-fade-enter" aria-label="Vue d'ensemble des visualisations">
             <KpiCockpit domaines={DOMAINES} kpis={kpis} />
-            <BestOfGrid />
+            <DeferredChunk minHeight="22rem">
+              <BestOfGrid />
+            </DeferredChunk>
 
             <section className="visualisations-cta" aria-label="Bandeau institutionnel">
               <h2>Pret a approfondir vos recherches ?</h2>
@@ -166,11 +207,13 @@ export default function VisualisationsLayout() {
             <DomainSidebar domaines={DOMAINES} kpis={kpis} />
 
             <div className="visualisations-analyse__main">
-              {activeDomaine === 'securite' && <SecuritePage />}
-              {activeDomaine === 'population' && <PopulationPage />}
-              {activeDomaine === 'education' && <EducationPage />}
-              {activeDomaine === 'economie' && <EconomiePage />}
-              {activeDomaine === 'sante' && <SantePage />}
+              <Suspense fallback={<ModuleFallback />}>
+                {activeDomaine === 'securite' && <SecuritePage />}
+                {activeDomaine === 'population' && <PopulationPage />}
+                {activeDomaine === 'education' && <EducationPage />}
+                {activeDomaine === 'economie' && <EconomiePage />}
+                {activeDomaine === 'sante' && <SantePage />}
+              </Suspense>
             </div>
           </section>
         )}

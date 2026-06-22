@@ -45,12 +45,10 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <DeferredSection fallbackMinHeight="42rem">
+      <Suspense fallback={null}>
         <CitadelSection />
-      </DeferredSection>
-      <DeferredSection fallbackMinHeight="20rem">
         <ModulesSection />
-      </DeferredSection>
+      </Suspense>
       <DeferredSection fallbackMinHeight="12rem">
         <StatusBanner />
       </DeferredSection>

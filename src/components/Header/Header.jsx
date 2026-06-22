@@ -299,7 +299,7 @@ export default function Header() {
         <div className="container header__main-inner">
           {/* Logo */}
           <NavLink to="/" className="header__logo" aria-label={t.aria.homeLabel}>
-            <img src={logoImg} alt="Logo CITADEL" className="header__logo-img" />
+            <img src={logoImg} alt="Logo CITADEL" className="header__logo-img" width={354} height={84} />
           </NavLink>
 
           {/* Navigation principale */}

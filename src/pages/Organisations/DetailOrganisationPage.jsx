@@ -243,7 +243,7 @@ export default function DetailOrganisationPage() {
               aria-label={`Visiter le site de ${organization.name}`}
             >
               {organization.logo ? (
-                <img src={organization.logo} alt={`Logo ${organization.shortName || organization.name}`} />
+                <img src={organization.logo} alt={`Logo ${organization.shortName || organization.name}`} width={146} height={146} />
               ) : (
                 <span className="detail-org-avatar" aria-hidden="true">
                   {getAvatarText(organization)}
