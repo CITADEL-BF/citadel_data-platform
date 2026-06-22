@@ -54,9 +54,9 @@ const UPDATE_FREQUENCIES = [
 ]
 
 const GUIDELINES = [
-  'Classez les ressources avec le fichier le plus recent en premier.',
+  'Classez les ressources avec le fichier le plus récent en premier.',
   'Utilisez des acronymes pour les sources lorsque cela est possible.',
-  'Ajoutez des etiquettes pertinentes pour faciliter la recherche.',
+  'Ajoutez des étiquettes pertinentes pour faciliter la recherche.',
 ]
 
 export default function ContributionPage() {
@@ -179,9 +179,9 @@ export default function ContributionPage() {
       <div className="contribution-hero">
         <div className="container contribution-hero__inner">
           <div>
-            <h1 className="contribution-hero__title">Ajouter un jeu de donnees</h1>
+            <h1 className="contribution-hero__title">Ajouter un jeu de données</h1>
             <p className="contribution-hero__subtitle">
-              Suivez les 6 etapes pour preparer et soumettre votre ensemble de donnees.
+              Suivez les 6 étapes pour préparer et soumettre votre ensemble de données.
             </p>
           </div>
 
@@ -204,7 +204,7 @@ export default function ContributionPage() {
           <article className="contribution-card">
             <header className="contribution-card__header">
               <span className="contribution-card__icon">▣</span>
-              <h2>1. Choisissez comment partager vos donnees</h2>
+              <h2>1. Choisissez comment partager vos données</h2>
             </header>
 
             <div className="contribution-grid contribution-grid--two">
@@ -216,7 +216,7 @@ export default function ContributionPage() {
                 }}
               >
                 <strong>Public</strong>
-                <span>Les donnees sont publiees ouvertement sur la plateforme.</span>
+                <span>Les données sont publiées ouvertement sur la plateforme.</span>
               </button>
 
               <button
@@ -226,8 +226,8 @@ export default function ContributionPage() {
                   setShareMode('private')
                 }}
               >
-                <strong>Prive</strong>
-                <span>Les donnees sont visibles uniquement par les membres de votre organisation.</span>
+                <strong>Privé</strong>
+                <span>Les données sont visibles uniquement par les membres de votre organisation.</span>
               </button>
             </div>
           </article>
@@ -240,7 +240,7 @@ export default function ContributionPage() {
 
             <div className="contribution-grid contribution-grid--single">
               <label className="contribution-field">
-                <span>Titre du jeu de donnees</span>
+                <span>Titre du jeu de données</span>
                 <input type="text" placeholder="ex: Rendement agricole national 2023" />
                 <small>Choisissez un titre clair et descriptif.</small>
               </label>
@@ -279,12 +279,12 @@ export default function ContributionPage() {
 
               <label className="contribution-field">
                 <span>Organisation</span>
-                <input type="text" placeholder="Organisation qui partage ce jeu de donnees" />
+                <input type="text" placeholder="Organisation qui partage ce jeu de données" />
               </label>
 
               <label className="contribution-field">
                 <span>Responsable de la maintenance</span>
-                <input type="text" placeholder="Nom et email de la personne de reference" />
+                <input type="text" placeholder="Nom et email de la personne de référence" />
               </label>
 
               <label className="contribution-field">
@@ -294,7 +294,7 @@ export default function ContributionPage() {
 
               <label className="contribution-field">
                 <span>Fréquence de mise à jour</span>
-                <select defaultValue="Temps reel">
+                <select defaultValue="Temps réel">
                   {UPDATE_FREQUENCIES.map((item) => (
                     <option key={item} value={item}>{item}</option>
                   ))}
@@ -303,21 +303,21 @@ export default function ContributionPage() {
 
               <label className="contribution-field">
                 <span>Localisation</span>
-                <input type="text" placeholder="Pays, region ou zone couverte" />
+                <input type="text" placeholder="Pays, région ou zone couverte" />
               </label>
 
               <label className="contribution-field">
-                <span>Methodologie</span>
-                <textarea rows={3} placeholder="Expliquez comment les donnees ont ete collectees ou generees" />
+                <span>Méthodologie</span>
+                <textarea rows={3} placeholder="Expliquez comment les données ont été collectées ou générées" />
               </label>
 
               <label className="contribution-field">
                 <span>Avertissements / Commentaires</span>
-                <textarea rows={3} placeholder="Limites, hypotheses ou considerations particulieres" />
+                <textarea rows={3} placeholder="Limites, hypothèses ou considérations particulières" />
               </label>
 
               <label className="contribution-field">
-                <span>Etiquettes</span>
+                <span>Étiquettes</span>
                 <input type="text" placeholder="ex: pdi, sécurité alimentaire, burkina faso" />
               </label>
             </div>
@@ -347,7 +347,7 @@ export default function ContributionPage() {
                 className={`contribution-mode-btn${uploadMode === 'fichier' ? ' contribution-mode-btn--active' : ''}`}
                 onClick={() => setUploadMode('fichier')}
               >
-                Importer un fichier (par defaut)
+                Importer un fichier (par défaut)
               </button>
               <button
                 type="button"
@@ -369,8 +369,8 @@ export default function ContributionPage() {
                   onDrop={handleDrop}
                   onDragOver={handleDragOver}
                 >
-                  <p className="contribution-dropzone__title">Glisser-deposer vos fichiers</p>
-                  <p className="contribution-dropzone__meta">Formats lisibles machine acceptes. Apercu disponible pour CSV, XLS, JSON et GeoJSON.</p>
+                  <p className="contribution-dropzone__title">Glisser-déposer vos fichiers</p>
+                  <p className="contribution-dropzone__meta">Formats lisibles machine acceptés. Aperçu disponible pour CSV, XLS, JSON et GeoJSON.</p>
                   <label className="btn-primary contribution-dropzone__browse">
                     Parcourir
                     <input type="file" multiple onChange={handleFileInput} hidden />
@@ -385,7 +385,7 @@ export default function ContributionPage() {
                 </div>
 
                 {selectedFiles.length > 0 && (
-                  <div className="contribution-resource-list" aria-label="Liste des ressources ajoutees">
+                  <div className="contribution-resource-list" aria-label="Liste des ressources ajoutées">
                     {selectedFiles.map((file, index) => (
                       <div key={`${file.name}-${index}`} className="contribution-resource-item">
                         <strong>{index + 1}. {file.name}</strong>
@@ -430,7 +430,7 @@ export default function ContributionPage() {
                   />
                 </label>
                 <div className="contribution-field contribution-field--checks">
-                  <span>4-5. Nature des donnees</span>
+                  <span>4-5. Nature des données</span>
                   <label className="contribution-check">
                     <input
                       type="checkbox"
@@ -438,7 +438,7 @@ export default function ContributionPage() {
                       checked={urlResourceDraft.containsPersonal}
                       onChange={handleUrlResourceChange}
                     />
-                    <span>Contient des donnees personnelles</span>
+                    <span>Contient des données personnelles</span>
                   </label>
                   <label className="contribution-check">
                     <input
@@ -447,7 +447,7 @@ export default function ContributionPage() {
                       checked={urlResourceDraft.containsMicrodata}
                       onChange={handleUrlResourceChange}
                     />
-                    <span>Contient des microdonnees</span>
+                    <span>Contient des microdonnées</span>
                   </label>
                 </div>
                 <div className="contribution-url-actions">
@@ -458,7 +458,7 @@ export default function ContributionPage() {
             )}
 
             {allResources.length > 0 && (
-              <div className="contribution-resource-list" aria-label="Liste des ressources ajoutees">
+              <div className="contribution-resource-list" aria-label="Liste des ressources ajoutées">
                 {allResources.map((resource) => (
                   <div key={resource.key} className="contribution-resource-item">
                     <div>

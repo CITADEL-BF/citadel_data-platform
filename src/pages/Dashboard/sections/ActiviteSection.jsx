@@ -63,7 +63,7 @@ export default function ActiviteSection({ entries, connectedAt, displayName }) {
       <div className="settings-activite-header">
         <div>
           <h3>Flux d’activité</h3>
-          <p>Historique chronologique des activites importantes effectuees sur la plateforme.</p>
+          <p>Historique chronologique des activités importantes effectuées sur la plateforme.</p>
         </div>
         <span className="settings-activite-badge">{sortedFeed.length} événement{sortedFeed.length > 1 ? 's' : ''}</span>
       </div>

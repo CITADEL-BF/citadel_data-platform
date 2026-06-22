@@ -13,7 +13,7 @@ function withBase(path) {
 
 function normalizeDatasetItem(item) {
   const domain = item?.domain || 'population'
-  const title = String(item?.title || item?.id || 'Jeu de donnees').trim()
+  const title = String(item?.title || item?.id || 'Jeu de données').trim()
   const fallbackId = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || 'dataset'
   const format = String(item?.format || '').trim() || 'CSV'
   const downloads = Array.isArray(item?.downloads) ? item.downloads : []
@@ -21,7 +21,7 @@ function normalizeDatasetItem(item) {
   return {
     id: String(item?.id || fallbackId),
     title,
-    description: String(item?.description || 'Jeu de donnees disponible dans la diffusion CITADEL.'),
+    description: String(item?.description || 'Jeu de données disponible dans la diffusion CITADEL.'),
     domain,
     domainLabel: item?.domainLabel || DOMAIN_OPTIONS.find((opt) => opt.value === domain)?.label || 'Autre',
     organization: String(item?.organization || 'CITADEL'),
@@ -35,10 +35,10 @@ function normalizeDatasetItem(item) {
     sizeMb: Number(item?.sizeMb || 0),
     license: String(item?.license || 'CC BY 4.0'),
     coverage: String(item?.coverage || 'National'),
-    collectionPeriod: String(item?.collectionPeriod || 'Non specifie'),
-    methodology: String(item?.methodology || 'Non specifiee'),
+    collectionPeriod: String(item?.collectionPeriod || 'Non spécifié'),
+    methodology: String(item?.methodology || 'Non spécifiée'),
     apiPath: String(item?.apiPath || ''),
-    contact: String(item?.contact || 'contact@citadel.bf'),
+    contact: String(item?.contact || 'citadel.uvbf@gmail.com'),
     downloads,
     sample: Array.isArray(item?.sample) ? item.sample : [],
     detailEnabled: item?.detailEnabled !== false,
@@ -379,13 +379,13 @@ export default function DonneesPage() {
           </div>
 
           <button type="button" className="donnees-reset" onClick={clearAllFilters}>
-            Reinitialiser les filtres
+            Réinitialiser les filtres
           </button>
         </aside>
 
         <div className="donnees-content">
           <header className="donnees-header">
-            <h1>Catalogue des Donnees</h1>
+            <h1>Catalogue des Données</h1>
             <div className="donnees-search-row">
               <div className="donnees-search-wrap">
                 <input
@@ -395,13 +395,13 @@ export default function DonneesPage() {
                     setQuery(event.target.value)
                     setPage(1)
                   }}
-                  placeholder="Rechercher un jeu de donnees, un indicateur ou une organisation..."
+                  placeholder="Rechercher un jeu de données, un indicateur ou une organisation..."
                   aria-label="Rechercher dans le catalogue"
                 />
               </div>
 
               <div className="donnees-quick-searches">
-                <span>Recherches frequentes :</span>
+                <span>Recherches fréquentes :</span>
                 {QUICK_SEARCHES.map((item) => (
                   <button
                     key={item}
@@ -421,15 +421,15 @@ export default function DonneesPage() {
           <div className="donnees-kpis">
             <article>
               <strong>{formatNumber(stats.datasets)}</strong>
-              <span>Jeux de donnees</span>
+              <span>Jeux de données</span>
             </article>
             <article>
               <strong>{stats.organizations}</strong>
-              <span>Organisations certifiees</span>
+              <span>Organisations certifiées</span>
             </article>
             <article>
               <strong>{formatNumber(filtered.reduce((sum, item) => sum + Number(item.rows || 0), 0))}</strong>
-              <span>Lignes recensees</span>
+              <span>Lignes recensées</span>
             </article>
           </div>
 
@@ -443,7 +443,7 @@ export default function DonneesPage() {
             </div>
           )}
 
-          <section className="donnees-results" aria-label="Resultats du catalogue">
+          <section className="donnees-results" aria-label="Résultats du catalogue">
             <div className="donnees-table-head" aria-hidden="true">
               {tableColumns.map((column) => (
                 <span key={column}>{column}</span>
@@ -495,7 +495,7 @@ export default function DonneesPage() {
 
               {filtered.length === 0 && (
                 <div className="donnees-empty">
-                  <p>Aucun dataset ne correspond aux filtres sélectionnés.</p>
+                  <p>Aucun jeu de données ne correspond aux filtres sélectionnés.</p>
                   <button type="button" onClick={clearAllFilters}>Revenir au catalogue complet</button>
                 </div>
               )}
@@ -507,7 +507,7 @@ export default function DonneesPage() {
                     {' - '}
                     {Math.min(page * ITEMS_PER_PAGE, filtered.length)}
                     {' sur '}
-                    {filtered.length} jeux de donnees
+                    {filtered.length} jeux de données
                   </p>
 
                   <div>

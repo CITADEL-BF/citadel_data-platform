@@ -136,7 +136,7 @@ export default function OrganisationsPage() {
               <div className="organisation-card__bottom">
                 <div>
                   <strong>{formatNumber(organization.datasetCount)}</strong>
-                  <span>jeux de donnees</span>
+                  <span>jeux de données</span>
                 </div>
 
                 <Link to={`/organisations/${organization.slug}`} aria-label={`Voir les détails de ${organization.name}`}>
@@ -149,7 +149,7 @@ export default function OrganisationsPage() {
           <aside className="organisation-cta">
             <h2>{page.cta?.title}</h2>
             <p>{page.cta?.description}</p>
-            <Link to="/contact">{page.cta?.linkLabel || 'Demander l’accès'}</Link>
+            <Link to="/contact">{page.cta?.linkLabel || "Demander l’accès"}</Link>
           </aside>
         </section>
 
@@ -157,7 +157,7 @@ export default function OrganisationsPage() {
           <div className="organisations-empty">
             <p>Aucune organisation ne correspond à votre recherche.</p>
             <button type="button" onClick={() => { setQuery(''); setActiveType('all') }}>
-              Reinitialiser
+              Réinitialiser
             </button>
           </div>
         )}
@@ -189,7 +189,7 @@ export default function OrganisationsPage() {
                 <strong>{formatNumber(enriched.length)}</strong>
               </article>
               <article>
-                <p>Jeux de donnees relies</p>
+                <p>Jeux de données reliés</p>
                 <strong>{formatNumber(totalDatasets)}</strong>
               </article>
             </div>

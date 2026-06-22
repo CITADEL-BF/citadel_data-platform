@@ -15,17 +15,17 @@ const DEFAULT_CONTENT = {
   organizations: [
     {
       slug: 'ministere-sante',
-      name: 'Ministère de la Santé et de l’Hygiène Publique',
+      name: "Ministère de la Santé et de l’Hygiène Publique",
       shortName: 'MS',
       type: 'ministere',
       typeLabel: 'Administration publique',
-      description: 'Pilotage des indicateurs sanitaires nationaux et des systemes de surveillance epidemiologique.',
+      description: "Pilotage des indicateurs sanitaires nationaux et des systèmes de surveillance épidémiologique.",
       longDescription:
-        'Le Ministère de la Santé assure la gouvernance des statistiques de santé publique, la consolidation des données de couverture sanitaire et la coordination des systèmes d’alerte épidémiologique.',
+        "Le Ministère de la Santé assure la gouvernance des statistiques de santé publique, la consolidation des données de couverture sanitaire et la coordination des systèmes d’alerte épidémiologique.",
       website: 'https://www.sante.gov.bf',
       logo: '/assets/org/m_sante.jpg',
       verified: true,
-      updateFrequency: 'Des que possible',
+      updateFrequency: 'Dès que possible',
       subscribers: 1230,
       headquarters: 'Ouagadougou, Burkina Faso',
       address: 'Avenue Kadiogo, 01 BP 7009 Ouagadougou 01',
@@ -38,20 +38,20 @@ const DEFAULT_CONTENT = {
     },
     {
       slug: 'insd-burkina',
-      name: 'Institut National de la Statistique et de la Demographie (INSD)',
+      name: "Institut National de la Statistique et de la Démographie (INSD)",
       shortName: 'INSD',
       type: 'institut-recherche',
       typeLabel: 'Recherche et analyse',
-      description: 'Autorite statistique nationale chargee de la production, harmonisation et diffusion des donnees officielles.',
+      description: "Autorité statistique nationale chargée de la production, harmonisation et diffusion des données officielles.",
       longDescription:
-        'L’INSD est l’organe central du Système Statistique National. Il consolide les informations démographiques, économiques et sociales utiles à la planification et au pilotage des politiques publiques.',
+        "L’INSD est l’organe central du Système Statistique National. Il consolide les informations démographiques, économiques et sociales utiles à la planification et au pilotage des politiques publiques.",
       website: 'https://www.insd.bf',
       logo: '/assets/org/insd.png',
       verified: true,
-      updateFrequency: 'Des que possible',
+      updateFrequency: 'Dès que possible',
       subscribers: 1200,
       headquarters: 'Ouagadougou, Burkina Faso',
-      address: 'Siege social, 01 BP 374 Ouagadougou 01',
+      address: 'Siège social, 01 BP 374 Ouagadougou 01',
       contactPerson: 'Direction générale - Dr. Boureima Ouedraogo',
       email: 'stats@insd.bf',
       phone: '+226 25 37 62 00',
@@ -61,21 +61,21 @@ const DEFAULT_CONTENT = {
     },
     {
       slug: 'menapln',
-      name: 'Ministère de l’Éducation Nationale, de l’Alphabétisation et de la Promotion des Langues Nationales',
+      name: "Ministère de l’Éducation Nationale, de l’Alphabétisation et de la Promotion des Langues Nationales",
       shortName: 'MENAPLN',
       type: 'ministere',
       typeLabel: 'Administration publique',
-      description: 'Suivi de la scolarisation, de l’accès numérique éducatif et des performances scolaires nationales.',
+      description: "Suivi de la scolarisation, de l’accès numérique éducatif et des performances scolaires nationales.",
       longDescription:
-        'Le MENAPLN pilote les statistiques educatives, la cartographie des ecoles ouvertes ou fermees, et la diffusion des resultats scolaires pour les cycles CEP, BEPC et Baccalaureat.',
+        "Le MENAPLN pilote les statistiques éducatives, la cartographie des écoles ouvertes ou fermées, et la diffusion des résultats scolaires pour les cycles CEP, BEPC et Baccalauréat.",
       website: 'https://www.education.gov.bf',
       logo: '/assets/org/menapln.png',
       verified: true,
-      updateFrequency: 'Des que possible',
+      updateFrequency: 'Dès que possible',
       subscribers: 740,
       headquarters: 'Ouagadougou, Burkina Faso',
       address: 'Avenue de l’Éducation, 03 BP 7133 Ouagadougou 03',
-      contactPerson: 'Direction des etudes et de la planification',
+      contactPerson: 'Direction des études et de la planification',
       email: null,
       phone: null,
       aliases: ['MENAPLN'],
@@ -88,13 +88,13 @@ const DEFAULT_CONTENT = {
       shortName: 'SP/CONASUR',
       type: 'ong',
       typeLabel: 'Organisation nationale',
-      description: 'Coordination des données de déplacements forcés et des indicateurs de vulnérabilité communautaire.',
+      description: "Coordination des données de déplacements forcés et des indicateurs de vulnérabilité communautaire.",
       longDescription:
-        'Le SP/CONASUR assure la collecte et la consolidation des informations sur les personnes déplacées internes et les zones fragilisées afin de faciliter la réponse humanitaire.',
+        "Le SP/CONASUR assure la collecte et la consolidation des informations sur les personnes déplacées internes et les zones fragilisées afin de faciliter la réponse humanitaire.",
       website: 'https://www.conasur.gov.bf',
       logo: '/assets/org/sp-conasur.png',
       verified: true,
-      updateFrequency: 'Des que possible',
+      updateFrequency: 'Dès que possible',
       subscribers: 420,
       headquarters: 'Ouagadougou, Burkina Faso',
       address: 'Avenue de l Humanitaire, 11 BP 824 CMS Ouagadougou',
@@ -117,7 +117,7 @@ const DEFAULT_CONTENT = {
       website: 'https://www.afristat.org',
       logo: null,
       verified: true,
-      updateFrequency: 'Des que possible',
+      updateFrequency: 'Dès que possible',
       subscribers: 360,
       headquarters: 'Bamako / Ouagadougou',
       address: 'Point focal national AFRISTAT, Ouagadougou',
@@ -134,17 +134,17 @@ const DEFAULT_CONTENT = {
       shortName: 'HRP/ACLED',
       type: 'partenaire',
       typeLabel: 'Partenaire technique',
-      description: 'Consolidation et analyse des incidents de sécurité et des dynamiques de conflit pour le suivi de la stabilité nationale.',
+      description: "Consolidation et analyse des incidents de sécurité et des dynamiques de conflit pour le suivi de la stabilité nationale.",
       longDescription:
         "Le partenariat HRP-ACLED assure la collecte systématique, la vérification et la diffusion des données d'incidents sécuritaires au Burkina Faso. Ces informations géoréférencées permettent d'orienter les stratégies de sécurisation et la réponse humanitaire dans les zones affectées.",
       website: 'https://www.acleddata.com',
       logo: '/assets/org/hrp-acled.png',
       verified: true,
-      updateFrequency: 'Des que possible',
+      updateFrequency: 'Dès que possible',
       subscribers: 580,
       headquarters: 'Coordination nationale Ouagadougou',
       address: 'Cellule de coordination HRP, Ouagadougou',
-      contactPerson: 'Equipe de monitoring securitaire',
+      contactPerson: 'Équipe de monitoring sécuritaire',
       email: null,
       phone: 'null',
       aliases: ['HRP / ACLED', 'ACLED'],
@@ -153,9 +153,9 @@ const DEFAULT_CONTENT = {
     }
   ],
   page: {
-    badge: 'Répertoire de l’autorité',
-    titlePrefix: 'Gouvernance des',
-    titleHighlight: 'Organisations',
+    badge: "Répertoire de l’autorité",
+    titlePrefix: "Gouvernance des",
+    titleHighlight: "Organisations",
     description:
       "Découvrez les entités souveraines qui alimentent l'écosystème de données national du Burkina Faso. Transparence, redevabilité et intégrité institutionnelle.",
     searchPlaceholder: 'Rechercher une institution, un ministère...',
@@ -168,17 +168,17 @@ const DEFAULT_CONTENT = {
     impact: {
       title: 'Impact des Organisations',
       description:
-        'Plus de {count} institutions utilisent déjà la plateforme CITADEL pour centraliser et sécuriser les actifs de données nationaux.',
+        "Plus de {count} institutions utilisent déjà la plateforme CITADEL pour centraliser et sécuriser les actifs de données nationaux.",
       visualCaption: 'Analyse en cours',
       visualTitle: 'Centre de Contrôle National',
       highlights: [
         {
-          title: '98% de precision',
-          description: 'Sur les donnees validees par les institutions.'
+          title: "98% de précision",
+          description: "Sur les données validées par les institutions."
         },
         {
-          title: '{datasets} jeux publies',
-          description: 'Catalogues structurels relies a des metadonnees communes.'
+          title: "{datasets} jeux publiés",
+          description: "Catalogues structurels reliés à des métadonnées communes."
         }
       ]
     }

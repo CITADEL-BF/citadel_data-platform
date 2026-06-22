@@ -156,7 +156,7 @@ export default function NewOrganizationRequestPage() {
                     name="role"
                     value={form.role}
                     onChange={handleChange}
-                    placeholder="Ex : Responsable donnees, charge de projet..."
+                    placeholder="Ex : Responsable données, chargé de projet..."
                   />
                 </label>
               </div>
@@ -168,9 +168,9 @@ export default function NewOrganizationRequestPage() {
                   <span className="org-access-hint">Quel type de données votre organisation souhaite-t-elle partager ?</span>
                   <ul className="org-access-guidance">
                     <li>Le sujet des données – comme les réfugiés, l’éducation, etc.</li>
-                    <li>Les lieux couverts par les donnees – veuillez preciser si des donnees infranationales sont incluses.</li>
+                    <li>Les lieux couverts par les données – veuillez préciser si des données infranationales sont incluses.</li>
                     <li>
-                      Le format de fichier dans lequel les donnees sont disponibles – les formats acceptables sont <strong>.csv</strong> ou <strong>.xlsx</strong> pour les donnees tabulaires et les formats <strong>json</strong> et <strong>geojson</strong> compresses pour les donnees geographiques.
+                      Le format de fichier dans lequel les données sont disponibles – les formats acceptables sont <strong>.csv</strong> ou <strong>.xlsx</strong> pour les données tabulaires et les formats <strong>json</strong> et <strong>geojson</strong> compressés pour les données géographiques.
                     </li>
                   </ul>
                   <textarea

@@ -342,7 +342,7 @@ export default function DetailDatasetPage() {
                       <p className="detail-complement-value">{dataset.organization}</p>
                     </li>
                     <li>
-                      <p className="detail-complement-label">Methodologie</p>
+                      <p className="detail-complement-label">Méthodologie</p>
                       <p className="detail-complement-value">{dataset.methodology}</p>
                     </li>
                     <li>
@@ -354,7 +354,7 @@ export default function DetailDatasetPage() {
                       <p className="detail-complement-value">{dataset.license}</p>
                     </li>
                     <li>
-                      <p className="detail-complement-label">Etiquettes</p>
+                      <p className="detail-complement-label">Étiquettes</p>
                       <div className="detail-tags-grid detail-tags-grid--inline">
                         {metadataTags.map((tag) => (
                           <span key={tag} className="detail-tag-chip">{tag}</span>
@@ -366,7 +366,7 @@ export default function DetailDatasetPage() {
                       <p className="detail-complement-value">{dataset.format}</p>
                     </li>
                     <li>
-                      <p className="detail-complement-label">Visibilite</p>
+                      <p className="detail-complement-label">Visibilité</p>
                       <p className="detail-complement-value">Publique</p>
                     </li>
                   </ul>
@@ -374,10 +374,10 @@ export default function DetailDatasetPage() {
 
                 <section id="apercu" className="detail-card">
                   <div className="detail-card__topbar">
-                    <h2>Apercu du Jeu de Donnees</h2>
+                    <h2>Aperçu du Jeu de Données</h2>
                     <div className="detail-card__actions">
                       <button type="button" onClick={handleDatasetDownload}>Télécharger</button>
-                      <button type="button" onClick={handleMetadataExport}>Exporter metadonnees</button>
+                      <button type="button" onClick={handleMetadataExport}>Exporter métadonnées</button>
                     </div>
                   </div>
                   <header className="detail-card__header">
@@ -405,7 +405,7 @@ export default function DetailDatasetPage() {
                         </tbody>
                       </table>
                     ) : (
-                      <p className="detail-table-empty">Aucun echantillon disponible pour ce jeu de donnees.</p>
+                      <p className="detail-table-empty">Aucun échantillon disponible pour ce jeu de données.</p>
                     )}
                   </div>
                   <button
@@ -414,7 +414,7 @@ export default function DetailDatasetPage() {
                     onClick={() => setVisibleRows((prev) => Math.min(prev + 10, previewRows.length))}
                     disabled={visibleRows >= previewRows.length}
                   >
-                    {visibleRows >= previewRows.length ? 'Toutes les lignes sont affichees' : 'Voir plus de lignes'}
+                    {visibleRows >= previewRows.length ? 'Toutes les lignes sont affichées' : 'Voir plus de lignes'}
                   </button>
                 </section>
               </div>

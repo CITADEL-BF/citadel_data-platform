@@ -424,7 +424,7 @@ export default function EconomiePage() {
 
   const unemploymentDataset = useMemo(() => ({
     meta: {
-      titre: 'Évolution du chômage par milieu de résidence',
+      titre: "Évolution du chômage par milieu de résidence",
       unite: '%',
       source: 'INSD / SSN / MFSFN',
     },

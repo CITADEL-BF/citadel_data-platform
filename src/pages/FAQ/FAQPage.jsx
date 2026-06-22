@@ -14,7 +14,7 @@ const FAQ_SECTIONS = [
     ),
     questions: [
       {
-        q: 'Qu\'est-ce que le Portail de donnees CITADEL Data Platform ?',
+        q: 'Qu\'est-ce que le Portail de données CITADEL Data Platform ?',
         a: `Le Portail CITADEL data.citadel.bf est une plateforme numérique de visualisation et d'analyse de données multisectorielles au Burkina Faso. 
         Il centralise des données harmonisées sur la population, l'éducation, la santé, l'économie et la sécurité, 
         permettant aux décideurs, chercheurs et organisations de prendre des décisions éclairées basées sur des données fiables et à jour.`

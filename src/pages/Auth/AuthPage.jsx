@@ -171,19 +171,19 @@ export default function AuthPage() {
                   </section>
 
                   <section className="auth-aside__section">
-                    <h2>Creer un compte</h2>
+                    <h2>Créer un compte</h2>
                     <p>
                       Accédez à des fonctionnalités supplémentaires avec un compte data.citadel.bf individuel.
                     </p>
                   </section>
 
                   <section className="auth-aside__section">
-                    <h2>Partager des donnees</h2>
-                    <p>Pour les organisations qui doivent publier des donnees sur data.citadel.bf.</p>
+                    <h2>Partager des données</h2>
+                    <p>Pour les organisations qui doivent publier des données sur data.citadel.bf.</p>
                     <ul className="auth-aside__list">
-                      <li>Commencez par creer un compte individuel</li>
+                      <li>Commencez par créer un compte individuel</li>
                       <li>Votre demande sera examinée</li>
-                      <li>Fournir des exemples de donnees pour verification</li>
+                      <li>Fournir des exemples de données pour vérification</li>
                     </ul>
                   </section>
                 </div>
@@ -191,15 +191,15 @@ export default function AuthPage() {
             </aside>
 
             <div className="auth-main">
-              {!isSupabaseConfigured && (
+              {/*{!isSupabaseConfigured && (
                 <p className="auth-card__notice">
                   Supabase n’est pas configuré. Définissez VITE_SUPABASE_URL et VITE_SUPABASE_ANON_KEY.
                 </p>
-              )}
+              )} */}
 
               {isProtectedRedirect && (
                 <p className="auth-card__notice">
-                  Vous devez vous connecter pour acceder a la page Ajouter des donnees.
+                  Vous devez vous connecter pour accéder à la page <strong>Ajouter des données</strong>.
                 </p>
               )}
 
@@ -212,7 +212,7 @@ export default function AuthPage() {
               <div className="auth-card__head">
                 <h1 className="auth-card__title">{mode === 'signup' ? 'Inscription' : 'Connexion'}</h1>
                 <p className="auth-card__subtitle">
-                  Connectez-vous pour acceder a la soumission de jeux de donnees.
+                  Connectez-vous pour accéder à la soumission de jeux de données.
                 </p>
               </div>
 
@@ -323,7 +323,7 @@ export default function AuthPage() {
                     </label>
 
                     <label className="auth-form__field">
-                      <span className="auth-form__label">Ressaisie email</span>
+                      <span className="auth-form__label">Confirmez votre email</span>
                       <input
                         type="email"
                         name="confirmEmail"
@@ -352,7 +352,7 @@ export default function AuthPage() {
                     </label>
 
                     <label className="auth-form__field">
-                      <span className="auth-form__label">Confirmation</span>
+                      <span className="auth-form__label">Confirmation du mot de passe</span>
                       <input
                         type="password"
                         name="confirmPassword"
@@ -384,7 +384,7 @@ export default function AuthPage() {
                         checked={signupFields.acceptNewsletter}
                         onChange={handleSignupChange}
                       />
-                      <span>J accepte de recevoir les newsletters</span>
+                      <span>J'accepte de recevoir les newsletters</span>
                     </label>
                   </div>
 
@@ -396,7 +396,7 @@ export default function AuthPage() {
 
               {mode === 'login' ? (
                 <div className="auth-card__actions">
-                  <Link to="/contact" className="auth-card__hint-link">Mot de passe oublie ?</Link>
+                  <Link to="/contact" className="auth-card__hint-link">Mot de passe oublié ?</Link>
                   <p className="auth-card__hint">
                     Pas encore membre ?
                     {' '}

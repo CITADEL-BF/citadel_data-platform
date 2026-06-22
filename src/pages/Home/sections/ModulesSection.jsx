@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useLanguage } from '../../../contexts/LanguageContext'
 import { TRANSLATIONS } from './translations'
 import './ModulesSection.css'
@@ -74,9 +75,9 @@ export default function ModulesSection() {
           {MODULES.map((m) => {
             const item = t.items.find((i) => i.id === m.id)
             return (
-              <a
+              <Link
                 key={m.id}
-                href={m.href}
+                to={m.href}
                 className={`module-card${m.large ? ' module-card--large' : ''}`}
                 style={{ '--module-color': m.color, '--module-bg': m.bg }}
                 aria-label={`Module ${item.label}`}
@@ -94,7 +95,7 @@ export default function ModulesSection() {
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
                 </span>
-              </a>
+              </Link>
             )
           })}
         </div>

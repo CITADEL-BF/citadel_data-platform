@@ -109,7 +109,7 @@ export default function ProfilSection({ user, onSave }) {
     e.preventDefault()
     const errs = {}
     if (!pwd.actuel.trim()) errs.actuel = 'Mot de passe actuel requis'
-    if (!pwd.nouveau.trim() || pwd.nouveau.length < 8) errs.nouveau = '8 caracteres minimum'
+    if (!pwd.nouveau.trim() || pwd.nouveau.length < 8) errs.nouveau = '8 caractères minimum'
     if (pwd.confirm !== pwd.nouveau) errs.confirm = 'Les mots de passe ne correspondent pas'
     if (Object.keys(errs).length) { setPwdErrors(errs); return }
     setPwd({ actuel: '', nouveau: '', confirm: '' })

@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useVisualisations } from '../app/visualisations/VisualisationsContext'
 import KpiCockpit from '../components/KpiCockpit/KpiCockpit'
 import DomainSidebar from '../components/DomainSidebar/DomainSidebar'
@@ -165,7 +166,7 @@ export default function VisualisationsLayout() {
         setKpis({
           sécurité: { value: fmtInt(securiteValue), detail: `${fmtInt(securiteDeaths)} décès totaux` },
           population: { value: fmtInt(populationKpi?.valeur || 0), detail: populationRate ? `${populationRate.valeur}% de croissance` : 'Population totale' },
-          education: { value: fmtPct(educationAvgRate), detail: educationYear ? `Taux moyen de reussite ${educationYear}` : 'Resultats scolaires' },
+          education: { value: fmtPct(educationAvgRate), detail: educationYear ? `Taux moyen de réussite ${educationYear}` : 'Résultats scolaires' },
           economie: { value: fmtInt(enterprisesValue || 0), detail: latestEmployment ? `${fmtPct(latestEmployment)} d'emploi` : 'Entreprises CEFORE' },
           sante: { value: fmtPct(latestCoverage?.valeur || 0), detail: latestCoverage ? `Couverture CPN2 ${latestCoverage.annee}` : 'Couverture sanitaire' },
         })
@@ -174,7 +175,7 @@ export default function VisualisationsLayout() {
         setKpis({
           sécurité: { value: '14 312', detail: 'Alerte nationale' },
           population: { value: '22 752 315', detail: 'Population totale' },
-          education: { value: '64.0%', detail: 'Taux moyen de reussite' },
+          education: { value: '64.0%', detail: 'Taux moyen de réussite' },
           economie: { value: '21 787', detail: 'Entreprises CEFORE' },
           sante: { value: '92.4%', detail: 'Couverture CPN2' },
         })
@@ -192,11 +193,11 @@ export default function VisualisationsLayout() {
             </DeferredChunk>
 
             <section className="visualisations-cta" aria-label="Bandeau institutionnel">
-              <h2>Pret a approfondir vos recherches ?</h2>
-              <p>Accedez au catalogue complet de jeux de donnees visualises et explorez les ressources methodologiques de la plateforme.</p>
+              <h2>Prêt à approfondir vos recherches ?</h2>
+              <p>Accédez au catalogue complet de jeux de données visualisés et explorez les ressources méthodologiques de la plateforme.</p>
               <div className="visualisations-cta__actions">
-                <a href="/donnees" className="visualisations-cta__btn visualisations-cta__btn--solid">Explorer le catalogue</a>
-                <a href="/docs" className="visualisations-cta__btn visualisations-cta__btn--outline">Documentation</a>
+                <Link to="/donnees" className="visualisations-cta__btn visualisations-cta__btn--solid">Explorer le catalogue</Link>
+                <Link to="/docs" className="visualisations-cta__btn visualisations-cta__btn--outline">Documentation</Link>
               </div>
             </section>
           </section>

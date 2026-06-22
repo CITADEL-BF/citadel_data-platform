@@ -24,8 +24,8 @@ export default function NotificationsSection() {
 
       return {
         id: slug,
-        title: `Vous etes abonne a la newsletter de ${label}`,
-        detail: 'Vous recevrez les prochaines notifications liees a cet abonnement.',
+        title: `Vous êtes abonné à la newsletter de ${label}`,
+        detail: 'Vous recevrez les prochaines notifications liées à cet abonnement.',
       }
     })
   }, [content])
@@ -35,13 +35,13 @@ export default function NotificationsSection() {
       <div className="settings-activite-header">
         <div>
           <h3>Notifications abonnement</h3>
-          <p>Notifications relatives a vos abonnements newsletters.</p>
+          <p>Notifications relatives à vos abonnements newsletters.</p>
         </div>
       </div>
 
       {notifications.length === 0 ? (
         <p className="settings-activite-hint">
-          Vous n'avez pas de notifications concernant vos abonnements. Pensez a vous abonner.
+          Vous n'avez pas de notifications concernant vos abonnements. Pensez à vous abonner.
         </p>
       ) : (
         <ol className="settings-activite-list" aria-label="Notifications abonnement">

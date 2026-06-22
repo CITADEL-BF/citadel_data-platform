@@ -100,7 +100,7 @@ export default function DetailOrganisationPage() {
 
     items.push({
       id: 'feed-subscribers',
-      title: `${formatNumber(subscriberCount)} abonnes recoivent les notifications`,
+      title: `${formatNumber(subscriberCount)} abonnés recoivent les notifications`,
       date: null,
       category: 'Newsletter',
     })
@@ -212,7 +212,7 @@ export default function DetailOrganisationPage() {
         <div className="container">
           <h1>Chargement en cours</h1>
           <p>La fiche organisation est en cours de préparation.</p>
-          <Link to="/organisations">Retour a la liste des organisations</Link>
+          <Link to="/organisations">Retour à la liste des organisations</Link>
         </div>
       </section>
     )
@@ -269,7 +269,7 @@ export default function DetailOrganisationPage() {
                 {subscribed ? (
                   <>
                     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
-                    <span>Se desabonner</span>
+                    <span>Se désabonner</span>
                   </>
                 ) : (
                   <>
@@ -293,7 +293,7 @@ export default function DetailOrganisationPage() {
             {feedbackMessage && <p className="detail-org-feedback-note">{feedbackMessage}</p>}
 
             <p className="detail-org-inline-counts">
-              <strong>{formatNumber(subscriberCount)}</strong> abonnes
+              <strong>{formatNumber(subscriberCount)}</strong> abonnés
               <span aria-hidden="true">•</span>
               <strong>{formatNumber(memberCount)}</strong> membres
             </p>
@@ -302,7 +302,7 @@ export default function DetailOrganisationPage() {
 
         <section className="detail-org-tabs" aria-label="Navigation des blocs organisation">
           <button type="button" className={activeTab === 'datasets' ? 'is-active' : ''} onClick={() => setActiveTab('datasets')}>
-            Ensemble de donnees
+            Ensemble de données
           </button>
           {isConnected && (
             <button type="button" className={activeTab === 'members' ? 'is-active' : ''} onClick={() => setActiveTab('members')}>
@@ -319,16 +319,16 @@ export default function DetailOrganisationPage() {
 
         <section className="detail-org-block" aria-live="polite">
           {activeTab === 'datasets' && (
-            <section className="detail-org-catalogue" aria-label="Catalogue des jeux de donnees">
+            <section className="detail-org-catalogue" aria-label="Catalogue des jeux de données">
               <div className="detail-org-catalogue__toolbar">
-                <h2>Ensemble de donnees</h2>
+                <h2>Ensemble de données</h2>
                 <div className="detail-org-catalogue__actions">
                   <input
                     type="search"
                     value={query}
                     onChange={(event) => setQuery(event.target.value)}
                     placeholder="Filtrer par titre, description ou domaine"
-                    aria-label="Filtrer les jeux de donnees"
+                    aria-label="Filtrer les jeux de données"
                   />
 
                   <select value={sortBy} onChange={(event) => setSortBy(event.target.value)} aria-label="Trier les jeux de donnees">
@@ -340,7 +340,7 @@ export default function DetailOrganisationPage() {
               </div>
 
               <div className="detail-org-catalogue__columns" aria-hidden="true">
-                <span>Nom du jeu de donnees</span>
+                <span>Nom du jeu de données</span>
                 <span>Domaine</span>
                 <span>Mise à jour</span>
                 <span>Format</span>
@@ -375,7 +375,7 @@ export default function DetailOrganisationPage() {
                 {filteredDatasets.length === 0 && <p className="detail-org-empty">Aucun jeu ne correspond au filtre saisi.</p>}
 
                 <footer className="detail-org-catalogue__footer">
-                  <span>{formatNumber(totalRows)} lignes recensees au total</span>
+                  <span>{formatNumber(totalRows)} lignes recensées au total</span>
                 </footer>
               </div>
             </section>
@@ -409,14 +409,14 @@ export default function DetailOrganisationPage() {
                   <div className="detail-org-members__grid">
                     {editorMembers.map((item) => (
                       <article key={item.id} className="detail-org-member-card detail-org-member-card--editor">
-                        <strong>{item.name || 'Editeur'}</strong>
+                        <strong>{item.name || 'Éditeur'}</strong>
                         <span>{item.email || 'Email non public'}</span>
                         <small>{item.joinedAt ? `Depuis le ${formatDateFR(item.joinedAt)}` : 'Date d’adhésion non renseignée'}</small>
                       </article>
                     ))}
                   </div>
                 ) : (
-                  <p className="detail-org-members__empty">Aucun editeur pour le moment.</p>
+                  <p className="detail-org-members__empty">Aucun éditeur pour le moment.</p>
                 )}
               </div>
 
@@ -463,11 +463,11 @@ export default function DetailOrganisationPage() {
               <div className="detail-org-stats__kpis">
                 <article>
                   <strong>{formatNumber(datasets.length)}</strong>
-                  <span>Jeux de donnees</span>
+                  <span>Jeux de données</span>
                 </article>
                 <article>
                   <strong>{formatNumber(subscriberCount)}</strong>
-                  <span>Abonnes newsletter</span>
+                  <span>Abonnés newsletter</span>
                 </article>
                 <article>
                   <strong>{organization.updateFrequency}</strong>
@@ -476,7 +476,7 @@ export default function DetailOrganisationPage() {
               </div>
 
               <div className="detail-org-stats__table">
-                <h3>Repartition par domaine</h3>
+                <h3>Répartition par domaine</h3>
                 <table>
                   <thead>
                     <tr>
@@ -537,9 +537,9 @@ export default function DetailOrganisationPage() {
       )}
 
       {memberModalOpen && (
-        <div className="detail-org-modal" role="dialog" aria-modal="true" aria-label="Demande d adhesion">
+        <div className="detail-org-modal" role="dialog" aria-modal="true" aria-label="Demande d'adhésion">
           <div className="detail-org-modal__panel">
-            <h2>Demande d adhesion</h2>
+            <h2>Demande d'adhésion</h2>
             <p>
               {member
                 ? 'Votre demande d’adhésion a déjà été enregistrée pour cette organisation.'

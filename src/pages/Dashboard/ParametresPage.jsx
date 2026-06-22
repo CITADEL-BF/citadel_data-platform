@@ -20,7 +20,7 @@ const TABS = [
   },
   {
     key: 'activite',
-    label: "Flux d'activite",
+    label: "Flux d'activité",
   },
 ]
 

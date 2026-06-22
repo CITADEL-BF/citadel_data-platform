@@ -18,8 +18,8 @@ import {
 import './DashboardPage.css'
 
 const BASE_TABS = [
-  { key: 'feed', label: "Fil d'actualites" },
-  { key: 'datasets', label: 'Mes ensembles de donnees' },
+  { key: 'feed', label: "Fil d'actualités" },
+  { key: 'datasets', label: 'Mes ensembles de données' },
   { key: 'organizations', label: 'Mes organisations' },
   { key: 'requests', label: 'Demandes' },
 ]
@@ -248,11 +248,11 @@ export default function DashboardPage() {
   const renderFeedTab = () => (
     <>
       <div className="dashboard-block__head">
-        <h2>Fil d'actualites</h2>
+        <h2>Fil d'actualités</h2>
         <p>Le fil d'actualités affiche l'activité récente sur le portail, notamment les mises à jour des jeux de données que vous suivez et les modifications apportées.</p>
       </div>
       {feedItems.length === 0 ? (
-        <p className="dashboard-empty-note">Aucune actualite recente pour le moment.</p>
+        <p className="dashboard-empty-note">Aucune actualité récente pour le moment.</p>
       ) : (
         <ul className="dashboard-feed-list">
           {feedItems.map((item) => (
@@ -272,12 +272,12 @@ export default function DashboardPage() {
   const renderDatasetsTab = () => (
     <>
       <div className="dashboard-block__head">
-        <h2>Mes ensembles de donnees</h2>
+        <h2>Mes ensembles de données</h2>
         <p>Affiche tous les jeux de données que vous gérez sur le portail, ainsi que leur état de mise à jour.</p>
       </div>
       {managedDatasets.length === 0 ? (
         <div className="dashboard-empty-block">
-          <p>Nous n'avons pas trouve de jeux de donnees. Rejoignez une organisation gerer vos propres jeux de donnees.</p>
+          <p>Nous n'avons pas trouvé de jeux de données. Rejoignez une organisation pour gérer vos propres jeux de données.</p>
         </div>
       ) : (
         <ul className="dashboard-datasets-list">
@@ -287,7 +287,7 @@ export default function DashboardPage() {
               <li key={dataset.id} className="dashboard-dataset-item">
                 <div>
                   <h3>{dataset.title}</h3>
-                  <p>Periode de l'ensemble de donnees: {dataset.period || 'Non renseignée'}</p>
+                  <p>Période de l'ensemble de données: {dataset.period || 'Non renseignée'}</p>
                   <p>
                     Fréquence de mise à jour prévue: {dataset.frequency || 'Non renseignée'}
                     {isLate ? <span className="dashboard-warning"> - Date de mise à jour dépassée</span> : null}
@@ -309,11 +309,11 @@ export default function DashboardPage() {
     <>
       <div className="dashboard-block__head">
         <h2>Mes organisations</h2>
-        <p>Liste des organisations dont vous etes membre.</p>
+        <p>Liste des organisations dont vous êtes membre.</p>
       </div>
       {myOrganizations.length === 0 ? (
         <div className="dashboard-empty-block">
-          <p>Pour partager des donnees, vous devez associer votre compte a une organisation existante ou demander la creation d'une nouvelle organisation.</p>
+          <p>Pour partager des données, vous devez associer votre compte à une organisation existante ou demander la création d'une nouvelle organisation.</p>
           <p>Votre demande d’association de votre compte à une organisation existante sera évaluée par l’administrateur de cette organisation. Vous devrez justifier votre demande.</p>
           <Link to="/organisations/adhesion-organisation" className="btn-primary">Rejoindre une organisation</Link>
         </div>
@@ -323,7 +323,7 @@ export default function DashboardPage() {
             <li key={org.slug} className="dashboard-org-item">
               <div>
                 <h3>{org.name}</h3>
-                <p>Role: {org.role}</p>
+                <p>Rôle: {org.role}</p>
                 <p>Rejoint: {org.joinedAt ? formatRelative(org.joinedAt) : 'Date non renseignée'}</p>
               </div>
               <button type="button" className="btn-ghost" onClick={() => leaveAsMember(org.slug)}>
@@ -372,7 +372,7 @@ export default function DashboardPage() {
         <>
           <div className="dashboard-block__head">
             <h2>Demandes</h2>
-            <p>L'onglet existe mais reste vide pour votre profil.</p>
+            {/*<p>L'onglet existe mais reste vide pour votre profil.</p>*/}
           </div>
           <div className="dashboard-requests-shell">
             <h3>Mes demandes [0]</h3>
@@ -401,11 +401,11 @@ export default function DashboardPage() {
   const renderCollaboratorDataVizTab = () => (
     <>
       <div className="dashboard-block__head">
-        <h2>Gestion donnees & visualisations</h2>
-        <p>Cet onglet est visible pour le collaborateur et regroupera les sections de pilotage des donnees en V2.</p>
+        <h2>Gestion données & visualisations</h2>
+        {/*<p>Cet onglet est visible pour le collaborateur et regroupera les sections de pilotage des données en V2.</p>*/}
       </div>
       <div className="dashboard-empty-block">
-        <p>Fonctionalite a venir</p>
+        <p>Fonctionnalité à venir</p>
       </div>
     </>
   )
@@ -417,7 +417,7 @@ export default function DashboardPage() {
       <>
         <div className="dashboard-block__head">
           <h2>Gestion utilisateurs et organisations</h2>
-          <p>Sections admin système pour la gestion des collaborateurs et de l’arborescence des organisations.</p>
+          {/*<p>Sections admin système pour la gestion des collaborateurs et de l’arborescence des organisations.</p>*/}
         </div>
 
         <section className="dashboard-admin-section">
@@ -457,7 +457,7 @@ export default function DashboardPage() {
           )}
 
           {collaborators.length === 0 ? (
-            <p className="dashboard-empty-note">Aucun collaborateur trouve.</p>
+            <p className="dashboard-empty-note">Aucun collaborateur trouvé.</p>
           ) : (
             <ul className="dashboard-request-list">
               {collaborators.map((item) => (
@@ -502,7 +502,7 @@ export default function DashboardPage() {
                   <details>
                     <summary>Admins de l'organisation ({orgAdmins.length})</summary>
                     {orgAdmins.length === 0 ? (
-                      <p className="dashboard-empty-note">Aucun admin d'organisation reference.</p>
+                      <p className="dashboard-empty-note">Aucun admin d'organisation référencé.</p>
                     ) : (
                       <ul className="dashboard-org-tree__admins">
                         {orgAdmins.map((admin) => (
@@ -510,7 +510,7 @@ export default function DashboardPage() {
                             <span>{admin.name || admin.email || 'Admin organisation'}</span>
                             <div className="dashboard-request-actions">
                               <button type="button">Suspendre</button>
-                              <button type="button">Revoquer role</button>
+                              <button type="button">Révoquer rôle</button>
                             </div>
                           </li>
                         ))}
