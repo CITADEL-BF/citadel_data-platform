@@ -75,7 +75,7 @@ begin
   on conflict (user_id) do nothing;
 
   insert into public.user_activity_feed (user_id, activity_type, activity_label)
-  values (new.id, 'inscription', 's\'est inscrit');
+  values (new.id, 'inscription', 's''est inscrit');
 
   return new;
 end;
@@ -120,7 +120,7 @@ insert into public.user_activity_feed (user_id, activity_type, activity_label, o
 select
   u.id,
   'inscription',
-  's\'est inscrit',
+  's''est inscrit',
   coalesce(u.created_at, now())
 from auth.users u
 left join public.user_activity_feed f
