@@ -43,7 +43,7 @@ const TRANSLATIONS = {
       contact: 'Contact',
     },
     cta: {
-      addData: 'Ajouter des données',
+      addData: 'Soumettre des données',
     },
     search: {
       placeholder: 'Rechercher...',
@@ -95,7 +95,7 @@ const TRANSLATIONS = {
       contact: 'Contact',
     },
     cta: {
-      addData: 'Add data',
+      addData: 'Submit data',
     },
     search: {
       placeholder: 'Search...',
@@ -362,7 +362,7 @@ export default function Header() {
                 </span>
               ))}
             </nav>
-            <span className="header__breadcrumb-version">V1.2</span>
+            
           </div>
         </div>
       )}

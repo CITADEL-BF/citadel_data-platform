@@ -51,6 +51,8 @@ const MEMBRE_IMAGES = [
   mDefault,
   mDefault,
   mDefault,
+  mDefault,
+  mDefault,
 ]
 
 const NUM_SLIDES = 6

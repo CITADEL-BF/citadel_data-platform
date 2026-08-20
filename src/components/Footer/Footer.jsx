@@ -32,7 +32,7 @@ const TRANSLATIONS = {
       link: 'licence Creative Commons Attribution 4.0 International',
       label: 'Licence Creative Commons Attribution 4.0 International',
     },
-    copyright: '© 2025 data.citadel.bf. Tous droits réservés.',
+    copyright: '© 2026 data.citadel.bf. Tous droits réservés.',
     licenseBadge: 'Licence CC BY 4.0',
     privacy: 'Politique de confidentialité',
     terms: "Conditions d'utilisation",
@@ -63,7 +63,7 @@ const TRANSLATIONS = {
       link: 'Creative Commons Attribution 4.0 International License',
       label: 'Creative Commons Attribution 4.0 International License',
     },
-    copyright: '© 2025 data.citadel.bf. All rights reserved.',
+    copyright: '© 2026 data.citadel.bf. All rights reserved.',
     licenseBadge: 'License CC BY 4.0',
     privacy: 'Privacy Policy',
     terms: 'Terms of Use',
@@ -155,7 +155,7 @@ export default function Footer() {
                   <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
                     <path d="M2.5 6.5l7.5 5 7.5-5M3 5h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
                   </svg>
-                  citadel.uvbf@gmail.com
+                  info@citadel.bf
                 </a>
                 <span className="footer__contact-item">
                   <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">

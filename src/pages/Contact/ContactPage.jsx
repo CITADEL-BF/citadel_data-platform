@@ -20,8 +20,8 @@ const INFO_CARDS = [
       </svg>
     ),
     label: 'Email',
-    value: 'citadel.uvbf@gmail.com',
-    href: 'mailto:citadel.uvbf@gmail.com',
+    value: 'info@citadel.bf',
+    href: 'mailto:info@citadel.bf',
   },
   {
     icon: (

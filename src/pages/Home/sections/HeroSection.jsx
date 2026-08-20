@@ -85,7 +85,7 @@ export default function HeroSection() {
         </nav>
 
         <p className="hero__coverage">
-          <strong>Plus de 1&nbsp;45</strong> {t.coverage} <strong>plus de 5</strong> {t.coverageAgencies}
+          <strong>Plus de 145</strong> {t.coverage} <strong>plus de 5</strong> {t.coverageAgencies}
         </p>
       </div>
     </section>
