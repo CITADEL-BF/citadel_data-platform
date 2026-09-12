@@ -867,3 +867,19 @@
     display: none;
   }
 }
+
+/* --- Menu deroulant "Visualisations" (nav principale) --- */
+.header__nav-link--trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-body-md);
+  font-weight: 500;
+  font-family: var(--font-body);
+  color: var(--on-surface-variant);
+  background: none;
+}
+
+.header__dropdown .header__dropdown-menu {
+  z-index: 60;
+}

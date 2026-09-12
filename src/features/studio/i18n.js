@@ -48,9 +48,18 @@ const TEXT = {
       back: 'Changer de fichier',
       next: 'Continuer',
     },
+    visualize: {
+      viewLabel: 'Type de graphique',
+      axisX: 'Axe horizontal (X)',
+      axisY: 'Valeur (Y)',
+      series: 'Série (couleur)',
+      noSeries: 'Aucune',
+      aggregation: 'Agrégation',
+      back: 'Retour',
+      next: 'Continuer',
+    },
     placeholder: {
-      visualize: 'La construction des graphiques arrive à l\'étape suivante du développement.',
-      export: 'L\'export PNG arrivera une fois les vues disponibles.',
+      export: 'L\'export PNG arrivera à la prochaine étape du développement.',
     },
   },
   en: {
@@ -94,9 +103,18 @@ const TEXT = {
       back: 'Change file',
       next: 'Continue',
     },
+    visualize: {
+      viewLabel: 'Chart type',
+      axisX: 'Horizontal axis (X)',
+      axisY: 'Value (Y)',
+      series: 'Series (color)',
+      noSeries: 'None',
+      aggregation: 'Aggregation',
+      back: 'Back',
+      next: 'Continue',
+    },
     placeholder: {
-      visualize: 'Chart building comes in the next development step.',
-      export: 'PNG export will come once views are available.',
+      export: 'PNG export will come in the next development step.',
     },
   },
 }

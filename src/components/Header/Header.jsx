@@ -10,8 +10,9 @@ import './Header.css'
 const TRANSLATIONS = {
   fr: {
     routes: {
-      donnees: 'Données',
+      donnees: 'Catalogue',
       visualisations: 'Visualisations',
+      explorer: 'Visualiser vos données',
       organisations: 'Organisations',
       contact: 'Contact',
       faq: 'FAQ',
@@ -37,9 +38,10 @@ const TRANSLATIONS = {
     },
     nav: {
       home: 'Accueil',
-      data: 'Données',
       visualizations: 'Visualisations',
-      studio: 'Visualiser mes données',
+      publicData: 'Données publiques',
+      ownData: 'Visualiser vos données',
+      catalogue: 'Catalogue',
       organizations: 'Organisations',
       contact: 'Contact',
     },
@@ -56,6 +58,7 @@ const TRANSLATIONS = {
       breadcrumb: 'Fil d\'ariane',
       contextNav: 'Navigation de contexte',
       accountLinks: 'Liens du compte',
+      vizMenu: 'Sous-menu Visualisations',
       openMenu: 'Ouvrir le menu',
       closeMenu: 'Fermer le menu',
       homeLabel: 'CITADEL — Accueil',
@@ -63,8 +66,9 @@ const TRANSLATIONS = {
   },
   en: {
     routes: {
-      donnees: 'Data',
+      donnees: 'Catalog',
       visualisations: 'Visualizations',
+      explorer: 'Visualize your data',
       organisations: 'Organizations',
       contact: 'Contact',
       faq: 'FAQ',
@@ -90,9 +94,10 @@ const TRANSLATIONS = {
     },
     nav: {
       home: 'Home',
-      data: 'Data',
       visualizations: 'Visualizations',
-      studio: 'Visualize my data',
+      publicData: 'Public data',
+      ownData: 'Visualize your data',
+      catalogue: 'Catalog',
       organizations: 'Organizations',
       contact: 'Contact',
     },
@@ -109,6 +114,7 @@ const TRANSLATIONS = {
       breadcrumb: 'Breadcrumb',
       contextNav: 'Context navigation',
       accountLinks: 'Account links',
+      vizMenu: 'Visualizations submenu',
       openMenu: 'Open menu',
       closeMenu: 'Close menu',
       homeLabel: 'CITADEL — Home',
@@ -139,6 +145,7 @@ const MODULE_LABELS = {
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [userMenuOpen, setUserMenuOpen] = useState(false)
+  const [vizMenuOpen, setVizMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const { pathname } = useLocation()
   const navigate = useNavigate()
@@ -179,6 +186,7 @@ export default function Header() {
 
   useEffect(() => {
     setUserMenuOpen(false)
+    setVizMenuOpen(false)
   }, [pathname])
 
   async function handleLogout() {
@@ -315,10 +323,29 @@ export default function Header() {
             >
               {t.nav.home}
             </NavLink>
-            <NavLink to="/donnees" className="header__nav-link">{t.nav.data}</NavLink>
-            <NavLink to="/visualisations" className="header__nav-link">{t.nav.visualizations}</NavLink>
-            <NavLink to="/visualiser" className="header__nav-link">{t.nav.studio}</NavLink>
-
+            <div
+              className="header__dropdown"
+              onMouseEnter={() => setVizMenuOpen(true)}
+              onMouseLeave={() => setVizMenuOpen(false)}
+            >
+              <button
+                type="button"
+                className="header__nav-link header__nav-link--trigger"
+                aria-expanded={vizMenuOpen}
+                aria-haspopup="menu"
+                onClick={() => setVizMenuOpen((prev) => !prev)}
+              >
+                {t.nav.visualizations}
+                <span className={`header__account-caret${vizMenuOpen ? ' header__account-caret--open' : ''}`} aria-hidden="true">▾</span>
+              </button>
+              {vizMenuOpen && (
+                <div className="header__dropdown-menu" role="menu" aria-label={t.aria.vizMenu}>
+                  <NavLink to="/visualisations" role="menuitem" className="header__dropdown-item" onClick={() => setVizMenuOpen(false)}>{t.nav.publicData}</NavLink>
+                  <NavLink to="/explorer" role="menuitem" className="header__dropdown-item" onClick={() => setVizMenuOpen(false)}>{t.nav.ownData}</NavLink>
+                </div>
+              )}
+            </div>
+            <NavLink to="/donnees" className="header__nav-link">{t.nav.catalogue}</NavLink>
             <NavLink to="/organisations" className="header__nav-link">{t.nav.organizations}</NavLink>
             <NavLink to="/contact" className="header__nav-link">{t.nav.contact}</NavLink>
           </nav>
@@ -374,9 +401,10 @@ export default function Header() {
       {mobileOpen && (
         <nav className="header__mobile-nav" aria-label={t.aria.mobileNav}>
           <NavLink to="/" end className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.home}</NavLink>
-          <NavLink to="/donnees" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.data}</NavLink>
-          <NavLink to="/visualisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.visualizations}</NavLink>
-          <NavLink to="/visualiser" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.studio}</NavLink>
+          <span className="header__mobile-label">{t.nav.visualizations}</span>
+          <NavLink to="/visualisations" className="header__mobile-link header__mobile-link--sub" onClick={() => setMobileOpen(false)}>{t.nav.publicData}</NavLink>
+          <NavLink to="/explorer" className="header__mobile-link header__mobile-link--sub" onClick={() => setMobileOpen(false)}>{t.nav.ownData}</NavLink>
+          <NavLink to="/donnees" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.catalogue}</NavLink>
           <NavLink to="/organisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.organizations}</NavLink>
           <NavLink to="/contact" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.contact}</NavLink>
           {canOpenDashboard && <span className="header__mobile-label">{userMenuLabel}</span>}

@@ -123,7 +123,8 @@ export default function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/visualisations" element={<VisualisationsPage />} />
                 <Route path="/visualisations/:domaine" element={<VisualisationsPage />} />
-                <Route path="/visualiser" element={<StudioPage />} />
+                <Route path="/explorer" element={<StudioPage />} />
+                <Route path="/visualiser" element={<Navigate to="/explorer" replace />} />
 
                 {/* Redirections legacy modules vers la SPA unifiee */}
                 <Route path="/modules/securite" element={<Navigate to="/visualisations/securite" replace />} />

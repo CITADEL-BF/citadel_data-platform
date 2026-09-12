@@ -1,0 +1,98 @@
+.visualize-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+}
+
+.visualize-step__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.visualize-step__view {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-md);
+  background: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  font-weight: 600;
+  font-size: var(--text-body-sm);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.visualize-step__view:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.visualize-step__view--active {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+}
+
+.visualize-step__view-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.visualize-step__body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-24);
+  align-items: start;
+}
+
+.visualize-step__controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.visualize-step__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--on-surface-variant);
+}
+
+.visualize-step__field select {
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-sm);
+  background: var(--surface-container-lowest);
+  color: var(--on-surface);
+  font-size: var(--text-body-md);
+  font-weight: 500;
+}
+
+.visualize-step__chart {
+  min-width: 0;
+  padding: var(--space-16);
+  border-radius: var(--radius-md);
+  background: var(--surface-container-lowest);
+  box-shadow: var(--shadow-card);
+}
+
+.visualize-step__warnings {
+  margin: var(--space-8) 0 0;
+  padding-left: var(--space-20);
+  font-size: var(--text-body-sm);
+  color: var(--color-secondary);
+}
+
+.visualize-step__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+@media (max-width: 720px) {
+  .visualize-step__body {
+    grid-template-columns: 1fr;
+  }
+}

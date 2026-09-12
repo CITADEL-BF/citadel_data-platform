@@ -1,9 +1,8 @@
 /**
- * StudioPage — coquille de l'assistant "Visualiser vos donnees".
+ * StudioPage — coquille de l'assistant "Visualiser vos donnees" (route /explorer).
  *
- * Perimetre actuel (Phase 1, etape 1) : Importer + Verifier.
- * Les etapes Visualiser / Exporter sont des jalons visibles mais pas encore
- * actives — elles seront branchees sur le moteur de vues + export PNG.
+ * Perimetre actuel (Phase 1) : Importer + Verifier + Visualiser (barres / courbe).
+ * L'etape Exporter est un jalon visible mais pas encore actif (export PNG a venir).
  *
  * Tout l'etat utile tient dans `config` (voir state/chartConfig.js), un objet
  * JSON serialisable pense pour devenir plus tard une ligne Supabase sans
@@ -13,9 +12,11 @@
 import { useCallback, useMemo, useState } from 'react'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { createEmptyConfig, buildColumns } from './state/chartConfig'
+import { defaultEncodings, sanitizeEncodings } from './engine/compatibility'
 import { useStudioText } from './i18n'
 import ImportStep from './wizard/ImportStep'
 import DescribeStep from './wizard/DescribeStep'
+import VisualizeStep from './wizard/VisualizeStep'
 import './StudioPage.css'
 
 const STEPS = ['import', 'describe', 'visualize', 'export']
@@ -29,6 +30,7 @@ export default function StudioPage() {
 
   const currentStep = STEPS[stepIndex]
   const hasData = config.data.rows.length > 0
+  const hasView = Boolean(config.view)
 
   const handleParsed = useCallback(
     ({ rows, delimiter, fileName, totalRows: total }) => {
@@ -46,28 +48,61 @@ export default function StudioPage() {
     [language]
   )
 
+  /** Reconstruit les colonnes puis remet l'encodage de la vue d'aplomb. */
+  const recolumn = useCallback((prev, columns) => {
+    if (!prev.view) return { ...prev, columns }
+    return {
+      ...prev,
+      columns,
+      view: { ...prev.view, encodings: sanitizeEncodings(columns, prev.view.encodings) },
+    }
+  }, [])
+
   const handleToggleHeader = useCallback(
     (hasHeaderRow) => {
-      setConfig((prev) => ({
-        ...prev,
-        data: { ...prev.data, hasHeaderRow },
-        columns: buildColumns(prev.data.rows, hasHeaderRow, language),
-      }))
+      setConfig((prev) =>
+        recolumn(
+          { ...prev, data: { ...prev.data, hasHeaderRow } },
+          buildColumns(prev.data.rows, hasHeaderRow, language)
+        )
+      )
     },
-    [language]
+    [language, recolumn]
   )
 
-  const handleChangeType = useCallback((key, type) => {
-    setConfig((prev) => ({
-      ...prev,
-      columns: prev.columns.map((col) => (col.key === key ? { ...col, type } : col)),
-    }))
-  }, [])
+  const handleChangeType = useCallback(
+    (key, type) => {
+      setConfig((prev) => {
+        const columns = prev.columns.map((col) => (col.key === key ? { ...col, type } : col))
+        return recolumn(prev, columns)
+      })
+    },
+    [recolumn]
+  )
 
   const handleReset = useCallback(() => {
     setConfig(createEmptyConfig())
     setTotalRows(0)
     setStepIndex(0)
+  }, [])
+
+  const goVisualize = useCallback(() => {
+    setConfig((prev) => {
+      if (prev.view) return prev
+      const type = 'bar'
+      return { ...prev, view: { type, encodings: defaultEncodings(prev.columns, type) } }
+    })
+    setStepIndex(2)
+  }, [])
+
+  const handleSetView = useCallback((nextView) => {
+    setConfig((prev) => {
+      const typeChanged = prev.view && prev.view.type !== nextView.type
+      const encodings = typeChanged
+        ? sanitizeEncodings(prev.columns, nextView.encodings)
+        : nextView.encodings
+      return { ...prev, view: { ...nextView, encodings } }
+    })
   }, [])
 
   const stepStatus = useMemo(
@@ -77,9 +112,13 @@ export default function StudioPage() {
         label: t.steps[step],
         active: idx === stepIndex,
         done: idx < stepIndex,
-        reachable: idx === 0 || (idx <= 1 && hasData) || idx < stepIndex,
+        reachable:
+          idx === 0 ||
+          (idx === 1 && hasData) ||
+          (idx === 2 && hasData) ||
+          (idx === 3 && hasView),
       })),
-    [stepIndex, hasData, t]
+    [stepIndex, hasData, hasView, t]
   )
 
   return (
@@ -124,12 +163,17 @@ export default function StudioPage() {
               onToggleHeader={handleToggleHeader}
               onChangeType={handleChangeType}
               onBack={handleReset}
-              onNext={() => setStepIndex(2)}
+              onNext={goVisualize}
             />
           )}
 
-          {currentStep === 'visualize' && (
-            <p className="studio__placeholder">{t.placeholder.visualize}</p>
+          {currentStep === 'visualize' && hasData && (
+            <VisualizeStep
+              config={config}
+              onSetView={handleSetView}
+              onBack={() => setStepIndex(1)}
+              onNext={() => setStepIndex(3)}
+            />
           )}
 
           {currentStep === 'export' && (

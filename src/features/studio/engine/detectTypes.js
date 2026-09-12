@@ -49,6 +49,14 @@ function isNumeric(raw) {
   return !Number.isNaN(Number(s))
 }
 
+/** Convertit une valeur brute en nombre exploitable, ou NaN si impossible. */
+export function coerceNumber(raw) {
+  if (raw == null) return NaN
+  const s = normalizeNumber(String(raw))
+  if (s === '' || s === '-' || s === '.') return NaN
+  return Number(s)
+}
+
 function isDate(raw) {
   const s = raw.trim()
   if (DATE_PATTERNS.some((re) => re.test(s))) {

@@ -3,6 +3,7 @@ import HeroSection from './sections/HeroSection'
 
 const CitadelSection = lazy(() => import('./sections/CitadelSection'))
 const ModulesSection = lazy(() => import('./sections/ModulesSection'))
+const ExploreCtaSection = lazy(() => import('./sections/ExploreCtaSection'))
 const StatusBanner = lazy(() => import('./sections/StatusBanner'))
 const MapSection = lazy(() => import('./sections/MapSection'))
 const MethodologySection = lazy(() => import('./sections/MethodologySection'))
@@ -49,6 +50,9 @@ export default function HomePage() {
         <CitadelSection />
         <ModulesSection />
       </Suspense>
+      <DeferredSection fallbackMinHeight="18rem">
+        <ExploreCtaSection />
+      </DeferredSection>
       <DeferredSection fallbackMinHeight="12rem">
         <StatusBanner />
       </DeferredSection>

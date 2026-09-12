@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { DATASETS, DOMAIN_OPTIONS, DOMAIN_STYLES, REGION_OPTIONS } from '../../features/datasets/catalogueData'
 import './DonneesPage.css'
 
@@ -417,6 +417,15 @@ export default function DonneesPage() {
               </div>
             </div>
           </header>
+
+          <Link to="/explorer" className="donnees-explore-banner">
+            <span className="donnees-explore-banner__icon" aria-hidden="true">📊</span>
+            <span className="donnees-explore-banner__text">
+              <strong>Vous avez déjà un fichier CSV&nbsp;?</strong>
+              Visualisez vos propres données directement dans le navigateur, sans compte.
+            </span>
+            <span className="donnees-explore-banner__cta">Ouvrir l’explorateur →</span>
+          </Link>
 
           <div className="donnees-kpis">
             <article>

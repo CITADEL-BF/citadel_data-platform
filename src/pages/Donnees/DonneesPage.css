@@ -605,3 +605,55 @@
     width: 100%;
   }
 }
+
+/* --- Bandeau vers l'explorateur "Visualiser vos donnees" --- */
+.donnees-explore-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  margin-bottom: var(--space-24);
+  padding: var(--space-16) var(--space-20);
+  border-radius: var(--radius-lg);
+  background: var(--surface-container-low);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.donnees-explore-banner:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-elevated);
+}
+
+.donnees-explore-banner__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.donnees-explore-banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-body-sm);
+  color: var(--on-surface-variant);
+}
+
+.donnees-explore-banner__text strong {
+  color: var(--on-surface);
+  font-size: var(--text-body-md);
+}
+
+.donnees-explore-banner__cta {
+  margin-left: auto;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+@media (max-width: 640px) {
+  .donnees-explore-banner {
+    flex-wrap: wrap;
+  }
+  .donnees-explore-banner__cta {
+    margin-left: 0;
+  }
+}
