@@ -20,3 +20,40 @@ export const SAMPLE_CSV = `annee,region,population,pib_par_habitant,latitude,lon
 `
 
 export const SAMPLE_FILE_NAME = 'exemple_regions_burkina.csv'
+
+/**
+ * Second exemple, pense pour tester la vue "Pyramide des ages" : une colonne
+ * binaire (sexe) x une colonne tranche d'age x une mesure.
+ */
+export const SAMPLE_PYRAMID_CSV = `tranche_age,sexe,population
+0-4,Hommes,1850000
+0-4,Femmes,1820000
+5-9,Hommes,1720000
+5-9,Femmes,1700000
+10-14,Hommes,1580000
+10-14,Femmes,1560000
+15-19,Hommes,1400000
+15-19,Femmes,1390000
+20-24,Hommes,1180000
+20-24,Femmes,1200000
+25-29,Hommes,980000
+25-29,Femmes,1010000
+30-34,Hommes,820000
+30-34,Femmes,850000
+35-39,Hommes,690000
+35-39,Femmes,710000
+40-44,Hommes,560000
+40-44,Femmes,580000
+45-49,Hommes,450000
+45-49,Femmes,470000
+50-54,Hommes,360000
+50-54,Femmes,380000
+55-59,Hommes,280000
+55-59,Femmes,300000
+60-64,Hommes,210000
+60-64,Femmes,230000
+65+,Hommes,320000
+65+,Femmes,380000
+`
+
+export const SAMPLE_PYRAMID_FILE_NAME = 'exemple_pyramide_ages.csv'

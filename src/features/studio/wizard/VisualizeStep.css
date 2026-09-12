@@ -67,6 +67,15 @@
   color: var(--on-surface-variant);
 }
 
+.visualize-step__check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
 .visualize-step__field select {
   padding: var(--space-8) var(--space-12);
   border: 1px solid var(--outline-variant);

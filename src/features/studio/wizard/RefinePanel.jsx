@@ -13,10 +13,12 @@ import './RefinePanel.css'
 const PALETTES = ['default', 'vives', 'sobre']
 const DECIMALS = ['auto', '0', '1', '2', '3']
 
-export default function RefinePanel({ meta, source, refine, annotations, hasSeries, onChange }) {
+export default function RefinePanel({ meta, source, refine, annotations, hasSeries, viewSpec, onChange }) {
   const { language } = useLanguage()
   const t = useStudioText()
   const r = t.refine
+  const isPie = viewSpec?.id === 'pie'
+  const showAnnotations = viewSpec?.supportsAnnotations !== false
 
   const setMeta = (patch) => onChange({ meta: { ...meta, ...patch } })
   const setSource = (patch) => onChange({ source: { ...source, ...patch } })
@@ -108,44 +110,56 @@ export default function RefinePanel({ meta, source, refine, annotations, hasSeri
             {r.legend}
           </label>
         )}
+        {isPie && (
+          <label className="refine-panel__check">
+            <input
+              type="checkbox"
+              checked={refine.donut === true}
+              onChange={(e) => setRefine({ donut: e.target.checked })}
+            />
+            {r.donut}
+          </label>
+        )}
       </div>
 
-      <div className="refine-panel__annotations">
-        <div className="refine-panel__annotations-head">
-          <span>{r.annotations}</span>
-          <button type="button" onClick={addAnnotation}>{r.addAnnotation}</button>
-        </div>
-        {annotations.length === 0 && <p className="refine-panel__hint">{r.annotationsHint}</p>}
-        {annotations.map((a) => (
-          <div key={a.id} className="refine-panel__annotation">
-            <label>
-              {r.atValue}
-              <input
-                type="number"
-                value={a.value ?? ''}
-                onChange={(e) =>
-                  updateAnnotation(a.id, { value: e.target.value === '' ? null : coerceNumber(e.target.value) })
-                }
-              />
-            </label>
-            <label className="refine-panel__annotation-label">
-              {r.annotationLabel}
-              <input
-                value={a.label}
-                onChange={(e) => updateAnnotation(a.id, { label: e.target.value })}
-              />
-            </label>
-            <button
-              type="button"
-              className="refine-panel__annotation-remove"
-              onClick={() => removeAnnotation(a.id)}
-              aria-label={r.remove}
-            >
-              ×
-            </button>
+      {showAnnotations && (
+        <div className="refine-panel__annotations">
+          <div className="refine-panel__annotations-head">
+            <span>{r.annotations}</span>
+            <button type="button" onClick={addAnnotation}>{r.addAnnotation}</button>
           </div>
-        ))}
-      </div>
+          {annotations.length === 0 && <p className="refine-panel__hint">{r.annotationsHint}</p>}
+          {annotations.map((a) => (
+            <div key={a.id} className="refine-panel__annotation">
+              <label>
+                {r.atValue}
+                <input
+                  type="number"
+                  value={a.value ?? ''}
+                  onChange={(e) =>
+                    updateAnnotation(a.id, { value: e.target.value === '' ? null : coerceNumber(e.target.value) })
+                  }
+                />
+              </label>
+              <label className="refine-panel__annotation-label">
+                {r.annotationLabel}
+                <input
+                  value={a.label}
+                  onChange={(e) => updateAnnotation(a.id, { label: e.target.value })}
+                />
+              </label>
+              <button
+                type="button"
+                className="refine-panel__annotation-remove"
+                onClick={() => removeAnnotation(a.id)}
+                aria-label={r.remove}
+              >
+                ×
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
     </details>
   )
 }

@@ -9,7 +9,7 @@
 import { useRef, useState } from 'react'
 import { parseCsv } from '../engine/parseCsv'
 import { deserializeConfig } from '../state/chartConfig'
-import { SAMPLE_CSV, SAMPLE_FILE_NAME } from '../sampleData'
+import { SAMPLE_CSV, SAMPLE_FILE_NAME, SAMPLE_PYRAMID_CSV, SAMPLE_PYRAMID_FILE_NAME } from '../sampleData'
 import { useStudioText } from '../i18n'
 import './ImportStep.css'
 
@@ -104,14 +104,24 @@ export default function ImportStep({ onParsed, onProjectLoaded }) {
           className="import-step__file-input"
           onChange={(e) => handleFiles(e.target.files)}
         />
-        <button
-          type="button"
-          className="import-step__sample-link"
-          onClick={() => ingest(SAMPLE_CSV, SAMPLE_FILE_NAME)}
-          disabled={busy}
-        >
-          {t.import.sampleButton}
-        </button>
+        <div className="import-step__sample-links">
+          <button
+            type="button"
+            className="import-step__sample-link"
+            onClick={() => ingest(SAMPLE_CSV, SAMPLE_FILE_NAME)}
+            disabled={busy}
+          >
+            {t.import.sampleButton}
+          </button>
+          <button
+            type="button"
+            className="import-step__sample-link"
+            onClick={() => ingest(SAMPLE_PYRAMID_CSV, SAMPLE_PYRAMID_FILE_NAME)}
+            disabled={busy}
+          >
+            {t.import.samplePyramidButton}
+          </button>
+        </div>
       </div>
 
       <details className="import-step__paste">

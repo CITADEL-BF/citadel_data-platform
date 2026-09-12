@@ -44,6 +44,13 @@
   display: none;
 }
 
+.import-step__sample-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4) var(--space-16);
+}
+
 .import-step__sample-link {
   color: var(--color-primary);
   font-size: var(--text-body-sm);

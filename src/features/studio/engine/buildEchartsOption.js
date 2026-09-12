@@ -4,10 +4,13 @@
  *
  *   1. filtre les lignes (applyFilters) ;
  *   2. selon la vue :
- *        bar / line  -> agrege Y par X (et serie) ;
- *        scatter     -> points bruts (X, Y) ;
- *        histogram   -> repartition de X en classes, effectif ;
- *   3. applique titre / note / source / mention / annotations ;
+ *        bar / line / area -> agrege Y par X (et serie, empilement optionnel) ;
+ *        scatter            -> points bruts (X, Y) ;
+ *        histogram          -> repartition de X en classes, effectif ;
+ *        pie                -> parts agregees par categorie ;
+ *        pyramid            -> barres horizontales miroir (ex. age x sexe) ;
+ *        map                -> choroplethe regions BF ;
+ *   3. applique titre / note / source / mention / annotations (vues cartesiennes) ;
  *   4. produit l'option ECharts, nombres formates (locale + refine).
  */
 
@@ -61,11 +64,37 @@ function aggregate(values, agg) {
   }
 }
 
+function leadingNumber(s) {
+  const m = String(s).match(/-?\d+(\.\d+)?/)
+  return m ? Number(m[0]) : null
+}
+
+/**
+ * Tri des categories : numerique pur si possible, sinon par le nombre en tete
+ * de chaque libelle (utile pour des tranches "0-4", "5-9", "80+"...), sinon
+ * alphabetique.
+ */
 function sortCategories(cats) {
   const allNumeric = cats.every((c) => c !== '' && !Number.isNaN(Number(c)))
-  const copy = [...cats]
-  copy.sort(allNumeric ? (a, b) => Number(a) - Number(b) : (a, b) => a.localeCompare(b, 'fr'))
-  return copy
+  if (allNumeric) return [...cats].sort((a, b) => Number(a) - Number(b))
+  const leading = cats.map(leadingNumber)
+  if (leading.every((n) => n !== null)) {
+    return [...cats].sort((a, b) => leadingNumber(a) - leadingNumber(b))
+  }
+  return [...cats].sort((a, b) => a.localeCompare(b, 'fr'))
+}
+
+/** Bloc titre/sous-titre partage par les vues sans grille cartesienne (carte, circulaire, pyramide). */
+function titleBlock(meta) {
+  if (!meta.title && !meta.note) return undefined
+  return {
+    text: meta.title || '',
+    subtext: meta.note || '',
+    left: 'center',
+    top: 6,
+    textStyle: { fontSize: 17, fontWeight: 700, color: '#191c1e' },
+    subtextStyle: { fontSize: 12.5, color: '#414941' },
+  }
 }
 
 function baseOption(ctx, { legend, xName, yName, xType = 'category', xData, zeroBaseline, rotate }) {
@@ -141,7 +170,7 @@ function buildFooter(ctx) {
   return { lines, graphic }
 }
 
-/* ---------- bar / line ---------- */
+/* ---------- bar / line / area ---------- */
 function buildCategorical(viewSpec, ctx) {
   const { columns, body, encodings, nf, palette, language } = ctx
   const xCol = columnByKey(columns, encodings.x)
@@ -175,12 +204,16 @@ function buildCategorical(viewSpec, ctx) {
       : `${effSeries.length} séries — le graphique risque d'être illisible.`)
   }
 
+  const isLineLike = viewSpec.id === 'line' || viewSpec.id === 'area'
+  const stackEnabled = (viewSpec.id === 'bar' || viewSpec.id === 'area') && sCol && encodings.stacked !== false
+
   const series = effSeries.map((sName, idx) => ({
     name: sCol ? sName : yCol.name,
-    type: viewSpec.id === 'line' ? 'line' : 'bar',
-    stack: viewSpec.id === 'bar' && sCol ? 'total' : undefined,
-    smooth: viewSpec.id === 'line',
-    showSymbol: viewSpec.id === 'line' && categories.length <= 24,
+    type: isLineLike ? 'line' : 'bar',
+    stack: stackEnabled ? 'total' : undefined,
+    areaStyle: viewSpec.id === 'area' ? { opacity: 0.35 } : undefined,
+    smooth: isLineLike,
+    showSymbol: isLineLike && categories.length <= 24,
     emphasis: { focus: 'series' },
     itemStyle: { color: palette[idx % palette.length] },
     data: categories.map((cat) => {
@@ -295,6 +328,124 @@ function buildHistogram(ctx) {
   }
 }
 
+/* ---------- circulaire (camembert / donut) ---------- */
+function buildPie(ctx) {
+  const { columns, body, encodings, nf, language, palette, refine } = ctx
+  const xCol = columnByKey(columns, encodings.x)
+  const yCol = columnByKey(columns, encodings.y)
+  const warnings = []
+  if (!xCol || !yCol) return { series: null, warnings: ['encodage incomplet'] }
+
+  const agg = encodings.agg || 'sum'
+  const buckets = new Map()
+  const order = []
+  for (const row of body) {
+    const xv = (row[xCol.index] ?? '').trim()
+    if (xv === '') continue
+    const yv = coerceNumber(row[yCol.index])
+    if (!buckets.has(xv)) { buckets.set(xv, []); order.push(xv) }
+    buckets.get(xv).push(yv)
+  }
+  if (order.length === 0) return { series: null, warnings: ['aucune donnee a tracer'] }
+
+  const categories = sortCategories(order)
+  if (categories.length > 12) {
+    warnings.push(language === 'en'
+      ? `${categories.length} slices — a bar chart may be more readable.`
+      : `${categories.length} parts — un diagramme en barres serait plus lisible.`)
+  }
+
+  const data = categories.map((c, idx) => ({
+    name: c,
+    value: Number(aggregate(buckets.get(c), agg).toFixed(4)),
+    itemStyle: { color: palette[idx % palette.length] },
+  }))
+  const isDonut = refine.donut === true
+
+  return {
+    series: [{
+      type: 'pie',
+      radius: isDonut ? ['42%', '70%'] : '70%',
+      center: ['50%', '54%'],
+      avoidLabelOverlap: true,
+      itemStyle: { borderColor: '#ffffff', borderWidth: 1 },
+      label: { formatter: (p) => `${p.name}\n${nf.format(p.value)} (${p.percent.toFixed(1)}%)`, fontSize: 11 },
+      labelLine: { length: 8 },
+      data,
+    }],
+    warnings,
+  }
+}
+
+/* ---------- pyramide des ages (barres horizontales miroir) ---------- */
+function buildPyramid(ctx) {
+  const { columns, body, encodings, language, palette } = ctx
+  const xCol = columnByKey(columns, encodings.x) // tranche (ex. age)
+  const yCol = columnByKey(columns, encodings.y) // mesure
+  const sCol = columnByKey(columns, encodings.series) // champ binaire (ex. sexe)
+  const warnings = []
+  if (!xCol || !yCol || !sCol) return { series: null, warnings: ['encodage incomplet'] }
+
+  const agg = encodings.agg || 'sum'
+  const byBand = new Map() // bande -> Map(groupe -> valeurs[])
+  const bandOrder = []
+  const groups = []
+
+  for (const row of body) {
+    const band = (row[xCol.index] ?? '').trim()
+    const group = (row[sCol.index] ?? '').trim()
+    if (band === '' || group === '') continue
+    const val = coerceNumber(row[yCol.index])
+    if (!byBand.has(band)) { byBand.set(band, new Map()); bandOrder.push(band) }
+    const inner = byBand.get(band)
+    if (!inner.has(group)) { inner.set(group, []); if (!groups.includes(group)) groups.push(group) }
+    inner.get(group).push(val)
+  }
+  if (bandOrder.length === 0) return { series: null, warnings: ['aucune donnee a tracer'] }
+  if (groups.length !== 2) {
+    warnings.push(language === 'en'
+      ? `The comparison field has ${groups.length} categories — a pyramid needs exactly 2.`
+      : `Le champ de comparaison comporte ${groups.length} catégories — une pyramide en nécessite exactement 2.`)
+  }
+
+  const bands = sortCategories(bandOrder)
+  const [g1, g2] = [...groups].sort((a, b) => a.localeCompare(b, 'fr'))
+
+  const series = []
+  if (g1 != null) {
+    series.push({
+      name: g1,
+      type: 'bar',
+      itemStyle: { color: palette[0] },
+      emphasis: { focus: 'series' },
+      data: bands.map((b) => {
+        const vals = byBand.get(b)?.get(g1) ?? []
+        return vals.length ? -Number(aggregate(vals, agg).toFixed(4)) : null
+      }),
+    })
+  }
+  if (g2 != null) {
+    series.push({
+      name: g2,
+      type: 'bar',
+      itemStyle: { color: palette[1] },
+      emphasis: { focus: 'series' },
+      data: bands.map((b) => {
+        const vals = byBand.get(b)?.get(g2) ?? []
+        return vals.length ? Number(aggregate(vals, agg).toFixed(4)) : null
+      }),
+    })
+  }
+
+  return {
+    series,
+    bands,
+    xName: xCol.name,
+    yName: agg === 'count' ? (language === 'en' ? 'Count' : 'Effectif') : yCol.name,
+    warnings,
+  }
+}
+
 /* ---------- carte (choroplethe regions BF) ---------- */
 function buildMap(ctx, boundaries) {
   const { columns, body, encodings, language } = ctx
@@ -405,14 +556,9 @@ export function buildEchartsOption({
       return { option: { title: meta.title ? { text: meta.title } : undefined }, warnings: builtMap.warnings }
     }
     const [lo, hi] = SEQUENTIAL_RAMPS[refine.palette] || SEQUENTIAL_RAMPS.default
-    const hasTitle = Boolean(meta.title || meta.note)
     const bottomForFooter = 18 + ctx.footerLines.length * 14
     const option = {
-      title: hasTitle
-        ? { text: meta.title || '', subtext: meta.note || '', left: 'center', top: 6,
-            textStyle: { fontSize: 17, fontWeight: 700, color: '#191c1e' },
-            subtextStyle: { fontSize: 12.5, color: '#414941' } }
-        : undefined,
+      title: titleBlock(meta),
       tooltip: {
         trigger: 'item',
         formatter: (p) => `${p.name}<br/>${builtMap.yName}: ${p.value == null ? '—' : nf.format(p.value)}`,
@@ -434,6 +580,55 @@ export function buildEchartsOption({
       series: builtMap.series,
     }
     return { option, warnings: builtMap.warnings }
+  }
+
+  if (viewSpec.id === 'pie') {
+    const builtPie = buildPie(ctx)
+    if (!builtPie.series) {
+      return { option: { title: titleBlock(meta) }, warnings: builtPie.warnings }
+    }
+    const bottomForFooter = 18 + ctx.footerLines.length * 14
+    const option = {
+      title: titleBlock(meta),
+      tooltip: { trigger: 'item', valueFormatter: (v) => (v == null ? '—' : nf.format(v)) },
+      legend: { type: 'scroll', bottom: bottomForFooter },
+      graphic: ctx.footerGraphic,
+      series: builtPie.series,
+    }
+    return { option, warnings: builtPie.warnings }
+  }
+
+  if (viewSpec.id === 'pyramid') {
+    const builtPyramid = buildPyramid(ctx)
+    if (!builtPyramid.series || builtPyramid.series.length === 0) {
+      return { option: { title: titleBlock(meta) }, warnings: builtPyramid.warnings }
+    }
+    const hasTitle = Boolean(meta.title || meta.note)
+    const bottomForFooter = 18 + ctx.footerLines.length * 14
+    const option = {
+      title: titleBlock(meta),
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: { type: 'shadow' },
+        valueFormatter: (v) => (v == null ? '—' : nf.format(Math.abs(v))),
+      },
+      legend: { bottom: bottomForFooter },
+      grid: {
+        left: 8, right: 16,
+        top: hasTitle ? 48 : 24,
+        bottom: 26 + bottomForFooter,
+        containLabel: true,
+      },
+      graphic: ctx.footerGraphic,
+      xAxis: {
+        type: 'value',
+        name: builtPyramid.yName,
+        axisLabel: { formatter: (v) => nf.format(Math.abs(v)) },
+      },
+      yAxis: { type: 'category', data: builtPyramid.bands, name: builtPyramid.xName },
+      series: builtPyramid.series,
+    }
+    return { option, warnings: builtPyramid.warnings }
   }
 
   let built

@@ -26,6 +26,10 @@ export const measureColumns = (columns) =>
 export const dimensionColumns = (columns) =>
   columns.filter((c) => rolesForType(c.type).includes('dimension'))
 
+/** Dimensions a exactement 2 valeurs distinctes (ex. sexe) : champ de miroir pour la pyramide des ages. */
+export const binaryDimensionColumns = (columns) =>
+  dimensionColumns(columns).filter((c) => c.distinct === 2)
+
 export const AGGREGATIONS = ['sum', 'mean', 'count', 'min', 'max']
 
 export const AGG_LABELS = {

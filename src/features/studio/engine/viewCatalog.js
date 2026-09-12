@@ -3,13 +3,17 @@
  *
  * Chaque vue declare les roles d'encodage dont elle a besoin. Le moteur de
  * compatibilite (compatibility.js) croise ces besoins avec les types de
- * colonnes detectes pour proposer / griser les vues.
+ * colonnes detectees pour proposer / griser les vues.
  *
- *   bar / line  : X = dimension, Y = mesure agregee, serie optionnelle
- *   scatter     : X = mesure, Y = mesure (points bruts), serie optionnelle
- *   histogram   : X = mesure (repartie en classes), Y = effectif
- *
- * Carte et table viendront ensuite, sur le meme modele.
+ *   bar / line / area : X = dimension, Y = mesure agregee, serie optionnelle
+ *                        (bar/area peuvent s'empiler quand une serie est choisie)
+ *   scatter            : X = mesure, Y = mesure (points bruts), serie optionnelle
+ *   histogram          : X = mesure (repartie en classes), Y = effectif
+ *   pie                : X = dimension (parts), Y = mesure agregee
+ *   pyramid            : X = dimension (ex. tranche d'age), serie = dimension
+ *                         BINAIRE obligatoire (ex. sexe), Y = mesure agregee,
+ *                         barres horizontales miroir
+ *   map                : X = dimension (nom de region BF), Y = mesure agregee
  */
 
 export const VIEWS = {
@@ -20,6 +24,7 @@ export const VIEWS = {
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: true,
     usesAggregation: true,
+    supportsAnnotations: true,
     zeroBaseline: true,
   },
   line: {
@@ -29,8 +34,20 @@ export const VIEWS = {
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: true,
     usesAggregation: true,
+    supportsAnnotations: true,
     prefersTemporalX: true,
     zeroBaseline: false,
+  },
+  area: {
+    id: 'area',
+    label: { fr: 'Aires', en: 'Area' },
+    icon: '🌊',
+    needs: { x: 'dimension', y: 'measure' },
+    allowsSeries: true,
+    usesAggregation: true,
+    supportsAnnotations: true,
+    prefersTemporalX: true,
+    zeroBaseline: true,
   },
   scatter: {
     id: 'scatter',
@@ -39,6 +56,7 @@ export const VIEWS = {
     needs: { x: 'measure', y: 'measure' },
     allowsSeries: true,
     usesAggregation: false,
+    supportsAnnotations: true,
     zeroBaseline: false,
   },
   histogram: {
@@ -48,7 +66,29 @@ export const VIEWS = {
     needs: { x: 'measure' },
     allowsSeries: false,
     usesAggregation: false,
+    supportsAnnotations: true,
     zeroBaseline: true,
+  },
+  pie: {
+    id: 'pie',
+    label: { fr: 'Circulaire', en: 'Pie' },
+    icon: '🥧',
+    needs: { x: 'dimension', y: 'measure' },
+    allowsSeries: false,
+    usesAggregation: true,
+    supportsAnnotations: false,
+    zeroBaseline: false,
+  },
+  pyramid: {
+    id: 'pyramid',
+    label: { fr: 'Pyramide des âges', en: 'Population pyramid' },
+    icon: '🔺',
+    needs: { x: 'dimension', y: 'measure', series: 'binary' },
+    allowsSeries: true,
+    requiresSeries: true,
+    usesAggregation: true,
+    supportsAnnotations: false,
+    zeroBaseline: false,
   },
   map: {
     id: 'map',
@@ -57,6 +97,7 @@ export const VIEWS = {
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: false,
     usesAggregation: true,
+    supportsAnnotations: false,
     isGeo: true,
     zeroBaseline: false,
   },

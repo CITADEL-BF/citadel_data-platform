@@ -2,7 +2,8 @@
  * VisualizeStep — etape 3 : choisir une vue, affecter les colonnes aux axes,
  * filtrer les lignes, afficher le graphe.
  *
- * Vues : barres, courbe, nuage de points, histogramme.
+ * Vues : barres (empilees/groupees), courbe, aires, nuage de points,
+ * histogramme, circulaire, pyramide des ages, carte (regions BF).
  */
 
 import { useMemo } from 'react'
@@ -10,7 +11,7 @@ import ReactECharts from 'echarts-for-react'
 import { useLanguage } from '../../../contexts/LanguageContext'
 import { availableViews } from '../engine/compatibility'
 import { getView } from '../engine/viewCatalog'
-import { dimensionColumns, measureColumns, AGGREGATIONS, AGG_LABELS } from '../engine/roles'
+import { dimensionColumns, measureColumns, binaryDimensionColumns, AGGREGATIONS, AGG_LABELS } from '../engine/roles'
 import { buildEchartsOption } from '../engine/buildEchartsOption'
 import { useRegionBoundaries } from '../hooks/useRegionBoundaries'
 import FiltersPanel from '../components/FiltersPanel'
@@ -35,7 +36,9 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
 
   const xChoices = viewSpec.needs.x === 'measure' ? measures : dims
   const yChoices = measures.filter((c) => c.key !== encodings.x)
-  const seriesChoices = dims.filter((c) => c.key !== encodings.x)
+  const seriesChoices = (viewSpec.requiresSeries ? binaryDimensionColumns(columns) : dims)
+    .filter((c) => c.key !== encodings.x)
+  const showStackToggle = (view.type === 'bar' || view.type === 'area') && Boolean(encodings.series)
 
   const boundaries = useRegionBoundaries(viewSpec.isGeo)
 
@@ -117,16 +120,27 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
 
             {viewSpec.allowsSeries && (
               <label className="visualize-step__field">
-                <span>{t.visualize.series}</span>
+                <span>{viewSpec.requiresSeries ? t.visualize.compareField : t.visualize.series}</span>
                 <select
                   value={encodings.series || ''}
                   onChange={(e) => setEncoding({ series: e.target.value || null })}
                 >
-                  <option value="">{t.visualize.noSeries}</option>
+                  {!viewSpec.requiresSeries && <option value="">{t.visualize.noSeries}</option>}
                   {seriesChoices.map((c) => (
                     <option key={c.key} value={c.key}>{c.name}</option>
                   ))}
                 </select>
+              </label>
+            )}
+
+            {showStackToggle && (
+              <label className="visualize-step__check">
+                <input
+                  type="checkbox"
+                  checked={encodings.stacked !== false}
+                  onChange={(e) => setEncoding({ stacked: e.target.checked })}
+                />
+                {t.visualize.stacked}
               </label>
             )}
           </div>
@@ -145,6 +159,7 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
             refine={refine}
             annotations={annotations}
             hasSeries={hasSeries}
+            viewSpec={viewSpec}
             onChange={onPatchConfig}
           />
         </div>
