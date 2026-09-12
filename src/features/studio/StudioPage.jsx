@@ -1,0 +1,142 @@
+/**
+ * StudioPage — coquille de l'assistant "Visualiser vos donnees".
+ *
+ * Perimetre actuel (Phase 1, etape 1) : Importer + Verifier.
+ * Les etapes Visualiser / Exporter sont des jalons visibles mais pas encore
+ * actives — elles seront branchees sur le moteur de vues + export PNG.
+ *
+ * Tout l'etat utile tient dans `config` (voir state/chartConfig.js), un objet
+ * JSON serialisable pense pour devenir plus tard une ligne Supabase sans
+ * retoucher le moteur.
+ */
+
+import { useCallback, useMemo, useState } from 'react'
+import { useLanguage } from '../../contexts/LanguageContext'
+import { createEmptyConfig, buildColumns } from './state/chartConfig'
+import { useStudioText } from './i18n'
+import ImportStep from './wizard/ImportStep'
+import DescribeStep from './wizard/DescribeStep'
+import './StudioPage.css'
+
+const STEPS = ['import', 'describe', 'visualize', 'export']
+
+export default function StudioPage() {
+  const { language } = useLanguage()
+  const t = useStudioText()
+  const [stepIndex, setStepIndex] = useState(0)
+  const [config, setConfig] = useState(createEmptyConfig)
+  const [totalRows, setTotalRows] = useState(0)
+
+  const currentStep = STEPS[stepIndex]
+  const hasData = config.data.rows.length > 0
+
+  const handleParsed = useCallback(
+    ({ rows, delimiter, fileName, totalRows: total }) => {
+      const hasHeaderRow = true
+      setConfig((prev) => ({
+        ...prev,
+        data: { ...prev.data, mode: 'inline', rows, delimiter, fileName, hasHeaderRow },
+        columns: buildColumns(rows, hasHeaderRow, language),
+        view: null,
+        filters: [],
+      }))
+      setTotalRows(total)
+      setStepIndex(1)
+    },
+    [language]
+  )
+
+  const handleToggleHeader = useCallback(
+    (hasHeaderRow) => {
+      setConfig((prev) => ({
+        ...prev,
+        data: { ...prev.data, hasHeaderRow },
+        columns: buildColumns(prev.data.rows, hasHeaderRow, language),
+      }))
+    },
+    [language]
+  )
+
+  const handleChangeType = useCallback((key, type) => {
+    setConfig((prev) => ({
+      ...prev,
+      columns: prev.columns.map((col) => (col.key === key ? { ...col, type } : col)),
+    }))
+  }, [])
+
+  const handleReset = useCallback(() => {
+    setConfig(createEmptyConfig())
+    setTotalRows(0)
+    setStepIndex(0)
+  }, [])
+
+  const stepStatus = useMemo(
+    () =>
+      STEPS.map((step, idx) => ({
+        step,
+        label: t.steps[step],
+        active: idx === stepIndex,
+        done: idx < stepIndex,
+        reachable: idx === 0 || (idx <= 1 && hasData) || idx < stepIndex,
+      })),
+    [stepIndex, hasData, t]
+  )
+
+  return (
+    <div className="studio">
+      <div className="container studio__inner">
+        <header className="studio__head">
+          <h1 className="studio__title">{t.pageTitle}</h1>
+          <p className="studio__intro">{t.pageIntro}</p>
+        </header>
+
+        <ol className="studio__steps" aria-label={t.pageTitle}>
+          {stepStatus.map(({ step, label, active, done, reachable }, idx) => (
+            <li
+              key={step}
+              className={
+                'studio__step' +
+                (active ? ' studio__step--active' : '') +
+                (done ? ' studio__step--done' : '')
+              }
+            >
+              <button
+                type="button"
+                className="studio__step-btn"
+                disabled={!reachable}
+                aria-current={active ? 'step' : undefined}
+                onClick={() => reachable && setStepIndex(idx)}
+              >
+                <span className="studio__step-num">{idx + 1}</span>
+                <span className="studio__step-label">{label}</span>
+              </button>
+            </li>
+          ))}
+        </ol>
+
+        <section className="studio__panel">
+          {currentStep === 'import' && <ImportStep onParsed={handleParsed} />}
+
+          {currentStep === 'describe' && hasData && (
+            <DescribeStep
+              config={config}
+              totalRows={totalRows}
+              onToggleHeader={handleToggleHeader}
+              onChangeType={handleChangeType}
+              onBack={handleReset}
+              onNext={() => setStepIndex(2)}
+            />
+          )}
+
+          {currentStep === 'visualize' && (
+            <p className="studio__placeholder">{t.placeholder.visualize}</p>
+          )}
+
+          {currentStep === 'export' && (
+            <p className="studio__placeholder">{t.placeholder.export}</p>
+          )}
+        </section>
+      </div>
+    </div>
+  )
+}

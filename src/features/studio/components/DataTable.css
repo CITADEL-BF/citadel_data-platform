@@ -1,0 +1,113 @@
+.data-table {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.data-table__scroll {
+  overflow: auto;
+  max-height: 60vh;
+  border-radius: var(--radius-md);
+  background: var(--surface-container-lowest);
+  box-shadow: var(--shadow-card);
+}
+
+.data-table__grid {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: max-content;
+  min-width: 100%;
+  font-size: var(--text-body-sm);
+}
+
+.data-table__grid th,
+.data-table__grid td {
+  padding: var(--space-8) var(--space-12);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.data-table__col-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-container-high);
+  vertical-align: top;
+  border-bottom: 1px solid var(--outline-variant);
+}
+
+.data-table__col-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--on-surface);
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-table__type-select {
+  margin-top: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-label-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--outline-variant);
+  background: var(--surface-container-lowest);
+  color: var(--on-surface-variant);
+}
+
+.data-table__col-detected {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--text-label-sm);
+  color: var(--color-secondary);
+}
+
+.data-table__rownum {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--surface-container);
+  color: var(--on-surface-variant);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  min-width: 3ch;
+}
+
+.data-table__col-head.data-table__rownum {
+  z-index: 3;
+}
+
+.data-table__cell {
+  border-bottom: 1px solid var(--surface-container-highest);
+  color: var(--on-surface);
+  font-variant-numeric: tabular-nums;
+}
+
+.data-table__cell--number,
+.data-table__cell--geo-lat,
+.data-table__cell--geo-lon {
+  text-align: right;
+  color: var(--domain-economie);
+}
+
+.data-table__cell--date {
+  color: var(--domain-education);
+}
+
+.data-table__cell--category {
+  color: var(--on-surface);
+}
+
+.data-table__cell--text {
+  color: var(--on-surface-variant);
+}
+
+.data-table__grid tbody tr:nth-child(even) .data-table__cell {
+  background: var(--surface-container-low);
+}
+
+.data-table__note {
+  font-size: var(--text-body-sm);
+  color: var(--on-surface-variant);
+}

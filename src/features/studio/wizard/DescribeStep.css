@@ -1,0 +1,61 @@
+.describe-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+}
+
+.describe-step__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+.describe-step__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.describe-step__count {
+  font-size: var(--text-body-sm);
+  color: var(--on-surface-variant);
+  font-variant-numeric: tabular-nums;
+}
+
+.describe-step__problems {
+  padding: var(--space-16);
+  border-radius: var(--radius-md);
+  background: var(--surface-container-low);
+  box-shadow: var(--shadow-card);
+}
+
+.describe-step__problems-title {
+  font-size: var(--text-title-md);
+  margin-bottom: var(--space-8);
+}
+
+.describe-step__ok {
+  font-size: var(--text-body-sm);
+  color: var(--color-primary);
+}
+
+.describe-step__problems-list {
+  margin: 0;
+  padding-left: var(--space-20);
+  font-size: var(--text-body-sm);
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.describe-step__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-12);
+}

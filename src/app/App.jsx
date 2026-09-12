@@ -8,6 +8,7 @@ import { LanguageProvider } from '../contexts/LanguageContext'
 
 const HomePage = lazy(() => import('../pages/Home/HomePage'))
 const VisualisationsPage = lazy(() => import('../pages/Visualisations/VisualisationsPage'))
+const StudioPage = lazy(() => import('../features/studio/StudioPage'))
 const ContactPage = lazy(() => import('../pages/Contact/ContactPage'))
 const FAQPage = lazy(() => import('../pages/FAQ/FAQPage'))
 const DonneesPage = lazy(() => import('../pages/Donnees/DonneesPage'))
@@ -122,6 +123,7 @@ export default function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/visualisations" element={<VisualisationsPage />} />
                 <Route path="/visualisations/:domaine" element={<VisualisationsPage />} />
+                <Route path="/visualiser" element={<StudioPage />} />
 
                 {/* Redirections legacy modules vers la SPA unifiee */}
                 <Route path="/modules/securite" element={<Navigate to="/visualisations/securite" replace />} />

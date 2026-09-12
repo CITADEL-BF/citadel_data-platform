@@ -39,6 +39,7 @@ const TRANSLATIONS = {
       home: 'Accueil',
       data: 'Données',
       visualizations: 'Visualisations',
+      studio: 'Visualiser mes données',
       organizations: 'Organisations',
       contact: 'Contact',
     },
@@ -91,6 +92,7 @@ const TRANSLATIONS = {
       home: 'Home',
       data: 'Data',
       visualizations: 'Visualizations',
+      studio: 'Visualize my data',
       organizations: 'Organizations',
       contact: 'Contact',
     },
@@ -315,6 +317,7 @@ export default function Header() {
             </NavLink>
             <NavLink to="/donnees" className="header__nav-link">{t.nav.data}</NavLink>
             <NavLink to="/visualisations" className="header__nav-link">{t.nav.visualizations}</NavLink>
+            <NavLink to="/visualiser" className="header__nav-link">{t.nav.studio}</NavLink>
 
             <NavLink to="/organisations" className="header__nav-link">{t.nav.organizations}</NavLink>
             <NavLink to="/contact" className="header__nav-link">{t.nav.contact}</NavLink>
@@ -373,6 +376,7 @@ export default function Header() {
           <NavLink to="/" end className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.home}</NavLink>
           <NavLink to="/donnees" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.data}</NavLink>
           <NavLink to="/visualisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.visualizations}</NavLink>
+          <NavLink to="/visualiser" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.studio}</NavLink>
           <NavLink to="/organisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.organizations}</NavLink>
           <NavLink to="/contact" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.contact}</NavLink>
           {canOpenDashboard && <span className="header__mobile-label">{userMenuLabel}</span>}

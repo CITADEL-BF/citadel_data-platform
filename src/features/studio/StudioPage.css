@@ -1,0 +1,107 @@
+.studio {
+  padding: var(--space-32) 0 var(--space-64);
+}
+
+.studio__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.studio__head {
+  max-width: 760px;
+}
+
+.studio__title {
+  font-size: var(--text-headline-lg);
+  font-weight: 800;
+}
+
+.studio__intro {
+  margin-top: var(--space-8);
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-lg);
+}
+
+/* --- Fil d'etapes --- */
+.studio__steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.studio__step {
+  flex: 1 1 160px;
+}
+
+.studio__step-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  width: 100%;
+  padding: var(--space-12) var(--space-16);
+  border-radius: var(--radius-md);
+  background: var(--surface-container-low);
+  color: var(--on-surface-variant);
+  font-weight: 600;
+  font-size: var(--text-body-sm);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.studio__step-btn:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.studio__step--active .studio__step-btn {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-container));
+  color: var(--color-on-primary);
+}
+
+.studio__step--done .studio__step-btn {
+  background: var(--surface-container-high);
+  color: var(--color-primary);
+}
+
+.studio__step-num {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.35);
+  font-variant-numeric: tabular-nums;
+}
+
+.studio__step--active .studio__step-num {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.studio__step:not(.studio__step--active):not(.studio__step--done) .studio__step-num {
+  background: var(--surface-container-highest);
+}
+
+/* --- Panneau d'etape --- */
+.studio__panel {
+  padding: var(--space-24);
+  border-radius: var(--radius-lg);
+  background: var(--surface-container-lowest);
+  box-shadow: var(--shadow-ambient);
+  min-height: 320px;
+}
+
+.studio__placeholder {
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-md);
+  padding: var(--space-32);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .studio__step {
+    flex-basis: 100%;
+  }
+}
