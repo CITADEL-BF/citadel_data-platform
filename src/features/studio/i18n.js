@@ -40,6 +40,11 @@ const TEXT = {
       colsCount: (n) => `${n} colonne${n > 1 ? 's' : ''}`,
       typeColumn: 'Type',
       detected: 'détecté',
+      renameColumn: 'Renommer la colonne',
+      transpose: '⇄ Transposer lignes/colonnes',
+      addColumn: '+ Ajouter une colonne',
+      undo: '↺ Annuler',
+      newColumnName: 'Nouvelle colonne',
       problemsTitle: 'Points à vérifier',
       noProblems: 'Aucune anomalie détectée sur les types.',
       nonConforming: (name, count, examples) =>
@@ -150,6 +155,11 @@ const TEXT = {
       colsCount: (n) => `${n} column${n > 1 ? 's' : ''}`,
       typeColumn: 'Type',
       detected: 'detected',
+      renameColumn: 'Rename column',
+      transpose: '⇄ Transpose rows/columns',
+      addColumn: '+ Add a column',
+      undo: '↺ Undo',
+      newColumnName: 'New column',
       problemsTitle: 'Things to check',
       noProblems: 'No type anomalies detected.',
       nonConforming: (name, count, examples) =>

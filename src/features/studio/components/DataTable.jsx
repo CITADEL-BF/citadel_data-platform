@@ -1,6 +1,11 @@
 /**
- * DataTable — apercu tabulaire des donnees importees avec, en entete, un
- * selecteur de type par colonne.
+ * DataTable — apercu tabulaire des donnees importees : nom et type editables
+ * en entete, valeurs editables cellule par cellule.
+ *
+ * Edition en "non controle" (defaultValue + commit au blur/Entree) pour ne
+ * pas re-rendre toute la grille a chaque frappe ; la cle inclut la valeur
+ * courante pour que la cellule se remonte proprement si la donnee change de
+ * l'exterieur (annuler, transposition...).
  *
  * Presentation seulement : l'etat (colonnes, matrice) vient du parent.
  */
@@ -13,7 +18,11 @@ import './DataTable.css'
 
 const MAX_ROWS = 200
 
-export default function DataTable({ rows, columns, hasHeaderRow, onChangeType }) {
+function commitOnEnter(e) {
+  if (e.key === 'Enter') e.currentTarget.blur()
+}
+
+export default function DataTable({ rows, columns, hasHeaderRow, onChangeType, onEditCell, onRenameColumn }) {
   const { language } = useLanguage()
   const t = useStudioText()
   const typeLabels = TYPE_LABELS[language] || TYPE_LABELS.fr
@@ -24,6 +33,7 @@ export default function DataTable({ rows, columns, hasHeaderRow, onChangeType })
   }, [rows, hasHeaderRow])
 
   const totalBody = hasHeaderRow ? rows.length - 1 : rows.length
+  const rowOffset = hasHeaderRow ? 1 : 0
 
   return (
     <div className="data-table">
@@ -34,7 +44,19 @@ export default function DataTable({ rows, columns, hasHeaderRow, onChangeType })
               <th className="data-table__rownum" scope="col" aria-label="#" />
               {columns.map((col) => (
                 <th key={col.key} scope="col" className="data-table__col-head">
-                  <span className="data-table__col-name" title={col.name}>{col.name}</span>
+                  <input
+                    key={`name:${col.key}:${col.name}`}
+                    className="data-table__col-name"
+                    defaultValue={col.name}
+                    title={col.name}
+                    aria-label={`${t.describe.renameColumn} — ${col.name}`}
+                    onKeyDown={commitOnEnter}
+                    onBlur={(e) => {
+                      const value = e.target.value.trim()
+                      if (value && value !== col.name) onRenameColumn(col.key, value)
+                      else e.target.value = col.name
+                    }}
+                  />
                   <select
                     className="data-table__type-select"
                     value={col.type}
@@ -58,14 +80,26 @@ export default function DataTable({ rows, columns, hasHeaderRow, onChangeType })
             {bodyRows.map((row, rIdx) => (
               <tr key={rIdx}>
                 <td className="data-table__rownum">{rIdx + 1}</td>
-                {columns.map((col) => (
-                  <td
-                    key={col.key}
-                    className={`data-table__cell data-table__cell--${col.type}`}
-                  >
-                    {row[col.index] ?? ''}
-                  </td>
-                ))}
+                {columns.map((col) => {
+                  const value = row[col.index] ?? ''
+                  return (
+                    <td
+                      key={col.key}
+                      className={`data-table__cell data-table__cell--${col.type}`}
+                    >
+                      <input
+                        key={`cell:${col.key}:${rIdx}:${value}`}
+                        className="data-table__cell-input"
+                        defaultValue={value}
+                        onKeyDown={commitOnEnter}
+                        onBlur={(e) => {
+                          const next = e.target.value
+                          if (next !== value) onEditCell(rIdx + rowOffset, col.index, next)
+                        }}
+                      />
+                    </td>
+                  )
+                })}
               </tr>
             ))}
           </tbody>

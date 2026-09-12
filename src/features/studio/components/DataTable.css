@@ -38,12 +38,28 @@
 
 .data-table__col-name {
   display: block;
+  width: 100%;
+  max-width: 220px;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
   font-family: var(--font-display);
+  font-size: inherit;
   font-weight: 700;
   color: var(--on-surface);
-  max-width: 220px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.data-table__col-name:hover {
+  border-color: var(--outline-variant);
+}
+
+.data-table__col-name:focus {
+  border-color: var(--color-primary);
+  background: var(--surface-container-lowest);
+  outline: none;
 }
 
 .data-table__type-select {
@@ -82,6 +98,29 @@
   border-bottom: 1px solid var(--surface-container-highest);
   color: var(--on-surface);
   font-variant-numeric: tabular-nums;
+  padding: var(--space-4) var(--space-8);
+}
+
+.data-table__cell-input {
+  width: 100%;
+  min-width: 8ch;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+}
+
+.data-table__cell-input:hover {
+  border-color: var(--outline-variant);
+}
+
+.data-table__cell-input:focus {
+  border-color: var(--color-primary);
+  background: var(--surface-container-lowest);
+  outline: none;
 }
 
 .data-table__cell--number,

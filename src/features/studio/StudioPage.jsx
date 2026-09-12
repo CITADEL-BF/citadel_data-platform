@@ -2,10 +2,11 @@
  * StudioPage — coquille de l'assistant "Visualiser vos donnees" (route /explorer).
  *
  * Perimetre actuel (Phase 1) : Importer (CSV, lien de configuration partage,
- * ou reouverture d'un projet .json) + Verifier + Visualiser (8 vues : barres,
- * courbe, aires, nuage de points, histogramme, circulaire, pyramide des ages,
- * cartes BF choroplethe/points) + filtres + personnalisation + Exporter (PNG,
- * apercu responsive, projet .json, lien de configuration).
+ * ou reouverture d'un projet .json) + Verifier (types, edition des noms/
+ * cellules, transposition, ajout de colonne, annuler) + Visualiser (8 vues :
+ * barres, courbe, aires, nuage de points, histogramme, circulaire, pyramide
+ * des ages, cartes BF choroplethe/points) + filtres + personnalisation +
+ * Exporter (PNG, apercu responsive, projet .json, lien de configuration).
  *
  * Tout l'etat utile tient dans `config` (voir state/chartConfig.js), un objet
  * JSON serialisable pense pour devenir plus tard une ligne Supabase sans
@@ -18,6 +19,7 @@ import { useLanguage } from '../../contexts/LanguageContext'
 import { createEmptyConfig, buildColumns } from './state/chartConfig'
 import { defaultEncodings, sanitizeEncodings } from './engine/compatibility'
 import { pruneFilters } from './engine/applyFilters'
+import { transposeRows, appendColumn, setCell, renameHeaderCell } from './engine/matrixOps'
 import { readShareParam, applySharedConfig } from './state/urlState'
 import { useStudioText } from './i18n'
 import ImportStep from './wizard/ImportStep'
@@ -27,13 +29,17 @@ import ExportStep from './wizard/ExportStep'
 import './StudioPage.css'
 
 const STEPS = ['import', 'describe', 'visualize', 'export']
+const HISTORY_LIMIT = 20
 
 export default function StudioPage() {
   const { language } = useLanguage()
   const t = useStudioText()
   const [stepIndex, setStepIndex] = useState(0)
   const [config, setConfig] = useState(createEmptyConfig)
-  const [totalRows, setTotalRows] = useState(0)
+  // Pile d'annulation pour les editions de l'etape "Verifier" (types, noms,
+  // cellules, transposition, ajout de colonne) : uniquement des references
+  // vers d'anciennes config, pas de copie profonde.
+  const [history, setHistory] = useState([])
   const [searchParams, setSearchParams] = useSearchParams()
   // Capture unique, au montage : un lien de config partage n'est applique
   // qu'une fois, au tout premier import reussi.
@@ -44,7 +50,7 @@ export default function StudioPage() {
   const hasView = Boolean(config.view)
 
   const handleParsed = useCallback(
-    ({ rows, delimiter, fileName, totalRows: total }) => {
+    ({ rows, delimiter, fileName }) => {
       const hasHeaderRow = true
       setConfig((prev) => {
         const base = {
@@ -56,7 +62,7 @@ export default function StudioPage() {
         }
         return sharedConfig ? applySharedConfig(base, sharedConfig) : base
       })
-      setTotalRows(total)
+      setHistory([])
       setStepIndex(sharedConfig?.view ? 2 : 1)
       if (sharedConfig) {
         setSharedConfig(null)
@@ -81,8 +87,14 @@ export default function StudioPage() {
     }
   }, [])
 
+  /** Empile l'etat courant pour l'annulation (etape "Verifier"). */
+  const pushHistory = useCallback(() => {
+    setHistory((h) => [...h.slice(-(HISTORY_LIMIT - 1)), config])
+  }, [config])
+
   const handleToggleHeader = useCallback(
     (hasHeaderRow) => {
+      pushHistory()
       setConfig((prev) =>
         recolumn(
           { ...prev, data: { ...prev.data, hasHeaderRow } },
@@ -90,22 +102,70 @@ export default function StudioPage() {
         )
       )
     },
-    [language, recolumn]
+    [language, recolumn, pushHistory]
   )
 
   const handleChangeType = useCallback(
     (key, type) => {
+      pushHistory()
       setConfig((prev) => {
         const columns = prev.columns.map((col) => (col.key === key ? { ...col, type } : col))
         return recolumn(prev, columns)
       })
     },
-    [recolumn]
+    [recolumn, pushHistory]
   )
+
+  const handleRenameColumn = useCallback(
+    (key, name) => {
+      pushHistory()
+      setConfig((prev) => {
+        const col = prev.columns.find((c) => c.key === key)
+        if (!col) return prev
+        const rows = prev.data.hasHeaderRow ? renameHeaderCell(prev.data.rows, col.index, name) : prev.data.rows
+        const columns = prev.columns.map((c) => (c.key === key ? { ...c, name } : c))
+        return { ...prev, data: { ...prev.data, rows }, columns }
+      })
+    },
+    [pushHistory]
+  )
+
+  const handleEditCell = useCallback(
+    (rowIndex, colIndex, value) => {
+      pushHistory()
+      setConfig((prev) => {
+        const rows = setCell(prev.data.rows, rowIndex, colIndex, value)
+        return recolumn({ ...prev, data: { ...prev.data, rows } }, buildColumns(rows, prev.data.hasHeaderRow, language))
+      })
+    },
+    [language, recolumn, pushHistory]
+  )
+
+  const handleTranspose = useCallback(() => {
+    pushHistory()
+    setConfig((prev) => {
+      const rows = transposeRows(prev.data.rows)
+      return recolumn({ ...prev, data: { ...prev.data, rows } }, buildColumns(rows, prev.data.hasHeaderRow, language))
+    })
+  }, [language, recolumn, pushHistory])
+
+  const handleAddColumn = useCallback(() => {
+    pushHistory()
+    setConfig((prev) => {
+      const rows = appendColumn(prev.data.rows, prev.data.hasHeaderRow, t.describe.newColumnName)
+      return recolumn({ ...prev, data: { ...prev.data, rows } }, buildColumns(rows, prev.data.hasHeaderRow, language))
+    })
+  }, [language, recolumn, pushHistory, t])
+
+  const handleUndo = useCallback(() => {
+    if (history.length === 0) return
+    setConfig(history[history.length - 1])
+    setHistory((h) => h.slice(0, -1))
+  }, [history])
 
   const handleReset = useCallback(() => {
     setConfig(createEmptyConfig())
-    setTotalRows(0)
+    setHistory([])
     setStepIndex(0)
   }, [])
 
@@ -140,7 +200,7 @@ export default function StudioPage() {
   /** Reouverture d'un projet .json exporte a l'etape "Exporter". */
   const handleProjectLoaded = useCallback((loaded) => {
     setConfig(loaded)
-    setTotalRows(loaded.data.rows.length)
+    setHistory([])
     setStepIndex(loaded.view ? 2 : loaded.data.rows.length ? 1 : 0)
     if (sharedConfig) {
       setSharedConfig(null)
@@ -208,9 +268,14 @@ export default function StudioPage() {
           {currentStep === 'describe' && hasData && (
             <DescribeStep
               config={config}
-              totalRows={totalRows}
+              canUndo={history.length > 0}
               onToggleHeader={handleToggleHeader}
               onChangeType={handleChangeType}
+              onEditCell={handleEditCell}
+              onRenameColumn={handleRenameColumn}
+              onTranspose={handleTranspose}
+              onAddColumn={handleAddColumn}
+              onUndo={handleUndo}
               onBack={handleReset}
               onNext={goVisualize}
             />

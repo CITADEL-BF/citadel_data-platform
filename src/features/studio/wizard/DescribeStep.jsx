@@ -1,7 +1,7 @@
 /**
- * DescribeStep — etape 2 : verifier la structure detectee.
- * Bascule "1re ligne = en-tetes", correction manuelle des types,
- * panneau des anomalies de type.
+ * DescribeStep — etape 2 : verifier et ajuster la structure detectee.
+ * Bascule "1re ligne = en-tetes", correction manuelle des types, edition des
+ * noms de colonnes et des cellules, transposition, ajout de colonne, annuler.
  */
 
 import { useMemo } from 'react'
@@ -9,9 +9,22 @@ import DataTable from '../components/DataTable'
 import { useStudioText } from '../i18n'
 import './DescribeStep.css'
 
-export default function DescribeStep({ config, totalRows, onToggleHeader, onChangeType, onBack, onNext }) {
+export default function DescribeStep({
+  config,
+  canUndo,
+  onToggleHeader,
+  onChangeType,
+  onEditCell,
+  onRenameColumn,
+  onTranspose,
+  onAddColumn,
+  onUndo,
+  onBack,
+  onNext,
+}) {
   const t = useStudioText()
   const { columns, data } = config
+  const rowCount = data.hasHeaderRow ? Math.max(data.rows.length - 1, 0) : data.rows.length
 
   const problems = useMemo(
     () =>
@@ -36,10 +49,22 @@ export default function DescribeStep({ config, totalRows, onToggleHeader, onChan
           {t.describe.headerToggle}
         </label>
         <span className="describe-step__count">
-          {t.describe.rowsCount(data.hasHeaderRow ? Math.max(totalRows - 1, 0) : totalRows)}
+          {t.describe.rowsCount(rowCount)}
           {' · '}
           {t.describe.colsCount(columns.length)}
         </span>
+      </div>
+
+      <div className="describe-step__edit-tools">
+        <button type="button" className="btn-ghost" onClick={onTranspose}>
+          {t.describe.transpose}
+        </button>
+        <button type="button" className="btn-ghost" onClick={onAddColumn}>
+          {t.describe.addColumn}
+        </button>
+        <button type="button" className="btn-ghost" onClick={onUndo} disabled={!canUndo}>
+          {t.describe.undo}
+        </button>
       </div>
 
       <DataTable
@@ -47,6 +72,8 @@ export default function DescribeStep({ config, totalRows, onToggleHeader, onChan
         columns={columns}
         hasHeaderRow={data.hasHeaderRow}
         onChangeType={onChangeType}
+        onEditCell={onEditCell}
+        onRenameColumn={onRenameColumn}
       />
 
       <div className="describe-step__problems">

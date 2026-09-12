@@ -27,6 +27,17 @@
   font-variant-numeric: tabular-nums;
 }
 
+.describe-step__edit-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.describe-step__edit-tools .btn-ghost:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
 .describe-step__problems {
   padding: var(--space-16);
   border-radius: var(--radius-md);
