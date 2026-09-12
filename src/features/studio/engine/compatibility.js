@@ -14,6 +14,13 @@ function binaryOf(dims) {
   return dims.filter((c) => c.distinct === 2)
 }
 
+function latOf(measures) {
+  return measures.filter((c) => c.type === 'geo-lat')
+}
+function lonOf(measures) {
+  return measures.filter((c) => c.type === 'geo-lon')
+}
+
 /** Une vue donnee est-elle realisable avec ces colonnes ? */
 function viewEnabled(view, dims, measures) {
   switch (view.id) {
@@ -23,6 +30,8 @@ function viewEnabled(view, dims, measures) {
       return measures.length >= 1
     case 'pyramid':
       return binaryOf(dims).length >= 1 && dims.length >= 2 && measures.length >= 1
+    case 'geoPoints':
+      return latOf(measures).length >= 1 && lonOf(measures).length >= 1
     case 'bar':
     case 'line':
     case 'area':
@@ -62,6 +71,11 @@ export function defaultEncodings(columns, viewId) {
       dims.find((c) => c.key !== seriesCol?.key)
     return { x: ageCol?.key ?? null, y: measures[0]?.key ?? null, series: seriesCol?.key ?? null, agg: 'sum' }
   }
+  if (viewId === 'geoPoints') {
+    const lats = latOf(measures)
+    const lons = lonOf(measures)
+    return { lat: lats[0]?.key ?? null, lon: lons[0]?.key ?? null, size: null, series: null, agg: 'sum' }
+  }
 
   const preferredX =
     viewId === 'line' || viewId === 'area'
@@ -75,6 +89,7 @@ export function sanitizeEncodings(columns, encodings, viewId = 'bar') {
   const view = getView(viewId) || getView('bar')
   const dims = dimensionColumns(columns)
   const measures = measureColumns(columns)
+  const dimKeys = new Set(dims.map((c) => c.key))
   const measureKeys = new Set(measures.map((c) => c.key))
 
   if (viewId === 'pyramid') {
@@ -87,7 +102,19 @@ export function sanitizeEncodings(columns, encodings, viewId = 'bar') {
     return { x, y, series, agg: AGGS.includes(encodings?.agg) ? encodings.agg : 'sum' }
   }
 
-  const dimKeys = new Set(dims.map((c) => c.key))
+  if (viewId === 'geoPoints') {
+    const lats = latOf(measures)
+    const lons = lonOf(measures)
+    const latKeys = new Set(lats.map((c) => c.key))
+    const lonKeys = new Set(lons.map((c) => c.key))
+    const lat = latKeys.has(encodings?.lat) ? encodings.lat : (lats[0]?.key ?? null)
+    const lon = lonKeys.has(encodings?.lon) ? encodings.lon : (lons[0]?.key ?? null)
+    const sizeCandidates = measures.filter((c) => c.type === 'number')
+    const size = encodings?.size && sizeCandidates.some((c) => c.key === encodings.size) ? encodings.size : null
+    const series = encodings?.series && dimKeys.has(encodings.series) ? encodings.series : null
+    return { lat, lon, size, series, agg: 'sum' }
+  }
+
   const xPool = view.needs.x === 'measure' ? measureKeys : dimKeys
   const xFallback = (view.needs.x === 'measure' ? measures : dims)[0]?.key ?? null
   const x = xPool.has(encodings?.x) ? encodings.x : xFallback

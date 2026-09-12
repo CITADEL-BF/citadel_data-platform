@@ -101,6 +101,18 @@ export const VIEWS = {
     isGeo: true,
     zeroBaseline: false,
   },
+  geoPoints: {
+    id: 'geoPoints',
+    label: { fr: 'Carte (points lat/lon)', en: 'Map (lat/lon points)' },
+    icon: '📍',
+    needs: { lat: 'geo-lat', lon: 'geo-lon' },
+    allowsSeries: true,
+    usesAggregation: false,
+    supportsAnnotations: false,
+    isGeo: true,
+    isLatLon: true,
+    zeroBaseline: false,
+  },
 }
 
 export const VIEW_LIST = Object.values(VIEWS)

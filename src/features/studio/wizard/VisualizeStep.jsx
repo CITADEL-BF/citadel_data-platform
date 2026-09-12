@@ -3,7 +3,8 @@
  * filtrer les lignes, afficher le graphe.
  *
  * Vues : barres (empilees/groupees), courbe, aires, nuage de points,
- * histogramme, circulaire, pyramide des ages, carte (regions BF).
+ * histogramme, circulaire, pyramide des ages, carte choroplethe (regions BF),
+ * carte a points (bulles lat/lon).
  */
 
 import { useMemo } from 'react'
@@ -11,7 +12,11 @@ import ReactECharts from 'echarts-for-react'
 import { useLanguage } from '../../../contexts/LanguageContext'
 import { availableViews } from '../engine/compatibility'
 import { getView } from '../engine/viewCatalog'
-import { dimensionColumns, measureColumns, binaryDimensionColumns, AGGREGATIONS, AGG_LABELS } from '../engine/roles'
+import {
+  dimensionColumns, measureColumns, binaryDimensionColumns,
+  latColumns, lonColumns, numericMeasureColumns,
+  AGGREGATIONS, AGG_LABELS,
+} from '../engine/roles'
 import { buildEchartsOption } from '../engine/buildEchartsOption'
 import { useRegionBoundaries } from '../hooks/useRegionBoundaries'
 import FiltersPanel from '../components/FiltersPanel'
@@ -39,6 +44,10 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
   const seriesChoices = (viewSpec.requiresSeries ? binaryDimensionColumns(columns) : dims)
     .filter((c) => c.key !== encodings.x)
   const showStackToggle = (view.type === 'bar' || view.type === 'area') && Boolean(encodings.series)
+
+  const latChoices = useMemo(() => latColumns(columns), [columns])
+  const lonChoices = useMemo(() => lonColumns(columns), [columns])
+  const sizeChoices = useMemo(() => numericMeasureColumns(columns), [columns])
 
   const boundaries = useRegionBoundaries(viewSpec.isGeo)
 
@@ -87,14 +96,47 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
       <div className="visualize-step__body">
         <div className="visualize-step__side">
           <div className="visualize-step__controls">
-            <label className="visualize-step__field">
-              <span>{t.visualize.axisX}</span>
-              <select value={encodings.x || ''} onChange={(e) => setEncoding({ x: e.target.value })}>
-                {xChoices.map((c) => (
-                  <option key={c.key} value={c.key}>{c.name}</option>
-                ))}
-              </select>
-            </label>
+            {viewSpec.isLatLon ? (
+              <>
+                <label className="visualize-step__field">
+                  <span>{t.visualize.latField}</span>
+                  <select value={encodings.lat || ''} onChange={(e) => setEncoding({ lat: e.target.value })}>
+                    {latChoices.map((c) => (
+                      <option key={c.key} value={c.key}>{c.name}</option>
+                    ))}
+                  </select>
+                </label>
+                <label className="visualize-step__field">
+                  <span>{t.visualize.lonField}</span>
+                  <select value={encodings.lon || ''} onChange={(e) => setEncoding({ lon: e.target.value })}>
+                    {lonChoices.map((c) => (
+                      <option key={c.key} value={c.key}>{c.name}</option>
+                    ))}
+                  </select>
+                </label>
+                <label className="visualize-step__field">
+                  <span>{t.visualize.sizeField}</span>
+                  <select
+                    value={encodings.size || ''}
+                    onChange={(e) => setEncoding({ size: e.target.value || null })}
+                  >
+                    <option value="">{t.visualize.noSize}</option>
+                    {sizeChoices.map((c) => (
+                      <option key={c.key} value={c.key}>{c.name}</option>
+                    ))}
+                  </select>
+                </label>
+              </>
+            ) : (
+              <label className="visualize-step__field">
+                <span>{t.visualize.axisX}</span>
+                <select value={encodings.x || ''} onChange={(e) => setEncoding({ x: e.target.value })}>
+                  {xChoices.map((c) => (
+                    <option key={c.key} value={c.key}>{c.name}</option>
+                  ))}
+                </select>
+              </label>
+            )}
 
             {viewSpec.needs.y === 'measure' && (
               <label className="visualize-step__field">

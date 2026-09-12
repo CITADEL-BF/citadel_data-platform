@@ -13,7 +13,7 @@ import { SAMPLE_CSV, SAMPLE_FILE_NAME, SAMPLE_PYRAMID_CSV, SAMPLE_PYRAMID_FILE_N
 import { useStudioText } from '../i18n'
 import './ImportStep.css'
 
-export default function ImportStep({ onParsed, onProjectLoaded }) {
+export default function ImportStep({ onParsed, onProjectLoaded, sharedColumnNames }) {
   const t = useStudioText()
   const fileInputRef = useRef(null)
   const projectInputRef = useRef(null)
@@ -74,6 +74,16 @@ export default function ImportStep({ onParsed, onProjectLoaded }) {
 
   return (
     <div className="import-step">
+      {sharedColumnNames && (
+        <p className="import-step__shared-banner" role="status">
+          {t.import.sharedBanner}
+          {sharedColumnNames.length > 0 && (
+            <span className="import-step__shared-columns">
+              {t.import.sharedColumnsLabel} {sharedColumnNames.join(', ')}
+            </span>
+          )}
+        </p>
+      )}
       <div
         className={`import-step__drop${dragOver ? ' import-step__drop--over' : ''}`}
         onDragOver={(e) => {

@@ -10,6 +10,7 @@
  *        pie                -> parts agregees par categorie ;
  *        pyramid            -> barres horizontales miroir (ex. age x sexe) ;
  *        map                -> choroplethe regions BF ;
+ *        geoPoints          -> bulles lat/lon sur fond de carte BF ;
  *   3. applique titre / note / source / mention / annotations (vues cartesiennes) ;
  *   4. produit l'option ECharts, nombres formates (locale + refine).
  */
@@ -446,6 +447,48 @@ function buildPyramid(ctx) {
   }
 }
 
+/* ---------- carte a points (bulles lat/lon) ---------- */
+function buildGeoPoints(ctx) {
+  const { columns, body, encodings, palette, language } = ctx
+  const latCol = columnByKey(columns, encodings.lat)
+  const lonCol = columnByKey(columns, encodings.lon)
+  const sizeCol = encodings.size ? columnByKey(columns, encodings.size) : null
+  const sCol = encodings.series ? columnByKey(columns, encodings.series) : null
+  const warnings = []
+  if (!latCol || !lonCol) return { series: null, warnings: ['encodage incomplet'] }
+
+  const groups = new Map()
+  let kept = 0
+  let sizeMax = 0
+  for (const row of body) {
+    const lat = coerceNumber(row[latCol.index])
+    const lon = coerceNumber(row[lonCol.index])
+    if (Number.isNaN(lat) || Number.isNaN(lon)) continue
+    if (kept >= SCATTER_MAX_POINTS) break
+    kept += 1
+    const sizeVal = sizeCol ? coerceNumber(row[sizeCol.index]) : null
+    if (sizeVal != null && !Number.isNaN(sizeVal)) sizeMax = Math.max(sizeMax, sizeVal)
+    const g = sCol ? ((row[sCol.index] ?? '').trim() || '—') : '__single__'
+    if (!groups.has(g)) groups.set(g, [])
+    groups.get(g).push([lon, lat, sizeVal])
+  }
+  if (kept === 0) return { series: null, warnings: ['aucune donnee a tracer'] }
+  if (kept >= SCATTER_MAX_POINTS) {
+    warnings.push(language === 'en' ? `Limited to ${SCATTER_MAX_POINTS} points.` : `Limité à ${SCATTER_MAX_POINTS} points.`)
+  }
+
+  const series = [...groups.entries()].map(([name, data], idx) => ({
+    name: sCol ? name : (language === 'en' ? 'Points' : 'Points'),
+    type: 'scatter',
+    coordinateSystem: 'geo',
+    symbolSize: sizeCol && sizeMax > 0 ? (val) => 6 + (Math.max(val[2] || 0, 0) / sizeMax) * 18 : 8,
+    itemStyle: { color: palette[idx % palette.length], opacity: 0.75 },
+    data,
+  }))
+
+  return { series, hasSeries: Boolean(sCol), warnings }
+}
+
 /* ---------- carte (choroplethe regions BF) ---------- */
 function buildMap(ctx, boundaries) {
   const { columns, body, encodings, language } = ctx
@@ -580,6 +623,39 @@ export function buildEchartsOption({
       series: builtMap.series,
     }
     return { option, warnings: builtMap.warnings }
+  }
+
+  if (viewSpec.id === 'geoPoints') {
+    if (!boundaries) {
+      return { option: { title: titleBlock(meta) }, warnings: [] }
+    }
+    const builtPoints = buildGeoPoints(ctx)
+    if (!builtPoints.series) {
+      return { option: { title: titleBlock(meta) }, warnings: builtPoints.warnings }
+    }
+    const bottomForFooter = 18 + ctx.footerLines.length * 14
+    const option = {
+      title: titleBlock(meta),
+      tooltip: {
+        trigger: 'item',
+        formatter: (p) => {
+          const [lon, lat, size] = p.value
+          const parts = [`${nf.format(lat)}, ${nf.format(lon)}`]
+          if (size != null && !Number.isNaN(size)) parts.push(nf.format(size))
+          return `${p.seriesName ? `${p.seriesName}<br/>` : ''}${parts.join(' — ')}`
+        },
+      },
+      legend: builtPoints.hasSeries ? { type: 'scroll', bottom: bottomForFooter } : undefined,
+      graphic: ctx.footerGraphic,
+      geo: {
+        map: MAP_NAME,
+        roam: true,
+        itemStyle: { areaColor: '#eef2f4', borderColor: '#ffffff' },
+        emphasis: { itemStyle: { areaColor: '#e0e6e2' } },
+      },
+      series: builtPoints.series,
+    }
+    return { option, warnings: builtPoints.warnings }
   }
 
   if (viewSpec.id === 'pie') {

@@ -1,9 +1,11 @@
 /**
  * StudioPage — coquille de l'assistant "Visualiser vos donnees" (route /explorer).
  *
- * Perimetre actuel (Phase 1) : Importer (CSV ou reouverture d'un projet .json)
- * + Verifier + Visualiser (barres, courbe, nuage de points, histogramme, carte
- * regions BF) + filtres + personnalisation + Exporter (PNG, projet .json).
+ * Perimetre actuel (Phase 1) : Importer (CSV, lien de configuration partage,
+ * ou reouverture d'un projet .json) + Verifier + Visualiser (8 vues : barres,
+ * courbe, aires, nuage de points, histogramme, circulaire, pyramide des ages,
+ * cartes BF choroplethe/points) + filtres + personnalisation + Exporter (PNG,
+ * apercu responsive, projet .json, lien de configuration).
  *
  * Tout l'etat utile tient dans `config` (voir state/chartConfig.js), un objet
  * JSON serialisable pense pour devenir plus tard une ligne Supabase sans
@@ -11,10 +13,12 @@
  */
 
 import { useCallback, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { createEmptyConfig, buildColumns } from './state/chartConfig'
 import { defaultEncodings, sanitizeEncodings } from './engine/compatibility'
 import { pruneFilters } from './engine/applyFilters'
+import { readShareParam, applySharedConfig } from './state/urlState'
 import { useStudioText } from './i18n'
 import ImportStep from './wizard/ImportStep'
 import DescribeStep from './wizard/DescribeStep'
@@ -30,6 +34,10 @@ export default function StudioPage() {
   const [stepIndex, setStepIndex] = useState(0)
   const [config, setConfig] = useState(createEmptyConfig)
   const [totalRows, setTotalRows] = useState(0)
+  const [searchParams, setSearchParams] = useSearchParams()
+  // Capture unique, au montage : un lien de config partage n'est applique
+  // qu'une fois, au tout premier import reussi.
+  const [sharedConfig, setSharedConfig] = useState(() => readShareParam(searchParams))
 
   const currentStep = STEPS[stepIndex]
   const hasData = config.data.rows.length > 0
@@ -38,17 +46,24 @@ export default function StudioPage() {
   const handleParsed = useCallback(
     ({ rows, delimiter, fileName, totalRows: total }) => {
       const hasHeaderRow = true
-      setConfig((prev) => ({
-        ...prev,
-        data: { ...prev.data, mode: 'inline', rows, delimiter, fileName, hasHeaderRow },
-        columns: buildColumns(rows, hasHeaderRow, language),
-        view: null,
-        filters: [],
-      }))
+      setConfig((prev) => {
+        const base = {
+          ...prev,
+          data: { ...prev.data, mode: 'inline', rows, delimiter, fileName, hasHeaderRow },
+          columns: buildColumns(rows, hasHeaderRow, language),
+          view: null,
+          filters: [],
+        }
+        return sharedConfig ? applySharedConfig(base, sharedConfig) : base
+      })
       setTotalRows(total)
-      setStepIndex(1)
+      setStepIndex(sharedConfig?.view ? 2 : 1)
+      if (sharedConfig) {
+        setSharedConfig(null)
+        setSearchParams({}, { replace: true })
+      }
     },
-    [language]
+    [language, sharedConfig, setSearchParams]
   )
 
   /** Reconstruit les colonnes puis remet filtres + encodage d'aplomb. */
@@ -127,7 +142,11 @@ export default function StudioPage() {
     setConfig(loaded)
     setTotalRows(loaded.data.rows.length)
     setStepIndex(loaded.view ? 2 : loaded.data.rows.length ? 1 : 0)
-  }, [])
+    if (sharedConfig) {
+      setSharedConfig(null)
+      setSearchParams({}, { replace: true })
+    }
+  }, [sharedConfig, setSearchParams])
 
   const stepStatus = useMemo(
     () =>
@@ -179,7 +198,11 @@ export default function StudioPage() {
 
         <section className="studio__panel">
           {currentStep === 'import' && (
-            <ImportStep onParsed={handleParsed} onProjectLoaded={handleProjectLoaded} />
+            <ImportStep
+              onParsed={handleParsed}
+              onProjectLoaded={handleProjectLoaded}
+              sharedColumnNames={sharedConfig?.columnsMeta?.map((c) => c.name) || null}
+            />
           )}
 
           {currentStep === 'describe' && hasData && (

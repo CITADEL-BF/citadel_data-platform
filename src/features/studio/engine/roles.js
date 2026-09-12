@@ -30,6 +30,13 @@ export const dimensionColumns = (columns) =>
 export const binaryDimensionColumns = (columns) =>
   dimensionColumns(columns).filter((c) => c.distinct === 2)
 
+export const latColumns = (columns) => columns.filter((c) => c.type === 'geo-lat')
+export const lonColumns = (columns) => columns.filter((c) => c.type === 'geo-lon')
+
+/** Mesures numeriques "ordinaires" (exclut les colonnes lat/lon) : candidates pour la taille des bulles. */
+export const numericMeasureColumns = (columns) =>
+  measureColumns(columns).filter((c) => c.type === 'number')
+
 export const AGGREGATIONS = ['sum', 'mean', 'count', 'min', 'max']
 
 export const AGG_LABELS = {

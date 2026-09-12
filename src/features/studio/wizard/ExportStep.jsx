@@ -1,9 +1,11 @@
 /**
  * ExportStep — etape 4 : apercu final compose (titre + note + source + mention
- * dans l'image) et telechargement.
+ * dans l'image), apercu responsive, et telechargement / partage.
  *
  *   - PNG : rasterisation du canvas ECharts en haute resolution.
  *   - Projet .json : la config serialisable, pour re-ouvrir plus tard.
+ *   - Lien de configuration : encode la mise en forme (pas les donnees) dans
+ *     l'URL, a rejouer apres reimport du meme fichier.
  *
  * Aucun envoi reseau : tout est genere dans le navigateur.
  */
@@ -15,10 +17,12 @@ import { buildEchartsOption } from '../engine/buildEchartsOption'
 import { getView } from '../engine/viewCatalog'
 import { useRegionBoundaries } from '../hooks/useRegionBoundaries'
 import { serializeConfig } from '../state/chartConfig'
+import { encodeShareUrl } from '../state/urlState'
 import { useStudioText } from '../i18n'
 import './ExportStep.css'
 
 const SCALES = [1, 2, 3]
+const PREVIEW_WIDTHS = { desktop: null, tablet: 480, mobile: 320 }
 
 function slugify(text, fallback) {
   const s = String(text || '')
@@ -46,6 +50,8 @@ export default function ExportStep({ config, onBack }) {
   const chartRef = useRef(null)
   const [scale, setScale] = useState(2)
   const [done, setDone] = useState('')
+  const [previewWidth, setPreviewWidth] = useState('desktop')
+  const [shareUrl, setShareUrl] = useState('')
 
   const viewSpec = getView(config.view?.type) || {}
   const boundaries = useRegionBoundaries(viewSpec.isGeo)
@@ -86,15 +92,47 @@ export default function ExportStep({ config, onBack }) {
     setDone('json')
   }
 
+  function copyShareLink() {
+    const url = encodeShareUrl(config)
+    setShareUrl(url)
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(url).then(
+        () => setDone('link'),
+        () => setDone('')
+      )
+    }
+  }
+
   return (
     <div className="export-step">
-      <div className="export-step__preview">
+      <div className="export-step__toolbar">
+        <div className="export-step__widths" role="group" aria-label={t.export.previewWidth}>
+          {Object.keys(PREVIEW_WIDTHS).map((w) => (
+            <button
+              key={w}
+              type="button"
+              className={
+                'export-step__width-btn' + (previewWidth === w ? ' export-step__width-btn--active' : '')
+              }
+              onClick={() => setPreviewWidth(w)}
+            >
+              {t.export.widths[w]}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div
+        className="export-step__preview"
+        style={{ maxWidth: PREVIEW_WIDTHS[previewWidth] || '100%' }}
+      >
         {mapNotReady ? (
           <p className="export-step__map-status" role="status">
             {boundaries.status === 'error' ? t.visualize.mapError : t.visualize.mapLoading}
           </p>
         ) : (
           <ReactECharts
+            key={previewWidth}
             ref={chartRef}
             option={option}
             notMerge
@@ -119,12 +157,21 @@ export default function ExportStep({ config, onBack }) {
         <button type="button" className="btn-ghost" onClick={downloadJson}>
           {t.export.downloadJson}
         </button>
+        <button type="button" className="btn-ghost" onClick={copyShareLink}>
+          {t.export.copyLink}
+        </button>
       </div>
 
       {done && (
         <p className="export-step__done" role="status">
-          {done === 'png' ? t.export.donePng : t.export.doneJson}
+          {done === 'png' ? t.export.donePng : done === 'json' ? t.export.doneJson : t.export.doneLink}
         </p>
+      )}
+      {shareUrl && (
+        <div className="export-step__share">
+          <input type="text" readOnly value={shareUrl} onFocus={(e) => e.target.select()} />
+          <p className="export-step__share-hint">{t.export.shareHint}</p>
+        </div>
       )}
       <p className="export-step__note">{t.export.note}</p>
 
