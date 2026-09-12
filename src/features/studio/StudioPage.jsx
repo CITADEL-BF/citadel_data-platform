@@ -1,9 +1,9 @@
 /**
  * StudioPage — coquille de l'assistant "Visualiser vos donnees" (route /explorer).
  *
- * Perimetre actuel (Phase 1) : Importer + Verifier + Visualiser (barres, courbe,
- * nuage de points, histogramme) + filtres. L'etape Exporter est un jalon visible
- * mais pas encore actif (export PNG a venir).
+ * Perimetre actuel (Phase 1) : Importer (CSV ou reouverture d'un projet .json)
+ * + Verifier + Visualiser (barres, courbe, nuage de points, histogramme, carte
+ * regions BF) + filtres + personnalisation + Exporter (PNG, projet .json).
  *
  * Tout l'etat utile tient dans `config` (voir state/chartConfig.js), un objet
  * JSON serialisable pense pour devenir plus tard une ligne Supabase sans
@@ -122,6 +122,13 @@ export default function StudioPage() {
     setConfig((prev) => ({ ...prev, ...patch }))
   }, [])
 
+  /** Reouverture d'un projet .json exporte a l'etape "Exporter". */
+  const handleProjectLoaded = useCallback((loaded) => {
+    setConfig(loaded)
+    setTotalRows(loaded.data.rows.length)
+    setStepIndex(loaded.view ? 2 : loaded.data.rows.length ? 1 : 0)
+  }, [])
+
   const stepStatus = useMemo(
     () =>
       STEPS.map((step, idx) => ({
@@ -171,7 +178,9 @@ export default function StudioPage() {
         </ol>
 
         <section className="studio__panel">
-          {currentStep === 'import' && <ImportStep onParsed={handleParsed} />}
+          {currentStep === 'import' && (
+            <ImportStep onParsed={handleParsed} onProjectLoaded={handleProjectLoaded} />
+          )}
 
           {currentStep === 'describe' && hasData && (
             <DescribeStep

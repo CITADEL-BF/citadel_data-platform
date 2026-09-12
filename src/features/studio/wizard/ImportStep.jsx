@@ -1,18 +1,22 @@
 /**
  * ImportStep — etape 1 : recuperer des donnees.
- * Trois entrees : depot/selection de fichier, texte colle, jeu d'exemple.
- * Le parsing est delegue a `parseCsv` (PapaParse en worker).
+ * Trois entrees pour des donnees CSV : depot/selection de fichier, texte
+ * colle, jeu d'exemple (parsing delegue a `parseCsv`, PapaParse en worker).
+ * Une quatrieme entree distincte permet de rouvrir un projet .json deja
+ * exporte a l'etape "Exporter" (config complete, aucune perte).
  */
 
 import { useRef, useState } from 'react'
 import { parseCsv } from '../engine/parseCsv'
+import { deserializeConfig } from '../state/chartConfig'
 import { SAMPLE_CSV, SAMPLE_FILE_NAME } from '../sampleData'
 import { useStudioText } from '../i18n'
 import './ImportStep.css'
 
-export default function ImportStep({ onParsed }) {
+export default function ImportStep({ onParsed, onProjectLoaded }) {
   const t = useStudioText()
   const fileInputRef = useRef(null)
+  const projectInputRef = useRef(null)
   const [dragOver, setDragOver] = useState(false)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
@@ -50,6 +54,22 @@ export default function ImportStep({ onParsed }) {
     e.preventDefault()
     setDragOver(false)
     handleFiles(e.dataTransfer.files)
+  }
+
+  async function handleProjectFile(fileList) {
+    const file = fileList?.[0]
+    if (!file) return
+    setBusy(true)
+    setError('')
+    try {
+      const text = await file.text()
+      const config = deserializeConfig(text)
+      onProjectLoaded(config)
+    } catch (err) {
+      setError(t.import.errorPrefix + (err?.message || String(err)))
+    } finally {
+      setBusy(false)
+    }
   }
 
   return (
@@ -115,6 +135,24 @@ export default function ImportStep({ onParsed }) {
 
       {busy && <p className="import-step__status" role="status">{t.import.parsing}</p>}
       {error && <p className="import-step__error" role="alert">{error}</p>}
+
+      <div className="import-step__reopen">
+        <button
+          type="button"
+          className="import-step__reopen-link"
+          onClick={() => projectInputRef.current?.click()}
+          disabled={busy}
+        >
+          {t.import.openProject}
+        </button>
+        <input
+          ref={projectInputRef}
+          type="file"
+          accept=".json,application/json"
+          className="import-step__file-input"
+          onChange={(e) => handleProjectFile(e.target.files)}
+        />
+      </div>
 
       <p className="import-step__privacy">{t.import.privacyNote}</p>
     </div>

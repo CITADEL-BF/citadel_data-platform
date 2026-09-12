@@ -11,11 +11,25 @@
   box-shadow: var(--shadow-card);
 }
 
+.export-step__map-status {
+  display: grid;
+  place-items: center;
+  height: 460px;
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-sm);
+}
+
 .export-step__bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-12);
+}
+
+.export-step__bar .btn-primary:disabled {
+  opacity: 0.5;
+  cursor: default;
+  transform: none;
 }
 
 .export-step__scale {

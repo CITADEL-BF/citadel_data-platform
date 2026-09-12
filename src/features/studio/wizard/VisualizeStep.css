@@ -85,6 +85,14 @@
   box-shadow: var(--shadow-card);
 }
 
+.visualize-step__map-status {
+  display: grid;
+  place-items: center;
+  height: 440px;
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-sm);
+}
+
 .visualize-step__warnings {
   margin: var(--space-8) 0 0;
   padding-left: var(--space-20);

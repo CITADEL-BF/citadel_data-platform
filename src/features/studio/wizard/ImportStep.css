@@ -93,6 +93,23 @@
   font-weight: 600;
 }
 
+.import-step__reopen {
+  text-align: center;
+}
+
+.import-step__reopen-link {
+  color: var(--on-surface-variant);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.import-step__reopen-link:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .import-step__privacy {
   font-size: var(--text-label-sm);
   color: var(--on-surface-variant);

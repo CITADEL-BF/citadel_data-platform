@@ -12,6 +12,7 @@ import { availableViews } from '../engine/compatibility'
 import { getView } from '../engine/viewCatalog'
 import { dimensionColumns, measureColumns, AGGREGATIONS, AGG_LABELS } from '../engine/roles'
 import { buildEchartsOption } from '../engine/buildEchartsOption'
+import { useRegionBoundaries } from '../hooks/useRegionBoundaries'
 import FiltersPanel from '../components/FiltersPanel'
 import RefinePanel from './RefinePanel'
 import { useStudioText } from '../i18n'
@@ -36,6 +37,8 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
   const yChoices = measures.filter((c) => c.key !== encodings.x)
   const seriesChoices = dims.filter((c) => c.key !== encodings.x)
 
+  const boundaries = useRegionBoundaries(viewSpec.isGeo)
+
   const { option, warnings } = useMemo(
     () =>
       buildEchartsOption({
@@ -50,8 +53,9 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
         refine,
         annotations,
         language,
+        boundaries: boundaries.geojson,
       }),
-    [columns, data.rows, data.hasHeaderRow, filters, view.type, encodings, meta, source, refine, annotations, language]
+    [columns, data.rows, data.hasHeaderRow, filters, view.type, encodings, meta, source, refine, annotations, language, boundaries.geojson]
   )
 
   const setEncoding = (patch) => onSetView({ ...view, encodings: { ...encodings, ...patch } })
@@ -146,12 +150,18 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
         </div>
 
         <div className="visualize-step__chart">
-          <ReactECharts
-            option={option}
-            notMerge
-            lazyUpdate
-            style={{ height: 440, width: '100%' }}
-          />
+          {viewSpec.isGeo && boundaries.status !== 'ready' ? (
+            <p className="visualize-step__map-status" role="status">
+              {boundaries.status === 'error' ? t.visualize.mapError : t.visualize.mapLoading}
+            </p>
+          ) : (
+            <ReactECharts
+              option={option}
+              notMerge
+              lazyUpdate
+              style={{ height: 440, width: '100%' }}
+            />
+          )}
           {warnings.length > 0 && (
             <ul className="visualize-step__warnings">
               {warnings.map((w, i) => (

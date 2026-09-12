@@ -50,6 +50,16 @@ export const VIEWS = {
     usesAggregation: false,
     zeroBaseline: true,
   },
+  map: {
+    id: 'map',
+    label: { fr: 'Carte (régions BF)', en: 'Map (BF regions)' },
+    icon: '🗺️',
+    needs: { x: 'dimension', y: 'measure' },
+    allowsSeries: false,
+    usesAggregation: true,
+    isGeo: true,
+    zeroBaseline: false,
+  },
 }
 
 export const VIEW_LIST = Object.values(VIEWS)

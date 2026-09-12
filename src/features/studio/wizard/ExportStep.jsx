@@ -12,6 +12,8 @@ import { useMemo, useRef, useState } from 'react'
 import ReactECharts from 'echarts-for-react'
 import { useLanguage } from '../../../contexts/LanguageContext'
 import { buildEchartsOption } from '../engine/buildEchartsOption'
+import { getView } from '../engine/viewCatalog'
+import { useRegionBoundaries } from '../hooks/useRegionBoundaries'
 import { serializeConfig } from '../state/chartConfig'
 import { useStudioText } from '../i18n'
 import './ExportStep.css'
@@ -45,6 +47,10 @@ export default function ExportStep({ config, onBack }) {
   const [scale, setScale] = useState(2)
   const [done, setDone] = useState('')
 
+  const viewSpec = getView(config.view?.type) || {}
+  const boundaries = useRegionBoundaries(viewSpec.isGeo)
+  const mapNotReady = viewSpec.isGeo && boundaries.status !== 'ready'
+
   const { option } = useMemo(
     () =>
       buildEchartsOption({
@@ -59,8 +65,9 @@ export default function ExportStep({ config, onBack }) {
         refine: config.refine,
         annotations: config.annotations,
         language,
+        boundaries: boundaries.geojson,
       }),
-    [config, language]
+    [config, language, boundaries.geojson]
   )
 
   const baseName = slugify(config.meta?.title, language === 'en' ? 'chart' : 'graphique')
@@ -82,12 +89,18 @@ export default function ExportStep({ config, onBack }) {
   return (
     <div className="export-step">
       <div className="export-step__preview">
-        <ReactECharts
-          ref={chartRef}
-          option={option}
-          notMerge
-          style={{ height: 460, width: '100%', background: '#ffffff' }}
-        />
+        {mapNotReady ? (
+          <p className="export-step__map-status" role="status">
+            {boundaries.status === 'error' ? t.visualize.mapError : t.visualize.mapLoading}
+          </p>
+        ) : (
+          <ReactECharts
+            ref={chartRef}
+            option={option}
+            notMerge
+            style={{ height: 460, width: '100%', background: '#ffffff' }}
+          />
+        )}
       </div>
 
       <div className="export-step__bar">
@@ -100,7 +113,7 @@ export default function ExportStep({ config, onBack }) {
           </select>
         </label>
 
-        <button type="button" className="btn-primary" onClick={downloadPng}>
+        <button type="button" className="btn-primary" onClick={downloadPng} disabled={mapNotReady}>
           {t.export.downloadPng}
         </button>
         <button type="button" className="btn-ghost" onClick={downloadJson}>

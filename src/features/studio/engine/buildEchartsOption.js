@@ -14,11 +14,19 @@
 import { coerceNumber } from './detectTypes'
 import { getView } from './viewCatalog'
 import { applyFilters } from './applyFilters'
+import { MAP_NAME, regionNames, matchRegionNames } from './geoBoundaries'
 
 const PALETTES = {
   default: ['#0d631b', '#1565c0', '#755b00', '#00695c', '#af0012', '#5b3a8c', '#c76e00', '#2e7d32', '#00838f', '#8e24aa'],
   vives: ['#1b9e3f', '#2f7bff', '#ffb300', '#00bcd4', '#e53935', '#7c4dff', '#ff7043', '#43a047', '#26c6da', '#d81b60'],
   sobre: ['#4b5563', '#6b7280', '#9ca3af', '#374151', '#1f2937', '#52525b', '#71717a', '#3f3f46', '#0f172a', '#475569'],
+}
+
+// Rampe sequentielle (clair -> fonce) par palette, pour la choroplethe.
+const SEQUENTIAL_RAMPS = {
+  default: ['#eaf5eb', '#0d631b'],
+  vives: ['#e3f2fd', '#1565c0'],
+  sobre: ['#f3f4f6', '#374151'],
 }
 
 const SCATTER_MAX_POINTS = 5000
@@ -287,6 +295,68 @@ function buildHistogram(ctx) {
   }
 }
 
+/* ---------- carte (choroplethe regions BF) ---------- */
+function buildMap(ctx, boundaries) {
+  const { columns, body, encodings, language } = ctx
+  const xCol = columnByKey(columns, encodings.x)
+  const yCol = columnByKey(columns, encodings.y)
+  const warnings = []
+  if (!xCol || !yCol) return { series: null, warnings: ['encodage incomplet'] }
+
+  const agg = encodings.agg || 'sum'
+  const byRaw = new Map()
+  for (const row of body) {
+    const xv = (row[xCol.index] ?? '').trim()
+    if (xv === '') continue
+    const yv = coerceNumber(row[yCol.index])
+    if (!byRaw.has(xv)) byRaw.set(xv, [])
+    byRaw.get(xv).push(yv)
+  }
+  if (byRaw.size === 0) return { series: null, warnings: ['aucune donnee a tracer'] }
+
+  const { matched, unmatched } = matchRegionNames([...byRaw.keys()], boundaries)
+  const byRegion = new Map()
+  for (const [raw, region] of matched.entries()) {
+    const vals = byRaw.get(raw)
+    byRegion.set(region, (byRegion.get(region) || []).concat(vals))
+  }
+
+  const data = regionNames(boundaries).map((name) => {
+    const vals = byRegion.get(name)
+    return { name, value: vals?.length ? Number(aggregate(vals, agg).toFixed(4)) : null }
+  })
+  const values = data.map((d) => d.value).filter((v) => v != null)
+
+  if (unmatched.length) {
+    const sample = unmatched.slice(0, 5).map((v) => `« ${v} »`).join(', ')
+    const sampleEn = unmatched.slice(0, 5).map((v) => `"${v}"`).join(', ')
+    warnings.push(
+      language === 'en'
+        ? `${unmatched.length} value(s) not recognized as one of the 13 BF regions: ${sampleEn}${unmatched.length > 5 ? '…' : ''}`
+        : `${unmatched.length} valeur(s) non reconnue(s) comme l'une des 13 régions du Burkina : ${sample}${unmatched.length > 5 ? '…' : ''}`
+    )
+  }
+  if (values.length === 0) {
+    warnings.push(language === 'en' ? 'No value could be matched to a region.' : 'Aucune valeur n\'a pu être associée à une région.')
+  }
+
+  return {
+    series: [{
+      type: 'map',
+      map: MAP_NAME,
+      roam: true,
+      selectedMode: false,
+      label: { show: false },
+      emphasis: { label: { show: true, fontSize: 11 } },
+      itemStyle: { borderColor: '#ffffff', borderWidth: 1, areaColor: '#e8ecee' },
+      data,
+    }],
+    values,
+    yName: agg === 'count' ? (language === 'en' ? 'Count' : 'Effectif') : yCol.name,
+    warnings,
+  }
+}
+
 /* ---------- annotations : lignes de reference horizontales ---------- */
 function attachAnnotations(series, annotations, nf) {
   if (!Array.isArray(annotations) || annotations.length === 0 || !series?.length) return
@@ -311,7 +381,7 @@ function attachAnnotations(series, annotations, nf) {
 export function buildEchartsOption({
   columns, rows, hasHeaderRow, filters, view, encodings,
   meta = {}, source = {}, refine = {}, annotations = [],
-  language = 'fr',
+  language = 'fr', boundaries = null,
 }) {
   const viewSpec = getView(view) || getView('bar')
   const locale = language === 'en' ? 'en-US' : 'fr-FR'
@@ -325,6 +395,46 @@ export function buildEchartsOption({
   const footer = buildFooter(ctx)
   ctx.footerLines = footer.lines
   ctx.footerGraphic = footer.graphic
+
+  if (viewSpec.id === 'map') {
+    if (!boundaries) {
+      return { option: { title: meta.title ? { text: meta.title } : undefined }, warnings: [] }
+    }
+    const builtMap = buildMap(ctx, boundaries)
+    if (!builtMap.series) {
+      return { option: { title: meta.title ? { text: meta.title } : undefined }, warnings: builtMap.warnings }
+    }
+    const [lo, hi] = SEQUENTIAL_RAMPS[refine.palette] || SEQUENTIAL_RAMPS.default
+    const hasTitle = Boolean(meta.title || meta.note)
+    const bottomForFooter = 18 + ctx.footerLines.length * 14
+    const option = {
+      title: hasTitle
+        ? { text: meta.title || '', subtext: meta.note || '', left: 'center', top: 6,
+            textStyle: { fontSize: 17, fontWeight: 700, color: '#191c1e' },
+            subtextStyle: { fontSize: 12.5, color: '#414941' } }
+        : undefined,
+      tooltip: {
+        trigger: 'item',
+        formatter: (p) => `${p.name}<br/>${builtMap.yName}: ${p.value == null ? '—' : nf.format(p.value)}`,
+      },
+      visualMap: builtMap.values.length
+        ? {
+            type: 'continuous',
+            min: Math.min(...builtMap.values),
+            max: Math.max(...builtMap.values),
+            calculable: true,
+            orient: 'horizontal',
+            left: 'center',
+            bottom: bottomForFooter,
+            text: [nf.format(Math.max(...builtMap.values)), nf.format(Math.min(...builtMap.values))],
+            inRange: { color: [lo, hi] },
+          }
+        : undefined,
+      graphic: ctx.footerGraphic,
+      series: builtMap.series,
+    }
+    return { option, warnings: builtMap.warnings }
+  }
 
   let built
   if (viewSpec.id === 'scatter') built = buildScatter(ctx)

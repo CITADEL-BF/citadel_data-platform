@@ -28,6 +28,7 @@ const TEXT = {
       errorPrefix: 'Impossible de lire le fichier : ',
       emptyError: 'Aucune donnée exploitable trouvée.',
       privacyNote: 'Traitement 100 % local — aucune donnée conservée ni transmise.',
+      openProject: 'Ou rouvrir un projet déjà exporté (.json)',
     },
     describe: {
       title: 'Vérifier les colonnes',
@@ -57,6 +58,8 @@ const TEXT = {
       aggregation: 'Agrégation',
       back: 'Retour',
       next: 'Continuer',
+      mapLoading: 'Chargement des frontières régionales…',
+      mapError: 'Impossible de charger les frontières régionales.',
     },
     filters: {
       title: 'Filtres',
@@ -120,6 +123,7 @@ const TEXT = {
       errorPrefix: 'Could not read the file: ',
       emptyError: 'No usable data found.',
       privacyNote: '100% local processing — no data stored or transmitted.',
+      openProject: 'Or reopen an already exported project (.json)',
     },
     describe: {
       title: 'Check the columns',
@@ -149,6 +153,8 @@ const TEXT = {
       aggregation: 'Aggregation',
       back: 'Back',
       next: 'Continue',
+      mapLoading: 'Loading regional boundaries…',
+      mapError: 'Could not load regional boundaries.',
     },
     filters: {
       title: 'Filters',

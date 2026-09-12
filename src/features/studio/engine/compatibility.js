@@ -5,6 +5,7 @@
 
 import { VIEW_LIST, getView } from './viewCatalog'
 import { measureColumns, dimensionColumns } from './roles'
+import { isGeoNameCandidate } from './detectTypes'
 
 const AGGS = ['sum', 'mean', 'count', 'min', 'max']
 
@@ -38,6 +39,10 @@ export function defaultEncodings(columns, viewId) {
   }
   if (viewId === 'histogram') {
     return { x: measures[0]?.key ?? null, y: null, series: null, agg: 'count' }
+  }
+  if (viewId === 'map') {
+    const geoX = dims.find((c) => isGeoNameCandidate(c.name)) || dims[0]
+    return { x: geoX?.key ?? null, y: measures[0]?.key ?? null, series: null, agg: 'sum' }
   }
 
   const preferredX =
