@@ -1,29 +1,28 @@
 /**
- * buildEchartsOption — transforme (colonnes + matrice + vue + encodage) en une
- * option ECharts prete a rendre.
+ * buildEchartsOption — transforme (colonnes + matrice + filtres + vue +
+ * encodage) en une option ECharts prete a rendre.
  *
- * Etapes :
- *   1. reconstitue des enregistrements a partir de la matrice brute ;
- *   2. agrege Y par valeur de X (et de serie si demandee) ;
- *   3. produit l'option ECharts (barres ou courbe).
- *
- * Formatage des nombres en francais / anglais via Intl.NumberFormat.
+ *   1. filtre les lignes (applyFilters) ;
+ *   2. selon la vue :
+ *        bar / line  -> agrege Y par X (et serie) ;
+ *        scatter     -> points bruts (X, Y) ;
+ *        histogram   -> repartition de X en classes, effectif ;
+ *   3. produit l'option ECharts, nombres formates en FR / EN.
  */
 
 import { coerceNumber } from './detectTypes'
 import { getView } from './viewCatalog'
+import { applyFilters } from './applyFilters'
 
 const PALETTE = [
   '#0d631b', '#1565c0', '#755b00', '#00695c', '#af0012',
   '#5b3a8c', '#c76e00', '#2e7d32', '#00838f', '#8e24aa',
 ]
 
+const SCATTER_MAX_POINTS = 5000
+
 function columnByKey(columns, key) {
   return columns.find((c) => c.key === key) || null
-}
-
-function records(rows, hasHeaderRow) {
-  return hasHeaderRow ? rows.slice(1) : rows
 }
 
 function aggregate(values, agg) {
@@ -46,27 +45,40 @@ function sortCategories(cats) {
   return copy
 }
 
-/**
- * @returns {{ option: object, warnings: string[] }}
- */
-export function buildEchartsOption({ columns, rows, hasHeaderRow, view, encodings, language = 'fr', title = '' }) {
-  const viewSpec = getView(view) || getView('bar')
-  const locale = language === 'en' ? 'en-US' : 'fr-FR'
-  const nf = new Intl.NumberFormat(locale)
-  const warnings = []
-
-  const xCol = columnByKey(columns, encodings?.x)
-  const yCol = columnByKey(columns, encodings?.y)
-  const sCol = encodings?.series ? columnByKey(columns, encodings.series) : null
-
-  if (!xCol || !yCol) {
-    return { option: { title: { text: title } }, warnings: ['encodage incomplet'] }
+function baseOption(nf, { title, legend, xName, yName, xType = 'category', xData, zeroBaseline, rotate }) {
+  return {
+    title: title ? { text: title, left: 'center', textStyle: { fontSize: 16 } } : undefined,
+    grid: { left: 8, right: 16, bottom: legend ? 24 : 8, top: title ? 48 : 24, containLabel: true },
+    tooltip: { trigger: xType === 'value' ? 'item' : 'axis', valueFormatter: (v) => (v == null ? '—' : nf.format(v)) },
+    legend: legend ? { type: 'scroll', bottom: 0 } : undefined,
+    xAxis: {
+      type: xType,
+      data: xType === 'category' ? xData : undefined,
+      name: xName,
+      nameLocation: 'middle',
+      nameGap: 32,
+      scale: xType === 'value',
+      axisLabel: { hideOverlap: true, rotate: rotate || 0, formatter: xType === 'value' ? (v) => nf.format(v) : undefined },
+    },
+    yAxis: {
+      type: 'value',
+      name: yName,
+      scale: !zeroBaseline,
+      axisLabel: { formatter: (v) => nf.format(v) },
+    },
   }
+}
 
-  const body = records(rows, hasHeaderRow)
-  const agg = encodings?.agg || 'sum'
+/* ---------- bar / line ---------- */
+function buildCategorical(viewSpec, ctx) {
+  const { columns, body, encodings, nf, language, title } = ctx
+  const xCol = columnByKey(columns, encodings.x)
+  const yCol = columnByKey(columns, encodings.y)
+  const sCol = encodings.series ? columnByKey(columns, encodings.series) : null
+  const warnings = []
+  if (!xCol || !yCol) return { option: { title: { text: title } }, warnings: ['encodage incomplet'] }
 
-  // clef "x" -> clef "serie" -> liste de valeurs numeriques
+  const agg = encodings.agg || 'sum'
   const buckets = new Map()
   const xValues = []
   const seriesNames = []
@@ -74,37 +86,24 @@ export function buildEchartsOption({ columns, rows, hasHeaderRow, view, encoding
   for (const row of body) {
     const xv = (row[xCol.index] ?? '').trim()
     if (xv === '') continue
-    const sv = sCol ? (row[sCol.index] ?? '').trim() || '—' : '__single__'
+    const sv = sCol ? ((row[sCol.index] ?? '').trim() || '—') : '__single__'
     const yv = coerceNumber(row[yCol.index])
-
-    if (!buckets.has(xv)) {
-      buckets.set(xv, new Map())
-      xValues.push(xv)
-    }
+    if (!buckets.has(xv)) { buckets.set(xv, new Map()); xValues.push(xv) }
     const inner = buckets.get(xv)
-    if (!inner.has(sv)) {
-      inner.set(sv, [])
-      if (sCol && !seriesNames.includes(sv)) seriesNames.push(sv)
-    }
+    if (!inner.has(sv)) { inner.set(sv, []); if (sCol && !seriesNames.includes(sv)) seriesNames.push(sv) }
     inner.get(sv).push(yv)
   }
-
-  if (xValues.length === 0) {
-    return { option: { title: { text: title } }, warnings: ['aucune donnee a tracer'] }
-  }
+  if (xValues.length === 0) return { option: { title: { text: title } }, warnings: ['aucune donnee a tracer'] }
 
   const categories = sortCategories(xValues)
-  const effectiveSeries = sCol ? sortCategories(seriesNames) : ['__single__']
-
-  if (sCol && effectiveSeries.length > 20) {
-    warnings.push(
-      language === 'en'
-        ? `${effectiveSeries.length} series — the chart may be hard to read.`
-        : `${effectiveSeries.length} séries — le graphique risque d'être illisible.`
-    )
+  const effSeries = sCol ? sortCategories(seriesNames) : ['__single__']
+  if (sCol && effSeries.length > 20) {
+    warnings.push(language === 'en'
+      ? `${effSeries.length} series — the chart may be hard to read.`
+      : `${effSeries.length} séries — le graphique risque d'être illisible.`)
   }
 
-  const series = effectiveSeries.map((sName, idx) => ({
+  const series = effSeries.map((sName, idx) => ({
     name: sCol ? sName : yCol.name,
     type: viewSpec.id === 'line' ? 'line' : 'bar',
     stack: viewSpec.id === 'bar' && sCol ? 'total' : undefined,
@@ -113,36 +112,127 @@ export function buildEchartsOption({ columns, rows, hasHeaderRow, view, encoding
     emphasis: { focus: 'series' },
     itemStyle: { color: PALETTE[idx % PALETTE.length] },
     data: categories.map((cat) => {
-      const inner = buckets.get(cat)
-      const vals = inner?.get(sName) ?? []
+      const vals = buckets.get(cat)?.get(sName) ?? []
       return vals.length ? Number(aggregate(vals, agg).toFixed(4)) : null
     }),
   }))
 
   const option = {
-    title: title ? { text: title, left: 'center', textStyle: { fontSize: 16 } } : undefined,
-    grid: { left: 8, right: 16, bottom: 8, top: title ? 48 : 24, containLabel: true },
-    tooltip: {
-      trigger: 'axis',
-      valueFormatter: (v) => (v == null ? '—' : nf.format(v)),
-    },
-    legend: sCol ? { type: 'scroll', bottom: 0 } : undefined,
-    xAxis: {
-      type: 'category',
-      data: categories,
-      name: xCol.name,
-      nameLocation: 'middle',
-      nameGap: 32,
-      axisLabel: { hideOverlap: true, rotate: categories.length > 12 ? 35 : 0 },
-    },
-    yAxis: {
-      type: 'value',
-      name: agg === 'count' ? '' : yCol.name,
-      scale: !viewSpec.zeroBaseline,
-      axisLabel: { formatter: (v) => nf.format(v) },
-    },
+    ...baseOption(nf, {
+      title, legend: Boolean(sCol), xName: xCol.name,
+      yName: agg === 'count' ? '' : yCol.name,
+      xData: categories, zeroBaseline: viewSpec.zeroBaseline,
+      rotate: categories.length > 12 ? 35 : 0,
+    }),
     series,
   }
-
   return { option, warnings }
+}
+
+/* ---------- scatter ---------- */
+function buildScatter(ctx) {
+  const { columns, body, encodings, nf, language, title } = ctx
+  const xCol = columnByKey(columns, encodings.x)
+  const yCol = columnByKey(columns, encodings.y)
+  const sCol = encodings.series ? columnByKey(columns, encodings.series) : null
+  const warnings = []
+  if (!xCol || !yCol) return { option: { title: { text: title } }, warnings: ['encodage incomplet'] }
+
+  const groups = new Map()
+  let kept = 0
+  for (const row of body) {
+    const x = coerceNumber(row[xCol.index])
+    const y = coerceNumber(row[yCol.index])
+    if (Number.isNaN(x) || Number.isNaN(y)) continue
+    if (kept >= SCATTER_MAX_POINTS) break
+    kept += 1
+    const g = sCol ? ((row[sCol.index] ?? '').trim() || '—') : '__single__'
+    if (!groups.has(g)) groups.set(g, [])
+    groups.get(g).push([x, y])
+  }
+  if (kept === 0) return { option: { title: { text: title } }, warnings: ['aucune donnee a tracer'] }
+  if (kept >= SCATTER_MAX_POINTS) {
+    warnings.push(language === 'en'
+      ? `Limited to ${SCATTER_MAX_POINTS} points.`
+      : `Limité à ${SCATTER_MAX_POINTS} points.`)
+  }
+
+  const series = [...groups.entries()].map(([name, data], idx) => ({
+    name: sCol ? name : yCol.name,
+    type: 'scatter',
+    symbolSize: 8,
+    itemStyle: { color: PALETTE[idx % PALETTE.length], opacity: 0.75 },
+    data,
+  }))
+
+  const option = {
+    ...baseOption(nf, {
+      title, legend: Boolean(sCol), xName: xCol.name, yName: yCol.name,
+      xType: 'value', zeroBaseline: false,
+    }),
+    series,
+  }
+  return { option, warnings }
+}
+
+/* ---------- histogram ---------- */
+function buildHistogram(ctx) {
+  const { columns, body, encodings, nf, language, title } = ctx
+  const xCol = columnByKey(columns, encodings.x)
+  if (!xCol) return { option: { title: { text: title } }, warnings: ['encodage incomplet'] }
+
+  const values = []
+  for (const row of body) {
+    const n = coerceNumber(row[xCol.index])
+    if (!Number.isNaN(n)) values.push(n)
+  }
+  if (values.length === 0) return { option: { title: { text: title } }, warnings: ['aucune donnee a tracer'] }
+
+  const min = Math.min(...values)
+  const max = Math.max(...values)
+  const binCount = Math.min(20, Math.max(5, Math.ceil(Math.sqrt(values.length))))
+  const width = (max - min) / binCount || 1
+  const counts = new Array(binCount).fill(0)
+  for (const v of values) {
+    let bin = Math.floor((v - min) / width)
+    if (bin < 0) bin = 0
+    if (bin >= binCount) bin = binCount - 1
+    counts[bin] += 1
+  }
+  const labels = counts.map((_, i) => {
+    const a = min + i * width
+    const b = i === binCount - 1 ? max : a + width
+    return `${nf.format(Number(a.toFixed(2)))} – ${nf.format(Number(b.toFixed(2)))}`
+  })
+
+  const option = {
+    ...baseOption(nf, {
+      title, legend: false, xName: xCol.name,
+      yName: language === 'en' ? 'Count' : 'Effectif',
+      xData: labels, zeroBaseline: true, rotate: 35,
+    }),
+    series: [{
+      name: language === 'en' ? 'Count' : 'Effectif',
+      type: 'bar',
+      barCategoryGap: '2%',
+      itemStyle: { color: PALETTE[0] },
+      data: counts,
+    }],
+  }
+  return { option, warnings: [] }
+}
+
+/**
+ * @returns {{ option: object, warnings: string[] }}
+ */
+export function buildEchartsOption({ columns, rows, hasHeaderRow, filters, view, encodings, language = 'fr', title = '' }) {
+  const viewSpec = getView(view) || getView('bar')
+  const locale = language === 'en' ? 'en-US' : 'fr-FR'
+  const nf = new Intl.NumberFormat(locale)
+  const body = applyFilters(rows, hasHeaderRow, columns, filters || [])
+  const ctx = { columns, body, encodings: encodings || {}, nf, language, title }
+
+  if (viewSpec.id === 'scatter') return buildScatter(ctx)
+  if (viewSpec.id === 'histogram') return buildHistogram(ctx)
+  return buildCategorical(viewSpec, ctx)
 }

@@ -1,32 +1,38 @@
 /**
  * VisualizeStep — etape 3 : choisir une vue, affecter les colonnes aux axes,
- * afficher le graphe.
+ * filtrer les lignes, afficher le graphe.
  *
- * Perimetre actuel : barres et courbe, avec X / Y / serie / agregation.
+ * Vues : barres, courbe, nuage de points, histogramme.
  */
 
 import { useMemo } from 'react'
 import ReactECharts from 'echarts-for-react'
 import { useLanguage } from '../../../contexts/LanguageContext'
 import { availableViews } from '../engine/compatibility'
+import { getView } from '../engine/viewCatalog'
 import { dimensionColumns, measureColumns, AGGREGATIONS, AGG_LABELS } from '../engine/roles'
 import { buildEchartsOption } from '../engine/buildEchartsOption'
+import FiltersPanel from '../components/FiltersPanel'
 import { useStudioText } from '../i18n'
 import './VisualizeStep.css'
 
-export default function VisualizeStep({ config, onSetView, onBack, onNext }) {
+export default function VisualizeStep({ config, onSetView, onSetFilters, onBack, onNext }) {
   const { language } = useLanguage()
   const t = useStudioText()
   const aggLabels = AGG_LABELS[language] || AGG_LABELS.fr
 
-  const { columns, data } = config
+  const { columns, data, filters } = config
   const view = config.view || { type: 'bar', encodings: { x: null, y: null, series: null, agg: 'sum' } }
   const { encodings } = view
+  const viewSpec = getView(view.type) || getView('bar')
 
   const views = useMemo(() => availableViews(columns), [columns])
   const dims = useMemo(() => dimensionColumns(columns), [columns])
   const measures = useMemo(() => measureColumns(columns), [columns])
-  const seriesChoices = useMemo(() => dims.filter((c) => c.key !== encodings.x), [dims, encodings.x])
+
+  const xChoices = viewSpec.needs.x === 'measure' ? measures : dims
+  const yChoices = measures.filter((c) => c.key !== encodings.x)
+  const seriesChoices = dims.filter((c) => c.key !== encodings.x)
 
   const { option, warnings } = useMemo(
     () =>
@@ -34,15 +40,15 @@ export default function VisualizeStep({ config, onSetView, onBack, onNext }) {
         columns,
         rows: data.rows,
         hasHeaderRow: data.hasHeaderRow,
+        filters,
         view: view.type,
         encodings,
         language,
       }),
-    [columns, data.rows, data.hasHeaderRow, view.type, encodings, language]
+    [columns, data.rows, data.hasHeaderRow, filters, view.type, encodings, language]
   )
 
-  const setEncoding = (patch) =>
-    onSetView({ ...view, encodings: { ...encodings, ...patch } })
+  const setEncoding = (patch) => onSetView({ ...view, encodings: { ...encodings, ...patch } })
 
   return (
     <div className="visualize-step">
@@ -59,55 +65,69 @@ export default function VisualizeStep({ config, onSetView, onBack, onNext }) {
             }
             onClick={() => onSetView({ ...view, type: v.id })}
           >
-            <span className="visualize-step__view-icon" aria-hidden="true">
-              {v.id === 'line' ? '📈' : '📊'}
-            </span>
+            <span className="visualize-step__view-icon" aria-hidden="true">{v.icon}</span>
             {v.label[language] || v.label.fr}
           </button>
         ))}
       </div>
 
       <div className="visualize-step__body">
-        <div className="visualize-step__controls">
-          <label className="visualize-step__field">
-            <span>{t.visualize.axisX}</span>
-            <select value={encodings.x || ''} onChange={(e) => setEncoding({ x: e.target.value })}>
-              {dims.map((c) => (
-                <option key={c.key} value={c.key}>{c.name}</option>
-              ))}
-            </select>
-          </label>
+        <div className="visualize-step__side">
+          <div className="visualize-step__controls">
+            <label className="visualize-step__field">
+              <span>{t.visualize.axisX}</span>
+              <select value={encodings.x || ''} onChange={(e) => setEncoding({ x: e.target.value })}>
+                {xChoices.map((c) => (
+                  <option key={c.key} value={c.key}>{c.name}</option>
+                ))}
+              </select>
+            </label>
 
-          <label className="visualize-step__field">
-            <span>{t.visualize.axisY}</span>
-            <select value={encodings.y || ''} onChange={(e) => setEncoding({ y: e.target.value })}>
-              {measures.map((c) => (
-                <option key={c.key} value={c.key}>{c.name}</option>
-              ))}
-            </select>
-          </label>
+            {viewSpec.needs.y === 'measure' && (
+              <label className="visualize-step__field">
+                <span>{t.visualize.axisY}</span>
+                <select value={encodings.y || ''} onChange={(e) => setEncoding({ y: e.target.value })}>
+                  {yChoices.map((c) => (
+                    <option key={c.key} value={c.key}>{c.name}</option>
+                  ))}
+                </select>
+              </label>
+            )}
 
-          <label className="visualize-step__field">
-            <span>{t.visualize.aggregation}</span>
-            <select value={encodings.agg} onChange={(e) => setEncoding({ agg: e.target.value })}>
-              {AGGREGATIONS.map((a) => (
-                <option key={a} value={a}>{aggLabels[a]}</option>
-              ))}
-            </select>
-          </label>
+            {viewSpec.usesAggregation && (
+              <label className="visualize-step__field">
+                <span>{t.visualize.aggregation}</span>
+                <select value={encodings.agg} onChange={(e) => setEncoding({ agg: e.target.value })}>
+                  {AGGREGATIONS.map((a) => (
+                    <option key={a} value={a}>{aggLabels[a]}</option>
+                  ))}
+                </select>
+              </label>
+            )}
 
-          <label className="visualize-step__field">
-            <span>{t.visualize.series}</span>
-            <select
-              value={encodings.series || ''}
-              onChange={(e) => setEncoding({ series: e.target.value || null })}
-            >
-              <option value="">{t.visualize.noSeries}</option>
-              {seriesChoices.map((c) => (
-                <option key={c.key} value={c.key}>{c.name}</option>
-              ))}
-            </select>
-          </label>
+            {viewSpec.allowsSeries && (
+              <label className="visualize-step__field">
+                <span>{t.visualize.series}</span>
+                <select
+                  value={encodings.series || ''}
+                  onChange={(e) => setEncoding({ series: e.target.value || null })}
+                >
+                  <option value="">{t.visualize.noSeries}</option>
+                  {seriesChoices.map((c) => (
+                    <option key={c.key} value={c.key}>{c.name}</option>
+                  ))}
+                </select>
+              </label>
+            )}
+          </div>
+
+          <FiltersPanel
+            columns={columns}
+            rows={data.rows}
+            hasHeaderRow={data.hasHeaderRow}
+            filters={filters}
+            onChange={onSetFilters}
+          />
         </div>
 
         <div className="visualize-step__chart">
@@ -115,7 +135,7 @@ export default function VisualizeStep({ config, onSetView, onBack, onNext }) {
             option={option}
             notMerge
             lazyUpdate
-            style={{ height: 420, width: '100%' }}
+            style={{ height: 440, width: '100%' }}
           />
           {warnings.length > 0 && (
             <ul className="visualize-step__warnings">

@@ -40,9 +40,16 @@
 
 .visualize-step__body {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: var(--space-24);
   align-items: start;
+}
+
+.visualize-step__side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  min-width: 0;
 }
 
 .visualize-step__controls {
@@ -91,7 +98,7 @@
   gap: var(--space-12);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   .visualize-step__body {
     grid-template-columns: 1fr;
   }

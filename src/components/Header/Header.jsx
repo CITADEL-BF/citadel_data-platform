@@ -10,7 +10,7 @@ import './Header.css'
 const TRANSLATIONS = {
   fr: {
     routes: {
-      donnees: 'Catalogue',
+      donnees: 'Données',
       visualisations: 'Visualisations',
       explorer: 'Visualiser vos données',
       organisations: 'Organisations',
@@ -41,7 +41,7 @@ const TRANSLATIONS = {
       visualizations: 'Visualisations',
       publicData: 'Données publiques',
       ownData: 'Visualiser vos données',
-      catalogue: 'Catalogue',
+      data: 'Données',
       organizations: 'Organisations',
       contact: 'Contact',
     },
@@ -66,7 +66,7 @@ const TRANSLATIONS = {
   },
   en: {
     routes: {
-      donnees: 'Catalog',
+      donnees: 'Data',
       visualisations: 'Visualizations',
       explorer: 'Visualize your data',
       organisations: 'Organizations',
@@ -97,7 +97,7 @@ const TRANSLATIONS = {
       visualizations: 'Visualizations',
       publicData: 'Public data',
       ownData: 'Visualize your data',
-      catalogue: 'Catalog',
+      data: 'Data',
       organizations: 'Organizations',
       contact: 'Contact',
     },
@@ -345,7 +345,7 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <NavLink to="/donnees" className="header__nav-link">{t.nav.catalogue}</NavLink>
+            <NavLink to="/donnees" className="header__nav-link">{t.nav.data}</NavLink>
             <NavLink to="/organisations" className="header__nav-link">{t.nav.organizations}</NavLink>
             <NavLink to="/contact" className="header__nav-link">{t.nav.contact}</NavLink>
           </nav>
@@ -404,7 +404,7 @@ export default function Header() {
           <span className="header__mobile-label">{t.nav.visualizations}</span>
           <NavLink to="/visualisations" className="header__mobile-link header__mobile-link--sub" onClick={() => setMobileOpen(false)}>{t.nav.publicData}</NavLink>
           <NavLink to="/explorer" className="header__mobile-link header__mobile-link--sub" onClick={() => setMobileOpen(false)}>{t.nav.ownData}</NavLink>
-          <NavLink to="/donnees" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.catalogue}</NavLink>
+          <NavLink to="/donnees" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.data}</NavLink>
           <NavLink to="/organisations" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.organizations}</NavLink>
           <NavLink to="/contact" className="header__mobile-link" onClick={() => setMobileOpen(false)}>{t.nav.contact}</NavLink>
           {canOpenDashboard && <span className="header__mobile-label">{userMenuLabel}</span>}

@@ -1,8 +1,9 @@
 /**
  * StudioPage — coquille de l'assistant "Visualiser vos donnees" (route /explorer).
  *
- * Perimetre actuel (Phase 1) : Importer + Verifier + Visualiser (barres / courbe).
- * L'etape Exporter est un jalon visible mais pas encore actif (export PNG a venir).
+ * Perimetre actuel (Phase 1) : Importer + Verifier + Visualiser (barres, courbe,
+ * nuage de points, histogramme) + filtres. L'etape Exporter est un jalon visible
+ * mais pas encore actif (export PNG a venir).
  *
  * Tout l'etat utile tient dans `config` (voir state/chartConfig.js), un objet
  * JSON serialisable pense pour devenir plus tard une ligne Supabase sans
@@ -13,6 +14,7 @@ import { useCallback, useMemo, useState } from 'react'
 import { useLanguage } from '../../contexts/LanguageContext'
 import { createEmptyConfig, buildColumns } from './state/chartConfig'
 import { defaultEncodings, sanitizeEncodings } from './engine/compatibility'
+import { pruneFilters } from './engine/applyFilters'
 import { useStudioText } from './i18n'
 import ImportStep from './wizard/ImportStep'
 import DescribeStep from './wizard/DescribeStep'
@@ -48,13 +50,18 @@ export default function StudioPage() {
     [language]
   )
 
-  /** Reconstruit les colonnes puis remet l'encodage de la vue d'aplomb. */
+  /** Reconstruit les colonnes puis remet filtres + encodage d'aplomb. */
   const recolumn = useCallback((prev, columns) => {
-    if (!prev.view) return { ...prev, columns }
+    const filters = pruneFilters(prev.filters, columns)
+    if (!prev.view) return { ...prev, columns, filters }
     return {
       ...prev,
       columns,
-      view: { ...prev.view, encodings: sanitizeEncodings(columns, prev.view.encodings) },
+      filters,
+      view: {
+        ...prev.view,
+        encodings: sanitizeEncodings(columns, prev.view.encodings, prev.view.type),
+      },
     }
   }, [])
 
@@ -99,10 +106,14 @@ export default function StudioPage() {
     setConfig((prev) => {
       const typeChanged = prev.view && prev.view.type !== nextView.type
       const encodings = typeChanged
-        ? sanitizeEncodings(prev.columns, nextView.encodings)
+        ? sanitizeEncodings(prev.columns, defaultEncodings(prev.columns, nextView.type), nextView.type)
         : nextView.encodings
       return { ...prev, view: { ...nextView, encodings } }
     })
+  }, [])
+
+  const handleSetFilters = useCallback((filters) => {
+    setConfig((prev) => ({ ...prev, filters }))
   }, [])
 
   const stepStatus = useMemo(
@@ -171,6 +182,7 @@ export default function StudioPage() {
             <VisualizeStep
               config={config}
               onSetView={handleSetView}
+              onSetFilters={handleSetFilters}
               onBack={() => setStepIndex(1)}
               onNext={() => setStepIndex(3)}
             />

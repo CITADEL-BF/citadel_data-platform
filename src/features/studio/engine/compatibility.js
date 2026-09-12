@@ -3,53 +3,78 @@
  * quel encodage proposer par defaut.
  */
 
-import { VIEW_LIST } from './viewCatalog'
+import { VIEW_LIST, getView } from './viewCatalog'
 import { measureColumns, dimensionColumns } from './roles'
 
-/** Vues realisables : il faut au moins une dimension et une mesure. */
-export function availableViews(columns) {
-  const hasDim = dimensionColumns(columns).length > 0
-  const hasMeasure = measureColumns(columns).length > 0
-  return VIEW_LIST.map((view) => ({
-    ...view,
-    enabled: hasDim && hasMeasure,
-  }))
+const AGGS = ['sum', 'mean', 'count', 'min', 'max']
+
+/** Une vue donnee est-elle realisable avec ces colonnes ? */
+function viewEnabled(view, dims, measures) {
+  switch (view.id) {
+    case 'scatter':
+      return measures.length >= 2
+    case 'histogram':
+      return measures.length >= 1
+    case 'bar':
+    case 'line':
+    default:
+      return dims.length >= 1 && measures.length >= 1
+  }
 }
 
-/**
- * Encodage par defaut pour une vue : X = premiere dimension (une date si
- * possible), Y = premiere mesure, pas de serie, agregation par somme.
- */
+export function availableViews(columns) {
+  const dims = dimensionColumns(columns)
+  const measures = measureColumns(columns)
+  return VIEW_LIST.map((view) => ({ ...view, enabled: viewEnabled(view, dims, measures) }))
+}
+
+/** Encodage par defaut pour une vue. */
 export function defaultEncodings(columns, viewId) {
   const dims = dimensionColumns(columns)
   const measures = measureColumns(columns)
+
+  if (viewId === 'scatter') {
+    return { x: measures[0]?.key ?? null, y: measures[1]?.key ?? measures[0]?.key ?? null, series: null, agg: 'sum' }
+  }
+  if (viewId === 'histogram') {
+    return { x: measures[0]?.key ?? null, y: null, series: null, agg: 'count' }
+  }
+
   const preferredX =
     viewId === 'line'
       ? dims.find((c) => c.type === 'date') || dims[0]
       : dims.find((c) => c.type === 'date' || c.type === 'category') || dims[0]
-
-  return {
-    x: preferredX?.key ?? null,
-    y: measures[0]?.key ?? null,
-    series: null,
-    agg: 'sum',
-  }
+  return { x: preferredX?.key ?? null, y: measures[0]?.key ?? null, series: null, agg: 'sum' }
 }
 
-/** Garde-fou : un encodage reste-t-il valide apres un changement de types ? */
-export function sanitizeEncodings(columns, encodings) {
+/** Garde-fou : ramene un encodage dans un etat valide pour la vue. */
+export function sanitizeEncodings(columns, encodings, viewId = 'bar') {
+  const view = getView(viewId) || getView('bar')
   const dims = dimensionColumns(columns)
   const measures = measureColumns(columns)
   const dimKeys = new Set(dims.map((c) => c.key))
   const measureKeys = new Set(measures.map((c) => c.key))
-  const x = dimKeys.has(encodings?.x) ? encodings.x : (dims[0]?.key ?? null)
+
+  const xPool = view.needs.x === 'measure' ? measureKeys : dimKeys
+  const xFallback = (view.needs.x === 'measure' ? measures : dims)[0]?.key ?? null
+  const x = xPool.has(encodings?.x) ? encodings.x : xFallback
+
+  let y = null
+  if (view.needs.y === 'measure') {
+    y = measureKeys.has(encodings?.y) && encodings.y !== x
+      ? encodings.y
+      : (measures.find((c) => c.key !== x)?.key ?? measures[0]?.key ?? null)
+  }
+
+  const series =
+    view.allowsSeries && encodings?.series && dimKeys.has(encodings.series) && encodings.series !== x
+      ? encodings.series
+      : null
+
   return {
     x,
-    y: measureKeys.has(encodings?.y) ? encodings.y : (measures[0]?.key ?? null),
-    series:
-      encodings?.series && dimKeys.has(encodings.series) && encodings.series !== x
-        ? encodings.series
-        : null,
-    agg: ['sum', 'mean', 'count', 'min', 'max'].includes(encodings?.agg) ? encodings.agg : 'sum',
+    y,
+    series,
+    agg: AGGS.includes(encodings?.agg) ? encodings.agg : (viewId === 'histogram' ? 'count' : 'sum'),
   }
 }
