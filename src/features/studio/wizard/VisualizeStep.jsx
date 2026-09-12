@@ -13,18 +13,20 @@ import { getView } from '../engine/viewCatalog'
 import { dimensionColumns, measureColumns, AGGREGATIONS, AGG_LABELS } from '../engine/roles'
 import { buildEchartsOption } from '../engine/buildEchartsOption'
 import FiltersPanel from '../components/FiltersPanel'
+import RefinePanel from './RefinePanel'
 import { useStudioText } from '../i18n'
 import './VisualizeStep.css'
 
-export default function VisualizeStep({ config, onSetView, onSetFilters, onBack, onNext }) {
+export default function VisualizeStep({ config, onSetView, onSetFilters, onPatchConfig, onBack, onNext }) {
   const { language } = useLanguage()
   const t = useStudioText()
   const aggLabels = AGG_LABELS[language] || AGG_LABELS.fr
 
-  const { columns, data, filters } = config
+  const { columns, data, filters, meta, source, refine, annotations } = config
   const view = config.view || { type: 'bar', encodings: { x: null, y: null, series: null, agg: 'sum' } }
   const { encodings } = view
   const viewSpec = getView(view.type) || getView('bar')
+  const hasSeries = Boolean(viewSpec.allowsSeries && encodings.series)
 
   const views = useMemo(() => availableViews(columns), [columns])
   const dims = useMemo(() => dimensionColumns(columns), [columns])
@@ -43,9 +45,13 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onBack,
         filters,
         view: view.type,
         encodings,
+        meta,
+        source,
+        refine,
+        annotations,
         language,
       }),
-    [columns, data.rows, data.hasHeaderRow, filters, view.type, encodings, language]
+    [columns, data.rows, data.hasHeaderRow, filters, view.type, encodings, meta, source, refine, annotations, language]
   )
 
   const setEncoding = (patch) => onSetView({ ...view, encodings: { ...encodings, ...patch } })
@@ -127,6 +133,15 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onBack,
             hasHeaderRow={data.hasHeaderRow}
             filters={filters}
             onChange={onSetFilters}
+          />
+
+          <RefinePanel
+            meta={meta}
+            source={source}
+            refine={refine}
+            annotations={annotations}
+            hasSeries={hasSeries}
+            onChange={onPatchConfig}
           />
         </div>
 

@@ -1,0 +1,116 @@
+.refine-panel {
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-md);
+  background: var(--surface-container-lowest);
+  padding: var(--space-8) var(--space-12);
+}
+
+.refine-panel > summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-body-md);
+  color: var(--on-surface);
+  padding: var(--space-4) 0;
+}
+
+.refine-panel__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8) var(--space-12);
+  margin-top: var(--space-12);
+}
+
+.refine-panel__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-label-sm);
+  color: var(--on-surface-variant);
+}
+
+.refine-panel__field--wide {
+  grid-column: 1 / -1;
+}
+
+.refine-panel__field input,
+.refine-panel__field select {
+  padding: var(--space-4) var(--space-8);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-sm);
+  background: var(--surface-container-lowest);
+}
+
+.refine-panel__check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-body-sm);
+  color: var(--on-surface);
+}
+
+.refine-panel__annotations {
+  margin-top: var(--space-16);
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--surface-container-highest);
+}
+
+.refine-panel__annotations-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: var(--text-body-sm);
+  margin-bottom: var(--space-8);
+}
+
+.refine-panel__annotations-head button {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.refine-panel__hint {
+  font-size: var(--text-label-sm);
+  color: var(--on-surface-variant);
+}
+
+.refine-panel__annotation {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.refine-panel__annotation label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-label-sm);
+  color: var(--on-surface-variant);
+}
+
+.refine-panel__annotation-label {
+  flex: 1;
+}
+
+.refine-panel__annotation input {
+  padding: var(--space-4) var(--space-8);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-sm);
+  width: 100%;
+}
+
+.refine-panel__annotation-remove {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-full);
+  background: var(--surface-container-high);
+  color: var(--on-surface-variant);
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+}

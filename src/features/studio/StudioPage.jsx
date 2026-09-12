@@ -19,6 +19,7 @@ import { useStudioText } from './i18n'
 import ImportStep from './wizard/ImportStep'
 import DescribeStep from './wizard/DescribeStep'
 import VisualizeStep from './wizard/VisualizeStep'
+import ExportStep from './wizard/ExportStep'
 import './StudioPage.css'
 
 const STEPS = ['import', 'describe', 'visualize', 'export']
@@ -116,6 +117,11 @@ export default function StudioPage() {
     setConfig((prev) => ({ ...prev, filters }))
   }, [])
 
+  /** Fusion de blocs de haut niveau (meta, source, refine, annotations). */
+  const handlePatchConfig = useCallback((patch) => {
+    setConfig((prev) => ({ ...prev, ...patch }))
+  }, [])
+
   const stepStatus = useMemo(
     () =>
       STEPS.map((step, idx) => ({
@@ -183,13 +189,14 @@ export default function StudioPage() {
               config={config}
               onSetView={handleSetView}
               onSetFilters={handleSetFilters}
+              onPatchConfig={handlePatchConfig}
               onBack={() => setStepIndex(1)}
               onNext={() => setStepIndex(3)}
             />
           )}
 
-          {currentStep === 'export' && (
-            <p className="studio__placeholder">{t.placeholder.export}</p>
+          {currentStep === 'export' && hasView && (
+            <ExportStep config={config} onBack={() => setStepIndex(2)} />
           )}
         </section>
       </div>

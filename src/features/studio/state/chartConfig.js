@@ -17,6 +17,7 @@ export const CONFIG_VERSION = 1
 export function createEmptyConfig() {
   return {
     version: CONFIG_VERSION,
+    meta: { title: '', note: '', byline: '' },
     source: { name: '', url: '' },
     data: {
       mode: 'inline',       // 'inline' | 'storage-ref' (Phase 2)
@@ -28,8 +29,13 @@ export function createEmptyConfig() {
     columns: [],            // [{ key, name, type, detectedType, role, format }]
     view: null,             // defini a l'etape "Visualiser"
     filters: [],
-    annotations: [],
-    refine: {},
+    annotations: [],        // [{ id, value, label }] -> lignes de reference
+    refine: {
+      decimals: null,       // null = auto
+      thousands: true,      // separateur de milliers
+      legend: true,         // legende (vues avec serie)
+      palette: 'default',   // 'default' | 'vives' | 'sobre'
+    },
     layout: {},
   }
 }
@@ -90,5 +96,13 @@ export function deserializeConfig(json) {
     // format incompatible en silence.
     throw new Error(`Version de projet non prise en charge (${parsed.version}).`)
   }
-  return { ...createEmptyConfig(), ...parsed }
+  const base = createEmptyConfig()
+  return {
+    ...base,
+    ...parsed,
+    meta: { ...base.meta, ...(parsed.meta || {}) },
+    source: { ...base.source, ...(parsed.source || {}) },
+    refine: { ...base.refine, ...(parsed.refine || {}) },
+    data: { ...base.data, ...(parsed.data || {}) },
+  }
 }

@@ -1,0 +1,53 @@
+.export-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.export-step__preview {
+  padding: var(--space-16);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.export-step__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.export-step__scale {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  color: var(--on-surface-variant);
+}
+
+.export-step__scale select {
+  padding: var(--space-4) var(--space-8);
+  border: 1px solid var(--outline-variant);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-body-sm);
+}
+
+.export-step__done {
+  font-size: var(--text-body-sm);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.export-step__note {
+  font-size: var(--text-label-sm);
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.export-step__actions {
+  display: flex;
+  justify-content: flex-start;
+}
