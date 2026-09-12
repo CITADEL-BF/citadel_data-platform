@@ -5,6 +5,9 @@
  * compatibilite (compatibility.js) croise ces besoins avec les types de
  * colonnes detectees pour proposer / griser les vues.
  *
+ * `icon` est un composant d'icone (react-icons/bs, Bootstrap Icons) rendu tel
+ * quel dans la galerie de vues : <v.icon aria-hidden="true" />.
+ *
  *   bar / line / area : X = dimension, Y = mesure agregee, serie optionnelle
  *                        (bar/area peuvent s'empiler quand une serie est choisie)
  *   scatter            : X = mesure, Y = mesure (points bruts), serie optionnelle
@@ -16,11 +19,23 @@
  *   map                : X = dimension (nom de region BF), Y = mesure agregee
  */
 
+import {
+  BsBarChartFill,
+  BsGraphUp,
+  BsGraphUpArrow,
+  BsBoundingBoxCircles,
+  BsBarChartSteps,
+  BsPieChartFill,
+  BsPeopleFill,
+  BsMapFill,
+  BsPinMapFill,
+} from 'react-icons/bs'
+
 export const VIEWS = {
   bar: {
     id: 'bar',
     label: { fr: 'Barres', en: 'Bars' },
-    icon: '📊',
+    icon: BsBarChartFill,
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: true,
     usesAggregation: true,
@@ -30,7 +45,7 @@ export const VIEWS = {
   line: {
     id: 'line',
     label: { fr: 'Courbe', en: 'Line' },
-    icon: '📈',
+    icon: BsGraphUp,
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: true,
     usesAggregation: true,
@@ -41,7 +56,7 @@ export const VIEWS = {
   area: {
     id: 'area',
     label: { fr: 'Aires', en: 'Area' },
-    icon: '🌊',
+    icon: BsGraphUpArrow,
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: true,
     usesAggregation: true,
@@ -52,7 +67,7 @@ export const VIEWS = {
   scatter: {
     id: 'scatter',
     label: { fr: 'Nuage de points', en: 'Scatter' },
-    icon: '⋯',
+    icon: BsBoundingBoxCircles,
     needs: { x: 'measure', y: 'measure' },
     allowsSeries: true,
     usesAggregation: false,
@@ -62,7 +77,7 @@ export const VIEWS = {
   histogram: {
     id: 'histogram',
     label: { fr: 'Histogramme', en: 'Histogram' },
-    icon: '▟',
+    icon: BsBarChartSteps,
     needs: { x: 'measure' },
     allowsSeries: false,
     usesAggregation: false,
@@ -72,7 +87,7 @@ export const VIEWS = {
   pie: {
     id: 'pie',
     label: { fr: 'Circulaire', en: 'Pie' },
-    icon: '🥧',
+    icon: BsPieChartFill,
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: false,
     usesAggregation: true,
@@ -82,7 +97,7 @@ export const VIEWS = {
   pyramid: {
     id: 'pyramid',
     label: { fr: 'Pyramide des âges', en: 'Population pyramid' },
-    icon: '🔺',
+    icon: BsPeopleFill,
     needs: { x: 'dimension', y: 'measure', series: 'binary' },
     allowsSeries: true,
     requiresSeries: true,
@@ -93,7 +108,7 @@ export const VIEWS = {
   map: {
     id: 'map',
     label: { fr: 'Carte (régions BF)', en: 'Map (BF regions)' },
-    icon: '🗺️',
+    icon: BsMapFill,
     needs: { x: 'dimension', y: 'measure' },
     allowsSeries: false,
     usesAggregation: true,
@@ -104,7 +119,7 @@ export const VIEWS = {
   geoPoints: {
     id: 'geoPoints',
     label: { fr: 'Carte (points lat/lon)', en: 'Map (lat/lon points)' },
-    icon: '📍',
+    icon: BsPinMapFill,
     needs: { lat: 'geo-lat', lon: 'geo-lon' },
     allowsSeries: true,
     usesAggregation: false,

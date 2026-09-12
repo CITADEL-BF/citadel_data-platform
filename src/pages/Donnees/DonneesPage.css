@@ -625,8 +625,10 @@
 }
 
 .donnees-explore-banner__icon {
-  font-size: 1.6rem;
-  line-height: 1;
+  width: 1.6rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+  color: var(--color-primary);
 }
 
 .donnees-explore-banner__text {
@@ -643,10 +645,18 @@
 }
 
 .donnees-explore-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
   margin-left: auto;
   white-space: nowrap;
   font-weight: 600;
   color: var(--color-primary);
+}
+
+.donnees-explore-banner__cta svg {
+  width: 1em;
+  height: 1em;
 }
 
 @media (max-width: 640px) {

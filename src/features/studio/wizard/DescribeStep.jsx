@@ -5,6 +5,7 @@
  */
 
 import { useMemo } from 'react'
+import { BsArrowLeftRight, BsPlusLg, BsArrowCounterclockwise } from 'react-icons/bs'
 import DataTable from '../components/DataTable'
 import { useStudioText } from '../i18n'
 import './DescribeStep.css'
@@ -57,12 +58,15 @@ export default function DescribeStep({
 
       <div className="describe-step__edit-tools">
         <button type="button" className="btn-ghost" onClick={onTranspose}>
+          <BsArrowLeftRight aria-hidden="true" />
           {t.describe.transpose}
         </button>
         <button type="button" className="btn-ghost" onClick={onAddColumn}>
+          <BsPlusLg aria-hidden="true" />
           {t.describe.addColumn}
         </button>
         <button type="button" className="btn-ghost" onClick={onUndo} disabled={!canUndo}>
+          <BsArrowCounterclockwise aria-hidden="true" />
           {t.describe.undo}
         </button>
       </div>

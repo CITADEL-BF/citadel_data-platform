@@ -58,13 +58,15 @@
 }
 
 .filters-panel__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 22px;
   height: 22px;
   border-radius: var(--radius-full);
   background: var(--surface-container-high);
   color: var(--on-surface-variant);
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 0.65rem;
 }
 
 .filters-panel__range {

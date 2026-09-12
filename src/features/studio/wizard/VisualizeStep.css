@@ -34,8 +34,9 @@
 }
 
 .visualize-step__view-icon {
-  font-size: 1rem;
-  line-height: 1;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
 }
 
 .visualize-step__body {

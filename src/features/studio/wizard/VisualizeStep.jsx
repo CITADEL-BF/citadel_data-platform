@@ -87,7 +87,7 @@ export default function VisualizeStep({ config, onSetView, onSetFilters, onPatch
             }
             onClick={() => onSetView({ ...view, type: v.id })}
           >
-            <span className="visualize-step__view-icon" aria-hidden="true">{v.icon}</span>
+            <v.icon className="visualize-step__view-icon" aria-hidden="true" />
             {v.label[language] || v.label.fr}
           </button>
         ))}

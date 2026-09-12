@@ -66,6 +66,9 @@
 }
 
 .refine-panel__annotations-head button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
   color: var(--color-primary);
   font-weight: 600;
   text-decoration: underline;
@@ -105,12 +108,14 @@
 }
 
 .refine-panel__annotation-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 26px;
   height: 26px;
   border-radius: var(--radius-full);
   background: var(--surface-container-high);
   color: var(--on-surface-variant);
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 0.7rem;
   flex-shrink: 0;
 }

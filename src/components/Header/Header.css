@@ -94,8 +94,9 @@
 }
 
 .header__account-caret {
-  font-size: 0.75rem;
-  line-height: 1;
+  width: 0.7em;
+  height: 0.7em;
+  flex-shrink: 0;
   transition: transform var(--transition-fast);
 }
 

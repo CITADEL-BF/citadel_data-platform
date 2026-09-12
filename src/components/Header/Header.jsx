@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { BsChevronDown } from 'react-icons/bs'
 import logoImg from '../../../assets/logo-citadel.png'
 import { getRoleDetails } from '../../app/auth/roles'
 import { useSubscriptions } from '../../app/subscriptions/SubscriptionsContext'
@@ -282,7 +283,7 @@ export default function Header() {
                     onClick={() => setUserMenuOpen((prev) => !prev)}
                   >
                     {userMenuLabel}
-                    <span className={`header__account-caret${userMenuOpen ? ' header__account-caret--open' : ''}`} aria-hidden="true">▾</span>
+                    <BsChevronDown className={`header__account-caret${userMenuOpen ? ' header__account-caret--open' : ''}`} aria-hidden="true" />
                   </button>
 
                   {userMenuOpen && (
@@ -336,7 +337,7 @@ export default function Header() {
                 onClick={() => setVizMenuOpen((prev) => !prev)}
               >
                 {t.nav.visualizations}
-                <span className={`header__account-caret${vizMenuOpen ? ' header__account-caret--open' : ''}`} aria-hidden="true">▾</span>
+                <BsChevronDown className={`header__account-caret${vizMenuOpen ? ' header__account-caret--open' : ''}`} aria-hidden="true" />
               </button>
               {vizMenuOpen && (
                 <div className="header__dropdown-menu" role="menu" aria-label={t.aria.vizMenu}>

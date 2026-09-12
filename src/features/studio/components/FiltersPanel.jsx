@@ -7,6 +7,7 @@
  */
 
 import { useMemo } from 'react'
+import { BsXLg } from 'react-icons/bs'
 import { coerceNumber } from '../engine/detectTypes'
 import { distinctValues, numericExtent } from '../engine/applyFilters'
 import { useStudioText } from '../i18n'
@@ -86,7 +87,7 @@ export default function FiltersPanel({ columns, rows, hasHeaderRow, filters, onC
                   onClick={() => removeFilter(f.column)}
                   aria-label={`${t.filters.remove} — ${col.name}`}
                 >
-                  ×
+                  <BsXLg aria-hidden="true" />
                 </button>
               </div>
 

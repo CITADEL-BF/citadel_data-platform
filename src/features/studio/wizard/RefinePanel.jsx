@@ -6,6 +6,7 @@
  */
 
 import { useLanguage } from '../../../contexts/LanguageContext'
+import { BsXLg, BsPlusLg } from 'react-icons/bs'
 import { coerceNumber } from '../engine/detectTypes'
 import { useStudioText } from '../i18n'
 import './RefinePanel.css'
@@ -126,7 +127,10 @@ export default function RefinePanel({ meta, source, refine, annotations, hasSeri
         <div className="refine-panel__annotations">
           <div className="refine-panel__annotations-head">
             <span>{r.annotations}</span>
-            <button type="button" onClick={addAnnotation}>{r.addAnnotation}</button>
+            <button type="button" className="refine-panel__add-annotation" onClick={addAnnotation}>
+              <BsPlusLg aria-hidden="true" />
+              {r.addAnnotation}
+            </button>
           </div>
           {annotations.length === 0 && <p className="refine-panel__hint">{r.annotationsHint}</p>}
           {annotations.map((a) => (
@@ -154,7 +158,7 @@ export default function RefinePanel({ meta, source, refine, annotations, hasSeri
                 onClick={() => removeAnnotation(a.id)}
                 aria-label={r.remove}
               >
-                ×
+                <BsXLg aria-hidden="true" />
               </button>
             </div>
           ))}
